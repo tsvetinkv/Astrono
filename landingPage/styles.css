@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(43, 2, 85);
+    background: linear-gradient(0deg, rgba(43, 2, 85, 1) 0%, rgba(5, 26, 70, 1) 100%);
+    background-repeat: no-repeat;
+    color: #E6CEFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #E6CEFF;
+    height: 60px;
+    background: rgba(11, 1, 15, 0.52);
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover {
+    background: #360453be;
+    border-radius: 20px 5px;
+    transition: 0.26s ease-in;
+}
+
+.starsAndConstellations {
+    position: relative;
+}
+
+.dropdown {
+    background: linear-gradient(#090D29, #2A0254);
+    margin-left: -13px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    top: 35px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.dropdown li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.dropdown li:hover {
+    background: transparent;
+    border-radius: 8px 20px;
+}
+
+.starsAndConstellations:hover .dropdown {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.pageExplanation {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.text h2,
+h3 {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+.section p {
+    font-size: 24px;
+    line-height: 2em;
+}
