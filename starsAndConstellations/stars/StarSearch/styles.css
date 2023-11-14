@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(0deg,rgba(62, 3, 122, 1)  0%, rgba(5, 4, 119, 1) 100%);
+    background-repeat: no-repeat;
+    font-family: Segoe UI;
+    color: #C5CCFC;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #E6CEFF;
+    height: 60px;
+    background: #000B53;
+    margin: -8px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #C5CCFC;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover {
+    background: #310082;
+    border-radius: 20px 5px;
+    transition: 0.26s ease-in;
+}
+
+.starsAndConstellations {
+    position: relative;
+}
+
+.dropdown {
+    background: linear-gradient(#000B53, #070476);
+    margin-left: -20px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    top: 35px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.dropdown li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.dropdown li:hover{
+    background: transparent;
+}
+
+.starsAndConstellations:hover .dropdown {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+}
+
+.img {
+    width: 400px;
+    height: 268px;
+    border-radius: 10px;
+    filter: brightness(1.15) contrast(1.10);
+}
+
+.starInfo {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #000B53;
+    color: #C5CCFC;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 45%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

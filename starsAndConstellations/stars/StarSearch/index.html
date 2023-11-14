@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star information</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./logoLight.png" />
+        </div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="/landingPage/index.html">Home</a></li>
+                <li><a href="/events/index.html">Events</a></li>
+                <li class="starsAndConstellations">
+                    <a href="/starsAndConstellations/landingPage/index.html">Stars & Constellations</a>
+                    <ul class="dropdown">
+                        <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a>
+                        </li>
+                        <li><a href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <figure>
+            <img class="img" id="star" src="" />
+            <figcaption>
+                image for the star from nasa image library
+            </figcaption>
+        </figure>
+        <div class="starInfo">
+            <h1 id="name">Vega</h1>
+            <div id="constellation" class="tooltip">Constellation: Lyra
+                <span class="tooltiptext">a group of stars that forms an imaginary outline</span>
+            </div>
+            <div id="distance" class="tooltip">Distance in light years: 25
+                <span class="tooltiptext">A light year is about 5.88 trillion miles.</span>
+            </div>
+            <div id="spectralClass" class="tooltip">spectral_class: A0Vvar
+                <span class="tooltiptext">Stars classification by temperature, color and size.</span>
+            </div>
+        </div>
+        <figure>
+            <img class="img" id="constellationImg" src="" />
+            <figcaption>
+                image for the constellation from nasa image library
+            </figcaption>
+        </figure>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

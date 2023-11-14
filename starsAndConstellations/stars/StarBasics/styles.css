@@ -1,0 +1,227 @@
+body {
+    background: linear-gradient(0deg,rgba(62, 3, 122, 1)  0%, rgba(5, 4, 119, 1) 100%);
+    background-repeat: no-repeat;
+    font-family: Segoe UI;
+    color: #C5CCFC;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #E6CEFF;
+    height: 60px;
+    background: #000B53;
+    margin: -8px;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #C5CCFC;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover {
+    background: #310082;
+    border-radius: 20px 5px;
+    transition: 0.26s ease-in;
+}
+
+.starsAndConstellations {
+    position: relative;
+}
+
+.dropdown {
+    background: linear-gradient(#000B53, #070476);
+    margin-left: -20px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    top: 35px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.dropdown li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+}
+.dropdown li:hover{
+    background: transparent;
+}
+
+.starsAndConstellations:hover .dropdown {
+    display: block;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+
+
+header {
+    background: linear-gradient(90deg, rgba(7, 4, 118, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(62, 3, 122, 1) 100%);
+    margin: -40px;
+    text-align: center;
+    width: 103.2%;
+}
+
+#heading {
+    margin-top: 40px;
+}
+
+.icon {
+    background: url(./images/SearchIcon.png) no-repeat left;
+    background-size: 17px;
+    width: 300px;
+    padding: 7px 25px;
+    border: 1px solid #9daaff;
+    color: #9daaff;
+    border-radius: 30px;
+    background-position: 7px 7px;
+    margin-bottom: 20px;
+}
+
+::placeholder{
+    color: #9daaff;
+}
+
+.navigation {
+    background-color: #000B53;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    margin-left: -10px;
+    width: 99vw;
+}
+
+.navigation a {
+    float: left;
+    color: #9daaff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid #000B53;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    top: 124%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-item {
+    position: relative;
+}
+
+main {
+    margin-top: 30px;
+}
+
+#introdusingText {
+    text-align: center;
+    font-weight: 330;
+    width: 80vw;
+    font-size: 20px;
+    line-height: 180%;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.text {
+    flex: 1;
+}
+
+.rightText {
+    margin-right: 80px;
+}
+
+.rightText p {
+    font-size: 20px;
+    line-height: 210%;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 210%;
+}
+
+h2 {
+    font-size: 33px;
+    color: #9daaff;
+}
+
+.images {
+    flex: 1;
+    max-width: 420px;
+    margin-top: 60px;
+}
+
+img {
+    width: 350px;
+    height: 185px;
+}
+
+.content {
+    display: flex;
+    gap: 170px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figcaption {
+    color: #9daaff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 180%;
+    width: 350px;
+}
+
+.threeImages {
+    flex: 1;
+    max-width: 420px;
+    margin-top: 28px;
+}
+
+.rightAlign {
+    text-align: right;
+}
