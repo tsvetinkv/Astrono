@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./images/logo.png" />
+    </div>
+    <ul class="nav-links">
+      <div class="menu">
+        <li><a href="/landingPage/index.html">Home</a></li>
+        <li class="starsAndConstellations">
+          <a href="/starsAndConstellations/landingPage/index.html">Stars & Constellations</a>
+          <ul class="dropdown">
+            <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a></li>
+            <li><a href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a></li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </nav>
+  <section class="introduction">
+    <div class="line">
+      <div class="textbox">
+        <p class="heading">
+          Are you interested in the upcoming astronomical events?
+        </p>
+        <hr />
+        <p class="text">
+          If so, then scroll down to learn what events are coming and
+          information about them.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="./images/image.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <div class="lineOfEvents">
+      <h2 id="currentMonth"></h2>
+      <div class="eventCard">
+        <h3 id="nameOfTheEvent""></h3>
+        <div class=" whiteLine">
+      </div>
+      <img class="eventPhoto" src="" alt="" />
+      <p id="dateOfTheEvent"></p>
+    </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>

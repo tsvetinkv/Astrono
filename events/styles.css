@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(5,26,70,1) 0%, rgba(43,2,85,1) 100%);
+    background-repeat: no-repeat;
+    color: #EDDCFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #EDDCFF;
+    height: 60px;
+    background: #2A0254;
+}
+
+.nav-links a {
+    color: #EDDCFF;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover{
+    background:#051a46;
+    border-radius: 20px 5px;
+    transition: 0.26s ease-in;
+}
+
+.starsAndConstellations {
+    position: relative;
+}
+
+.dropdown {
+    background: linear-gradient(0deg, rgba(5,26,70,1) 0%, rgba(43,2,85,1) 100%);
+    margin-left: -13px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    top: 35px;
+    text-align: center;
+    list-style-position: inside;  
+}
+
+.dropdown li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.dropdown li:hover {
+    background: transparent;
+}
+
+.starsAndConstellations:hover .dropdown {
+    display: block;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+
+.introduction {
+    background-image: url(images/background.png);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.textbox {
+    width: 45%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: 100px;
+    background: rgba(19, 2, 29, 0.6);
+    border-radius: 20px;
+}
+
+.heading {
+    height: 162px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 37px;
+}
+
+.text {
+    height: 140px;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.image img {
+    width: 340px;
+    height: 315px;
+    border-radius: 50px;
+    margin-top: 75px;
+}
+
+.line {
+    display: flex;
+    gap: 140px;
+    margin-left: 100px;
+}
+
+
+hr {
+    border: 1px solid #45056A;
+}
+
+.eventCard {
+    width: 240px;
+    height: 280px;
+    background: rgba(19, 2, 29, 0.6);
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.eventCard img {
+    width: 180px;
+    height: 180px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+#nameOfTheEvent {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dateOfTheEvent {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+}
+
+
+
+.monthName {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin-top: 20px;
+}
+
+.monthContainer {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    gap: 70px;
+}
+
+.events {
+    margin-left: 30px;
+}
