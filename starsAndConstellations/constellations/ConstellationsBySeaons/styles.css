@@ -1,0 +1,128 @@
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(116, 30, 113);
+    background: linear-gradient(0deg, rgba(116, 30, 113, 1) 0%, rgba(10, 22, 84, 1) 100%);
+    background-repeat: no-repeat;
+    color: #CAF7F3;
+    font-family: Segoe UI;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #EDDCFF;
+    height: 60px;
+    background: #2A0254;
+    margin: -8px;
+}
+
+.nav-links a {
+    color: #EDDCFF;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: 200px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.menu li:hover{
+    background:#051a46;
+    border-radius: 20px 5px;
+    transition: 0.26s ease-in;
+}
+
+.starsAndConstellations {
+    position: relative;
+}
+
+.dropdown {
+    background: linear-gradient(0deg, rgba(5,26,70,1) 0%, rgba(43,2,85,1) 100%);
+    margin-left: -13px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    top: 35px;
+    text-align: center;
+    list-style-position: inside;  
+}
+
+.dropdown li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.dropdown li:hover {
+    background: transparent;
+}
+
+.starsAndConstellations:hover .dropdown {
+    display: block;
+}
+
+.navbar ul{
+    list-style-type: none;
+}
+h1,
+h2 {
+    color: #7CE4DC;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+.textCentered {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 180%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    margin-top: 40px;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+}

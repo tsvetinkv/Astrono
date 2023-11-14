@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constellations</title>
+    <link rel="stylesheet" href="./styles.css" </head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" />
+        </div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="/landingPage/index.html">Home</a></li>
+                <li><a href="/events/index.html">Events</a></li>
+                <li class="starsAndConstellations">
+                    <a href="/starsAndConstellations/landingPage/index.html">Stars & Constellations</a>
+                    <ul class="dropdown">
+                        <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a></li>
+                        <li><a
+                                href="/starsAndConstellations/constellations/ConstellationsBySeaons/index.html">Constellations by seasons</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <h1>Constellations</h1>
+    <div class="center">
+        <form class="form">
+            <div class="form-title"><span>Generate</span></div>
+            <div class="title-2"><span>Star Chart</span></div>
+            <div class="center">
+                <div class="input-container">
+                    <input class="input-date" id="dateInput" type="date">
+                </div>
+
+                <section class="bg-stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </section>
+
+                <div class="input-container">
+                    <select id="constellationSelect">
+                        <option value="and">Andromeda</option>
+                        <option value="ant">Antlia</option>
+                        <option value="aps">Apus</option>
+                        <option value="aqr">Aquarius</option>
+                        <option value="aql">Aquila</option>
+                        <option value="ara">Ara</option>
+                        <option value="ari">Aries</option>
+                        <option value="aur">Auriga</option>
+                        <option value="boo">Boötes</option>
+                        <option value="cae">Caelum</option>
+                        <option value="cam">Camelopardalis</option>
+                        <option value="cnc">Cancer</option>
+                        <option value="cvn">Canes Venatici</option>
+                        <option value="cma">Canis Major</option>
+                        <option value="cmi">Canis Minor</option>
+                        <option value="cap">Capricornus</option>
+                        <option value="car">Carina</option>
+                        <option value="cas">Cassiopeia</option>
+                        <option value="cen">Centaurus</option>
+                        <option value="cep">Cepheus</option>
+                        <option value="cet">Cetus</option>
+                        <option value="cha">Chamaeleon</option>
+                        <option value="cir">Circinus</option>
+                        <option value="col">Columba</option>
+                        <option value="com">Coma Berenices</option>
+                        <option value="cra">Corona Austrina</option>
+                        <option value="crb">Corona Borealis</option>
+                        <option value="crv">Corvus</option>
+                        <option value="crt">Crater</option>
+                        <option value="cru">Crux</option>
+                        <option value="cyg">Cygnus</option>
+                        <option value="del">Delphinus</option>
+                        <option value="dor">Dorado</option>
+                        <option value="dra">Draco</option>
+                        <option value="equ">Equuleus</option>
+                        <option value="eri">Eridanus</option>
+                        <option value="for">Fornax</option>
+                        <option value="gem">Gemini</option>
+                        <option value="gru">Grus</option>
+                        <option value="her">Hercules</option>
+                        <option value="hor">Horologium</option>
+                        <option value="hya">Hydra</option>
+                        <option value="hyi">Hydrus</option>
+                        <option value="ind">Indus</option>
+                        <option value="lac">Lacerta</option>
+                        <option value="leo">Leo</option>
+                        <option value="lmi">Leo Minor</option>
+                        <option value="lep">Lepus</option>
+                        <option value="lib">Libra</option>
+                        <option value="lup">Lupus</option>
+                        <option value="lyn">Lynx</option>
+                        <option value="lyr">Lyra</option>
+                        <option value="men">Mensa</option>
+                        <option value="mic">Microscopium</option>
+                        <option value="mon">Monoceros</option>
+                        <option value="mus">Musca</option>
+                        <option value="nor">Norma</option>
+                        <option value="oct">Octans</option>
+                        <option value="oph">Ophiuchus</option>
+                        <option value="ori">Orion</option>
+                        <option value="pav">Pavo</option>
+                        <option value="peg">Pegasus</option>
+                        <option value="per">Perseus</option>
+                        <option value="phe">Phoenix</option>
+                        <option value="pic">Pictor</option>
+                        <option value="psc">Pisces</option>
+                        <option value="psa">Piscis Austrinus</option>
+                        <option value="pup">Puppis</option>
+                        <option value="pyx">Pyxis</option>
+                        <option value="ret">Reticulum</option>
+                        <option value="sge">Sagitta</option>
+                        <option value="sgr">Sagittarius</option>
+                        <option value="sco">Scorpius</option>
+                        <option value="scl">Sculptor</option>
+                        <option value="sct">Scutum</option>
+                        <option value="ser">Serpens Cauda</option>
+                        <option value="sex">Sextans</option>
+                        <option value="tau">Taurus</option>
+                        <option value="tel">Telescopium</option>
+                        <option value="tri">Triangulum</option>
+                        <option value="tra">Triangulum Australe</option>
+                        <option value="tuc">Tucana</option>
+                        <option value="uma">Ursa Major</option>
+                        <option value="umi">Ursa Minor</option>
+                        <option value="vel">Vela</option>
+                        <option value="vir">Virgo</option>
+                        <option value="vol">Volans</option>
+                        <option value="Vul">Vulpecula</option>
+                    </select>
+                </div>
+
+                <button class="submit" id="submit" onclick="generateStarChart();return false">
+                    <span class="sign-text">Get star chart</span>
+                </button>
+            </div>
+            <p>It may take few seconds to generate a star chart.</p>
+        </form>
+    </div>
+    <div id="popupContainer" style="display: none;">
+        <span id="closeButton" class="close-button">✘</span>
+        <img id="popupImage" src="" />
+    </div>
+    <main>
+        <section id="whatAreConstellations">
+            <div class="text">
+                <h2>What are constellations?</h2>
+                <p>
+                    There are a few different definitions of constellations, but many people think of <br>
+                    constellations as
+                    a
+                    group of stars. The constellations you can see at night <br> depend on your location on Earth and
+                    the
+                    time of
+                    year. Constellations were <br> named after objects, animals, and people long ago. Astronomers today
+                    still <br>
+                    use
+                    constellations to name stars and meteor showers.
+                </p>
+            </div>
+            <div class="image">
+                <img src="./images/constellations.png" />
+            </div>
+        </section>
+        <section id="visibleConstellations">
+            <h2>What constellations can you see in the night sky?</h2>
+            <div class="center">
+                <p>
+                    The constellations you can see at night depend on the time of year. Earth orbits around the Sun once
+                    each year. Our view into space through <br> the night sky changes as we orbit. So, the night sky
+                    looks
+                    slightly different each night because Earth is in a different spot in its orbit. The stars <br>
+                    appear each
+                    night to move slightly west of where they were the night before.
+                    Your location on Earth also determines what stars and constellations <br> you see, and how high they
+                    appear
+                    to rise in the sky. The Northern Hemisphere is always pointing in a different direction than the
+                    Southern <br> Hemisphere. This means that stargazers in Australia, for example, get a slightly
+                    different view
+                    of the sky and can see a few different constellations <br> than those in the United States.
+                    It can be a little confusing to picture how the night sky changes as we orbit the Sun. You can see
+                    how
+                    it all works <br> in the illustration below.
+                </p>
+            </div>
+
+            <figure>
+                <img src="./images/visibleConstellations.png" />
+                <figcaption>
+                    A chart showing some of the constellations that are visible from the Northern Hemisphere in
+                    different times of year. Credit: NASA/JPL-Caltech
+                </figcaption>
+            </figure>
+        </section>
+        <section id="seasons">
+            <h2>Constellations by seasons</h2>
+            <div class="center">
+                <p>
+                    Constellations are ever-changing patterns of stars that grace our night sky, varying with the
+                    seasons. From the wintry brilliance of Orion and Taurus to the <br> summer's Cygnus and Lyra, these
+                    celestial arrangements have inspired cultures throughout history. Join us as we explore the
+                    constellations by season, <br> delving into their rich history and captivating lore.
+                </p>
+            </div>
+            <div class="container">
+                <div class="centerBtn">
+                    <a href="/starsAndConstellations/constellations/ConstellationsBySeaons/index.html">
+                        <button class="signupBtn">
+                            Learn more
+                            <span class="arrow">
+                                <svg fill="rgb(31, 69, 252)" viewBox="0 0 320 512" height="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
