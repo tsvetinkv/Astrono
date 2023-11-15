@@ -156,3 +156,8 @@ h2 {
     font-size: 35px;
     font-weight: 500;
 }
+
+iframe{
+    width: 70vw;
+    height: 80vh;
+}
