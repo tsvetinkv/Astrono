@@ -5,7 +5,6 @@
 }
 
 body {
-    background: rgb(43, 2, 85);
     background: linear-gradient(0deg, rgba(43, 2, 85, 1) 0%, rgba(5, 26, 70, 1) 100%);
     background-repeat: no-repeat;
     color: #E6CEFF;
@@ -22,6 +21,10 @@ body {
     background: rgba(11, 1, 15, 0.52);
 }
 
+.nav-links {
+    text-align: center;
+}
+
 .nav-links a {
     color: whitesmoke;
     text-decoration: none;
@@ -34,6 +37,7 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 1em;
     font-size: 18px;
 }
@@ -93,11 +97,7 @@ img {
     justify-content: center;
     gap: 150px;
     margin-top: 50px;
-}
-
-.pageExplanation {
-    font-size: 20px;
-    line-height: 2em;
+    font-weight: 300;
 }
 
 .text {
@@ -106,13 +106,23 @@ img {
     line-height: 2em;
 }
 
-.text h2,
-h3 {
+.text h2 {
     font-weight: 500;
     font-style: italic;
 }
 
-.section {
+.text h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pageExplanation {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.section,
+.sectionBiggerScreen {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +130,82 @@ h3 {
     margin-top: 100px;
 }
 
-.section p {
+.section p,
+.sectionBiggerScreen p,
+.sectionPhone p {
     font-size: 24px;
     line-height: 2em;
+}
+
+.sectionPhone {
+    display: none;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/*mobile devices responsive design*/
+@media (max-width: 480px) {
+    body {
+        width: 100vw;
+        margin-bottom: 85px;
+    }
+
+    .logo img {
+        width: 130px;
+    }
+
+    .nav-links {
+        margin-left: 50px;
+    }
+
+    .menu {
+        gap: 1.8em;
+    }
+
+    .dropdown {
+        top: 55px;
+        margin-left: -18px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .starsAndConstellations {
+        margin-left: -12px;
+    }
+
+    .introduction {
+        display: block;
+    }
+
+    .rightImage {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .section,
+    .sectionPhone {
+        display: block;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .pageExplanation {
+        text-align: center;
+    }
+
+    .sectionPhone {
+        margin-top: 40px;
+    }
+
+    .sectionPhone p, .section p {
+        margin-bottom: 40px;
+    }
+
+    .sectionBiggerScreen {
+        display: none;
+    }
 }
