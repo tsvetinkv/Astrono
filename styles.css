@@ -87,8 +87,8 @@ body {
 }
 
 img {
-    width: 400px;
-    height: 350px;
+    width: 390px;
+    height: 340px;
 }
 
 .introduction {
@@ -96,8 +96,12 @@ img {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    margin-top: 50px;
     font-weight: 300;
+    margin: 25px;
+}
+
+.introduction .rightImage{
+    margin-top: 100px;
 }
 
 .text {
@@ -142,7 +146,7 @@ img {
 }
 
 /*mobile devices responsive design*/
-@media (max-width: 930px) {
+@media (max-width: 1008px) {
     body {
         width: 100vw;
         margin-bottom: 85px;
@@ -175,9 +179,10 @@ img {
         display: block;
     }
 
-    .rightImage {
+    .introduction .rightImage {
         text-align: center;
         margin-top: 30px;
+        margin-right: 0;
     }
 
     .section,
