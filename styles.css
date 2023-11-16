@@ -96,11 +96,11 @@ img {
     align-items: center;
     justify-content: center;
     gap: 150px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 25px;
 }
 
-.introduction .rightImage{
+.introduction .rightImage {
     margin-top: 100px;
 }
 
@@ -111,12 +111,12 @@ img {
 }
 
 .text h2 {
-    font-weight: 500;
+    font-weight: bold;
     font-style: italic;
 }
 
 .text h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
 }
 
@@ -200,11 +200,44 @@ img {
         margin-top: 40px;
     }
 
-    .sectionPhone p, .section p {
-        margin-bottom: 40px;
+    .sectionPhone p,
+    .section p {
+        margin-bottom: 100px;
     }
 
     .sectionBiggerScreen {
         display: none;
+    }
+}
+
+@media (min-width: 2200px) {
+    img {
+        width: 700px;
+        height: 650px;
+    }
+
+    h2 {
+        font-size: 73px;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 63px;
+        margin-bottom: 25px;
+    }
+
+    p,
+    .section p,
+    .sectionBiggerScreen p,
+    .sectionPhone p {
+        font-size: 50px;
+    }
+
+    .introduction{
+        gap: 300px;
+    }
+    .sectionBiggerScreen,
+    .section {
+        gap: 560px
     }
 }
