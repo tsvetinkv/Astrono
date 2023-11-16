@@ -18,6 +18,7 @@ body {
     padding: 20px;
     color: #E6CEFF;
     height: 60px;
+    width: 100vw;
     background: rgba(11, 1, 15, 0.52);
 }
 
@@ -145,7 +146,21 @@ img {
     display: none;
 }
 
-/*mobile devices responsive design*/
+@media (max-width: 388px) {
+    .menu {
+        font-size: 12px;
+    }
+
+    .dropdown li{
+        font-size: 11px;
+    }
+
+    .sectionPhone p,
+    .section p {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 1008px) {
     body {
         width: 100vw;
@@ -156,88 +171,94 @@ img {
         width: 130px;
     }
 
-    .nav-links {
-        margin-left: 50px;
+    .menu {
+        gap: 5%;
     }
 
-    .menu {
-        gap: 1.8em;
+    .menu li:hover{
+        margin: 5px 0 -2px 0;
     }
 
     .dropdown {
-        top: 55px;
-        margin-left: -18px;
+        top: 100%;
+        margin-left: -20px;
         font-size: 15px;
         font-weight: 500;
     }
 
-    .starsAndConstellations {
-        margin-left: -12px;
+    img{
+        width: 70vw;
+        height: 50%;
     }
 
-    .introduction {
-        display: block;
+        .starsAndConstellations {
+            margin-left: -12px;
+        }
+
+        .introduction {
+            display: block;
+        }
+
+        .introduction .rightImage {
+            text-align: center;
+            margin-top: 30px;
+            margin-right: 0;
+        }
+
+        .section,
+        .sectionPhone {
+            display: block;
+            text-align: center;
+            margin-bottom: -50px;
+        }
+
+        .pageExplanation {
+            text-align: center;
+        }
+
+        .sectionPhone {
+            margin-top: 40px;
+        }
+
+        .sectionPhone p,
+        .section p {
+            margin-bottom: 50px;
+        }
+
+        .sectionBiggerScreen {
+            display: none;
+        }
     }
 
-    .introduction .rightImage {
-        text-align: center;
-        margin-top: 30px;
-        margin-right: 0;
-    }
+    @media (min-width: 2200px) {
+        img {
+            width: 700px;
+            height: 650px;
+        }
 
-    .section,
-    .sectionPhone {
-        display: block;
-        text-align: center;
-        margin-bottom: -50px;
-    }
+        h2 {
+            font-size: 73px;
+            margin-bottom: 25px;
+        }
 
-    .pageExplanation {
-        text-align: center;
-    }
+        h3 {
+            font-size: 63px;
+            margin-bottom: 25px;
+        }
 
-    .sectionPhone {
-        margin-top: 40px;
-    }
+        p,
+        .section p,
+        .sectionBiggerScreen p,
+        .sectionPhone p {
+            font-size: 50px;
+        }
 
-    .sectionPhone p,
-    .section p {
-        margin-bottom: 100px;
-    }
+        .introduction {
+            gap: 300px;
+        }
 
-    .sectionBiggerScreen {
-        display: none;
+        .sectionBiggerScreen,
+        .section {
+            gap: 560px
+        }
     }
-}
-
-@media (min-width: 2200px) {
-    img {
-        width: 700px;
-        height: 650px;
-    }
-
-    h2 {
-        font-size: 73px;
-        margin-bottom: 25px;
-    }
-
-    h3 {
-        font-size: 63px;
-        margin-bottom: 25px;
-    }
-
-    p,
-    .section p,
-    .sectionBiggerScreen p,
-    .sectionPhone p {
-        font-size: 50px;
-    }
-
-    .introduction{
-        gap: 300px;
-    }
-    .sectionBiggerScreen,
-    .section {
-        gap: 560px
-    }
-}
