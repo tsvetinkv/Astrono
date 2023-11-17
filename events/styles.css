@@ -189,7 +189,7 @@ hr {
     margin-left: 30px;
 }
 
-@media (min-width:1501px) {
+@media (min-width:1550px) {
     .navbar {
         height: 7vh;
     }
