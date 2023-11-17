@@ -175,9 +175,6 @@ img {
         gap: 5%;
     }
 
-    .menu li:hover{
-        margin: 5px 0 -2px 0;
-    }
 
     .dropdown {
         top: 100%;
