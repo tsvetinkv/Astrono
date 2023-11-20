@@ -163,3 +163,436 @@ iframe {
     width: 70vw;
     height: 70vh;
 }
+
+@media (min-width: 1800px) and (max-width: 3000px) {
+    .navbar {
+        height: 90px;
+    }
+
+    .logo img {
+        height: 90px;
+        width: auto;
+    }
+
+    .menu {
+        gap: 2em;
+        font-size: 1.3vw;
+    }
+
+    .dropdown {
+        top: 70px;
+
+    }
+
+    header {
+        height: 45vh;
+    }
+
+    .textbox {
+        height: 80%;
+    }
+
+    .textbox h1 {
+        font-size: 2.5vw;
+        margin: 10px 0;
+    }
+
+    .textbox p {
+        font-size: 1.3vw;
+        padding: 0 15%;
+    }
+
+    header img {
+        width: 28vw;
+        height: 37vh;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    iframe {
+        width: 70vw;
+        height: 65vh;
+    }
+
+    .cards {
+        gap: 15%;
+    }
+
+    .cards img {
+        height: 58vh;
+        width: 28vw;
+    }
+
+    h3 {
+        font-size: 1.8vw;
+    }
+
+    figcaption {
+        height: 80px;
+        margin-top: -105px;
+    }
+}
+
+@media (min-width: 1599px) and (max-width: 1800px) {
+    header {
+        height: 45vh;
+    }
+
+    .textbox {
+        height: 80%;
+    }
+
+    .textbox h1 {
+        font-size: 2.5vw;
+        margin: 10px 0;
+    }
+
+    .textbox p {
+        font-size: 1.3vw;
+        padding: 0 15%;
+    }
+
+    .cards {
+        gap: 15%;
+    }
+
+    .cards img {
+        height: 58vh;
+        width: 28vw;
+    }
+}
+
+@media (min-width: 1480px) and (max-width:1599px) {
+    .textbox {
+        width: 35vw;
+        height: 80%;
+    }
+
+    .textbox h1 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 2.2vw;
+    }
+
+    .textbox p {
+        padding: 0 10%;
+        font-size: 1.4vw;
+    }
+}
+
+@media (min-width: 1380px) and (max-width:1480px) {
+    .textbox {
+        height: 80%;
+    }
+
+    .textbox p {
+        margin-left: 5%;
+        padding: 0 10%;
+    }
+}
+
+@media (min-width: 1250px) and (max-width: 1380px) {
+    .textbox {
+        height: 83%;
+    }
+
+    .textbox h1 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .textbox p {
+        margin-left: 2%;
+        padding: 0 10%;
+    }
+
+    header img {
+        width: 30vw;
+        height: 41vh;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1250px) {
+    .textbox {
+        height: 90%;
+    }
+
+    .textbox h1 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .textbox p {
+        padding: 0 55px;
+        margin-left: 20px;
+    }
+
+    header img {
+        width: 33vw;
+        height: 45vh;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1200px) {
+    .menu {
+        gap: 1.6em;
+    }
+
+    header {
+        gap: 10%;
+    }
+
+    .textbox {
+        width: 40vw;
+        height: 82%;
+    }
+
+    .textbox h1 {
+        margin-bottom: -3px;
+        margin-top: 10px;
+    }
+
+    .textbox p {
+        margin-left: 5px;
+        padding: 10px 12%;
+        font-size: 17.5px;
+    }
+
+
+    header img {
+        width: 35vw;
+        height: 40vh;
+    }
+
+
+    iframe {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .cards {
+        gap: 15%;
+    }
+
+    .cards img {
+        width: 35vw;
+        height: 65vh;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 820px) {
+    .menu {
+        gap: 1.6em;
+    }
+
+    header {
+        gap: 5%;
+    }
+
+    .textbox {
+        width: 45vw;
+        height: 85%;
+    }
+
+    .textbox h1 {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .textbox p {
+        margin-left: 0;
+        padding: 0 13px;
+        font-size: 17.5px;
+    }
+
+
+    header img {
+        width: 43vw;
+        height: 44vh;
+    }
+
+    .map h2 {
+        padding: 0 11px;
+    }
+
+    iframe {
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .cards {
+        gap: 10%;
+    }
+
+    .cards img {
+        width: 40vw;
+        height: auto;
+    }
+}
+
+@media (min-width: 480px) and (max-width:600px) {
+
+    .logo img {
+        height: 45px;
+        width: 170px;
+    }
+
+    .menu {
+        text-align: center;
+        gap: 0.5em;
+        margin-left: 15px;
+    }
+
+    .menu li {
+        padding: 3px 15px;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+    }
+
+    .dropdown li {
+        margin: 0 0px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header {
+        display: inline-flex;
+        width: 100vw;
+        height: 40vh;
+        gap: 0;
+    }
+
+    .textbox {
+        width: 85vw;
+        height: 35vh;
+    }
+
+    .textbox h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .textbox p {
+        margin-left: 6%;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    iframe {
+        width: 80vw;
+        height: 45vh;
+    }
+
+    .cards {
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .cards img {
+        height: 50vh;
+        width: 70vw;
+    }
+
+    figure {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    figcaption {
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+        height: 55px;
+    }
+
+    .logo img {
+        height: 35px;
+        width: 110px;
+    }
+
+    .menu {
+        text-align: center;
+        gap: 0;
+        font-size: 14px;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 95%;
+        width: 125px;
+    }
+
+    .dropdown li {
+        margin: 0 0px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header {
+        display: inline-flex;
+        width: 100vw;
+        gap: 0;
+    }
+
+    .textbox {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .textbox h1 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .textbox p {
+        margin-left: 12px;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    iframe {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .cards {
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .cards img {
+        height: 50vh;
+        width: 80vw;
+    }
+
+    figure {
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    figcaption {
+        width: 80vw;
+    }
+}
