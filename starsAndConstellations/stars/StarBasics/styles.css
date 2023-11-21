@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(0deg,rgba(62, 3, 122, 1)  0%, rgba(5, 4, 119, 1) 100%);
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
     background-repeat: no-repeat;
     font-family: Segoe UI;
     color: #C5CCFC;
@@ -29,6 +29,7 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 1em;
     font-size: 18px;
 }
@@ -63,7 +64,8 @@ body {
     text-align: center;
     padding-right: 40px;
 }
-.dropdown li:hover{
+
+.dropdown li:hover {
     background: transparent;
 }
 
@@ -78,10 +80,10 @@ body {
 
 
 header {
-    background: linear-gradient(90deg, rgba(7, 4, 118, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(62, 3, 122, 1) 100%);
+    background: linear-gradient(90deg, rgba(62, 3, 122, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(7, 4, 118, 1) 100%);
     margin: -40px;
     text-align: center;
-    width: 103.2%;
+    width: 100vw;
 }
 
 #heading {
@@ -100,7 +102,7 @@ header {
     margin-bottom: 20px;
 }
 
-::placeholder{
+::placeholder {
     color: #9daaff;
 }
 
@@ -112,7 +114,7 @@ header {
     gap: 50px;
     margin-top: 40px;
     margin-left: -10px;
-    width: 99vw;
+    width: 100vw;
 }
 
 .navigation a {
@@ -162,8 +164,8 @@ section {
     margin-top: 10px;
 }
 
-.text {
-    flex: 1;
+.smallerScreenSection {
+    display: none
 }
 
 .rightText {
@@ -186,7 +188,7 @@ h2 {
 }
 
 .images {
-    flex: 1;
+
     max-width: 420px;
     margin-top: 60px;
 }
@@ -217,11 +219,628 @@ figcaption {
 }
 
 .threeImages {
-    flex: 1;
+
     max-width: 420px;
     margin-top: 28px;
 }
 
 .rightAlign {
     text-align: right;
+}
+
+@media (min-width: 1600px) {
+    header {
+        margin: -40px -56px;
+    }
+
+    .icon {
+        background-size: 1.1vw;
+        width: 23vw;
+        padding: 0.3% 2%;
+        background-position: 1%;
+        font-size: 1.1vw;
+    }
+}
+
+@media (min-width: 1500px) and (max-width:1600px) {
+    header {
+        margin: -43px;
+    }
+
+    .icon {
+        background-size: 20px;
+        width: 23vw;
+        padding: 7px 33px;
+        background-position: 10px 6px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .logo img {
+        height: 5vh;
+        width: auto;
+    }
+
+    .navbar {
+        height: 5vh;
+    }
+
+    .menu {
+        font-size: 1.2vw;
+    }
+
+    .dropdown {
+        top: 95%;
+        width: 100%;
+    }
+
+    #heading{
+        font-size: 2vw;
+    }
+
+    .navigation a {
+        font-size: 1.3vw;
+    }
+
+    .triangle {
+        top: 115%;
+    }
+
+
+    .text,
+    .rightText {
+        width: 45vw;
+    }
+
+    #introdusingText {
+        font-size: 1.5vw;
+    }
+
+    .text p {
+        font-size: 1.5vw;
+        width: 110%;
+    }
+
+    .rightText p {
+        font-size: 1.5vw;
+        width: 95%;
+        margin-left: 15%;
+    }
+
+    .rightAlign {
+        margin-right: -9%;
+    }
+
+    figcaption {
+        font-size: 1.3vw;
+        width: 24vw;
+    }
+
+    h2 {
+        font-size: 2.3vw;
+    }
+
+    img {
+        width: 24vw;
+        height: auto;
+    }
+
+    .threeImages {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width:1500px) {
+    header {
+        margin: -40px -40px;
+    }
+
+    section {
+        margin: 3%;
+    }
+
+    .content {
+        gap: 15%;
+    }
+
+    .text {
+        width: 52vw;
+    }
+
+    .rightText {
+        margin-right: 20px;
+        width: 52vw;
+    }
+
+    .text p {
+        padding: 0 3% 0 0;
+    }
+
+    .rightText p {
+        padding: 0 0 0 8%;
+    }
+
+    #longerText {
+        padding: 0 18% 0 0;
+    }
+
+    .images {
+        margin-top: 7%;
+    }
+
+    .threeImages {
+        margin-top: 7.5%;
+    }
+
+    #twoImages figure {
+        margin: 3.5vh 0;
+    }
+}
+
+
+@media (min-width: 1250px) and (max-width:1300px) {
+    header {
+        margin: -40px -33px;
+    }
+
+    section {
+        margin: 3%;
+    }
+
+    .content {
+        gap: 15%;
+    }
+
+    .rightText {
+        margin-right: 20px;
+    }
+
+    .rightText p {
+        padding: 0 0 0 15%;
+    }
+
+    .text p {
+        padding: 0 5% 0 0;
+    }
+
+    #longerText {
+        padding: 0 17% 0 0;
+    }
+
+    .images {
+        margin-top: 7%;
+    }
+
+    .threeImages {
+        margin-top: 7.5%;
+    }
+
+    #twoImages figure {
+        margin: 3.5vh 0;
+    }
+}
+
+@media (min-width: 1100px) and (max-width:1200px) {
+    img {
+        width: 30vw;
+        height: auto;
+    }
+
+    figure {
+        margin: 5vh 0;
+    }
+
+    figcaption {
+        width: 30vw;
+    }
+
+    .images,
+    .threeImages {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width:1100px) {
+    img {
+        width: 30vw;
+        height: auto;
+    }
+
+    figure {
+        margin: 15vh 0;
+    }
+
+    figcaption {
+        width: 30vw;
+    }
+
+    .images,
+    .threeImages {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 950px) and (max-width:1000px) {
+    figure {
+        margin: 31% 0;
+    }
+
+    img {
+        width: 35vw;
+        height: auto;
+    }
+
+    figcaption {
+        width: 35vw;
+    }
+
+    .images,
+    .threeImages {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 950px) and (max-width:1250px) {
+    header {
+        width: 100vw;
+        margin: -40px -8px;
+    }
+
+    .navigation {
+        margin-left: -8px;
+        width: 100vw;
+    }
+
+    section {
+        width: 84vw;
+    }
+
+    .content {
+        gap: 18%;
+    }
+
+    .biggerScreenSection {
+        width: 89vw;
+    }
+
+    .text p,
+    .rightText p {
+        width: 45vw;
+        padding: 0 0;
+        font-size: 19.2px;
+        line-height: 230%;
+    }
+
+    .rightText {
+        margin-top: 15px;
+    }
+
+    .rightText p {
+        font-size: 19.5px;
+    }
+}
+
+@media (min-width: 680px) and (max-width:950px) {
+    .triangle {
+        top: 120%;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 75%;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .navigation {
+        gap: 1em;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -1%;
+    }
+}
+
+@media (min-width: 494px) and (max-width:680px) {
+    .triangle {
+        top: 120%;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 75%;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .navigation {
+        gap: 1em;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -21px;
+    }
+}
+
+@media (min-width: 446px) and (max-width:494px) {
+    .triangle {
+        top: 135%;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 75%;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .navigation {
+        gap: 1em;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -21px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:446px) {
+    .navbar {
+        padding: 10px;
+        height: 30px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 75%;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .icon {
+        width: 70vw;
+        padding: 9px 30px;
+        background-position: 7px 8px;
+        font-size: 13px;
+    }
+
+    .triangle {
+        top: 140%;
+    }
+
+    .navigation {
+        gap: 0;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -26px;
+    }
+}
+
+@media (min-width: 330px) and (max-width:375px) {
+    .navbar {
+        padding: 10px;
+        height: 40px;
+    }
+
+    .logo img {
+        height: auto;
+        width: 100px;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 70%;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .icon {
+        width: 70vw;
+        padding: 9px 25px;
+        background-position: 6px 7px;
+        font-size: 11.3px;
+    }
+
+    .triangle {
+        top: 140%;
+    }
+
+    .navigation {
+        gap: 0;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -30px;
+    }
+}
+
+@media (max-width: 330px) {
+    .navbar {
+        padding: 10px;
+        height: 40px;
+    }
+
+    .logo img {
+        height: auto;
+        width: 100px;
+    }
+
+    .dropdown {
+        margin-left: -15px;
+        top: 100%;
+        width: 75px;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .icon {
+        width: 70vw;
+        padding: 9px 25px;
+        background-position: 6px 7px;
+        font-size: 11.3px;
+    }
+
+    .triangle {
+        top: 160%;
+    }
+
+    .navigation {
+        gap: 0;
+    }
+
+    .images,
+    .threeImages {
+        margin: 30px -30px;
+    }
+}
+
+@media (max-width: 950px) {
+    .menu {
+        text-align: center;
+        gap: 0.3em;
+        font-size: 14px;
+        margin-left: -20px;
+    }
+
+    header {
+        margin: -40px -8px;
+        width: 100vw;
+    }
+
+    .navigation {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: -8px;
+        width: 100vw;
+    }
+
+    .navigation a {
+        font-size: 16px;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    section {
+        display: block;
+    }
+
+    .biggerScreenSection {
+        display: none;
+    }
+
+    .smallerScreenSection {
+        display: block;
+    }
+
+    .content {
+        display: block;
+    }
+
+    #introdusingText {
+        width: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .rightAlign {
+        text-align: center;
+    }
+
+    .text p,
+    .rightText p {
+        width: 90vw;
+        padding: 0 4%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    img {
+        width: 90vw;
+        height: auto;
+    }
+
+    figcaption {
+        width: 90vw;
+    }
+
+    .images,
+    .threeImages {
+        width: 99vw;
+    }
 }
