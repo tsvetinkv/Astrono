@@ -172,12 +172,7 @@ section {
     margin-right: 80px;
 }
 
-.rightText p {
-    font-size: 20px;
-    line-height: 210%;
-}
-
-.text p {
+.rightText p, .text p {
     font-size: 20px;
     line-height: 210%;
 }
