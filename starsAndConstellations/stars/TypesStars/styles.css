@@ -1,8 +1,9 @@
 body {
-    background: linear-gradient(0deg,rgba(62, 3, 122, 1)  0%, rgba(5, 4, 119, 1) 100%);
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
     background-repeat: no-repeat;
     font-family: Segoe UI;
     color: #C5CCFC;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -29,12 +30,14 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 1em;
     font-size: 18px;
 }
 
 .menu li {
     padding: 5px 14px;
+    text-align: center;
 }
 
 .menu li:hover {
@@ -64,7 +67,7 @@ body {
     padding-right: 40px;
 }
 
-.dropdown li:hover{
+.dropdown li:hover {
     background: transparent;
 }
 
@@ -77,7 +80,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, rgba(7, 4, 118, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(62, 3, 122, 1) 100%);
+    background: linear-gradient(90deg, rgba(62, 3, 122, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(7, 4, 118, 1) 100%);
     margin: -40px;
     text-align: center;
     width: 103.2%;
@@ -99,7 +102,7 @@ header {
     margin-bottom: 20px;
 }
 
-::placeholder{
+::placeholder {
     color: #9daaff;
 }
 
@@ -125,16 +128,14 @@ header {
 }
 
 .triangle {
-    width: 0;
-    height: 0;
+    position: absolute;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 25px solid #000B53;
     border-radius: 0 0 10px 10px;
-    position: absolute;
-    top: 124%;
-    left: 48%;
-    transform: translate(-50%, -50%);
 }
 
 .centered-item {
@@ -193,11 +194,13 @@ h2 {
 img {
     width: 360px;
     height: 300px;
+    border-radius: 20px;
 }
 
 
 .content {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 160px;
 }
@@ -222,16 +225,240 @@ img {
     margin-top: 30px;
 }
 
-section{
+section {
     margin-top: 20px;
 }
 
-.pulsarsAndMagnetars{
+.smallerScreen {
+    display: none;
+}
+
+.pulsarsAndMagnetars {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 175px;
 }
-.magnetars img{
+
+.magnetars img {
     float: right;
+}
+
+@media (min-width: 1311px) {
+    .navbar {
+        height: 7vh;
+    }
+
+    .logo img {
+        height: 7vh;
+        width: auto;
+    }
+
+    .menu {
+        font-size: 1.2vw;
+    }
+
+    .dropdown {
+        top: 120%;
+        width: 11vw;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .navigation a {
+        font-size: 1.2vw;
+    }
+
+    #heading {
+        font-size: 2.2vw;
+    }
+
+    .icon {
+        background-size: 1.3vw;
+        width: 25vw;
+        padding: 0.5% 2%;
+        border-radius: 100px;
+        background-position: 8px 9px;
+        font-size: 1.2vw;
+    }
+
+    img {
+        width: 25vw;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    h2 {
+        font-size: 2vw;
+        margin-bottom: 5%;
+    }
+
+    .pulsarsAndMagnetars {
+        gap: 15%;
+    }
+
+    fieldset legend {
+        font-size: 1.8vw;
+    }
+
+    fieldset {
+        width: 75vw;
+        border-radius: 15px;
+    }
+
+    .textAndImage p {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 901px) and (max-width:1310px) {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .pulsarsAndMagnetars {
+        gap: 25%;
+    }
+
+    img {
+        width: 30vw;
+        height: auto;
+    }
+
+    fieldset {
+        width: 85vw;
+    }
+}
+
+@media (min-width: 901px) {
+    .navigation {
+        width: 100vw;
+    }
+
+    p {
+        font-size: 1.6vw;
+        width: 40vw;
+    }
+
+    .textAndImage {
+        gap: 10%;
+    }
+
+    .pulsarsAndMagnetars p {
+        width: 30vw;
+    }
+
+    fieldset span {
+        font-size: 1.6vw;
+    }
+
+}
+
+
+@media (min-width: 530px) and (max-width: 900px) {
+    .dropdown {
+        margin-left: -5%;
+        width: 15vw;
+    }
+
+    img {
+        width: 80vw;
+        height: 95vh;
+    }
+}
+
+@media (max-width: 530px) {
+    .dropdown {
+        margin-left: 0;
+        top: 100%;
+        width: 25vw;
+    }
+
+    img {
+        width: 90vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu li {
+        padding: 5px 5px;
+    }
+
+    .dropdown li {
+        margin: 0 -80px;
+        display: inline-block;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .dropdown a {
+        margin-left: -50px;
+    }
+
+    .content,
+    .textAndImage,
+    .pulsarsAndMagnetars,
+    .forStargazes {
+        display: block;
+    }
+
+    .navigation {
+        gap: 0;
+        margin-left: -15px;
+        width: 100.7vw;
+    }
+
+    .menu {
+        font-size: 15px;
+        align-items: center;
+        margin-left: -10%;
+    }
+
+    .logo img {
+        height: auto;
+        width: 100px;
+    }
+
+    header {
+        margin: -40px -2.3%;
+    }
+
+    .icon {
+        width: 250px;
+        padding: 7px 25px;
+        background-position: 7px 6px;
+        font-size: 12.5px;
+    }
+
+    .textAndImage p {
+        margin-top: 0;
+    }
+
+    p,
+    .rightText {
+        text-align: center;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .magnetars img {
+        float: none;
+    }
+
+    .forStargazes {
+        margin-top: 0;
+    }
+
+    .biggerScreen {
+        display: none;
+    }
+
+    .smallerScreen {
+        display: block;
+    }
 }
