@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     font-family: Segoe UI;
     color: #C5CCFC;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -77,10 +78,10 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, rgba(7, 4, 118, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(62, 3, 122, 1) 100%);
+    background: linear-gradient(90deg, rgba(62, 3, 122, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(7, 4, 118, 1) 100%);
     margin: -40px;
     text-align: center;
-    width: 103.2%;
+    width: 100%;
 }
 
 #heading{
