@@ -17,8 +17,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     color: #E6CEFF;
-    height: 60px;
-    width: 98.9vw;
+    height: 7vh;
     background: rgba(11, 1, 15, 0.52);
 }
 
@@ -32,15 +31,15 @@ body {
 }
 
 .logo img {
-    height: 50px;
-    width: 200px;
+    height: 7vh;
+    width: auto;
 }
 
 .menu {
     display: flex;
     align-items: center;
     gap: 1em;
-    font-size: 18px;
+    font-size: 1.4vw;
 }
 
 .menu li {
@@ -63,7 +62,7 @@ body {
     position: absolute;
     display: none;
     border-radius: 10px;
-    top: 35px;
+    top: 100%;
     text-align: center;
     list-style-position: inside;
 }
@@ -98,7 +97,7 @@ img {
     justify-content: center;
     gap: 150px;
     font-weight: 400;
-    margin: 25px;
+    margin: 15px;
 }
 
 .introduction .rightImage {
@@ -151,7 +150,7 @@ img {
         font-size: 12px;
     }
 
-    .dropdown li{
+    .dropdown li {
         font-size: 11px;
     }
 
@@ -183,79 +182,126 @@ img {
         font-weight: 500;
     }
 
-    img{
+    img {
         width: 70vw;
         height: 50%;
     }
 
-        .starsAndConstellations {
-            margin-left: -12px;
-        }
-
-        .introduction {
-            display: block;
-        }
-
-        .introduction .rightImage {
-            text-align: center;
-            margin-top: 30px;
-            margin-right: 0;
-        }
-
-        .section,
-        .sectionPhone {
-            display: block;
-            text-align: center;
-            margin-bottom: -50px;
-        }
-
-        .pageExplanation {
-            text-align: center;
-        }
-
-        .sectionPhone {
-            margin-top: 40px;
-        }
-
-        .sectionPhone p,
-        .section p {
-            margin-bottom: 50px;
-        }
-
-        .sectionBiggerScreen {
-            display: none;
-        }
+    .starsAndConstellations {
+        margin-left: -12px;
     }
 
-    @media (min-width: 2200px) {
-        img {
-            width: 700px;
-            height: 650px;
-        }
-
-        h2 {
-            font-size: 73px;
-            margin-bottom: 25px;
-        }
-
-        h3 {
-            font-size: 63px;
-            margin-bottom: 25px;
-        }
-
-        p,
-        .section p,
-        .sectionBiggerScreen p,
-        .sectionPhone p {
-            font-size: 50px;
-        }
-
-        .introduction {
-            gap: 300px;
-        }
-
-        .sectionBiggerScreen,
-        .section {
-            gap: 560px
-        }
+    .introduction {
+        display: block;
     }
+
+    .introduction .rightImage {
+        text-align: center;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .section,
+    .sectionPhone {
+        display: block;
+        text-align: center;
+        margin-bottom: -50px;
+    }
+
+    .pageExplanation {
+        text-align: center;
+    }
+
+    .sectionPhone {
+        margin-top: 40px;
+    }
+
+    .sectionPhone p,
+    .section p {
+        margin: 25px;
+    }
+
+    .sectionBiggerScreen {
+        display: none;
+    }
+}
+
+@media (min-width: 1009px) and (max-width:2200px) {
+    .text {
+        font-size: 1.8vw;
+        width: 50vw;
+    }
+}
+
+@media (min-width:1009px) and (max-width:1400px) {
+
+    .section p,
+    .sectionBiggerScreen p,
+    .sectionPhone p {
+        width: 40vw;
+        font-size: 1.8vw;
+    }
+
+    .introduction .rightImage {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1400px) and (max-width:2200px) {
+
+    .section p,
+    .sectionBiggerScreen p,
+    .sectionPhone p {
+        width: 35vw;
+        font-size: 1.8vw;
+    }
+
+    .introduction .rightImage {
+        margin-top: 0;
+    }
+
+    .section, .sectionBiggerScreen {
+        gap: 20%;
+    }
+}
+
+@media (min-width: 2200px) {
+    img {
+        width: 700px;
+        height: 650px;
+    }
+
+    h2 {
+        font-size: 73px;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 63px;
+        margin-bottom: 25px;
+    }
+
+    p,
+    .section p,
+    .sectionBiggerScreen p,
+    .sectionPhone p {
+        font-size: 50px;
+        width: 40vw;
+    }
+
+    .introduction {
+        gap: 300px;
+    }
+
+    .sectionBiggerScreen,
+    .section {
+        gap: 15%;
+    }
+
+    .text {
+        font-size: 1vw;
+        text-align: center;
+        line-height: 2.5em;
+        width: 40vw;
+    }
+}
