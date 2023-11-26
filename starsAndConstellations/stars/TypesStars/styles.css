@@ -284,6 +284,10 @@ section {
         font-size: 1.2vw;
     }
 
+    #longerText {
+        margin-top: 21%;
+    }
+
     img {
         width: 25vw;
         height: auto;
@@ -323,12 +327,17 @@ section {
     }
 
     img {
-        width: 30vw;
+        width: 35vw;
         height: auto;
+        margin-top: 5%;
     }
 
     fieldset {
         width: 85vw;
+    }
+
+    #longerText {
+        margin-top: 145px;
     }
 }
 
@@ -338,7 +347,7 @@ section {
     }
 
     p {
-        font-size: 1.6vw;
+        font-size: 1.4vw;
         width: 40vw;
     }
 
@@ -351,7 +360,7 @@ section {
     }
 
     fieldset span {
-        font-size: 1.6vw;
+        font-size: 1.4vw;
     }
 
 }
@@ -452,6 +461,10 @@ section {
 
     .forStargazes {
         margin-top: 0;
+    }
+
+    fieldset legend {
+        font-size: 19px;
     }
 
     .biggerScreen {
