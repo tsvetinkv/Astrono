@@ -221,13 +221,13 @@ figcaption {
     }
 
     #binary {
-        height: 35vh;
+        height: 50vh;
         margin-top: 5%;
     }
 
     .img {
         width: 24vw;
-        height: 43vh;
+        height: 45vh;
     }
 
     figure{
@@ -235,7 +235,7 @@ figcaption {
     }
 
     .text p, .rightText p {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
         line-height: 210%;
     }
 }
@@ -257,13 +257,13 @@ figcaption {
         margin-top: 10%;
     }
     #binary {
-        height: 35vh;
+        height: 45vh;
         margin-top: 15%;
     }
 
     .img {
-        width: 24vw;
-        height: 35vh;
+        width: 25vw;
+        height: 45vh;
         margin-top: 10%;
     }
 
