@@ -4,6 +4,8 @@ let starDistance = document.getElementById('distance');
 let starSpectralClass = document.getElementById('spectralClass');
 var urlParams = new URLSearchParams(window.location.search);
 var value = urlParams.get('value');
+let main = document.getElementById('content');
+let h1Error = document.getElementById('error')
 const apiKeyStars = 'tV2McOe2kgdAkVncwvVDeA==aN9tqSIW2Er3B4ru';
 fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
     method: 'GET',
@@ -14,6 +16,7 @@ fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
 })
     .then(response => {
         if (!response.ok) {
+            error();
             throw new Error(`Request failed with status: ${response.status}`);
         }
         return response.json();
@@ -28,11 +31,22 @@ fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
     });
 
 function displayInfo(data) {
-    starName.innerHTML = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();;
-    starConstellation.innerHTML = `Съзвездие: ${data[0].constellation}`;
-    starDistance.innerHTML = `Разстояние в светлинни години: ${data[0].distance_light_year}`;
-    starSpectralClass.innerHTML = `Спектрален клас: ${data[0].spectral_class}`;
+    if (data.length === 0) {
+        h1Error.style.height = "86vh";
+        h1Error.style.display = "flex";
+        h1Error.style.alignItems = "center";
+        h1Error.style.justifyContent = "center";
+        h1Error.style.fontSize = "3vw";
+        h1Error.innerHTML = "Няма такава звезда в списъка";
+        main.style.display = "none";
+    } else {
+        starName.innerHTML = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+        starConstellation.innerHTML = `Съзвездие: ${data[0].constellation}`;
+        starDistance.innerHTML = `Разстояние в светлинни години: ${data[0].distance_light_year}`;
+        starSpectralClass.innerHTML = `Спектрален клас: ${data[0].spectral_class}`;
+    }
 }
+
 
 
 function searchNASAImagesForStars() {
@@ -78,5 +92,4 @@ function searchNASAImagesForConstellation(constellation) {
 function displayConstellationImage(data) {
     let resultsContainer = document.getElementById("constellationImg");
     resultsContainer.src = data.collection.items[1].links[0].href;
-
 }
