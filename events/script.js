@@ -1,14 +1,14 @@
 const months = [
-    "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
-    "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"
+    "ЯНУАРИ", "ФЕВРУАРИ", "МАРТ", "АПРИЛ", "МАЙ", "ЮНИ",
+    "ЮЛИ", "АВГУСТ", "СЕПТЕМВРИ", "ОКТОМВРИ", "НОЕМВРИ", "ДЕКЕМВРИ"
 ];
 
 const eventPhotos = {
-    "Full Moon": "fullMoon.jpg",
-    "New Moon": "newMoon.jpg",
-    "Solar Eclipse": "solarEclipse.jpg",
-    "Lunar Eclipse": "lunarEclipse.jpg",
-    "Meteor Shower": "meteorShower.jpg",
+    "Пълнолуние": "fullMoon.jpg",
+    "Новолуние": "newMoon.jpg",
+    "Слънчево затъмнение": "solarEclipse.jpg",
+    "Лунно затъмнение": "lunarEclipse.jpg",
+    "Метеоритен дъжд": "meteorShower.jpg",
 };
 
 function fetchICalendarEventData() {
@@ -94,7 +94,7 @@ function filterEvents(parsedEvents, currentMonth, currentYear) {
         const eventMonth = event.startDate.getMonth();
         const eventYear = event.startDate.getFullYear();
 
-        const keywords = ["eclipse", "moon", "meteor shower"];
+        const keywords = ["затъмнение", "луние", "Метеоритен дъжд"];
         const eventContainsKeywords = keywords.some(keyword => event.name.toLowerCase().includes(keyword.toLowerCase()));
 
         if (eventContainsKeywords) {
@@ -117,7 +117,7 @@ function filterEvents(parsedEvents, currentMonth, currentYear) {
 
 function formatDate(date) {
     const options = { month: "long", day: "numeric" };
-    return date.toLocaleDateString("en-US", options);
+    return date.toLocaleDateString("bg-BG", options);
 }
 
 function displayEvents(parsedEvents) {
@@ -209,12 +209,12 @@ function displayPopup(event) {
         <p>${formatDate(event.startDate)} - ${formatDate(event.endDate)}</p>
         </div>
         <div class="center">
-        <p>Description: ${event.description}</p>
+        <p>Описание: ${event.description}</p>
         </div>
     `;
 
     // Open a new window with the content
-    const popupWindow = window.open("", "EventPopup", "width=600,height=420");
+    const popupWindow = window.open("", "EventPopup", "width=600,height=450");
     popupWindow.document.body.innerHTML = popupContent;
 }
 

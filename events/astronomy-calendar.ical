@@ -588,33 +588,33 @@ DESCRIPTION:The giant planet will be at its closest approach to Earth and
  est moons, appearing as bright dots on either side of the planet.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Taurids Meteor Shower
+SUMMARY:Тауридс Метеоритен дъжд
 DTSTART;VALUE=DATE:20231104
 DTEND;VALUE=DATE:20231106
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:tauridsmeteorshower_2023110420231106@seasky.org
-DESCRIPTION:The Taurids is a long-running minor meteor shower producing on
- ly about 5-10 meteors per hour. It is unusual in that it consists of two s
- eparate streams. The first is produced by dust grains left behind by Aster
- oid 2004 TG10. The second stream is produced by debris left behind by Come
- t 2P Encke. The shower runs annually from September 7 to December 10. It p
- eaks this year on the the night of November 4 and the morning of the 5th. 
- The second quarter moon will block most of the dim meteors this year. But 
- if you are patient, you may still be able to catch a few good ones. Best 
- viewing will be just after midnight from a dark location far away from cit
- y lights. Meteors will radiate from the constellation Taurus, but can app
- ear anywhere in the sky.
+DESCRIPTION:Тауридите са дълготраен малък метеорен дъжд, произвеждащ около 
+ 5-10 метеора на час. Необичайно е с това, че се състои от два отделни потока.
+ Първият се произвежда от зрънца на прах, оставени от Asteroid 2004 TG10.
+ Вторият поток е произведен от отломки, оставени от Comet 2P Encke.
+ Дъждът продължава всяка година от 7 септември до 10 декември.
+ Тази година достига своя връх в нощта на 4 ноември и сутринта на 5-ти.
+ Втората четвърт на луната ще блокира повечето от мрачните метеори 
+ тази година. Но ако сте търпеливи, все пак може да успеете да хванете
+ няколко добри. Най-доброто гледане ще бъде точно след полунощ от тъмно
+ място, далеч от градските светлини. Метеорите ще излъчват от съзвездието
+ Телец, но могат да се чуят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:New Moon
+SUMMARY:Новолуние
 DTSTART;VALUE=DATE:20231113
 DTEND;VALUE=DATE:20231114
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:newmoon_2023111320231114@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 09:28 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
+DESCRIPTION:Луната ще бъде разположена от същата страна на Земята като Слънцето
+ и няма да се вижда на нощното небе. Тази фаза настъпва в 09:28 UTC. Това е 
+ най-доброто време от месеца за наблюдение на слаби обекти като галактики и
+ звездни купове, защото няма лунна светлина, която да пречи.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Uranus at Opposition
@@ -629,34 +629,33 @@ DESCRIPTION:The blue-green planet will be at its closest approach to Earth
   a tiny blue-green dot in all but the most powerful telescopes.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Leonids Meteor Shower
+SUMMARY:Леонидс Метеоритен дъжд
 DTSTART;VALUE=DATE:20231117
 DTEND;VALUE=DATE:20231119
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:leonidsmeteorshower_2023111720231119@seasky.org
-DESCRIPTION:The Leonids is an average shower, producing up to 15 meteors 
- per hour at its peak. This shower is unique in that it has a cyclonic peak
-  about every 33 years where hundreds of meteors per hour can be seen. That
-  last of these occurred in 2001. The Leonids is produced by dust grains le
- ft behind by comet Tempel-Tuttle, which was discovered in 1865. The showe
- r runs annually from November 6-30. It peaks this year on the night of the
-  17th and morning of the 18th. The crescent moon will set before midnight 
- leaving dark skies for what should be a great early morning show. Best vie
- wing will be from a dark location after midnight. Meteors will radiate fro
- m the constellation Leo, but can appear anywhere in the sky.
+DESCRIPTION:Леонидите е среден поток, произвеждащ до 15 метеора на час в своя
+ пик. Този поток е уникален с това, че има циклоничен пик на всеки 33 години,
+  където могат да се видят стотици метеори на час. Последният от тях се случи
+  през 2001 г. Леонидите се произвеждат от прахови зърна, оставени от кометата
+  Темпел-Тътъл, която беше открита през 1865 г. Поливът тече всяка година от 6
+  до 30 ноември. Той достига своя връх тази година в нощта на 17-ти и сутринта
+  на 18-ти. Полумесецът ще залезе преди полунощ, оставяйки тъмни небеса за
+  това, което би трябвало да е страхотно шоу рано сутрин. Най-доброто крило
+  за наблюдение ще бъде от тъмно място след полунощ. Метеорите ще излъчват
+  от съзвездието Лъв, но могат да се появят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Full Moon
+SUMMARY:Пълнолуние
 DTSTART;VALUE=DATE:20231127
 DTEND;VALUE=DATE:20231128
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:fullmoon_2023112720231128@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 09:17 UTC. This full moon was known by early Native American tribes as 
- the Full Beaver Moon because this was the time of year to set the beaver t
- raps before the swamps and rivers froze. It has also been known as the Fro
- sty Moon and the Hunter's Moon.
+DESCRIPTION:Луната ще бъде разположена на противоположната страна на Земята като
+ Слънцето и нейното лице ще бъде напълно осветено. Тази фаза настъпва в 09:17 UTC.
+ Тази пълна луна е била известна от ранните индиански племена като Пълната луна на
+ бобрите, защото това е времето от годината, когато бобрите започват да ловят, преди
+ блатата и реките да замръзнат. Известна е още като Мразовитата луна и Луната на ловеца.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Mercury at Greatest Eastern Elongation
@@ -670,48 +669,50 @@ DESCRIPTION:The planet Mercury reaches greatest eastern elongation of 21.3
  e planet low in the western sky just after sunset.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:New Moon
+SUMMARY:Новолуние
 DTSTART;VALUE=DATE:20231212
 DTEND;VALUE=DATE:20231213
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:newmoon_2023121220231213@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 23:33 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
+DESCRIPTION:: Луната ще бъде разположена от същата страна на Земята като
+ Слънцето и няма да се вижда на нощното небе. Тази фаза настъпва в
+ 23:33 UTC. Това е най-доброто време от месеца за наблюдение на слаби
+ обекти като галактики и звездни купове, защото няма лунна светлина,
+ която да пречи.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Geminids Meteor Shower
+SUMMARY:Джеминиден Метеоритен дъжд
 DTSTART;VALUE=DATE:20231213
 DTEND;VALUE=DATE:20231215
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:geminidsmeteorshower_2023121320231215@seasky.org
-DESCRIPTION:The Geminids is the  king of the meteor showers. It is conside
- red by many to be the best shower in the heavens, producing up to 120 mul
- ticolored meteors per hour at its peak. It is produced by debris left behi
- nd by an asteroid known as 3200 Phaethon, which was discovered in 1982. T
- he shower runs annually from December 7-17. It peaks this year on the nigh
- t of the 13th and morning of the 14th.  This should be an great year for t
- he Geminids. The nearly new moon means dark skies for what should be an ex
- cellent show. Best viewing will be from a dark location after midnight. Me
- teors will radiate from the constellation Gemini, but can appear anywhere
-  in the sky.
+DESCRIPTION:Джеминидите са царят на метеорните потоци. Мнозина смятат,
+ че червеното е най-добрият дъжд в небесата, произвеждайки до 120 
+ многоцветни метеора на час в своя пик. Произвеждат се от отломки,
+ оставени след себе си от астероид, известен като 3200 Phaethon,
+ който беше открит през 1982 г. Поливът тече всяка година от 7
+ до 17 декември. Той достига своя връх тази година през нощта
+ на 13-ти и сутринта на 14-ти. Това трябва да е страхотна година
+ за Джеминидите. Почти новолунието означава тъмно небе за това,
+ което би трябвало да е страхотно шоу. Най-доброто гледане ще
+ бъде от тъмно място след полунощ. Метеорите ще излъчват от 
+ съзвездието Близнаци, но могат да се появят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ursids Meteor Shower
+SUMMARY:Урсуиден Метеоритен дъжд
 DTSTART;VALUE=DATE:20231221
 DTEND;VALUE=DATE:20231223
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:ursidsmeteorshower_2023122120231223@seasky.org
-DESCRIPTION:The Ursids is a minor meteor shower producing about 5-10 meteo
- rs per hour. It is produced by dust grains left behind by comet Tuttle, w
- hich was first discovered in 1790. The shower runs annually from December 
- 17-25. It peaks this year on the the night of the 21st and morning of the 
- 22nd. The waxing gibbous moon will block out most of the faintest meteors 
- this year. But if you are patient, you should still be able to catch a fe
- w good ones. Best viewing will be just after midnight from a dark location
-  far away from city lights. Meteors will radiate from the constellation Ur
- sa Minor, but can appear anywhere in the sky.
+DESCRIPTION:Урсидите са малък метеорен поток, произвеждащ около 5-10
+ метеора на час. Произвежда се от праховидни зърна, оставени от кометата
+ Тътъл, открита за първи път през 1790 г. Поливът тече ежегодно от 17 до
+ 25 декември. Той достига своя връх тази година през нощта на 21 и сутринта
+ на 22. Нарастващата луна ще блокира повечето от най-слабите метеори тази 
+ година. Но ако сте търпеливи, все пак трябва да можете да хванете няколко
+ добри. Най-доброто гледане ще бъде точно след полунощ от тъмно място, 
+ далеч от градските светлини. Метеорите ще излъчват от съзвездието Малката
+ мечка, но могат да се появят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:December Solstice
@@ -727,17 +728,17 @@ DESCRIPTION:The December solstice occurs at 03:21 UTC. The South Pole of t
  r solstice) in the Southern Hemisphere.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Full Moon
+SUMMARY:Пълнолуние
 DTSTART;VALUE=DATE:20231227
 DTEND;VALUE=DATE:20231228
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:fullmoon_2023122720231228@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 00:34 UTC. This full moon was known by early Native American tribes as 
- the Full Cold Moon because this is the time of year when the cold winter a
- ir settles in and the nights become long and dark. This moon has also been
-  known as the Full Long Nights Moon and the Moon Before Yule.
+DESCRIPTION:: Луната ще бъде разположена на противоположната страна на
+ Земята като Слънцето и нейното лице ще бъде напълно осветено. Тази фаза
+ настъпва в 00:34 UTC. Тази пълна луна е била известна от ранните индиански
+ племена като Пълна студена луна, защото това е времето от годината, когато
+ настъпва студената зима и нощите стават дълги и тъмни. Тази луна е известна
+ още като луната на дългите нощи и луната преди празника.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Quadrantids Meteor Shower
