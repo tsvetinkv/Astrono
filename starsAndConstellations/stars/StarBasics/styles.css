@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     font-family: Segoe UI;
     color: #C5CCFC;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -11,7 +12,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     color: #E6CEFF;
-    height: 60px;
+    height: 5vh;
     background: #000B53;
     margin: -8px;
     padding: 0;
@@ -23,8 +24,8 @@ body {
 }
 
 .logo img {
-    height: 50px;
-    width: 200px;
+    height: 5vh;
+    width: auto;
 }
 
 .menu {
@@ -152,7 +153,7 @@ main {
     text-align: center;
     font-weight: 330;
     width: 80vw;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 180%;
 
 }
@@ -162,6 +163,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    margin-left: -8%;
 }
 
 .smallerScreenSection {
@@ -173,7 +175,7 @@ section {
 }
 
 .rightText p, .text p {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 210%;
 }
 
@@ -185,7 +187,7 @@ h2 {
 .images {
 
     max-width: 420px;
-    margin-top: 60px;
+    margin-top: 10%;
 }
 
 img {
@@ -195,7 +197,7 @@ img {
 
 .content {
     display: flex;
-    gap: 170px;
+    gap: 280px;
 }
 
 .center {
@@ -253,12 +255,12 @@ figcaption {
 
 @media (min-width: 1500px) {
     .logo img {
-        height: 5vh;
+        height: 7vh;
         width: auto;
     }
 
     .navbar {
-        height: 5vh;
+        height: 7vh;
     }
 
     .menu {
@@ -292,6 +294,10 @@ figcaption {
         font-size: 1.5vw;
     }
 
+    section{
+        margin-left: 0;
+    }
+
     .text p {
         font-size: 1.5vw;
         width: 110%;
@@ -299,12 +305,11 @@ figcaption {
 
     .rightText p {
         font-size: 1.5vw;
-        width: 95%;
-        margin-left: 15%;
+        width: 100%;
     }
 
     .rightAlign {
-        margin-right: -9%;
+        margin-right: 0;
     }
 
     figcaption {
@@ -322,7 +327,8 @@ figcaption {
     }
 
     .threeImages {
-        margin-top: 3%;
+        margin-top: 10%;
+        margin-left: -1%;
     }
 }
 
@@ -332,7 +338,7 @@ figcaption {
     }
 
     section {
-        margin: 3%;
+        margin: 4%;
     }
 
     .content {
@@ -380,7 +386,7 @@ figcaption {
     }
 
     section {
-        margin: 3%;
+        margin: 4%;
     }
 
     .content {
@@ -489,6 +495,7 @@ figcaption {
 
     section {
         width: 84vw;
+        margin-left: 0;
     }
 
     .content {
@@ -503,7 +510,7 @@ figcaption {
     .rightText p {
         width: 45vw;
         padding: 0 0;
-        font-size: 19.2px;
+        font-size: 17px;
         line-height: 230%;
     }
 
@@ -512,7 +519,7 @@ figcaption {
     }
 
     .rightText p {
-        font-size: 19.5px;
+        font-size: 17px;
     }
 }
 
