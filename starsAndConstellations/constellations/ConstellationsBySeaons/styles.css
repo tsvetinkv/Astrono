@@ -96,8 +96,8 @@ h2 {
 }
 
 img {
-    width: 350px;
-    height: 350px;
+    width: 30vw;
+    height: auto;
 }
 
 .textCentered {
@@ -112,17 +112,19 @@ figcaption {
     font-size: 16px;
     font-weight: 300;
     line-height: 180%;
+    width: 30vw;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    gap: 120px;
+    gap: 20%;
     margin-top: 40px;
 }
 
 .text p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 180%;
+    line-height: 255%;
+    width: 35vw;
 }
