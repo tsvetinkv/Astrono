@@ -1,20 +1,25 @@
+html,
 body {
-    background: linear-gradient(0deg,rgba(62, 3, 122, 1)  0%, rgba(5, 4, 119, 1) 100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
     background-repeat: no-repeat;
     font-family: Segoe UI;
     color: #C5CCFC;
+    margin: 0;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px;
     color: #E6CEFF;
-    height: 60px;
+    height: 35px;
     background: #000B53;
-    margin: -8px;
-    padding: 0;
 }
 
 .nav-links a {
@@ -23,12 +28,14 @@ body {
 }
 
 .logo img {
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: auto;
 }
 
 .menu {
     display: flex;
+    align-items: center;
+    text-align: center;
     gap: 1em;
     font-size: 18px;
 }
@@ -49,7 +56,8 @@ body {
 
 .dropdown {
     background: linear-gradient(#000B53, #070476);
-    margin-left: -20px;
+    margin-left: -13px;
+    padding: 0;
     position: absolute;
     display: none;
     border-radius: 10px;
@@ -61,12 +69,14 @@ body {
 .dropdown li {
     display: inline-block;
     text-align: center;
-    padding-right: 40px;
+    margin: 0 10px;
 }
 
-.dropdown li:hover{
+.dropdown li:hover {
     background: transparent;
+    border-radius: 8px 20px;
 }
+
 
 .starsAndConstellations:hover .dropdown {
     display: block;
@@ -86,9 +96,9 @@ main {
 }
 
 .img {
-    width: 400px;
-    height: 268px;
-    border-radius: 10px;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 15px;
     filter: brightness(1.15) contrast(1.10);
 }
 
@@ -107,26 +117,198 @@ figcaption {
 .tooltip {
     position: relative;
     display: block;
-    /* border-bottom: 1px dotted black; */
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 140px;
+    width: 14vw;
     background-color: #000B53;
     color: #C5CCFC;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
     bottom: 100%;
-    left: 45%;
-    margin-left: -60px;
+    left: 40%;
+    margin-left: -35%;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (min-width: 1235px) {
+    figcaption {
+        width: 30vw;
+        font-size: 1.4vw;
+    }
+
+    .starInfo {
+        font-size: 1.5vw;
+    }
+
+    .menu {
+        font-size: 1.4vw;
+    }
+
+    .logo img {
+        height: 6vh;
+        width: auto;
+    }
+
+    .dropdown {
+        top: 100%;
+    }
+
+    .navbar {
+        height: 5vh;
+    }
+}
+
+@media (min-width: 1450px){
+    .tooltip .tooltiptext {
+        width: 18vw;
+        left: 45%;
+    }
+}
+
+@media (min-width: 1250px) and (max-width:1450px){
+    .tooltip .tooltiptext {
+        width: 17vw;
+        left: 43%;
+    }
+}
+
+@media (min-width: 1150px) and (max-width:1250px){
+    .tooltip .tooltiptext {
+        width: 17vw;
+        left: 38%;
+    }
+}
+
+@media (min-width: 665px) and (max-width:900px) {
+    figure {
+        margin: 0 3%;
+        text-align: center;
+    }
+
+    figcaption {
+        width: 30vw;
+    }
+
+    main {
+        gap: 5%;
+    }
+
+    .tooltip .tooltiptext {
+        width: 17vw;
+        left: 38%;
+    }
+}
+
+@media (min-width: 535px) and (max-width:665px) {
+    .dropdown {
+        z-index: 100;
+        margin-left: 0;
+        top: 100%;
+        width: 15vw;
+        padding: 5px;
+    }
+
+    .tooltip .tooltiptext {
+        width: 30vw;
+        left: 70%;
+    }
+}
+
+@media (min-width: 405px) and (max-width:535px) {
+    .dropdown {
+        width: 20vw;
+    }
+
+    .tooltip .tooltiptext {
+        width: 40vw;
+        left: 65%;
+    }
+}
+
+@media (min-width: 346px) and (max-width:405px) {
+    .dropdown {
+        width: 25vw;
+    }
+
+    .tooltip .tooltiptext {
+        width: 50vw;
+        left: 60%;
+    }
+}
+
+@media (max-width:345px) {
+    .dropdown {
+        width: 30vw;
+    }
+
+    .tooltip .tooltiptext {
+        width: 50vw;
+        left: 60%;
+    }
+}
+
+@media (max-width: 665px) {
+    .navbar {
+        padding-top: 13px;
+        height: 40px;
+        padding-bottom: 5px;
+        text-align: left;
+    }
+
+    .logo img {
+        width: 100px;
+        height: auto;
+        margin-top: 8%;
+        margin-left: 15%;
+    }
+
+    .menu {
+        gap: 1.5em;
+        font-size: 13px;
+        margin-right: 10%;
+    }
+
+    .menu li {
+        padding: 2px 0;
+    }
+
+    .dropdown {
+        z-index: 100;
+        margin-left: 0;
+        top: 100%;
+        padding: 5px;
+    }
+
+    .dropdown li {
+        font-size: 12px;
+    }
+
+    main {
+        display: block;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    .img {
+        width: 70vw;
+        height: 45vh;
+    }
+
+    .starInfo {
+        margin-bottom: 25px;
+    }
 }

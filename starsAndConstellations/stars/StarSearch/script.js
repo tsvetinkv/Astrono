@@ -4,11 +4,11 @@ let starDistance = document.getElementById('distance');
 let starSpectralClass = document.getElementById('spectralClass');
 var urlParams = new URLSearchParams(window.location.search);
 var value = urlParams.get('value');
-const apiKeyStars = 'SRIwQNPeQVP2YX3/42hjGA==f3SP2fo4djU6Tg21';
+const apiKeyStars = 'tV2McOe2kgdAkVncwvVDeA==aN9tqSIW2Er3B4ru';
 fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
     method: 'GET',
     headers: {
-        'X-Api-Key': apiKey,
+        'X-Api-Key': apiKeyStars,
         'Content-Type': 'application/json',
     }
 })
@@ -28,10 +28,10 @@ fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
     });
 
 function displayInfo(data) {
-    starName.innerHTML = value;
-    starConstellation.innerHTML = data[0].constellation;
-    starDistance.innerHTML = data[0].distance_light_year;
-    starSpectralClass.innerHTML = data[0].spectral_class;
+    starName.innerHTML = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();;
+    starConstellation.innerHTML = `Съзвездие: ${data[0].constellation}`;
+    starDistance.innerHTML = `Разстояние в светлинни години: ${data[0].distance_light_year}`;
+    starSpectralClass.innerHTML = `Спектрален клас: ${data[0].spectral_class}`;
 }
 
 
