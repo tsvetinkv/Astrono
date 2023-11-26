@@ -92,6 +92,7 @@ h1 {
 p {
     font-size: 20px;
     line-height: 180%;
+    width: 85vw;
 }
 
 h2 {
@@ -455,7 +456,7 @@ form p {
 }
 
 .signupBtn {
-    margin-top: -63px;
+    /* margin-top: -63px; */
     width: 150px;
     height: 46px;
     border-radius: 30px;
@@ -494,4 +495,12 @@ form p {
 
 a {
     text-decoration: none;
+}
+
+#shorterText{
+    width: 50vw;
+}
+
+#seasons{
+    margin-bottom: 3%;
 }
