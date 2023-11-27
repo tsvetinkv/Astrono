@@ -146,10 +146,6 @@ img {
 }
 
 @media (max-width: 388px) {
-    .menu {
-        font-size: 12px;
-    }
-
     .dropdown li {
         font-size: 11px;
     }
@@ -167,13 +163,19 @@ img {
     }
 
     .logo img {
-        width: 130px;
+        width: 85px;
+        height: auto;
+        margin-left: -10px;
     }
 
     .menu {
         gap: 5%;
     }
 
+    .menu li {
+        padding: 0px 14px;
+        font-size: 3.5vw;
+    }
 
     .dropdown {
         top: 100%;
@@ -260,7 +262,8 @@ img {
         margin-top: 0;
     }
 
-    .section, .sectionBiggerScreen {
+    .section,
+    .sectionBiggerScreen {
         gap: 20%;
     }
 }
