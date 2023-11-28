@@ -11,6 +11,7 @@ body {
     color: #CAF7F3;
     font-family: Segoe UI;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -42,8 +43,8 @@ body {
     padding: 5px 14px;
 }
 
-.menu li:hover{
-    background:#051a46;
+.menu li:hover {
+    background: #051a46;
     border-radius: 20px 5px;
     transition: 0.26s ease-in;
 }
@@ -53,14 +54,14 @@ body {
 }
 
 .dropdown {
-    background: linear-gradient(0deg, rgba(5,26,70,1) 0%, rgba(43,2,85,1) 100%);
+    background: linear-gradient(0deg, rgba(5, 26, 70, 1) 0%, rgba(43, 2, 85, 1) 100%);
     margin-left: -13px;
     position: absolute;
     display: none;
     border-radius: 10px;
-    top: 35px;
+    top: 100%;
     text-align: center;
-    list-style-position: inside;  
+    list-style-position: inside;
 }
 
 .dropdown li {
@@ -77,7 +78,7 @@ body {
     display: block;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
 }
 
@@ -205,7 +206,8 @@ select {
     transform: scale(0.9);
 }
 
-.center {
+.center,
+.inputs {
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -395,6 +397,11 @@ form p {
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 999;
+    width: 50vw;
+}
+
+#popupContainer img {
+    width: 50vw;
 }
 
 #closeButton {
@@ -455,7 +462,7 @@ form p {
     line-height: 240%;
 }
 
-.signupBtn {
+.btn {
     /* margin-top: -63px; */
     width: 150px;
     height: 46px;
@@ -488,7 +495,7 @@ form p {
     transition: all .5s ease;
 }
 
-.signupBtn:hover .arrow {
+.btn:hover .arrow {
     width: calc(140px - (4px)*2);
     background-color: rgb(245, 245, 245);
 }
@@ -497,10 +504,202 @@ a {
     text-decoration: none;
 }
 
-#shorterText{
+#shorterText {
     width: 50vw;
 }
 
-#seasons{
+#seasons {
     margin-bottom: 3%;
+}
+
+@media (min-width: 2000px) {
+    .navbar {
+        height: 8vh;
+    }
+
+    .menu {
+        font-size: 1.5vw;
+    }
+
+    .logo img {
+        height: 8vh;
+        width: auto;
+    }
+
+    h1 {
+        margin-top: 2%;
+        font-size: 2.5vw;
+        ;
+    }
+
+    .form {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .form-title {
+        font-size: 3rem;
+        line-height: 3.55rem;
+    }
+
+    .title-2 {
+        font-size: 4rem;
+        text-shadow: 0 0 45px #CECECE;
+    }
+
+    .center,
+    .inputs {
+        zoom: 1.4;
+    }
+
+    form p {
+        width: 100%;
+        font-size: 1vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.2vw;
+        width: 85%;
+    }
+
+    #shorterText {
+        font-size: 1.6vw;
+    }
+
+    #visibleConstellations figcaption{
+        font-size: 1.2vw;
+    }
+
+    #whatAreConstellations img{
+        width: 30vw;
+    }
+
+    .image{
+        display: flex;
+        align-items: center;
+    }
+
+    .btn{
+        zoom: 2;
+    }
+}
+
+@media (min-width: 750px) and (max-width:1100px) {
+    .logo img {
+        height: 7vh;
+        width: auto;
+    }
+
+    .form {
+        width: 40vw;
+    }
+
+    #popupContainer {
+        width: 65vw;
+    }
+
+    #popupContainer img {
+        width: 65vw;
+    }
+}
+
+@media (max-width:750px) {
+    .logo img {
+        height: auto;
+        width: 100px;
+    }
+
+    .form {
+        width: 75vw;
+    }
+
+    #popupContainer {
+        width: 85vw;
+    }
+
+    #popupContainer img {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .menu li {
+        padding: 5px 3px;
+    }
+
+    .dropdown {
+        z-index: 100;
+        margin-left: -5%;
+        padding: 5px;
+    }
+
+    .dropdown li {
+        font-size: 15px;
+    }
+
+    .navigation {
+        gap: 0;
+        margin-left: -15px;
+        width: 100.7vw;
+    }
+
+    .menu {
+        font-size: 15px;
+        align-items: center;
+        margin-left: -10%;
+    }
+
+    h1 {
+        margin-top: 5%;
+    }
+
+    .title-2 {
+        font-size: 1.2em;
+    }
+
+    .inputs {
+        display: block;
+        text-align: center;
+    }
+
+    .input-container {
+        margin: 10% 0;
+    }
+
+    .form p {
+        width: auto;
+    }
+
+    #whatAreConstellations {
+        display: block;
+        text-align: center;
+    }
+
+    #shorterText,
+    p {
+        width: 95vw;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #whatAreConstellations img {
+        width: 95vw;
+    }
+
+    #visibleConstellations figure {
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 5%;
+    }
+
+    main {
+        margin-bottom: 10%;
+    }
 }
