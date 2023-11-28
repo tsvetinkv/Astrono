@@ -145,7 +145,11 @@ img {
     display: none;
 }
 
-@media (max-width: 388px) {
+@media (max-width: 450px) {
+    .menu li {
+        font-size: 3vw;
+    }
+
     .dropdown li {
         font-size: 11px;
     }
@@ -153,6 +157,45 @@ img {
     .sectionPhone p,
     .section p {
         margin-bottom: 20px;
+    }
+
+    .navbar {
+        height: 6vh;
+    }
+
+    .logo img {
+        height: 5vh;
+        width: auto;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 700px) {
+    .menu li {
+        font-size: 2.5vw;
+    }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .logo img {
+        height: 9vh;
+        width: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1008px) {
+    .menu li {
+        font-size: 2vw;
+    }
+
+    .navbar {
+        height: 10vh;
+    }
+
+    .logo img {
+        height: 10vh;
+        width: auto;
     }
 }
 
@@ -162,19 +205,12 @@ img {
         margin-bottom: 85px;
     }
 
-    .logo img {
-        width: 85px;
-        height: auto;
-        margin-left: -10px;
-    }
-
     .menu {
         gap: 5%;
     }
 
     .menu li {
         padding: 0px 14px;
-        font-size: 3.5vw;
     }
 
     .dropdown {
