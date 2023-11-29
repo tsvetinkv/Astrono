@@ -11,6 +11,7 @@ body {
     color: #CAF7F3;
     font-family: Segoe UI;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -42,8 +43,8 @@ body {
     padding: 5px 14px;
 }
 
-.menu li:hover{
-    background:#051a46;
+.menu li:hover {
+    background: #051a46;
     border-radius: 20px 5px;
     transition: 0.26s ease-in;
 }
@@ -53,14 +54,14 @@ body {
 }
 
 .dropdown {
-    background: linear-gradient(0deg, rgba(5,26,70,1) 0%, rgba(43,2,85,1) 100%);
+    background: linear-gradient(0deg, rgba(5, 26, 70, 1) 0%, rgba(43, 2, 85, 1) 100%);
     margin-left: -13px;
     position: absolute;
     display: none;
     border-radius: 10px;
-    top: 35px;
+    top: 100%;
     text-align: center;
-    list-style-position: inside;  
+    list-style-position: inside;
 }
 
 .dropdown li {
@@ -77,9 +78,10 @@ body {
     display: block;
 }
 
-.navbar ul{
+.navbar ul {
     list-style-type: none;
 }
+
 h1,
 h2 {
     color: #7CE4DC;
@@ -107,6 +109,10 @@ img {
     line-height: 180%;
 }
 
+.rightAlign {
+    text-align: right;
+}
+
 figcaption {
     text-align: center;
     font-size: 16px;
@@ -115,11 +121,16 @@ figcaption {
     width: 30vw;
 }
 
-.container {
+.container,
+.containerBiggerScreen {
     display: flex;
     justify-content: center;
     gap: 20%;
     margin-top: 40px;
+}
+
+.containerSmallerScreen {
+    display: none;
 }
 
 .text p {
@@ -127,4 +138,154 @@ figcaption {
     font-weight: 400;
     line-height: 255%;
     width: 35vw;
+}
+
+
+@media (min-width: 2000px) {
+    .navbar {
+        height: 8vh;
+    }
+
+    .menu {
+        font-size: 1.5vw;
+    }
+
+    .logo img {
+        height: 8vh;
+        width: auto;
+    }
+
+    h1 {
+        margin-top: 2%;
+        font-size: 2.5vw;
+        ;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+
+    .textCentered, .text p {
+        font-size: 1.4vw;
+        line-height: 200%;
+    }
+
+    figcaption {
+        font-size:1.3vw;
+    }
+    .container, .containerBiggerScreen{
+        gap: 17%;
+    }
+}
+
+@media (min-width: 130px) and (max-width:1400px) {
+    .text p {
+        line-height: 230%;
+    }
+}
+
+@media (min-width: 1150px) and (max-width:1300px) {
+    .text p {
+        line-height: 210%;
+    }
+}
+
+@media (min-width: 1100px) and (max-width:1150px) {
+    .text p {
+        line-height: 180%;
+        width: 40vw;
+    }
+
+    .container,
+    .containerBiggerScreen {
+        gap: 15%;
+    }
+}
+
+@media (min-width: 750px) and (max-width:1100px) {
+    .logo img {
+        height: 7vh;
+        width: auto;
+    }
+
+    .form {
+        width: 40vw;
+    }
+
+}
+
+@media (max-width:750px) {
+    .logo img {
+        height: auto;
+        width: 100px;
+    }
+
+    .form {
+        width: 75vw;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .menu li {
+        padding: 5px 3px;
+    }
+
+    .dropdown {
+        z-index: 100;
+        margin-left: -5%;
+        padding: 5px;
+    }
+
+    .dropdown li {
+        font-size: 15px;
+    }
+
+    .navigation {
+        gap: 0;
+        margin-left: -15px;
+        width: 100.7vw;
+    }
+
+    .menu {
+        font-size: 15px;
+        align-items: center;
+        margin-left: -10%;
+    }
+
+    .container {
+        display: block;
+    }
+
+    p,
+    .text p {
+        width: 95vw;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    img {
+        width: 70vw;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figcaption {
+        width: 71vw;
+        margin: auto;
+    }
+
+    main {
+        margin-bottom: 10%;
+    }
+
+    .containerBiggerScreen {
+        display: none
+    }
+
+    .containerSmallerScreen {
+        display: block;
+    }
 }
