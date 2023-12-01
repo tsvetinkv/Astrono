@@ -190,7 +190,7 @@ function sendDataToAPI(data) {
     fetch("https://api.astronomyapi.com/api/v2/studio/star-chart", {
         method: "POST",
         headers: {
-            "Authorization":  btoa(`Basic 052bbf9f-94d8-4113-8ad1-9e325eb1f6b0:052bbf9f-94d8-4113-8ad1-9e325eb1f6b0`),
+            "Authorization":  "Basic YmQ2MzdmM2UtMGM2ZC00MjljLWE2YWEtNTRhZTY0NmNkYjlkOmYyN2E0YmNkZjc4YTQ3N2E1YTFhOGZkYWNkNzU1ZjBhYjI3YWZiMjEzYjRkYzg3Njk2YjQwMDRmZjczNjYwNWZiZTE3M2Y1ODZkNTAyZDcxNGMxOGYwZDcxZTQyMGZhNzFmNzVhNjk5NTY0YmZiNjBhM2Q1ZmQ1MGUwYTEzYTQ0NzBmNzU1YTNkZjIwYzBjNmIyOWZiNjEyODFjNjc1MzEyYTYwOGI1MWM0MWQ5YzMwYWQ2ZGM1MmVhMDI4MmExYjgzNmRmMjEwNzAwMjU2Y2Q0Mzk4MGNjMThhOTM2NWVh",
             "Content-Type": "application/json", // Set the content type to JSON
         },
         body: JSON.stringify(data), // Convert the data object to a JSON string
