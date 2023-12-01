@@ -15,7 +15,6 @@ body {
     height: 5vh;
     background: #000B53;
     margin: -8px;
-    padding: 0;
 }
 
 .nav-links a {
@@ -87,7 +86,7 @@ header {
     width: 100vw;
 }
 
-#heading {
+#heading1 {
     margin-top: 40px;
 }
 
@@ -172,10 +171,12 @@ section {
 
 .rightText {
     margin-right: 80px;
+    text-align: right;
 }
 
-.rightText p, .text p {
-    font-size: 17px;
+.rightText p,
+.text p {
+    font-size: 18px;
     line-height: 210%;
 }
 
@@ -187,7 +188,7 @@ h2 {
 .images {
 
     max-width: 420px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 img {
@@ -225,6 +226,56 @@ figcaption {
     text-align: right;
 }
 
+
+.btn {
+    margin: auto;
+    margin-bottom: 2%;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+.btn span {
+    background-color: rgb(5, 6, 45);
+    padding: 10px 10px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.btn:hover span {
+    background: none;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
 @media (min-width: 1600px) {
     header {
         margin: -40px -56px;
@@ -260,7 +311,7 @@ figcaption {
     }
 
     .navbar {
-        height: 7vh;
+        height: 2vh;
     }
 
     .menu {
@@ -272,7 +323,7 @@ figcaption {
         width: 100%;
     }
 
-    #heading{
+    #heading1 {
         font-size: 2vw;
     }
 
@@ -294,7 +345,7 @@ figcaption {
         font-size: 1.5vw;
     }
 
-    section{
+    section {
         margin-left: 0;
     }
 
@@ -327,7 +378,7 @@ figcaption {
     }
 
     .threeImages {
-        margin-top: 10%;
+        margin-top: 5%;
         margin-left: -1%;
     }
 }
@@ -362,16 +413,16 @@ figcaption {
         padding: 0 0 0 8%;
     }
 
-    #longerText {
+    #deathP {
         padding: 0 18% 0 0;
     }
 
     .images {
-        margin-top: 7%;
+        margin-top: 0;
     }
 
     .threeImages {
-        margin-top: 7.5%;
+        margin-top: 0;
     }
 
     #twoImages figure {
@@ -405,7 +456,7 @@ figcaption {
         padding: 0 5% 0 0;
     }
 
-    #longerText {
+    #deathP {
         padding: 0 17% 0 0;
     }
 
@@ -449,7 +500,7 @@ figcaption {
     }
 
     figure {
-        margin: 15vh 0;
+        margin: 8vh 0;
     }
 
     figcaption {
@@ -468,12 +519,12 @@ figcaption {
     }
 
     img {
-        width: 35vw;
+        width: 25vw;
         height: auto;
     }
 
     figcaption {
-        width: 35vw;
+        width: 25vw;
     }
 
     .images,

@@ -1,687 +1,120 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//Celestial events//seasky.org//
-X-WR-CALNAME:Celestial events
 BEGIN:VEVENT
-SUMMARY:Quadrantids Meteor Shower
-DTSTART;VALUE=DATE:20230103
-DTEND;VALUE=DATE:20230105
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:quadrantidsmeteorshower_2023010320230105@seasky.org
-DESCRIPTION:The Quadrantids is an above average shower, with up to 40 met
- eors per hour at its peak. It is thought to be produced by dust grains lef
- t behind by an extinct comet known as 2003 EH1, which was discovered in 2
- 003. The shower runs annually from January 1-5. It peaks this year on the 
- night of the 3rd and  morning of the 4th. This year the nearly full moon w
- ill block out most of the fainter meteors. But if you are patient you may 
- still be able to catch a few good ones. Best viewing will be from a dark l
- ocation after midnight. Meteors will radiate from the constellation Bootes
- , but can appear anywhere in the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230106
-DTEND;VALUE=DATE:20230107
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023010620230107@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 23:09 UTC. This full moon was known by early Native American tribes as 
- the Full Wolf Moon because this was the time of year when hungry wolf pack
- s howled outside their camps. This moon has also been know as the Old Moon
-  and the Moon After Yule.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230121
-DTEND;VALUE=DATE:20230122
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023012120230122@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 20:55 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Western Elongation
-DTSTART;VALUE=DATE:20230130
-DTEND;VALUE=DATE:20230131
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatestwesternelongation_2023013020230131@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest western elongation of 25 d
- egrees from the Sun. This is the best time to view Mercury since it will b
- e at its highest point above the horizon in the morning sky. Look for the 
- planet low in the eastern sky just before sunrise.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230205
-DTEND;VALUE=DATE:20230206
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023020520230206@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 18:30 UTC. This full moon was known by early Native American tribes as 
- the Full Snow Moon because the heaviest snows usually fell during this tim
- e of the year. Since hunting is difficult, this moon has also been known 
- by some tribes as the Full Hunger Moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230220
-DTEND;VALUE=DATE:20230221
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023022020230221@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 07:08 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230307
-DTEND;VALUE=DATE:20230308
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023030720230308@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 12:42 UTC. This full moon was known by early Native American tribes as 
- the Full Worm Moon because this was the time of year when the ground would
-  begin to soften and the earthworms would reappear. This moon has also bee
- n known as the Full Crow Moon, the Full Crust Moon, the Full Sap Moon, 
- and the Lenten Moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:March Equinox
-DTSTART;VALUE=DATE:20230320
-DTEND;VALUE=DATE:20230321
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:marchequinox_2023032020230321@seasky.org
-DESCRIPTION:The March equinox occurs at 21:17 UTC. The Sun will shine dire
- ctly on the equator and there will be nearly equal amounts of day and nigh
- t throughout the world. This is also the first day of spring (vernal equin
- ox) in the Northern Hemisphere and the first day of fall (autumnal equinox
- ) in the Southern Hemisphere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230321
-DTEND;VALUE=DATE:20230322
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023032120230322@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 17:25 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230406
-DTEND;VALUE=DATE:20230407
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023040620230407@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 04:37 UTC. This full moon was known by early Native American tribes as 
- the Full Pink Moon because it marked the appearance of the moss pink, or 
- wild ground phlox, which is one of the first spring flowers. This moon ha
- s also been known as the Sprouting Grass Moon, the Growing Moon, and the
-  Egg Moon. Many coastal tribes called it the Full Fish Moon because this w
- as the time that the shad swam upstream to spawn.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Eastern Elongation
-DTSTART;VALUE=DATE:20230411
-DTEND;VALUE=DATE:20230412
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatesteasternelongation_2023041120230412@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest eastern elongation of 19.5
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the evening sky. Look for th
- e planet low in the western sky just after sunset.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230420
-DTEND;VALUE=DATE:20230421
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023042020230421@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 04:15 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hybrid Solar Eclipse
-DTSTART;VALUE=DATE:20230420
-DTEND;VALUE=DATE:20230421
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:hybridsolareclipse_2023042020230421@seasky.org
-DESCRIPTION:A hybrid solar eclipse occurs when the Moon is almost too clos
- e to the Earth to completely block the Sun. This type of eclipse will appe
- ar as a total eclipse to some parts of the world and will appear annular t
- o others. The eclipse path will begin in the southern Indian Ocean and mov
- e across parts of western Australia and southern Indonesia. A partial ecli
- pse will be visible throughout most of Indonesia and Australia. () ()
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Lyrids Meteor Shower
-DTSTART;VALUE=DATE:20230422
-DTEND;VALUE=DATE:20230424
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:lyridsmeteorshower_2023042220230424@seasky.org
-DESCRIPTION:The Lyrids is an average shower, usually producing about 20 m
- eteors per hour at its peak. It is produced by dust particles left behind 
- by comet C/1861 G1 Thatcher, which was discovered in 1861. The shower run
- s annually from April 16-25. It peaks this year on the night of the night 
- of the 22nd and morning of the 23rd. These meteors can sometimes produce b
- right dust trails that last for several seconds.  The thin crescent moon w
- ill set early in the evening leaving dark skies for what should be an exce
- llent show. Best viewing will be from a dark location after midnight. Mete
- ors will radiate from the constellation Lyra, but can appear anywhere in 
- the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230505
-DTEND;VALUE=DATE:20230506
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023050520230506@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 17:36 UTC. This full moon was known by early Native American tribes as 
- the Full Flower Moon because this was the time of year when spring flowers
-  appeared in abundance. This moon has also been known as the Full Corn Pla
- nting Moon and the Milk Moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Penumbral Lunar Eclipse
-DTSTART;VALUE=DATE:20230505
-DTEND;VALUE=DATE:20230506
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:penumbrallunareclipse_2023050520230506@seasky.org
-DESCRIPTION:A penumbral lunar eclipse occurs when the Moon passes through 
- the Earth's partial shadow, or penumbra. During this type of eclipse the 
- Moon will darken slightly but not completely. The eclipse will be visible 
- throughout all of Asia and Australia and parts of eastern Europe and easte
- rn Africa. ()
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Eta Aquarids Meteor Shower
-DTSTART;VALUE=DATE:20230506
-DTEND;VALUE=DATE:20230508
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:etaaquaridsmeteorshower_2023050620230508@seasky.org
-DESCRIPTION:The Eta Aquarids is an above average shower, capable of produ
- cing up to 60 meteors per hour at its peak. Most of the activity is seen i
- n the Southern Hemisphere. In the Northern Hemisphere, the rate can reach
-  about 30 meteors per hour. It is produced by dust particles left behind b
- y comet Halley, which has known and observed since ancient times. The sho
- wer runs annually from April 19 to May 28. It peaks this year on the night
-  of May 6 and the morning of the May 7. The nearly full moon will be a pro
- blem this year, blocking out all but the brightest meteors. If you are pa
- tient, you should still should be able to catch a few good ones. Best vie
- wing will be from a dark location after midnight. Meteors will radiate fro
- m the constellation Aquarius, but can appear anywhere in the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230519
-DTEND;VALUE=DATE:20230520
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023051920230520@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 15:55 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Western Elongation
-DTSTART;VALUE=DATE:20230529
-DTEND;VALUE=DATE:20230530
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatestwesternelongation_2023052920230530@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest western elongation of 24.9
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the morning sky. Look for th
- e planet low in the eastern sky just before sunrise.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20230604
-DTEND;VALUE=DATE:20230605
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023060420230605@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 03:43 UTC. This full moon was known by early Native American tribes as 
- the Full Strawberry Moon because it signaled the time of year to gather ri
- pening fruit. It also coincides with the peak of the strawberry harvesting
-  season. This moon has also been known as the Full Rose Moon and the Full 
- Honey Moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Venus at Greatest Eastern Elongation
-DTSTART;VALUE=DATE:20230604
-DTEND;VALUE=DATE:20230605
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:venusatgreatesteasternelongation_2023060420230605@seasky.org
-DESCRIPTION:The planet Venus reaches greatest eastern elongation of 45.4 d
- egrees from the Sun. This is the best time to view Venus since it will be 
- at its highest point above the horizon in the evening sky. Look for the br
- ight planet in the western sky after sunset.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230618
-DTEND;VALUE=DATE:20230619
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023061820230619@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 04:39 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:June Solstice
-DTSTART;VALUE=DATE:20230621
-DTEND;VALUE=DATE:20230622
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:junesolstice_2023062120230622@seasky.org
-DESCRIPTION:The June solstice occurs at 14:51 UTC. The North Pole of the e
- arth will be tilted toward the Sun, which will have reached its northernm
- ost position in the sky and will be directly over the Tropic of Cancer at 
- 23.44 degrees north latitude. This is the first day of summer (summer sols
- tice) in the Northern Hemisphere and the first day of winter (winter solst
- ice) in the Southern Hemisphere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon, Supermoon
-DTSTART;VALUE=DATE:20230703
-DTEND;VALUE=DATE:20230704
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon,supermoon_2023070320230704@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 11:40 UTC. This full moon was known by early Native American tribes as 
- the Full Buck Moon because the male buck deer would begin to grow their ne
- w antlers at this time of year. This moon has also been known as the Full 
- Thunder Moon and the Full Hay Moon. This is also the first of four supermo
- ons for 2023. The Moon will be at its closest approach to the Earth and ma
- y look slightly larger and brighter than usual.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230717
-DTEND;VALUE=DATE:20230718
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023071720230718@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 18:33 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Delta Aquarids Meteor Shower
-DTSTART;VALUE=DATE:20230728
-DTEND;VALUE=DATE:20230730
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:deltaaquaridsmeteorshower_2023072820230730@seasky.org
-DESCRIPTION:The Delta Aquarids is an average shower that can produce up to
-  20 meteors per hour at its peak. It is produced by debris left behind by 
- comets Marsden and Kracht. The shower runs annually from July 12 to August
-  23. It peaks this year on the night of July 28 and morning of July 29. Th
- e nearly full moon will block most of the fainter meteors this year. But i
- f you are patient, you may still be able to catch a few good ones. Best v
- iewing will be from a dark location after midnight. Meteors will radiate f
- rom the constellation Aquarius, but can appear anywhere in the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon, Supermoon
-DTSTART;VALUE=DATE:20230801
-DTEND;VALUE=DATE:20230802
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon,supermoon_2023080120230802@seasky.org
-DESCRIPTION:The Moon will be located opposite the Earth from the Sun and w
- ill be fully illuminated as seen from Earth. This phase occurs at 18:33 UT
- C. This full moon was known by early Native American tribes as the Full St
- urgeon Moon because the large sturgeon fish of the Great Lakes and other m
- ajor lakes were more easily caught at this time of year. This moon has als
- o been known as the Green Corn Moon and the Grain Moon. This is also the s
- econd of four supermoons for 2023. The Moon will be at its closest approac
- h to the Earth and may look slightly larger and brighter than usual.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Eastern Elongation
-DTSTART;VALUE=DATE:20230810
-DTEND;VALUE=DATE:20230811
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatesteasternelongation_2023081020230811@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest eastern elongation of 27.4
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the evening sky. Look for th
- e planet low in the western sky just after sunset.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Perseids Meteor Shower
-DTSTART;VALUE=DATE:20230812
-DTEND;VALUE=DATE:20230814
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:perseidsmeteorshower_2023081220230814@seasky.org
-DESCRIPTION:The Perseids is one of the best meteor showers to observe, pr
- oducing up to 60 meteors per hour at its peak. It is produced by comet Swi
- ft-Tuttle, which was discovered in 1862. The Perseids are famous for prod
- ucing a large number of bright meteors. The shower runs annually from July
-  17 to August 24. It peaks this year on the night of August 12 and the mor
- ning of August 13. The crescent moon should not be too much of a problem t
- his year. Skies should still be dark enough for a good show. Best viewing 
- will be from a dark location after midnight. Meteors will radiate from the
-  constellation Perseus, but can appear anywhere in the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230816
-DTEND;VALUE=DATE:20230817
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023081620230817@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 09:39 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Saturn at Opposition
-DTSTART;VALUE=DATE:20230827
-DTEND;VALUE=DATE:20230828
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:saturnatopposition_2023082720230828@seasky.org
-DESCRIPTION:The ringed planet will be at its closest approach to Earth and
-  its face will be fully illuminated by the Sun. It will be brighter than a
- ny other time of the year and will be visible all night long. This is the 
- best time to view and photograph Saturn and its moons. A medium-sized or l
- arger telescope will allow you to see Saturn's rings and a few of its brig
- htest moons.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon, Supermoon, Blue Moon
-DTSTART;VALUE=DATE:20230831
-DTEND;VALUE=DATE:20230901
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon,supermoon,bluemoon_2023083120230901@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 01:37 UTC.  This is also the third of four supermoons for 2023. The Moo
- n will be at its closest approach to the Earth and may look slightly large
- r and brighter than usual. Since this is the second full moon in the same 
- month, it is sometimes referred to as a blue moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20230915
-DTEND;VALUE=DATE:20230916
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023091520230916@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 01:41 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Neptune at Opposition
-DTSTART;VALUE=DATE:20230919
-DTEND;VALUE=DATE:20230920
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:neptuneatopposition_2023091920230920@seasky.org
-DESCRIPTION:The blue giant planet will be at its closest approach to Earth
-  and its face will be fully illuminated by the Sun. It will be brighter th
- an any other time of the year and will be visible all night long. This is 
- the best time to view and photograph Neptune. Due to its extreme distance 
- from Earth, it will only appear as a tiny blue dot in all but the most po
- werful telescopes.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Western Elongation
-DTSTART;VALUE=DATE:20230922
-DTEND;VALUE=DATE:20230923
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatestwesternelongation_2023092220230923@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest western elongation of 17.9
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the morning sky. Look for th
- e planet low in the eastern sky just before sunrise.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:September Equinox
-DTSTART;VALUE=DATE:20230923
-DTEND;VALUE=DATE:20230924
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:septemberequinox_2023092320230924@seasky.org
-DESCRIPTION:The September equinox occurs at 06:43 UTC. The Sun will shine 
- directly on the equator and there will be nearly equal amounts of day and 
- night throughout the world. This is also the first day of fall (autumnal e
- quinox) in the Northern Hemisphere and the first day of spring (vernal equ
- inox) in the Southern Hemisphere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon, Supermoon
-DTSTART;VALUE=DATE:20230929
-DTEND;VALUE=DATE:20230930
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon,supermoon_2023092920230930@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 09:59 UTC. This full moon was known by early Native American tribes as 
- the Full Corn Moon because the corn is harvested around this time of year.
-  This moon is also known as the Harvest Moon. The Harvest Moon is the full
-  moon that occurs closest to the September equinox each year. This is also
-  the last of four supermoons for 2023. The Moon will be at its closest app
- roach to the Earth and may look slightly larger and brighter than usual.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Draconids Meteor Shower
-DTSTART;VALUE=DATE:20231007
-DTEND;VALUE=DATE:20231008
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:draconidsmeteorshower_2023100720231008@seasky.org
-DESCRIPTION:The Draconids is a minor meteor shower producing only about 10
-  meteors per hour. It is produced by dust grains left behind by comet 21P 
- Giacobini-Zinner, which was first discovered in 1900. The Draconids is an
-  unusual shower in that the best viewing is in the early evening instead o
- f early morning like most other showers. The shower runs annually from Oct
- ober 6-10 and peaks this year on the the night of the 7th. The second quar
- ter moon will dark skies in the early evening for what should be a good sh
- ow.  Best viewing will be in the early evening from a dark location far aw
- ay from city lights. Meteors will radiate from the constellation Draco, b
- ut can appear anywhere in the sky.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:New Moon
-DTSTART;VALUE=DATE:20231014
-DTEND;VALUE=DATE:20231015
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:newmoon_2023101420231015@seasky.org
-DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
-  and will not be visible in the night sky. This phase occurs at 17:56 UTC.
-  This is the best time of the month to observe faint objects such as galax
- ies and star clusters because there is no moonlight to interfere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Annular Solar Eclipse
-DTSTART;VALUE=DATE:20231014
-DTEND;VALUE=DATE:20231015
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:annularsolareclipse_2023101420231015@seasky.org
-DESCRIPTION:An annular solar eclipse occurs when the Moon is too far away 
- from the Earth to completely cover the Sun. This results in a ring of ligh
- t around the darkened Moon. The Sun's corona is not visible during an annu
- lar eclipse.  The eclipse path will begin in the Pacific Ocean off the coa
- st of southern Canada and move across the southwestern United States and C
- entral America, Columbia, and Brazil. A partial eclipse will be visible 
- throughout much of North and South America.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Orionids Meteor Shower
-DTSTART;VALUE=DATE:20231021
-DTEND;VALUE=DATE:20231023
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:orionidsmeteorshower_2023102120231023@seasky.org
-DESCRIPTION:The Orionids is an average shower producing up to 20 meteors p
- er hour at its peak. It is produced by dust grains left behind by comet Ha
- lley, which has been known and observed since ancient times. The shower r
- uns annually from October 2 to November 7. It peaks this year on the night
-  of October 21 and the morning of October 22. The first quarter moon may b
- lock some of the dim meteors in the evening, but it will set shortly afte
- r midnight. This will leave dark skies for what could be a good morning sh
- ow. Best viewing will be from a dark location after midnight. Meteors will
-  radiate from the constellation Orion, but can appear anywhere in the sky
- .
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Venus at Greatest Western Elongation
-DTSTART;VALUE=DATE:20231023
-DTEND;VALUE=DATE:20231024
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:venusatgreatestwesternelongation_2023102320231024@seasky.org
-DESCRIPTION:The planet Venus reaches greatest eastern elongation of 46.4 d
- egrees from the Sun. This is the best time to view Venus since it will be 
- at its highest point above the horizon in the morning sky. Look for the br
- ight planet in the eastern sky before sunrise.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Full Moon
-DTSTART;VALUE=DATE:20231028
-DTEND;VALUE=DATE:20231029
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:fullmoon_2023102820231029@seasky.org
-DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
- the Sun and its face will be will be fully illuminated. This phase occurs 
- at 20:25 UTC. This full moon was known by early Native American tribes as 
- the Full Hunters Moon because at this time of year the leaves are falling 
- and the game is fat and ready to hunt. This moon has also been known as th
- e Travel Moon and the Blood Moon.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Partial Lunar Eclipse
-DTSTART;VALUE=DATE:20231028
-DTEND;VALUE=DATE:20231029
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:partiallunareclipse_2023102820231029@seasky.org
-DESCRIPTION:A partial lunar eclipse occurs when the Moon passes through th
- e Earth's partial shadow, or penumbra, and only a portion of it passes t
- hrough the darkest shadow, or umbra. During this type of eclipse a part o
- f the Moon will darken as it moves through the Earth's shadow. The eclipse
-  will be visible throughout all of Europe, Asia, and Africa, and wester
- n Australia.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Jupiter at Opposition
-DTSTART;VALUE=DATE:20231103
-DTEND;VALUE=DATE:20231104
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:jupiteratopposition_2023110320231104@seasky.org
-DESCRIPTION:The giant planet will be at its closest approach to Earth and 
- its face will be fully illuminated by the Sun. It will be brighter than an
- y other time of the year and will be visible all night long. This is the b
- est time to view and photograph Jupiter and its moons. A medium-sized tele
- scope should be able to show you some of the details in Jupiter's cloud ba
- nds. A good pair of binoculars should allow you to see Jupiter's four larg
- est moons, appearing as bright dots on either side of the planet.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Тауридс Метеоритен дъжд
+SUMMARY:Taurids Meteor Shower
+LANGUAGE:en
+ISMETEOR: true
 DTSTART;VALUE=DATE:20231104
 DTEND;VALUE=DATE:20231106
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:tauridsmeteorshower_2023110420231106@seasky.org
-DESCRIPTION:Тауридите са дълготраен малък метеорен дъжд, произвеждащ около 
- 5-10 метеора на час. Необичайно е с това, че се състои от два отделни потока.
- Първият се произвежда от зрънца на прах, оставени от Asteroid 2004 TG10.
- Вторият поток е произведен от отломки, оставени от Comet 2P Encke.
- Дъждът продължава всяка година от 7 септември до 10 декември.
- Тази година достига своя връх в нощта на 4 ноември и сутринта на 5-ти.
- Втората четвърт на луната ще блокира повечето от мрачните метеори 
- тази година. Но ако сте търпеливи, все пак може да успеете да хванете
- няколко добри. Най-доброто гледане ще бъде точно след полунощ от тъмно
- място, далеч от градските светлини. Метеорите ще излъчват от съзвездието
- Телец, но могат да се чуят навсякъде в небето.
+DESCRIPTION:The Taurids is a long-running minor meteor shower producing on
+ ly about 5-10 meteors per hour. It is unusual in that it consists of two s
+ eparate streams. The first is produced by dust grains left behind by Aster
+ oid 2004 TG10. The second stream is produced by debris left behind by Come
+ t 2P Encke. The shower runs annually from September 7 to December 10. It p
+ eaks this year on the the night of November 4 and the morning of the 5th. 
+ The second quarter moon will block most of the dim meteors this year. But 
+ if you are patient, you may still be able to catch a few good ones. Best 
+ viewing will be just after midnight from a dark location far away from cit
+ y lights. Meteors will radiate from the constellation Taurus, but can app
+ ear anywhere in the sky.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Новолуние
+SUMMARY:New Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20231113
 DTEND;VALUE=DATE:20231114
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:newmoon_2023111320231114@seasky.org
-DESCRIPTION:Луната ще бъде разположена от същата страна на Земята като Слънцето
- и няма да се вижда на нощното небе. Тази фаза настъпва в 09:28 UTC. Това е 
- най-доброто време от месеца за наблюдение на слаби обекти като галактики и
- звездни купове, защото няма лунна светлина, която да пречи.
+DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
+  and will not be visible in the night sky. This phase occurs at 09:28 UTC.
+  This is the best time of the month to observe faint objects such as galax
+ ies and star clusters because there is no moonlight to interfere.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Uranus at Opposition
-DTSTART;VALUE=DATE:20231113
-DTEND;VALUE=DATE:20231114
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:uranusatopposition_2023111320231114@seasky.org
-DESCRIPTION:The blue-green planet will be at its closest approach to Earth
-  and its face will be fully illuminated by the Sun. It will be brighter th
- an any other time of the year and will be visible all night long. This is 
- the best time to view Uranus. Due to its distance, it will only appear as
-  a tiny blue-green dot in all but the most powerful telescopes.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Леонидс Метеоритен дъжд
+SUMMARY:Leonids Meteor Shower
+LANGUAGE:en
+ISMETEOR: true
 DTSTART;VALUE=DATE:20231117
 DTEND;VALUE=DATE:20231119
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:leonidsmeteorshower_2023111720231119@seasky.org
-DESCRIPTION:Леонидите е среден поток, произвеждащ до 15 метеора на час в своя
- пик. Този поток е уникален с това, че има циклоничен пик на всеки 33 години,
-  където могат да се видят стотици метеори на час. Последният от тях се случи
-  през 2001 г. Леонидите се произвеждат от прахови зърна, оставени от кометата
-  Темпел-Тътъл, която беше открита през 1865 г. Поливът тече всяка година от 6
-  до 30 ноември. Той достига своя връх тази година в нощта на 17-ти и сутринта
-  на 18-ти. Полумесецът ще залезе преди полунощ, оставяйки тъмни небеса за
-  това, което би трябвало да е страхотно шоу рано сутрин. Най-доброто крило
-  за наблюдение ще бъде от тъмно място след полунощ. Метеорите ще излъчват
-  от съзвездието Лъв, но могат да се появят навсякъде в небето.
+DESCRIPTION:The Leonids is an average shower, producing up to 15 meteors 
+ per hour at its peak. This shower is unique in that it has a cyclonic peak
+  about every 33 years where hundreds of meteors per hour can be seen. That
+  last of these occurred in 2001. The Leonids is produced by dust grains le
+ ft behind by comet Tempel-Tuttle, which was discovered in 1865. The showe
+ r runs annually from November 6-30. It peaks this year on the night of the
+  17th and morning of the 18th. The crescent moon will set before midnight 
+ leaving dark skies for what should be a great early morning show. Best vie
+ wing will be from a dark location after midnight. Meteors will radiate fro
+ m the constellation Leo, but can appear anywhere in the sky.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Пълнолуние
+SUMMARY:Full Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20231127
 DTEND;VALUE=DATE:20231128
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:fullmoon_2023112720231128@seasky.org
-DESCRIPTION:Луната ще бъде разположена на противоположната страна на Земята като
- Слънцето и нейното лице ще бъде напълно осветено. Тази фаза настъпва в 09:17 UTC.
- Тази пълна луна е била известна от ранните индиански племена като Пълната луна на
- бобрите, защото това е времето от годината, когато бобрите започват да ловят, преди
- блатата и реките да замръзнат. Известна е още като Мразовитата луна и Луната на ловеца.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Eastern Elongation
-DTSTART;VALUE=DATE:20231204
-DTEND;VALUE=DATE:20231205
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:mercuryatgreatesteasternelongation_2023120420231205@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest eastern elongation of 21.3
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the evening sky. Look for th
- e planet low in the western sky just after sunset.
+DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
+ the Sun and its face will be will be fully illuminated. This phase occurs 
+ at 09:17 UTC. This full moon was known by early Native American tribes as 
+ the Full Beaver Moon because this was the time of year to set the beaver t
+ raps before the swamps and rivers froze. It has also been known as the Fro
+ sty Moon and the Hunter's Moon.
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Новолуние
+LANGUAGE:bg
+ISMETEOR: false
 DTSTART;VALUE=DATE:20231212
 DTEND;VALUE=DATE:20231213
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:newmoon_2023121220231213@seasky.org
-DESCRIPTION:: Луната ще бъде разположена от същата страна на Земята като
+DESCRIPTION: Луната ще бъде разположена от същата страна на Земята като
  Слънцето и няма да се вижда на нощното небе. Тази фаза настъпва в
  23:33 UTC. Това е най-доброто време от месеца за наблюдение на слаби
  обекти като галактики и звездни купове, защото няма лунна светлина,
  която да пречи.
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:New Moon
+LANGUAGE:en
+ISMETEOR: false
+DTSTART;VALUE=DATE:20231212
+DTEND;VALUE=DATE:20231213
+DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
+UID:newmoon_2023121220231213@seasky.org
+DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
+  and will not be visible in the night sky. This phase occurs at 23:33 UTC.
+  This is the best time of the month to observe faint objects such as galax
+ ies and star clusters because there is no moonlight to interfere.
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Geminids Meteor Shower
+LANGUAGE:en
+ISMETEOR: true
+DTSTART;VALUE=DATE:20231213
+DTEND;VALUE=DATE:20231215
+DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
+UID:geminidsmeteorshower_2023121320231215@seasky.org
+DESCRIPTION:The Geminids is the  king of the meteor showers. It is conside
+ red by many to be the best shower in the heavens, producing up to 120 mul
+ ticolored meteors per hour at its peak. It is produced by debris left behi
+ nd by an asteroid known as 3200 Phaethon, which was discovered in 1982. T
+ he shower runs annually from December 7-17. It peaks this year on the nigh
+ t of the 13th and morning of the 14th.  This should be an great year for t
+ he Geminids. The nearly new moon means dark skies for what should be an ex
+ cellent show. Best viewing will be from a dark location after midnight. Me
+ teors will radiate from the constellation Gemini, but can appear anywhere
+  in the sky.
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Джеминиден Метеоритен дъжд
+LANGUAGE:bg
+ISMETEOR: true
 DTSTART;VALUE=DATE:20231213
 DTEND;VALUE=DATE:20231215
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
@@ -699,7 +132,27 @@ DESCRIPTION:Джеминидите са царят на метеорните п�
  съзвездието Близнаци, но могат да се появят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Ursids Meteor Shower
+LANGUAGE:en
+ISMETEOR: true
+DTSTART;VALUE=DATE:20231221
+DTEND;VALUE=DATE:20231223
+DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
+UID:ursidsmeteorshower_2023122120231223@seasky.org
+DESCRIPTION:The Ursids is a minor meteor shower producing about 5-10 meteo
+ rs per hour. It is produced by dust grains left behind by comet Tuttle, w
+ hich was first discovered in 1790. The shower runs annually from December 
+ 17-25. It peaks this year on the the night of the 21st and morning of the 
+ 22nd. The waxing gibbous moon will block out most of the faintest meteors 
+ this year. But if you are patient, you should still be able to catch a fe
+ w good ones. Best viewing will be just after midnight from a dark location
+  far away from city lights. Meteors will radiate from the constellation Ur
+ sa Minor, but can appear anywhere in the sky.
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:Урсуиден Метеоритен дъжд
+LANGUAGE:bg
+ISMETEOR: true
 DTSTART;VALUE=DATE:20231221
 DTEND;VALUE=DATE:20231223
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
@@ -715,25 +168,29 @@ DESCRIPTION:Урсидите са малък метеорен поток, про
  мечка, но могат да се появят навсякъде в небето.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:December Solstice
-DTSTART;VALUE=DATE:20231222
-DTEND;VALUE=DATE:20231223
-DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
-UID:decembersolstice_2023122220231223@seasky.org
-DESCRIPTION:The December solstice occurs at 03:21 UTC. The South Pole of t
- he earth will be tilted toward the Sun, which will have reached its south
- ernmost position in the sky and will be directly over the Tropic of Capric
- orn at 23.44 degrees south latitude. This is the first day of winter (wint
- er solstice) in the Northern Hemisphere and the first day of summer (summe
- r solstice) in the Southern Hemisphere.
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Пълнолуние
+SUMMARY:Full Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20231227
 DTEND;VALUE=DATE:20231228
 DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
 UID:fullmoon_2023122720231228@seasky.org
-DESCRIPTION:: Луната ще бъде разположена на противоположната страна на
+DESCRIPTION:The Moon will be located on the opposite side of the Earth as 
+ the Sun and its face will be will be fully illuminated. This phase occurs 
+ at 00:34 UTC. This full moon was known by early Native American tribes as 
+ the Full Cold Moon because this is the time of year when the cold winter a
+ ir settles in and the nights become long and dark. This moon has also been
+  known as the Full Long Nights Moon and the Moon Before Yule.
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Пълнолуние
+LANGUAGE:bg
+ISMETEOR: false
+DTSTART;VALUE=DATE:20231227
+DTEND;VALUE=DATE:20231228
+DTSTAMP;VALUE=DATE-TIME:20150701T194727Z
+UID:fullmoon_2023122720231228@seasky.org
+DESCRIPTION: Луната ще бъде разположена на противоположната страна на
  Земята като Слънцето и нейното лице ще бъде напълно осветено. Тази фаза
  настъпва в 00:34 UTC. Тази пълна луна е била известна от ранните индиански
  племена като Пълна студена луна, защото това е времето от годината, когато
@@ -742,6 +199,8 @@ DESCRIPTION:: Луната ще бъде разположена на проти�
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Quadrantids Meteor Shower
+LANGUAGE:en
+ISMETEOR: true
 DTSTART;VALUE=DATE:20240103
 DTEND;VALUE=DATE:20240105
 DTSTAMP;VALUE=DATE-TIME:20150701T194729Z
@@ -758,6 +217,8 @@ DESCRIPTION:The Quadrantids is an above average shower, with up to 40 met
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:New Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20240111
 DTEND;VALUE=DATE:20240112
 DTSTAMP;VALUE=DATE-TIME:20150701T194729Z
@@ -768,18 +229,9 @@ DESCRIPTION:The Moon will located on the same side of the Earth as the Sun
  ies and star clusters because there is no moonlight to interfere.
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Mercury at Greatest Western Elongation
-DTSTART;VALUE=DATE:20240112
-DTEND;VALUE=DATE:20240113
-DTSTAMP;VALUE=DATE-TIME:20150701T194729Z
-UID:mercuryatgreatestwesternelongation_2024011220240113@seasky.org
-DESCRIPTION:The planet Mercury reaches greatest western elongation of 23.5
-  degrees from the Sun. This is the best time to view Mercury since it will
-  be at its highest point above the horizon in the morning sky. Look for th
- e planet low in the eastern sky just before sunrise.
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Full Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20240125
 DTEND;VALUE=DATE:20240126
 DTSTAMP;VALUE=DATE-TIME:20150701T194729Z
@@ -793,6 +245,8 @@ DESCRIPTION:The Moon will be located on the opposite side of the Earth as
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:New Moon
+LANGUAGE:en
+ISMETEOR: false
 DTSTART;VALUE=DATE:20240209
 DTEND;VALUE=DATE:20240210
 DTSTAMP;VALUE=DATE-TIME:20150701T194729Z

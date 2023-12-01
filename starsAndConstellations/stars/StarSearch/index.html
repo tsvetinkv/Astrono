@@ -18,54 +18,59 @@
         </a>
         <ul class="nav-links">
             <div class="menu">
-                <li><a href="/events/index.html">Събития</a></li>
+                <li><a id="navEvents" href="/events/index.html">Events</a></li>
                 <li class="starsAndConstellations">
-                    <a href="/starsAndConstellations/landingPage/index.html">Звезди и Съзвездия</a>
+                    <a id="navStarsAndConstellations" href="/starsAndConstellations/landingPage/index.html">Stars &
+                        Constellations</a>
                     <ul class="dropdown">
-                        <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Звезди</a>
+                        <li><a id="navStars" href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a>
                         </li>
-                        <li><a
-                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Съзвездия</a>
+                        <li><a id="navConstellations"
+                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a>
                         </li>
                     </ul>
                 </li>
             </div>
         </ul>
     </nav>
+    <button class="btn" onclick="switchLanguage()">
+        <span id="translateBtn">translate</span>
+    </button>
     <main id="content">
         <figure>
             <img class="img" id="star" src="" />
-            <figcaption>
-            Снимка на звездата от библиотеката със снимки на НАСА
+            <figcaption id="figcaption1">
+                Image for the constellation from NASA image library
             </figcaption>
         </figure>
         <div class="starInfo">
             <h1 id="name"></h1>
             <div class="tooltip">
-                <p id="constellation"></p>
-                <span class="tooltiptext">Група от звезди, която образува въображаем контур</span>
+                <span id="starConstellationPlaceholder">Constellation:</span> <span id="constellation"></span><br>
+                <span id="tooltip1" class="tooltiptext">a group of stars that forms an imaginary outline</span>
             </div>
             <br>
             <div class="tooltip">
-                <p id="distance"></p>
-
-                <span class="tooltiptext">1 светлинна година = 9 460 730 472 580,8 км.</span>
+                <span id="starDistancePlaceholder">Distance:</span> <span id="distance"></span><br>
+                <span id="tooltip2" class="tooltiptext">A light year is about 5.88 trillion miles.</span>
             </div>
             <br>
             <div class="tooltip">
-                <p id="spectralClass"></p>
-                <span class="tooltiptext">Класификация на звездите по температура, цвят и размер.</span>
+                <span id="starSpectralClassPlaceholder">Spectral class:</span> <span id="spectralClass"></span><br>
+                <span id="tooltip3" class="tooltiptext">Stars classification by temperature, color and size.</span>
             </div>
         </div>
         <figure>
             <img class="img" id="constellationImg" src="" />
-            <figcaption>
-            Снимка на съзвездието от библиотеката със снимки на НАСА
+            <figcaption id="figcaption2">
+                Image for the star from NASA image library
             </figcaption>
         </figure>
     </main>
     <h1 id="error"></h1>
     <script src="./script.js"></script>
+    <script src="/helpers.js"></script>
+
 </body>
 
 </html>

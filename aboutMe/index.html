@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 
 <body>
@@ -26,8 +26,8 @@
             </div>
           </div>
 
-          <h2 id="name">Цвети Николова</h2>
-          <h3 id="student">ученичка</h3>
+          <h2 id="name">Tsveti Nikolova</h2>
+          <h3 id="student">Student</h3>
         </div>
 
         <ul class="icons">
@@ -45,7 +45,7 @@
     <div class="about-right">
       <div class="buttons-container">
         <a href="/index.html" style="text-decoration: none;">
-          <button class="home-btn"> Към началната страница
+          <button class="home-btn"> Go to home
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                 <path fill="none" d="M0 0h24v24H0z"></path>
@@ -56,6 +56,7 @@
           </button>
         </a>
         </a>
+        <button id="changeLang" class="btn btn-white" onClick="switchLanguage()">Change Language</button>
       </div>
       <div class="about-btns">
         <a href="mailto: cnikolova95@gmail.com" style="text-decoration: none;">
@@ -65,22 +66,66 @@
           <button type="button" class="btn btn-white">Git hub</button>
         </a>
       </div>
-      <h2 id="whoAmI">Коя съм аз?</h2>
+      <h2 id="whoAmI">Who am i?</h2>
       <div class="about-para" style="font-size: larger;">
         <p>
-          Казвам се Цвети Николова и съм ученичка в 12 клас, паралелка приложен програмист в ППМГ "Акад. Иван Ценов" гр. Враца. Интересувам се от
-          програмиране още от 6 клас и изпитвам голяма страст към научаването на нови неща. Когато искам нещо, не се
-          отказвам и бих направила всичко възможно, за да бъда най-добрата. Имам високи амбиции и се стремя към
-          съвършенство във всичко, което правя.
+          My name is Tsveti Nikolova and I am an 11th grade student,
+          an applied programmer class. I have been interested in
+          programming since 6th grade and have a great passion for
+          learning new things. When I want something, I don't give
+          up and I would do my best to be the best. I have high
+          ambitions and strive for perfection in everything I do.
         </p>
         <p>
-          СЪщо така много харесвам дизайна и мечтая един ден да работя като freelancer и сама да си правя дизайните и
-          приложенията. След като завърша тази година искам да уча софтуерни технологии и дизайн, за да постигна тази
-          моя мечта.
+          I'm also good at design and I know how to take good pictures.
+          When I'm not working on a project, I like to read or learn something new.
+          In the future, I want to become a software engineer because programming is my true passion.
         </p>
       </div>
     </div>
   </div>
 </body>
+<script src="/helpers.js"></script>
+<script>
+  let currentLanguage = window.currentLanguage;
+  translate();
+
+  function switchLanguage() {
+    changeLanguage();
+    currentLanguage = window.currentLanguage;
+    translate();
+  }
+
+  function translate() {
+    const myName = document.getElementById("name");
+    const unerlineInfoAboutMe = document.getElementById("student");
+    const whoAmIQuestion = document.getElementById("whoAmI");
+    const about = document.querySelector(".about-para");
+    const changeLanguageButton = document.getElementById("changeLang");
+
+    const translations = {
+      en: {
+        name: "Tsveti Nikolova",
+        position: "student",
+        whoAmI: "Who am i?",
+        aboutParagraf: "My name is Tsveti Nikolova and I am an 11th grade student, an applied programmer class. I have been interested in programming since 6th grade and have a great passion for learning new things. When I want something, I don't give up and I would do my best to be the best. I have high ambitions and strive for perfection in everything I do. I'm also good at design and I know how to take good pictures. When I'm not working on a project, I like to read or learn something new. In the future, I want to become a software engineer because programming is my true passion.",
+        chngLang: "Change language"
+      },
+      bg: {
+        name: "Цвети Николова",
+        position: "ученичка",
+        whoAmI: "Коя съм аз?",
+        aboutParagraf: "Казвам се Цвети Николова и съм ученичка в 11 клас, паралелка приложен програмист. Интересувам се от програмиране още от 6 клас и изпитвам голяма страст към научаването на нови неща. Когато искам нещо, не се отказвам и бих направила всичко възможно, за да бъда най-добрата. Имам високи амбиции и се стремя към съвършенство във всичко, което правя. Освен това съм добра в дизайна и умея да правя добри снимки. Когато не работя по даден проект, обичам да чета или да научавам нещо ново. В бъдеще искам да стана софтуерен инженер, защото програмирането е истинската ми страст.",
+        chngLang: "Смени езика"
+      },
+    };
+
+    changeLanguageButton.innerHTML = translations[currentLanguage].chngLang;
+    myName.innerHTML = translations[currentLanguage].name;
+    unerlineInfoAboutMe.innerHTML = translations[currentLanguage].position;
+    whoAmIQuestion.innerHTML = translations[currentLanguage].whoAmI;
+    about.innerHTML = translations[currentLanguage].aboutParagraf;
+  }
+</script>
 
 </html>

@@ -20,24 +20,29 @@
         </a>
         <ul class="nav-links">
             <div class="menu">
-                <li><a href="/events/index.html">Събития</a></li>
+                <li><a id="navEvents" href="/events/index.html">Events</a></li>
                 <li class="starsAndConstellations">
-                    <a href="/starsAndConstellations/landingPage/index.html">Звезди и Съзвездия</a>
+                    <a id="navStarsAndConstellations" href="/starsAndConstellations/landingPage/index.html">Stars &
+                        Constellations</a>
                     <ul class="dropdown">
-                        <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Звезди</a></li>
-                        <li><a href="/starsAndConstellations/constellations/ConstellationsBySeaons/index.html">Съзвездия
-                                по сезони</a>
+                        <li><a id="navStars" href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a></li>
+                        <li><a id="navConstellations"
+                                href="/starsAndConstellations/constellations/ConstellationsBySeaons/index.html">Constellations
+                                by seasons</a>
                         </li>
                     </ul>
                 </li>
             </div>
         </ul>
     </nav>
-    <h1>Съзвездия</h1>
+    <button class="button" onclick="switchLanguage()">
+        <span id="translateBtn">translate</span>
+    </button>
+    <h1 id="heading1">Constellations</h1>
     <div class="center">
         <form class="form">
-            <div class="form-title"><span>Генерирай</span></div>
-            <div class="title-2"><span>Звездна Карта</span></div>
+            <div class="form-title"><span id="generate">Generate</span></div>
+            <div class="title-2"><span id="starChart">Star Chart</span></div>
             <div class="inputs">
                 <div class="input-container">
                     <input class="input-date" id="dateInput" type="date">
@@ -148,10 +153,10 @@
                 </div>
 
                 <center><button class="submit" id="submit" onclick="generateStarChart();return false">
-                        <span class="sign-text">Генерирай</span>
+                        <span id="generateBtn" class="sign-text">Generate!</span>
                     </button></center>
             </div>
-            <p>Отнема около 10-15 секунди да се генерира.</p>
+            <p id="time">It may take 10-15 seconds to generate a star chart.</p>
         </form>
     </div>
     <div id="popupContainer" style="display: none;">
@@ -161,14 +166,18 @@
     <main>
         <section id="whatAreConstellations">
             <div class="text">
-                <h2>Какво представляват съзвездията?</h2>
-                <p id="shorterText">
-                    Има няколко различни определения за съзвездия, но много хора се сещат за
-                    съзвездия като група от звезди. Съзвездията, които можете да видите през нощта
-                    зависят от вашето местоположение на Земята и времето от годината. Съзвездията бяха
-                    наречени на предмети, животни и хора отдавна. Астрономите и днес
-                    използвайте съзвездия, за да назовавате звезди и метеорни потоци.
-
+                <h2 id="heading2">What are constellations?</h2>
+                <p id="constellationsP">
+                    There are a few different definitions of constellations, but many people think of
+                    constellations as
+                    a
+                    group of stars. The constellations you can see at night depend on your location on Earth and
+                    the
+                    time of
+                    year. Constellations were named after objects, animals, and people long ago. Astronomers today
+                    still
+                    use
+                    constellations to name stars and meteor showers.
                 </p>
             </div>
             <div class="image">
@@ -176,45 +185,50 @@
             </div>
         </section>
         <section id="visibleConstellations">
-            <h2>Какви съзвездия можете да видите на нощното небе?</h2>
+            <h2 id="heading3">What constellations can you see in the night sky?</h2>
             <div class="center">
-                <p>
-                    Съзвездията, които можете да видите през нощта, зависят от времето на годината. Земята обикаля около
-                    Слънцето веднъж годишно. Нашият поглед към космоса през нощното небе се променя, докато орбитираме.
-                    И така, нощното небе изглежда малко по-различно всяка вечер, защото Земята е на различно място в
-                    своята орбита. Звездите се появяват всяка вечер, за да се движат леко на запад от мястото, където са
-                    били предната нощ. Вашето местоположение на Земята също определя какви звезди и съзвездия виждате и
-                    колко високо изглеждат, че се издигат в небето. Северното полукълбо винаги сочи в различна посока от
-                    южното полукълбо. Това означава, че наблюдателите на звезди в Австралия например получават малко
-                    по-различен изглед на небето и могат да видят няколко различни съзвездия отколкото тези в
-                    Съединените щати. Може да е малко объркващо да си представим как нощното небе се променя, докато
-                    обикаляме около Слънцето. Можете да видите как работи всичко в илюстрацията по-долу.
+                <p id="visibleConstellationsP">
+                    The constellations you can see at night depend on the time of year. Earth orbits around the Sun once
+                    each year. Our view into space through the night sky changes as we orbit. So, the night sky
+                    looks
+                    slightly different each night because Earth is in a different spot in its orbit. The stars
+                    appear each
+                    night to move slightly west of where they were the night before.
+                    Your location on Earth also determines what stars and constellations you see, and how high they
+                    appear
+                    to rise in the sky. The Northern Hemisphere is always pointing in a different direction than the
+                    Southern Hemisphere. This means that stargazers in Australia, for example, get a slightly
+                    different view
+                    of the sky and can see a few different constellations than those in the United States.
+                    It can be a little confusing to picture how the night sky changes as we orbit the Sun. You can see
+                    how
+                    it all works in the illustration below.
                 </p>
             </div>
 
             <figure>
                 <img src="./images/visibleConstellations.png" />
-                <figcaption>
-                    Диаграма, показваща някои от съзвездията, които се виждат от Северното полукълбо през
-                    по различно време на годината. Кредит: NASA/JPL-Caltech
+                <figcaption id="figcaption">
+                    A chart showing some of the constellations that are visible from the Northern Hemisphere in
+                    different times of year. Credit: NASA/JPL-Caltech
                 </figcaption>
             </figure>
         </section>
         <section id="seasons">
-            <h2>Съзвездия по сезони</h2>
+            <h2 id="heading4">Constellations by seasons</h2>
             <div class="center">
-                <p>
-                    Съзвездията са постоянно променящи се шарки от звезди, които красят нашето нощно небе, вариращи
-                    според сезоните. От зимния блясък на Орион и Телец до Лебед и Лира през лятото, тези небесни
-                    подредби са вдъхновявали култури през цялата история. Присъединете се към нас, докато изследваме
-                    съзвездията по сезон, задълбочавайки се в тяхната богата история и завладяващо знание.
+                <p id="constellationsBySeasonsP">
+                    Constellations are ever-changing patterns of stars that grace our night sky, varying with the
+                    seasons. From the wintry brilliance of Orion and Taurus to the summer's Cygnus and Lyra, these
+                    celestial arrangements have inspired cultures throughout history. Join us as we explore the
+                    constellations by season, delving into their rich history and captivating lore.
                 </p>
             </div>
             <div class="container">
                 <div class="centerBtn">
                     <a href="/starsAndConstellations/constellations/ConstellationsBySeaons/index.html">
                         <button class="btn">
-                            Научи повече
+                            <span id="learnMore">Learn more</span>
                             <span class="arrow">
                                 <svg fill="rgb(31, 69, 252)" viewBox="0 0 320 512" height="1em"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -229,6 +243,7 @@
             </div>
         </section>
     </main>
+    <script src="/helpers.js"></script>
     <script src="./script.js"></script>
 </body>
 

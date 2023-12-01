@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="astronomy, events, celestial events, meteor shower, new moon, ful moon, lunar eclipse, solar eclipse" />
-  <meta name="keywords" content="астрономия, небесни събития, събития, метеоритни дъждове, новолуние, пълнолуние, слънчево затъмнение, лунно затъмнение" />
+  <meta name="keywords"
+    content="astronomy, events, celestial events, meteor shower, new moon, ful moon, lunar eclipse, solar eclipse" />
+  <meta name="keywords"
+    content="астрономия, небесни събития, събития, метеоритни дъждове, новолуние, пълнолуние, слънчево затъмнение, лунно затъмнение" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -19,10 +21,12 @@
     <ul class="nav-links">
       <div class="menu">
         <li class="starsAndConstellations">
-          <a href="/starsAndConstellations/landingPage/index.html">Звезди и Съзвездия</a>
+          <a id="navStarsAndConstellations" href="/starsAndConstellations/landingPage/index.html">Stars &
+            Constellations</a>
           <ul class="dropdown">
-            <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Звезди</a></li>
-            <li><a href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Съзвездия</a>
+            <li><a id="navStars" href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a></li>
+            <li><a id="navConstellations"
+                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a>
             </li>
           </ul>
         </li>
@@ -32,13 +36,16 @@
   <section class="introduction">
     <div class="line">
       <div class="textbox">
-        <p class="heading">
-          Заинтересован ли си в предстоящите астрономически събития?
+        <p id="heading1" class="heading">
+          Are you interested in astronomy?
         </p>
         <hr />
-        <p class="text">
-          Ако е така скролни надолу за да научиш кои събития предстоят и за да получиш информация за тях.
+        <p id="p" class="text">
+          If so, then scroll down to learn what events are coming and information about them.
         </p>
+        <button class="btn" onclick="switchLanguage()">
+          <span id="translateBtn">translate</span>
+      </button>
       </div>
 
       <div class="image">
@@ -59,6 +66,7 @@
     </div>
     </div>
   </section>
+  <script src="/helpers.js"></script>
   <script src="./script.js"></script>
 </body>
 

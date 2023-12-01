@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="stars, types stars, main sequence star, red giant, white dwarf, neutron star, pulsar, magnetar, red dwarfs, brown dwarfs" />
-    <meta name="keywords" content="звезди, видове звезди, звезда от главната последователност, червен гигант, бяло джудже, неутронна звезда, магнетар, пулсар, червено джудже, кафяво джудже" />
+    <meta name="keywords"
+        content="stars, types stars, main sequence star, red giant, white dwarf, neutron star, pulsar, magnetar, red dwarfs, brown dwarfs" />
+    <meta name="keywords"
+        content="звезди, видове звезди, звезда от главната последователност, червен гигант, бяло джудже, неутронна звезда, магнетар, пулсар, червено джудже, кафяво джудже" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" </head>
 
@@ -18,12 +20,13 @@
         </a>
         <ul class="nav-links">
             <div class="menu">
-                <li><a href="/events/index.html">Събития</a></li>
+                <li><a id="navEvents" href="/events/index.html">Events</a></li>
                 <li class="starsAndConstellations">
-                    <a href="/starsAndConstellations/landingPage/index.html">Звезди и Съзвездия</a>
+                    <a id="navStarsAndConstellations" href="/starsAndConstellations/landingPage/index.html">Stars &
+                        Constellations</a>
                     <ul class="dropdown">
-                        <li><a
-                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Съзвездия</a>
+                        <li><a id="navConstellations"
+                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a>
                         </li>
                     </ul>
                 </li>
@@ -31,30 +34,36 @@
         </ul>
     </nav>
     <header>
-        <h1 id="heading">Звезди</h1>
-        <input type="text" class="icon" id="input" value
-            placeholder="Потърси име на звезда на английски">
+        <h1 id="heading">Stars</h1>
+        <button class="btn" onclick="switchLanguage()">
+            <span id="translateBtn">translate</span>
+        </button>
+        <input id="placeholder" type="text" class="icon" value
+            placeholder="Search about star and learn information for it">
     </header>
     <div class="navigation">
-        <a href="/starsAndConstellations/stars/StarBasics/index.html">Основи</a>
+        <a id="basics" href="/starsAndConstellations/stars/StarBasics/index.html">Basics</a>
         <div class="centered-item">
-            <a class="active" href="#">Видове звезди</a>
+            <a id="typesStars" class="active" href="#">Types stars</a>
             <div class="triangle"></div>
         </div>
-        <a href="/starsAndConstellations/stars/MultypleStarSystems/index.html">Множество звездни системи</a>
+        <a id="multipleStarsSystems" href="/starsAndConstellations/stars/MultypleStarSystems/index.html">Multiple
+            star systems</a>
     </div>
     <main>
         <section>
             <div class="content">
                 <span class="text">
-                    <h2>
-                        Видове звезди
+                    <h2 id="typesStarsHeading">
+                        Types stars
                     </h2>
-                    <p>
-                        Вселената е изпълнена с удивително разнообразие от звезди, всяка от които притежава уникални
-                        характеристики, които ги отличават една от друга. Звездите се различават значително по отношение
-                        на тяхната яркост, размер, цвят и поведение. Някои видове се превръщат в други много бързо,
-                        докато други остават относително непроменени в продължение на трилиони години.
+                    <p id="typesStarsP">
+                        The universe is filled with an astonishing diversity of stars,
+                        each possessing unique characteristics that set them apart
+                        from one another. Stars vary widely in terms of their
+                        brightness, size, color, and behavior. Some types change into
+                        others very quickly, while others stay
+                        relatively unchanged over trillions of years.
                     </p>
                 </span>
                 <div class="image">
@@ -65,28 +74,32 @@
         <section>
             <div class="textAndImage">
                 <div class="image">
-                    <h2>
-                        Звезди от главната <br> последователност
+                    <h2 id="mainSequence">
+                        Main Sequence Stars
                     </h2>
                     <img src="./images/MainSequenceStar.png">
                 </div>
                 <span class="rightText">
-                    <p id="longerText">
-                        Нормална звезда се образува от прах и газ в звездна ясла, набирайки маса и нагрявайки се в
-                        продължение на стотици хиляди години. Когато сърцевината му достигне милиони градуси, ядреният
-                        синтез започва, когато водородните ядра се сливат в хелий, освобождавайки енергия, която
-                        противодейства на гравитацията. Такива звезди, известни като звезди от главната
-                        последователност, съставляват около 90% от всички звезди. Те се различават по размер, цвят и
-                        яркост, като продължителността им варира от милиони до милиарди години.
+                    <p id="mainSequenceP">
+                        A normal star forms from dust and gas in a stellar
+                        nursery, gaining mass and heating up over hundreds of thousands of years.
+                        When its core reaches millions of degrees, nuclear fusion begins
+                        as hydrogen nuclei merge into helium, releasing
+                        energy that counters gravity. Such stars, known as main sequence stars,
+                        make up about 90% of all stars. They vary in size, color,
+                        and luminosity, with lifespans ranging from millions to billions of years.
                     </p>
                 </span>
             </div>
             <div class="forStargazes">
                 <fieldset>
-                    <legend>Допълнителна информация</legend>
-                    <span>
-                        Много звезди от главната последователност могат да се видят с невъоръжено око, като Сириус –
-                        най-ярката звезда в нощното небе – в северното съзвездие Голямо куче.
+                    <legend class="legend">For stargazers</legend>
+                    <span id="legend1">
+                        Many main sequence stars can be seen with the
+                        unaided eye,
+                        such as Sirius – the brightest star
+                        in the night sky – in the northern constellation
+                        Canis Major.
                     </span>
                 </fieldset>
             </div>
@@ -95,19 +108,22 @@
             <div class="biggerScreen">
                 <div class="textAndImage">
                     <div class="text">
-                        <p>
-                            Когато звезда от главната последователност под осем слънчеви маси изчерпи водород в ядрото
-                            си, тя колабира поради гравитацията, повишавайки температурата и налягането. Сливането на
-                            хелий във въглерод освобождава енергия, причинявайки сливането на водорода да разширява
-                            външните слоеве, образувайки червен гигант. Тези червени гиганти често изглеждат оранжеви.
-                            Те стават нестабилни, пулсират и изхвърлят атмосферата си, като в крайна сметка разпръскват
-                            външните си слоеве като планетарна мъглявина. Нашето Слънце ще се превърне в червен гигант
-                            след около 5 милиарда години.
+                        <p class="redGiantsP">
+                            When a main sequence star under eight solar masses exhausts core hydrogen, it collapses due
+                            to
+                            gravity, raising temperature and pressure. Helium fusion into carbon releases energy,
+                            causing
+                            hydrogen fusion to expand the outer layers, forming a red giant. These red giants often
+                            appear
+                            orange. They become unstable, pulsate, and eject their atmospheres, ultimately
+                            dispersing their
+                            outer layers as a planetary nebula. Our Sun will become a red giant in about 5 billion
+                            years.
                         </p>
                     </div>
                     <div class="image">
-                        <h2>
-                            Червени гиганти
+                        <h2 class="redGiants">
+                            Red Giants
                         </h2>
                         <img src="./images/RedGiant.png">
                     </div>
@@ -116,31 +132,35 @@
             <div class="smallerScreen">
                 <div class="textAndImage">
                     <div class="image">
-                        <h2>
-                            Червени гиганти
+                        <h2 class="redGiants">
+                            Red Giants
                         </h2>
                         <img src="./images/RedGiant.png">
                     </div>
                     <div class="text">
-                        <p>
-                            Когато звезда от главната последователност под осем слънчеви маси изчерпи водород в ядрото
-                            си, тя колабира поради гравитацията, повишавайки температурата и налягането. Сливането на
-                            хелий във въглерод освобождава енергия, причинявайки сливането на водорода да разширява
-                            външните слоеве, образувайки червен гигант. Тези червени гиганти често изглеждат оранжеви.
-                            Те стават нестабилни, пулсират и изхвърлят атмосферата си, като в крайна сметка разпръскват
-                            външните си слоеве като планетарна мъглявина. Нашето Слънце ще се превърне в червен гигант
-                            след около 5 милиарда години.
+                        <p class="redGiantsP">
+                            When a main sequence star under eight solar masses exhausts core hydrogen, it collapses due
+                            to
+                            gravity, raising temperature and pressure. Helium fusion into carbon releases energy,
+                            causing
+                            hydrogen fusion to expand the outer layers, forming a red giant. These red giants often
+                            appear
+                            orange. They become unstable, pulsate, and eject their atmospheres, ultimately
+                            dispersing their
+                            outer layers as a planetary nebula. Our Sun will become a red giant in about 5 billion
+                            years.
                         </p>
                     </div>
                 </div>
             </div>
             <div class="forStargazes">
                 <fieldset>
-                    <legend>Допълнителна информация</legend>
-                    <span>
-                        Арктур в северното съзвездие Воловар и Гама Круцис в
-                        южното съзвездие Крукс (Южният кръст) са
-                        червени гиганти, видими с невъоръжено око.
+                    <legend class="legend">For stargazers</legend>
+                    <span id="legend2">
+                        Arcturus in the northern constellation Boötes
+                        and Gamma Crucis in the southern constellation
+                        Crux (the Southern Cross) are red giants visible
+                        to the unaided eye.
                     </span>
                 </fieldset>
             </div>
@@ -148,30 +168,38 @@
         <section>
             <div class="textAndImage">
                 <div class="image">
-                    <h2>
-                        Бели джуджета
+                    <h2 id="whiteDwarfs">
+                        White Dwarfs
                     </h2>
                     <img src="./images/WhiteDwarf.png">
                 </div>
                 <div class="rightText">
-                    <p>
-                        Когато червеният гигант изхвърли външните си слоеве, той оставя след себе си ядро на бяло
-                        джудже, обикновено с размерите на Земята, но много по-масивно. Една чаена лъжичка от техния
-                        материал може да надхвърли един пикап. Белите джуджета се охлаждат в продължение на милиарди
-                        години, като понякога излъчват видима светлина от синьо до червено. Някои съдържат прашни
-                        дискове и планетарни останки от миналото им на червени гиганти. След около 10 милиарда години
-                        нашето Слънце също ще се трансформира в бяло джудже след фазата си на червен гигант.
+                    <p id="whiteDwarfsP">
+                        When a red giant sheds its outer layers, it leaves behind a white dwarf core, typically
+                        Earth-sized
+                        but far more massive. A teaspoon of their material can outweigh a pickup truck. White
+                        dwarfs
+                        cool
+                        over billions of years, occasionally emitting visible light from blue to red. Some host
+                        dusty
+                        disks
+                        and planetary remnants from their red giant past. In about 10 billion years, our Sun
+                        will also
+                        transform into a white dwarf following its red giant phase.
                     </p>
                 </div>
             </div>
             <div class="forStargazes">
                 <fieldset>
-                    <legend>Допълнителна информация</legend>
-                    <span>
-                        Белите джуджета често са твърде слаби за наблюдение с невъоръжено око, но могат да бъдат
-                        забелязани в двойни системи с по-ярки звезди от главната последователност, като Procyon B в
-                        Canis Minor. Ако имате телескоп, можете да наблюдавате отделни бели джуджета като LP 145-141 в
-                        Musca (южното съзвездие) и звездата на Van Maanen в Риби (северното съзвездие).
+                    <legend class="legend">For stargazers</legend>
+                    <span id="legend3">
+                        White dwarfs are often too faint for naked-eye observation but can be spotted in binary
+                        systems
+                        with brighter main sequence stars, like Procyon B in Canis Minor. If you have a telescope,
+                        you
+                        can observe individual white dwarfs like LP 145-141 in Musca (southern constellation) and
+                        Van
+                        Maanen's star in Pisces (northern constellation).
                     </span>
                 </fieldset>
             </div>
@@ -180,19 +208,26 @@
             <div class="biggerScreen">
                 <div class="textAndImage">
                     <div class="text">
-                        <p>
-                            Неутронна звезда се образува, когато звезда от главната последователност с маса между осем и
-                            20 пъти масата на Слънцето изчерпи водорода в ядрото си. Звездата първоначално слива хелий
-                            във въглерод, след това превръща въглерода в по-тежки елементи като неон, кислород, силиций
-                            и накрая желязо, освобождавайки енергия, която предотвратява колапса на ядрото. Въпреки
-                            това, докато достига до синтез на желязо, звездата изчерпва горивото си, което води до бърз
-                            колапс на ядрото, отскачане и мощна експлозия на свръхнова. Остатъчното ядро е свръхплътна
-                            неутронна звезда.
+                        <p class="neutronStarP">
+                            A neutron star forms when a main sequence star with between about eight and 20 times the
+                            Sun’s
+                            mass
+                            runs out of hydrogen in its core. The star initially fuses helium into carbon, then
+                            converts
+                            carbon
+                            into heavier elements like neon, oxygen, silicon, and finally iron, releasing energy that
+                            prevents
+                            core collapse. However, as it reaches iron fusion, the star runs out of fuel, leading to a
+                            rapid
+                            core collapse, rebound, and a powerful supernova explosion. The remnant core is a
+                            superdense
+                            neutron
+                            star.
                         </p>
                     </div>
                     <div class="image">
-                        <h2>
-                            Неутронни звезди
+                        <h2 class="neutronStar">
+                            Neutron Stars
                         </h2>
                         <img src="./images/NeutronStar.png" />
                     </div>
@@ -201,42 +236,52 @@
             <div class="smallerScreen">
                 <div class="textAndImage">
                     <div class="image">
-                        <h2>
-                            Неутронни звезди
+                        <h2 class="neutronStar">
+                            Neutron Stars
                         </h2>
                         <img src="./images/NeutronStar.png" />
                     </div>
                     <div class="text">
-                        <p>
-                            Неутронна звезда се образува, когато звезда от главната последователност с маса между осем и
-                            20 пъти масата на Слънцето изчерпи водорода в ядрото си. Звездата първоначално слива хелий
-                            във въглерод, след това превръща въглерода в по-тежки елементи като неон, кислород, силиций
-                            и накрая желязо, освобождавайки енергия, която предотвратява колапса на ядрото. Въпреки
-                            това, докато достига до синтез на желязо, звездата изчерпва горивото си, което води до бърз
-                            колапс на ядрото, отскачане и мощна експлозия на свръхнова. Остатъчното ядро е свръхплътна
-                            неутронна звезда.
+                        <p class="neutronStarP">
+                            A neutron star forms when a main sequence star with between about eight and 20 times the
+                            Sun’s
+                            mass
+                            runs out of hydrogen in its core. The star initially fuses helium into carbon, then
+                            converts
+                            carbon
+                            into heavier elements like neon, oxygen, silicon, and finally iron, releasing energy that
+                            prevents
+                            core collapse. However, as it reaches iron fusion, the star runs out of fuel, leading to a
+                            rapid
+                            core collapse, rebound, and a powerful supernova explosion. The remnant core is a
+                            superdense
+                            neutron
+                            star.
                         </p>
                     </div>
                 </div>
             </div>
             <span class="pulsarsAndMagnetars">
                 <div class="pulsars">
-                    <h2>Пулсари</h2>
-                    <p>
-                        Tе са вид бързо въртящи се неутронни звезди. Докато се
-                        въртят, петната се въртят навътре и извън
-                        видимостта като лъчи на фар. Някои пулсари се въртят
-                        по-бързо от остриетата на миксера.
+                    <h2 id="pulsars">Pulsars</h2>
+                    <p id="pulsarsP">
+                        these are a type of rapidly rotating neutron star.
+                        As they rotate, the spots spin in and out of
+                        view like the beams of a lighthouse. Some pulsars
+                        spin faster than blender blades.
                     </p>
                     <div class="image">
                         <img src="./images/Pulsar.png" />
                     </div>
                 </div>
                 <div class="magnetars">
-                    <h2>Магнетари</h2>
-                    <p class="rightText">
-                        Всички неутронни звезди имат силни магнитни полета. Но магнетарът може да бъде 10 трилиона пъти
-                        по-силен от магнита за хладилник и до хиляда пъти по-силен от типичната неутронна звезда.
+                    <h2 id="magnetars">Magnetars</h2>
+                    <p id="magnetarsP" class="rightText">
+                        All neutron stars have strong magnetic fields.
+                        But a magnetar’s can be 10 trillion times
+                        stronger than a refrigerator magnet’s and up
+                        to a thousand times stronger than a typical neutron
+                        star’s.
                     </p>
                     <div class="image">
                         <img src="./images/Magnetar.png" />
@@ -245,11 +290,13 @@
             </span>
             <div class="forStargazes">
                 <fieldset>
-                    <legend>Допълнителна информация</legend>
-                    <span>
-                        Неутронните звезди са твърде слаби, за да се видят с невъоръжено око или с телескопи в задния
-                        двор, въпреки че космическият телескоп Хъбъл успя да улови няколко във видима светлина.
-                        Астрономите обикновено ги наблюдават чрез рентгенови лъчи и радиоизлъчване.
+                    <legend class="legend">For stargazers</legend>
+                    <span id="legend4">
+                        Neutron stars are too faint to see with the unaided eye or backyard telescopes, although the
+                        Hubble
+                        Space Telescope has been able to capture a few in visible light. Astronomers usually
+                        observe them
+                        via X-rays and radio emission.
                     </span>
                 </fieldset>
             </div>
@@ -257,30 +304,35 @@
             <section>
                 <div class="textAndImage">
                     <div class="image">
-                        <h2>
-                            Червени джуджета
+                        <h2 id="redDwarfs">
+                            ЧRed Dwarfs
                         </h2>
                         <img src="./images/RedDwarfs.png">
                     </div>
                     <div class="rightText">
-                        <p>
-                            Червените джуджета, най-малките звезди от главната последователност, са по-хладни и често
-                            изглеждат оранжеви на цвят. Те поддържат постоянен процес на синтез, който им позволява да
-                            изгарят своите запаси от водород за трилиони години без значителни структурни промени. Някои
-                            червени джуджета с ниска маса, само една трета от масата на Слънцето, може да имат
-                            продължителност на живота, надхвърляща настоящата възраст на Вселената, до около 14 трилиона
-                            години. Червените джуджета са изобилни и съставляват приблизително 75% от звездното
-                            население на Млечния път.
+                        <p id="redDwarfsP">
+                            Red dwarfs, the smallest main sequence stars, are cooler and often appear orange in color.
+                            They
+                            maintain a constant fusion process that allows them to burn through their hydrogen supply
+                            for
+                            trillions of years without significant structural changes. Some low-mass red dwarfs, just a
+                            third of
+                            the Sun's mass, may have lifespans exceeding the current age of the universe, up to about
+                            14
+                            trillion years. Red dwarfs are abundant and make up roughly 75% of the Milky Way's stellar
+                            population.
                         </p>
                     </div>
                 </div>
                 <div class="forStargazes">
                     <fieldset>
-                        <legend>Допълнителна информация</legend>
-                        <span>
-                            Червените джуджета са твърде слаби, за да ги видите с невъоръжено око. Но с телескоп в
-                            задния двор може да успеете да видите Lacaille 8760 в южното съзвездие Microscopium или
-                            Lalande 21185 в северното съзвездие Голяма мечка.
+                        <legend class="legend">For stargazers</legend>
+                        <span id="legend5">
+                            Red dwarfs are too faint to see with the unaided
+                            eye. But with a backyard telescope, you may be
+                            able to see Lacaille 8760 in the southern constellation
+                            Microscopium or Lalande 21185 in the
+                            northern constellation Ursa Major.
                         </span>
                     </fieldset>
                 </div>
@@ -289,19 +341,29 @@
                 <div class="biggerScreen">
                     <div class="textAndImage">
                         <div class="text">
-                            <p>
-                                Кафявите джуджета технически не са звезди. Те са по-масивни от планетите, но не толкова
-                                масивни, колкото звездите. Обикновено те имат между 13 и 80 пъти масата на Юпитер. Те не
-                                излъчват почти никаква видима светлина, но учените са видели няколко в инфрачервена
-                                светлина. Някои кафяви джуджета се образуват по същия начин като звездите от главната
-                                последователност, от газови и прахови купчини в мъглявини, но те никога не набират
-                                достатъчно маса, за да извършат синтез в мащаба на звезда от главната последователност.
-                                Други могат да се образуват като планети, от дискове от газ и прах около звездите.
+                            <p class="brownDwarfsP">
+                                Brown dwarfs aren’t technically stars. They’re more massive than planets but not quite
+                                as
+                                massive as
+                                stars. Generally, they have between 13 and 80 times the mass of Jupiter. They emit
+                                almost
+                                no
+                                visible
+                                light, but scientists have seen a few in infrared light. Some brown dwarfs form the same
+                                way as
+                                main
+                                sequence stars, from gas and dust clumps in nebulae, but they never gain enough mass
+                                to do
+                                fusion on
+                                the scale of a main sequence star. Others may form like planets, from disks of gas and
+                                dust
+                                around
+                                stars.
                             </p>
                         </div>
                         <div class="image">
-                            <h2>
-                                Кафяви джуджета
+                            <h2 class="brownDwarfs">
+                                Brown Dwarfs
                             </h2>
                             <img src="./images/BrownDwarf.png">
                         </div>
@@ -310,36 +372,348 @@
                 <div class="smallerScreen">
                     <div class="textAndImage">
                         <div class="image">
-                            <h2>
-                                Кафяви джуджета
+                            <h2 class="brownDwarfs">
+                                Brown Dwarfs
                             </h2>
                             <img src="./images/BrownDwarf.png">
                         </div>
                         <div class="text">
-                            <p>
-                                Кафявите джуджета технически не са звезди. Те са по-масивни от планетите, но не толкова
-                                масивни, колкото звездите. Обикновено те имат между 13 и 80 пъти масата на Юпитер. Те не
-                                излъчват почти никаква видима светлина, но учените са видели няколко в инфрачервена
-                                светлина. Някои кафяви джуджета се образуват по същия начин като звездите от главната
-                                последователност, от газови и прахови купчини в мъглявини, но те никога не набират
-                                достатъчно маса, за да извършат синтез в мащаба на звезда от главната последователност.
-                                Други могат да се образуват като планети, от дискове от газ и прах около звездите.
+                            <p class="brownDwarfsP">
+                                Brown dwarfs aren’t technically stars. They’re more massive than planets but not quite
+                                as
+                                massive as
+                                stars. Generally, they have between 13 and 80 times the mass of Jupiter. They emit
+                                almost
+                                no
+                                visible
+                                light, but scientists have seen a few in infrared light. Some brown dwarfs form the same
+                                way as
+                                main
+                                sequence stars, from gas and dust clumps in nebulae, but they never gain enough mass
+                                to do
+                                fusion on
+                                the scale of a main sequence star. Others may form like planets, from disks of gas and
+                                dust
+                                around
+                                stars.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="forStargazes">
                     <fieldset>
-                        <legend>Допълнителна информация</legend>
-                        <span>
-                            Кафявите джуджета обикновено са невидими както за невъоръжено око, така и за малки телескопи
-                            в задния двор поради тяхната слабост и малки размери.
+                        <legend class="legend">For stargazers</legend>
+                        <span id="legend6">
+                            Brown dwarfs are generally invisible to both the unaided eye and small backyard telescopes
+                            due
+                            to their faintness and small size.
                         </span>
                     </fieldset>
                 </div>
             </section>
     </main>
     <script src="/starsAndConstellations/stars/StarBasics/script.js"></script>
+    <script src="/helpers.js"></script>
+    <script>
+        let currentLanguage = window.currentLanguage;
+        translate();
+        function switchLanguage() {
+            changeLanguage();
+            currentLanguage = window.currentLanguage;
+            translate();
+        }
+
+        function translate() {
+            const changeLanguageButton = document.getElementById("translateBtn");
+            const navEvents = document.getElementById("navEvents");
+            const navStarsAndConstellations = document.getElementById("navStarsAndConstellations");
+            const navConstellations = document.getElementById("navConstellations");
+            const heading = document.getElementById("heading");
+            const typesStars = document.getElementById("typesStars");
+            const multipleStarsSystems = document.getElementById("multipleStarsSystems");
+            const typesStarsHeading = document.getElementById("typesStarsHeading");
+            const typesStarsP = document.getElementById("typesStarsP");
+            const mainSequence = document.getElementById("mainSequence");
+            const mainSequenceP = document.getElementById("mainSequenceP");
+            const legend = document.querySelectorAll(".legend");
+            const redGiants = document.querySelectorAll(".redGiants");
+            const redGiantsP = document.querySelectorAll(".redGiantsP");
+            const whiteDwarfs = document.getElementById("whiteDwarfs");
+            const whiteDwarfsP = document.getElementById("whiteDwarfsP");
+            const neutronStarP = document.querySelectorAll(".neutronStarP");
+            const neutronStar = document.querySelectorAll(".neutronStar");
+            const pulsars = document.getElementById("pulsars");
+            const pulsarsP = document.getElementById("pulsarsP");
+            const magnetars = document.getElementById("magnetars");
+            const magnetarsP = document.getElementById("magnetarsP");
+            const redDwarfs = document.getElementById("redDwarfs");
+            const redDwarfsP = document.getElementById("redDwarfsP");
+            const brownDwarfsP = document.querySelectorAll(".brownDwarfsP");
+            const brownDwarfs = document.querySelectorAll(".brownDwarfs");
+            const legend1 = document.getElementById("legend1");
+            const legend2 = document.getElementById("legend2");
+            const legend3 = document.getElementById("legend3");
+            const legend4 = document.getElementById("legend4");
+            const legend5 = document.getElementById("legend5");
+            const legend6 = document.getElementById("legend6");
+
+            const translations = {
+                en: {
+                    cngLangButton: "translate",
+                    navEvents: "Events",
+                    navStarsAndConstellations: "Stars & Constellations",
+                    navConstellations: "Constellations",
+                    heading: "Stars",
+                    placeholder: "Search about star and learn information for it",
+                    basics: "Basics",
+                    typesStars: "Types stars",
+                    multipleStarsSystems: "Multiple Star Systems",
+                    typesStarsHeading: "Types of Stars",
+                    typesStarsP: `The universe is filled with an astonishing diversity of stars,
+                        each possessing unique characteristics that set them apart
+                        from one another. Stars vary widely in terms of their
+                        brightness, size, color, and behavior. Some types change into
+                        others very quickly, while others stay
+                        relatively unchanged over trillions of years.`,
+                    mainSequence: "Main Sequence Stars",
+                    mainSequenceP: `A normal star forms from dust and gas in a stellar
+                        nursery, gaining mass and heating up over hundreds of thousands of years.
+                        When its core reaches millions of degrees, nuclear fusion begins
+                        as hydrogen nuclei merge into helium, releasing
+                        energy that counters gravity. Such stars, known as main sequence stars,
+                        make up about 90% of all stars. They vary in size, color,
+                        and luminosity, with lifespans ranging from millions to billions of years.`,
+                    legend: "For stargazers",
+                    redGiants: "Red Giants",
+                    redGiantsP: `When a main sequence star under eight solar masses exhausts core hydrogen, it collapses due
+                        to
+                        gravity, raising temperature and pressure. Helium fusion into carbon releases energy,
+                        causing
+                        hydrogen fusion to expand the outer layers, forming a red giant. These red giants often
+                        appear
+                        orange. They become unstable, pulsate, and eject their atmospheres, ultimately
+                        dispersing their
+                        outer layers as a planetary nebula. Our Sun will become a red giant in about 5 billion
+                        years.`,
+                    whiteDwarfs: "White Dwarfs",
+                    whiteDwarfsP: `When a red giant sheds its outer layers, it leaves behind a white dwarf core, typically
+                        Earth-sized
+                        but far more massive. A teaspoon of their material can outweigh a pickup truck. White
+                        dwarfs
+                        cool
+                        over billions of years, occasionally emitting visible light from blue to red. Some host
+                        dusty
+                        disks
+                        and planetary remnants from their red giant past. In about 10 billion years, our Sun
+                        will also
+                        transform into a white dwarf following its red giant phase.`,
+                    neutronStar: "Neutron Stars",
+                    neutronStarP: `A neutron star forms when a main sequence star with between about eight and 20 times the
+                        Sun’s
+                        mass
+                        runs out of hydrogen in its core. The star initially fuses helium into carbon, then
+                        converts
+                        carbon
+                        into heavier elements like neon, oxygen, silicon, and finally iron, releasing energy that
+                        prevents
+                        core collapse. However, as it reaches iron fusion, the star runs out of fuel, leading to a
+                        rapid
+                        core collapse, rebound, and a powerful supernova explosion. The remnant core is a
+                        superdense
+                        neutron
+                        star.`,
+                    pulsars: "Pulsars",
+                    pulsarsP: `these are a type of rapidly rotating neutron star.
+                        As they rotate, the spots spin in and out of
+                        view like the beams of a lighthouse. Some pulsars
+                        spin faster than blender blades.`,
+                    magnetars: "Magnetars",
+                    magnetarsP: `All neutron stars have strong magnetic fields.
+                        But a magnetar’s can be 10 trillion times
+                        stronger than a refrigerator magnet’s and up
+                        to a thousand times stronger than a typical neutron
+                        star’s.`,
+                    redDwarfs: "Red Dwarfs",
+                    redDwarfsP: `Red dwarfs, the smallest main sequence stars, are cooler and often appear orange in color.
+                        They
+                        maintain a constant fusion process that allows them to burn through their hydrogen supply
+                        for
+                        trillions of years without significant structural changes. Some low-mass red dwarfs, just a
+                        third of
+                        the Sun's mass, may have lifespans exceeding the current age of the universe, up to about
+                        14
+                        trillion years. Red dwarfs are abundant and make up roughly 75% of the Milky Way's stellar
+                        population.`,
+                    brownDwarfs: "Brown Dwarfs",
+                    brownDwarfsP: `Brown dwarfs aren’t technically stars. They’re more massive than planets but not quite as
+                        massive as
+                        stars. Generally, they have between 13 and 80 times the mass of Jupiter. They emit almost
+                        no
+                        visible
+                        light, but scientists have seen a few in infrared light. Some brown dwarfs form the same
+                        way as
+                        main
+                        sequence stars, from gas and dust clumps in nebulae, but they never gain enough mass
+                        to do
+                        fusion on
+                        the scale of a main sequence star. Others may form like planets, from disks of gas and dust
+                        around
+                        stars.`,
+                    legend1: `Many main sequence stars can be seen with the
+                        unaided eye,
+                        such as Sirius – the brightest star
+                        in the night sky – in the northern constellation
+                        Canis Major.`,
+                    legend2: `Arcturus in the northern constellation Boötes
+                        and Gamma Crucis in the southern constellation
+                        Crux (the Southern Cross) are red giants visible
+                        to the unaided eye.`,
+                    legend3: `White dwarfs are often too faint for naked-eye observation but can be spotted in binary
+                        systems
+                        with brighter main sequence stars, like Procyon B in Canis Minor. If you have a telescope,
+                        you
+                        can observe individual white dwarfs like LP 145-141 in Musca (southern constellation) and
+                        Van
+                        Maanen's star in Pisces (northern constellation).`,
+                    legend4: `Neutron stars are too faint to see with the unaided eye or backyard telescopes, although the
+                        Hubble
+                        Space Telescope has been able to capture a few in visible light. Astronomers usually
+                        observe them
+                        via X-rays and radio emission.`,
+                    legend5: `Red dwarfs are too faint to see with the unaided
+                        eye. But with a backyard telescope, you may be
+                        able to see Lacaille 8760 in the southern constellation
+                        Microscopium or Lalande 21185 in the
+                        northern constellation Ursa Major.`,
+                    legend6: `Brown dwarfs are generally invisible to both the unaided eye and small backyard telescopes due
+                        to their faintness and small size.`
+                },
+                bg: {
+                    cngLangButton: "преведи",
+                    navEvents: "Сбития",
+                    navStarsAndConstellations: "Звезди и Съзвездия",
+                    navConstellations: "Съзвездия",
+                    heading: "Звезди",
+                    placeholder: "Потърси име на звезда на английски",
+                    basics: "Основи",
+                    typesStars: "Видове звезди",
+                    multipleStarsSystems: "Множество звездни системи",
+                    typesStarsHeading: "Видове звезди",
+                    typesStarsP: `Вселената е изпълнена с удивително разнообразие от звезди, всяка от които притежава уникални
+                        характеристики, които ги отличават една от друга. Звездите се различават значително по отношение
+                        на тяхната яркост, размер, цвят и поведение. Някои видове се превръщат в други много бързо,
+                        докато други остават относително непроменени в продължение на трилиони години.`,
+                    mainSequence: " Звезди от главната <br> последователност",
+                    mainSequenceP: `Нормална звезда се образува от прах и газ в звездна ясла, набирайки маса и нагрявайки се в
+                        продължение на стотици хиляди години. Когато сърцевината му достигне милиони градуси, ядреният
+                        синтез започва, когато водородните ядра се сливат в хелий, освобождавайки енергия, която
+                        противодейства на гравитацията. Такива звезди, известни като звезди от главната
+                        последователност, съставляват около 90% от всички звезди. Те се различават по размер, цвят и
+                        яркост, като продължителността им варира от милиони до милиарди години.`,
+                    legend: "Допълнителна информация",
+                    redGiants: "Червени гиганти",
+                    redGiantsP: `Когато звезда от главната последователност под осем слънчеви маси изчерпи водород в ядрото
+                            си, тя колабира поради гравитацията, повишавайки температурата и налягането. Сливането на
+                            хелий във въглерод освобождава енергия, причинявайки сливането на водорода да разширява
+                            външните слоеве, образувайки червен гигант. Тези червени гиганти често изглеждат оранжеви.
+                            Те стават нестабилни, пулсират и изхвърлят атмосферата си, като в крайна сметка разпръскват
+                            външните си слоеве като планетарна мъглявина. Нашето Слънце ще се превърне в червен гигант
+                            след около 5 милиарда години.`,
+                    whiteDwarfs: "Бели джуджета",
+                    whiteDwarfsP: `Когато червеният гигант изхвърли външните си слоеве, той оставя след себе си ядро на бяло
+                        джудже, обикновено с размерите на Земята, но много по-масивно. Една чаена лъжичка от техния
+                        материал може да надхвърли един пикап. Белите джуджета се охлаждат в продължение на милиарди
+                        години, като понякога излъчват видима светлина от синьо до червено. Някои съдържат прашни
+                        дискове и планетарни останки от миналото им на червени гиганти. След около 10 милиарда години
+                        нашето Слънце също ще се трансформира в бяло джудже след фазата си на червен гигант.`,
+                    neutronStar: "Неутронни звезди",
+                    neutronStarP: `Неутронна звезда се образува, когато звезда от главната последователност с маса между осем и
+                            20 пъти масата на Слънцето изчерпи водорода в ядрото си. Звездата първоначално слива хелий
+                            във въглерод, след това превръща въглерода в по-тежки елементи като неон, кислород, силиций
+                            и накрая желязо, освобождавайки енергия, която предотвратява колапса на ядрото. Въпреки
+                            това, докато достига до синтез на желязо, звездата изчерпва горивото си, което води до бърз
+                            колапс на ядрото, отскачане и мощна експлозия на свръхнова. Остатъчното ядро е свръхплътна
+                            неутронна звезда.`,
+                    pulsars: "Пулсари",
+                    pulsarsP: `Tе са вид бързо въртящи се неутронни звезди. Докато се
+                        въртят, петната се въртят навътре и извън
+                        видимостта като лъчи на фар. Някои пулсари се въртят
+                        по-бързо от остриетата на миксера.`,
+                    magnetars: "Магнетари",
+                    magnetarsP: `Всички неутронни звезди имат силни магнитни полета. Но магнетарът може да бъде 10 трилиона пъти
+                        по-силен от магнита за хладилник и до хиляда пъти по-силен от типичната неутронна звезда.`,
+                    redDwarfs: " Червени джуджета",
+                    redDwarfsP: `Червените джуджета, най-малките звезди от главната последователност, са по-хладни и често
+                            изглеждат оранжеви на цвят. Те поддържат постоянен процес на синтез, който им позволява да
+                            изгарят своите запаси от водород за трилиони години без значителни структурни промени. Някои
+                            червени джуджета с ниска маса, само една трета от масата на Слънцето, може да имат
+                            продължителност на живота, надхвърляща настоящата възраст на Вселената, до около 14 трилиона
+                            години. Червените джуджета са изобилни и съставляват приблизително 75% от звездното
+                            население на Млечния път.`,
+                    brownDwarfs: "Кафяви джуджета",
+                    brownDwarfsP: `Кафявите джуджета технически не са звезди. Те са по-масивни от планетите, но не толкова
+                                масивни, колкото звездите. Обикновено те имат между 13 и 80 пъти масата на Юпитер. Те не
+                                излъчват почти никаква видима светлина, но учените са видели няколко в инфрачервена
+                                светлина. Някои кафяви джуджета се образуват по същия начин като звездите от главната
+                                последователност, от газови и прахови купчини в мъглявини, но те никога не набират
+                                достатъчно маса, за да извършат синтез в мащаба на звезда от главната последователност.
+                                Други могат да се образуват като планети, от дискове от газ и прах около звездите.`,
+                    legend1: `Много звезди от главната последователност могат да се видят с невъоръжено око, като Сириус –
+                        най-ярката звезда в нощното небе – в северното съзвездие Голямо куче.`,
+                    legend2: `Арктур в северното съзвездие Воловар и Гама Круцис в
+                        южното съзвездие Крукс (Южният кръст) са
+                        червени гиганти, видими с невъоръжено око.`,
+                    legend3: `Белите джуджета често са твърде слаби за наблюдение с невъоръжено око, но могат да бъдат
+                        забелязани в двойни системи с по-ярки звезди от главната последователност, като Procyon B в
+                        Canis Minor. Ако имате телескоп, можете да наблюдавате отделни бели джуджета като LP 145-141 в
+                        Musca (южното съзвездие) и звездата на Van Maanen в Риби (северното съзвездие).`,
+                    legend4: `Неутронните звезди са твърде слаби, за да се видят с невъоръжено око или с телескопи в задния
+                        двор, въпреки че космическият телескоп Хъбъл успя да улови няколко във видима светлина.
+                        Астрономите обикновено ги наблюдават чрез рентгенови лъчи и радиоизлъчване.`,
+                    legend5: `Червените джуджета са твърде слаби, за да ги видите с невъоръжено око. Но с телескоп в
+                            задния двор може да успеете да видите Lacaille 8760 в южното съзвездие Microscopium или
+                            Lalande 21185 в северното съзвездие Голяма мечка.`,
+                    legend6: `Кафявите джуджета обикновено са невидими както за невъоръжено око, така и за малки телескопи
+                            в задния двор поради тяхната слабост и малки размери.`
+                },
+            };
+            changeLanguageButton.innerHTML = translations[currentLanguage].cngLangButton;
+            navEvents.innerHTML = translations[currentLanguage].navEvents;
+            navStarsAndConstellations.innerHTML = translations[currentLanguage].navStarsAndConstellations;
+            navConstellations.innerHTML = translations[currentLanguage].navConstellations;
+            heading.innerHTML = translations[currentLanguage].heading;
+            document.getElementById("placeholder").placeholder = translations[currentLanguage].placeholder;
+            basics.innerHTML = translations[currentLanguage].basics;
+            typesStars.innerHTML = translations[currentLanguage].typesStars;
+            multipleStarsSystems.innerHTML = translations[currentLanguage].multipleStarsSystems;
+            typesStarsHeading.innerHTML = translations[currentLanguage].typesStarsHeading;
+            typesStarsP.innerHTML = translations[currentLanguage].typesStarsP;
+            mainSequence.innerHTML = translations[currentLanguage].mainSequence;
+            mainSequenceP.innerHTML = translations[currentLanguage].mainSequenceP;
+            whiteDwarfs.innerHTML = translations[currentLanguage].whiteDwarfs;
+            whiteDwarfsP.innerHTML = translations[currentLanguage].whiteDwarfsP;
+            pulsars.innerHTML = translations[currentLanguage].pulsars;
+            pulsarsP.innerHTML = translations[currentLanguage].pulsarsP;
+            magnetars.innerHTML = translations[currentLanguage].magnetars;
+            magnetarsP.innerHTML = translations[currentLanguage].magnetarsP;
+            redDwarfs.innerHTML = translations[currentLanguage].redDwarfs;
+            redDwarfsP.innerHTML = translations[currentLanguage].redDwarfsP;
+            legend1.innerHTML = translations[currentLanguage].legend1;
+            legend2.innerHTML = translations[currentLanguage].legend2;
+            legend3.innerHTML = translations[currentLanguage].legend3;
+            legend4.innerHTML = translations[currentLanguage].legend4;
+            legend5.innerHTML = translations[currentLanguage].legend5;
+            legend6.innerHTML = translations[currentLanguage].legend6;
+            legend.forEach(el => el.innerHTML = translations[currentLanguage].legend);
+            redGiants.forEach(el => el.innerHTML = translations[currentLanguage].redGiants);
+            redGiantsP.forEach(el => el.innerHTML = translations[currentLanguage].redGiantsP);
+            neutronStar.forEach(el => el.innerHTML = translations[currentLanguage].neutronStar);
+            neutronStarP.forEach(el => el.innerHTML = translations[currentLanguage].neutronStarP);
+            brownDwarfs.forEach(el => el.innerHTML = translations[currentLanguage].brownDwarfs);
+            brownDwarfsP.forEach(el => el.innerHTML = translations[currentLanguage].brownDwarfsP);
+        }
+
+    </script>
 </body>
 
 </html>

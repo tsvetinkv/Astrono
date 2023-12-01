@@ -19,28 +19,31 @@
         </div>
         <ul class="nav-links">
             <div class="menu">
-                <li><a href="/events/index.html">Събития</a></li>
+                <li><a id="navEvents" href="/events/index.html">Events</a></li>
                 <li class="starsAndConstellations">
-                    <a href="/starsAndConstellations/landingPage/index.html">Звезди и Съзвездия</a>
+                    <a id="navStarsAndConstellations" href="/starsAndConstellations/landingPage/index.html">Stars &
+                        Constellations</a>
                     <ul class="dropdown">
-                        <li><a href="/starsAndConstellations/stars/StarBasics/index.html">Звезди</a></li>
-                        <li><a
-                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Съзвездия</a>
+                        <li><a id="navStars" href="/starsAndConstellations/stars/StarBasics/index.html">Stars</a></li>
+                        <li><a id="navConstellations"
+                                href="/starsAndConstellations/constellations/ConstellationHomePage/index.html">Constellations</a>
                         </li>
                     </ul>
-                <li><a href="/aboutMe/index.html">Зa мен</a></li>
+                <li><a id="navAbout" href="/aboutMe/index.html">About</a></li>
                 </li>
             </div>
         </ul>
     </nav>
+    <button class="btn" onclick="switchLanguage()">
+        <span id="translateBtn">translate</span>
+    </button>
     <div class="introduction">
         <div class="text">
-            <h2>Заинтересован ли си от астрономията?</h2>
-            <h3>Искаш ли да научиш нови неща за звездните събития или за звездите и съзвездията?</h3>
-            <p>
-                Тогава Астроно е перфектното място за теб! Просто избери
-                от категориите отдолу и изследвай нови вселени
-                и учи нови неща.
+            <h2 id="heading1">Are you interested in astronomy?</h2>
+            <h3 id="heading2">Do you want to learn new things about celestial events or stars and constelations?</h3>
+            <p id="pAstrono">
+                Then Astrono is the perfect place for you! Just choose from the categories below and explore a whole new
+                univerce and learn new things.
             </p>
         </div>
         <div class="rightImage">
@@ -50,37 +53,109 @@
     <div class="sectionBiggerScreen">
         <a href="/events/index.html">
             <div class="card">
-                <img src="./images/events.png" />
+                <img class="eventImg" src="./images/eventsEn.png" />
             </div>
         </a>
-        <p style="text-align:right;" class="pageExplanation">
-            Ако искаш да научиш повече за небесните събития като пълнолунието, новолунието, лунните затъмнения,
-            слънчевите затъмнения или метеорните дъждове и да разбереш кога ще се случат, тогава провери страницата.
+        <p class="events" style="text-align:right;" class="pageExplanation">
+            If you want to learn more about Celestial events like full moons, new moons, lunar eclipces, solar eclipses
+            or meteor showers, and see when they will happen, then check this page.
         </p>
     </div>
     <div class="sectionPhone">
-        <p class="pageExplanation">
-            Ако искаш да научиш повече за небесните събития като пълнолунието, новолунието, лунните затъмнения,
-            слънчевите затъмнения или метеорните дъждове и да разбереш кога ще се случат, тогава провери страницата.
+        <p class="events" class="pageExplanation">
+            If you want to learn more about Celestial events like full moons, new moons, lunar eclipces, solar eclipses
+            or meteor showers, and see when they will happen, then check this page.
         </p>
         <a href="/events/index.html">
             <div class="card">
-                <img src="./images/events.png" />
+                <img class="eventImg" src="./images/eventsEn.png" />
             </div>
         </a>
     </div>
     <div class="section">
-        <p class="pageExplanation">
-            Ако искаш да научиш повече за звездите, за техния живот за различните видове звезди и слъчеви системи или
-            пък искаш да видиш звездна карта на съзвездие и искаш да научиш повече за съзвездията, то тази страница е за
-            теб.
+        <p id="starsAndConstellations" class="pageExplanation">
+            If stars grab your attention and you want to learn about the stars and the constellations then this page is
+            for you.
         </p>
         <a href="/starsAndConstellations/landingPage/index.html">
             <div class="cardRight">
-                <img src="./images/starsAndConstellations.png" />
+                <img id="starsAndConstellationsImg" src="./images/starsAndConstellationsEn.png" />
             </div>
         </a>
     </div>
+    <script src="/helpers.js"></script>
+    <script>
+        let currentLanguage = window.currentLanguage;
+        translate();
+        function switchLanguage() {
+            changeLanguage();
+            currentLanguage = window.currentLanguage;
+            translate();
+        }
+
+        function translate() {
+            const changeLanguageButton = document.getElementById("translateBtn");
+            const navEvents = document.getElementById("navEvents");
+            const navStarsAndConstellations = document.getElementById("navStarsAndConstellations");
+            const navStars = document.getElementById("navStars");
+            const navConstellations = document.getElementById("navConstellations");
+            const navAbout = document.getElementById("navAbout");
+            const heading1 = document.getElementById("heading1");
+            const heading2 = document.getElementById("heading2");
+            const p = document.getElementById("pAstrono");
+            const events = document.querySelectorAll(".events");
+            const starsAndConstellations = document.getElementById("starsAndConstellations");
+            const eventImgs = document.querySelectorAll(".eventImg");
+            const starsAndConstellationsImg = document.getElementById("starsAndConstellationsImg");
+            const translations = {
+                en: {
+                    cngLangButton: "translate",
+                    navEvents: "Events",
+                    navStarsAndConstellations: "Stars & Constellations",
+                    navStars: "Stars",
+                    navConstellations: "Constellations",
+                    navAbout: "About",
+                    heading1: "Are you interested in astronomy?",
+                    heading2: "Do you want to learn new things about celestial events or stars and constelations?",
+                    p: "Then Astrono is the perfect place for you! Just choose from the categories below and explore a whole new univerce and learn new things.",
+                    events: "If you want to learn more about Celestial events like full moons, new moons, lunar eclipces, solar eclipses or meteor showers, and see when they will happen, then check this page.",
+                    starsAndConstellations: "If stars grab your attention and you want to learn about the stars and the constellations then this page is for you.",
+                },
+                bg: {
+                    cngLangButton: "преведи",
+                    navEvents: "Сбития",
+                    navStarsAndConstellations: "Звезди и Съзвездия",
+                    navStars: "Звезди",
+                    navConstellations: "Съзвездия",
+                    navAbout: "За мен",
+                    heading1: "Заинтересован ли си от астрономията?",
+                    heading2: "Искаш ли да научиш нови неща за звездните събития или за звездите и съзвездията?",
+                    p: "Тогава Астроно е перфектното място за теб! Просто избери от категориите отдолу и изследвай нови вселени и учи нови неща.",
+                    events: "Ако искаш да научиш повече за небесните събития като пълнолунието, новолунието, лунните затъмнения, слънчевите затъмнения или метеорните дъждове и да разбереш кога ще се случат, тогава провери страницата. ",
+                    starsAndConstellations: "Ако искаш да научиш повече за звездите, за техния живот за различните видове звезди и слъчеви системи или пък искаш да видиш звездна карта на съзвездие и искаш да научиш повече за съзвездията, то тази страница е за теб.",
+                },
+            };
+            changeLanguageButton.innerHTML = translations[currentLanguage].cngLangButton;
+            navEvents.innerHTML = translations[currentLanguage].navEvents;
+            navStarsAndConstellations.innerHTML = translations[currentLanguage].navStarsAndConstellations;
+            navStars.innerHTML = translations[currentLanguage].navStars;
+            navConstellations.innerHTML = translations[currentLanguage].navConstellations;
+            navAbout.innerHTML = translations[currentLanguage].navAbout;
+            heading1.innerHTML = translations[currentLanguage].heading1;
+            heading2.innerHTML = translations[currentLanguage].heading2;
+            p.innerHTML = translations[currentLanguage].p;
+            events.forEach(el => el.innerHTML = translations[currentLanguage].events)
+            starsAndConstellations.innerHTML = translations[currentLanguage].starsAndConstellations;
+            if (currentLanguage === "en") {
+                eventImgs.forEach(img => img.src = "./images/eventsEn.png");
+                starsAndConstellationsImg.src = "./images/starsAndConstellationsEn.png";
+            } else {
+                eventImgs.forEach(img => img.src = "./images/eventsBg.png");
+                starsAndConstellationsImg.src = "./images/starsAndConstellationsBg.png";
+            }
+        }
+
+    </script>
 </body>
 
 </html>

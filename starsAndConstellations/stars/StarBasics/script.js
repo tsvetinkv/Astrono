@@ -1,5 +1,5 @@
 // Set the flag and redirect when 'Enter' key is pressed
-document.querySelector('#input').addEventListener('keypress', function (e) {
+document.querySelector('#placeholder').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         var value = e.target.value;
         window.location.href = '/starsAndConstellations/stars/StarSearch/index.html?value=' + encodeURIComponent(value);
@@ -8,7 +8,7 @@ document.querySelector('#input').addEventListener('keypress', function (e) {
 });
 
 // Set the flag and redirect when input field is clicked
-document.querySelector('#input').addEventListener('click', function (e) {
+document.querySelector('#placeholder').addEventListener('click', function (e) {
     let value = e.target.value;
     if (value) {
         window.location.href = '/starsAndConstellations/stars/StarSearch/index.html?value=' + encodeURIComponent(value);
@@ -19,7 +19,7 @@ document.querySelector('#input').addEventListener('click', function (e) {
 // Clear the input field when the page loads, if the flag is set
 window.onload = function() {
     if (localStorage.getItem('clearInput') === 'true') {
-        document.querySelector('#input').value = '';
+        document.querySelector('#placeholder').value = '';
         localStorage.removeItem('clearInput');
     }
 };
