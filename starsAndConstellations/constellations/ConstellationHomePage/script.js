@@ -1,5 +1,4 @@
 let currentLanguage = window.currentLanguage;
-console.log(currentLanguage);
 translate();
 function switchLanguage() {
     changeLanguage();
@@ -191,7 +190,7 @@ function sendDataToAPI(data) {
     fetch("https://api.astronomyapi.com/api/v2/studio/star-chart", {
         method: "POST",
         headers: {
-            "Authorization": "Basic NWNkMzhjNDYtNDVhMC00ZmZkLTkyMTAtMTVhYjUzZWZmNDIyOmM2ZDAxNmI1MzFmZmVjZjJiMDdlNGQ4OTgzNDQ5ZDdjNzJjYmVmMTJiYWRhYjFkOGRmMDAyNDUwNDNiYjE4MGQzNTMyNGFhN2VmNjcyNTllY2NiZDRkNTdjNDEyZTAwYzFjODkxZjliYzI3NWFiMGQ0ZjlmMTAwOTllNWQ4MzVlZTUzYjhjNWI5MmZjZTQyZWI0YWRkMzgyNTdhNWNmNjFlODlmNjU4ZDUyZjg3YmU5M2ZiOTRhZTc2ODJjM2VlYWQ3NTgzMTU1MTUyNTVhMmVlNjkxMThiNjRmOWUyZjhk",
+            "Authorization":  btoa(`Basic 052bbf9f-94d8-4113-8ad1-9e325eb1f6b0:052bbf9f-94d8-4113-8ad1-9e325eb1f6b0`),
             "Content-Type": "application/json", // Set the content type to JSON
         },
         body: JSON.stringify(data), // Convert the data object to a JSON string
