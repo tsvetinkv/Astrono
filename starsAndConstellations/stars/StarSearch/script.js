@@ -41,7 +41,7 @@ function translate() {
         },
         bg: {
             cngLangButton: "преведи",
-            navEvents: "Сбития",
+            navEvents: "Събития",
             navStarsAndConstellations: "Звезди и Съзвездия",
             navConstellations: "Съзвездия",
             navStars: "Звезди",
