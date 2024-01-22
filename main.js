@@ -1,4 +1,5 @@
-
+import * as THREE from "../Astrono/node_modules/three/";
+import { OrbitControls } from "../Astrono/node_modules/three/examples/jsm/controls/OrbitControls";
 
 
 // Parameters
