@@ -1,6 +1,7 @@
 import "./style.css";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+
 import moonTexture from "./assets/moon-texture.jpg";
 import moonElevation from "./assets/moon-elevation.jpg";
 import moonGravity from "./assets/moon-gravity.jpg";
