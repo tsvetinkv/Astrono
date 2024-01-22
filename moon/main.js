@@ -31,9 +31,9 @@ const material = new THREE.MeshStandardMaterial({
   color: 0xffffff,
   map: texture,
   displacementMap: displacementMap,
-  displacementScale: 0.1,
+  displacementScale: 0.005,
   bumpMap: displacementMap,
-  bumpScale: 3,
+  bumpScale: 0.04,
 });
 
 const elevationMaterial = new THREE.MeshBasicMaterial({
@@ -85,11 +85,11 @@ if (document.documentElement.clientWidth < 800) {
 }
 
 // light
-const light = new THREE.DirectionalLight(0xffffff, 2);
+const light = new THREE.DirectionalLight(0xffffff, 1.15);
 light.position.set(100, 10, 5);
 scene1.add(light);
 
-const ambientLight = new THREE.AmbientLight(0xff9a14);
+const ambientLight = new THREE.AmbientLight(0xd9d9d9);
 
 // camera
 const camera1 = new THREE.PerspectiveCamera(20, w / h);
@@ -116,54 +116,54 @@ const canvas1 = document.querySelector("#webgl1");
 const renderer1 = new THREE.WebGLRenderer({
   canvas: canvas1,
   antialias: true,
+  alpha: true
 });
 renderer1.setSize(w, h);
-renderer1.setClearColor(0x0f0e0e, 0);
 renderer1.render(scene1, camera1);
 
 const canvas2 = document.querySelector("#webgl2");
 const renderer2 = new THREE.WebGLRenderer({
   canvas: canvas2,
   antialias: true,
+  alpha: true
 });
 renderer2.setSize(w, h);
-renderer2.setClearColor(0x0f0e0e, 0);
 renderer2.render(scene1, camera1);
 
 const canvas3 = document.querySelector("#webgl3");
 const renderer3 = new THREE.WebGLRenderer({
   canvas: canvas3,
   antialias: true,
+  alpha: true
 });
 renderer3.setSize(w, h);
-renderer3.setClearColor(0x0f0e0e, 0);
 renderer3.render(scene2, camera2);
 
 const canvas4 = document.querySelector("#webgl4");
 const renderer4 = new THREE.WebGLRenderer({
   canvas: canvas4,
   antialias: true,
+  alpha: true
 });
 renderer4.setSize(w, h);
-renderer4.setClearColor(0x0f0e0e, 0);
 renderer4.render(scene2, camera3);
 
 const canvas5 = document.querySelector("#webgl5");
 const renderer5 = new THREE.WebGLRenderer({
   canvas: canvas5,
   antialias: true,
+  alpha: true
 });
 renderer5.setSize(w, h);
-renderer5.setClearColor(0x0f0e0e, 0);
 renderer5.render(scene2, camera4);
 
 const canvas6 = document.querySelector("#webgl6");
 const renderer6 = new THREE.WebGLRenderer({
   canvas: canvas6,
   antialias: true,
+  alpha: true
 });
 renderer6.setSize(w, h);
-renderer6.setClearColor(0x0f0e0e, 0);
 renderer6.render(scene2, camera5);
 
 // orbit controls
