@@ -1,5 +1,6 @@
-import * as THREE from "./node_modules/three";
-import { OrbitControls } from "./node_modules/three/examples/jsm/controls/OrbitControls";
+import "./style.css";
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 const scene = new THREE.Scene();
 
