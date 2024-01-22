@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/images/smallLogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon</title>
+  <link rel="stylesheet" href
+  <link rel="stylesheet" href="/uikit-3.17.11/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="uk-navbar-justify uk-navbar" id="biggerSceenNav" uk-navbar="" style="background: rgb(42 2 84);">
+    <div class="uk-navbar-left" style="flex-grow: 7;">
+      <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img src="./images/logo.png" /></a>
+      <ul class="uk-navbar-nav" style="flex-grow: 5;">
+        <li><a href="/events/">Events</a></li>
+        <li>
+          <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true" id="hoveredNav">Stars & constellations</a>
+          <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar" id="dropdown"
+            style="background: rgb(42 2 84); top: 80px; left: 605.6px; max-width: 933.2px">
+            <div class="uk-padding">
+              <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+                <div class="uk-first-column">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="/starsAndConstellations/stars/basics/">Star Basics</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="/starsAndConstellations/constellations/home/">Constellations</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div uk-navbar="" class="uk-navbar" id="smallerScreenNav" style="background: rgb(42 2 84);">
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="/"><img src="./images/logo.png" /></a>
+    </div>
+    <div class="uk-navbar-right uk-margin-right">
+      <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
+        uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"><svg width="20" height="20"
+          viewBox="0 0 20 20"></svg></a>
+      <div class="uk-navbar-dropdown uk-drop"
+        uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false" style="width: 511.6px;
+        overflow-x: auto;
+        top: 75px;
+        left: 15px;
+        background: rgb(42 2 84);
+        max-width: 511.6px;">
+        <ul class="uk-nav uk-navbar-dropdown-nav">
+          <li><a href="/events/">Events</a></li>
+          <li class="uk-active"><a href="/starsAndConstellations/">Star & Constellations</a></li>
+          <li class="uk-parent">
+            <a href="/starsAndConstellations/stars/basics/">Star Basics</a>
+            <ul class="uk-nav-sub">
+              <li><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
+              <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+            </ul>
+          </li>
+          <li class="uk-parent">
+            <a href="/starsAndConstellations/constellations/home/">Constellations</a>
+            <ul class="uk-nav-sub">
+              <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+            </ul>
+          </li>
+          <li><a href="/moon/formation/">Moon formation</a></li>
+          <li><a href="/moon/moonPhases/">Moon phases</a></li>
+          <li><a href="/moon/eclipses/">Eclipses</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card uk-card-secondary uk-grid-collapse uk-child-width-1-3@s uk-grid" id="horizontalCard">
+    <div class="uk-flex uk-flex-middle uk-text-center uk-width-viewport uk-align-center uk-animation-fade">
+      <div class="uk-card-media-left uk-cover-container uk-first-column uk-width-xlarge">
+        <div class="canvas-container">
+          <canvas id="webgl1"></canvas>
+        </div>
+      </div>
+      <div class="uk-width-1-3">
+        <div class="uk-card-body uk-width-1-1">
+          <h1 class="uk-heading-small" style="color: #debeff">Do you want to learn about the moon?</h1>
+          <hr>
+          <p class="uk-text-center\@s uk-text-center\@m uk-text-center\@l uk-text-center\@xl uk-text-lead uk-text-light"
+            style="color: #eedfff;">
+            If you want to learn more about the moon phases,
+            events and much more then check this page
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-secondary uk-animation-fade" id="verticalCard">
+    <div class="uk-card-media-top">
+      <div class="canvas-container">
+        <canvas id="webgl2"></canvas>
+      </div>
+    </div>
+    <div class="uk-card-body">
+      <h1 class="uk-heading-small uk-text-center" style="color: #debeff">Do you want to learn about the moon?</h1>
+      <hr>
+      <p class="uk-text-center" style="color: #eedfff;">
+        If you want to learn more about the moon phases,
+        events and much more then check this page
+      </p>
+    </div>
+  </div>
+
+  <div uk-navbar="" class="uk-navbar">
+    <div class="uk-navbar-center">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active"><a href="#">Moon maps</a></li>
+        <li><a href="/moon/formation/">Moon formation</a></li>
+        <li><a href="/moon/moonPhases/">Moon pahses</a></li>
+        <li><a href="/moon/eclipses/">Eclipses</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-primary uk-grid-collapse uk-child-width-1-3@s uk-grid" uk-grid id="elevationCard"
+    style="justify-content: center;">
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+      <div class="canvas-container">
+        <canvas id="webgl3"></canvas>
+      </div>
+    </div>
+    <div class="uk-first-column">
+      <div class="uk-card-body uk-width-1-3\@xl uk-width-1-3\@l uk-width-1-3\@m">
+        <button class="uk-button uk-button-default">Digital elevation model</button>
+        <div uk-dropdown="" class="uk-drop uk-dropdown">
+          <ul class="uk-nav uk-dropdown-nav">
+            <li class="gravity">Gravity map</li>
+            <li class="hydrogen">Hydrogen​ ​Abundance</li>
+            <li class="roughness">Surface​ ​Roughness</li>
+          </ul>
+        </div>
+        <p>Topographic​ ​Moon​ ​map​ ​created​ ​by <br> ​ ​Lunar​ ​Reconnaissance​ ​Orbiter.</p>
+        <br>
+        <div style="width: 95%;">
+          <p class="unitsEl">Elev (m)</p>
+          <div class="scale" class="uk-transform-center">
+            <span>-9128</span>
+            <img src="assets/elevationScale.png">
+            <span>10781</span>
+          </div>
+        </div>
+        <br>
+        <a class="uk-text-background uk-text-center learnMore" id="elevationLearnMore">Leran more ></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-primary uk-grid-collapse uk-child-width-1-3@s uk-grid" uk-grid id="gravityCard"
+    style="justify-content: center;">
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+      <div class="canvas-container">
+        <canvas id="webgl4"></canvas>
+      </div>
+    </div>
+    <div class="uk-first-column">
+      <div class="uk-card-body uk-width-1-3\@xl uk-width-1-3\@l uk-width-1-3\@m">
+        <button class="uk-button uk-button-default">Gravity map</button>
+        <div uk-dropdown="" class="uk-drop uk-dropdown">
+          <ul class="uk-nav uk-dropdown-nav">
+            <li class="elevation">Digital elevation model</li>
+            <li class="hydrogen">Hydrogen​ ​Abundance</li>
+            <li class="roughness">Surface​ ​Roughness</li>
+          </ul>
+        </div>
+        <p>Global​ ​lunar​ ​gravity​ ​survey​ ​created <br>​ ​by​ ​the​ ​twin​ ​GRAIL​ ​spacecraft.</p>
+        <div style="width: 80%;">
+          <p class="units">mGal</p>
+          <div class="scale">
+            <span>-487</span>
+            <img src="assets/gravityScale.png">
+            <span>515</span>
+          </div>
+        </div>
+        <br>
+        <a class="uk-text-background" id="gravityLearnMore">Leran more ></a>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card uk-card-primary uk-grid-collapse uk-child-width-1-3@s uk-grid" uk-grid id="hydrogenCard"
+    style="justify-content: center;">
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+      <div class="canvas-container">
+        <canvas id="webgl5"></canvas>
+      </div>
+    </div>
+    <div class="uk-first-column">
+      <div class="uk-card-body uk-width-1-3\@xl uk-width-1-3\@l uk-width-1-3\@m">
+        <button class="uk-button uk-button-default">Hydrogen​ ​Abundance</button>
+        <div uk-dropdown="" class="uk-drop uk-dropdown">
+          <ul class="uk-nav uk-dropdown-nav">
+            <li class="elevation">Digital elevation model</li>
+            <li class="gravity">Gravity map</li>
+            <li class="roughness">Surface​ ​Roughness</li>
+          </ul>
+        </div>
+        <p>The​ ​presence​ ​of​ ​hydrogen​ ​may <br>​ ​indicate​ ​the​ ​presence​ ​of​ ​water.</p>
+        <div style="width: 80%;">
+          <p class="unitsSmall">PPM BY WEIGHT</p>
+          <div class="scale">
+            <span>0</span>
+            <img src="assets/hydrogenScale.png">
+            <span>195.5</span>
+          </div>
+        </div>
+        <br>
+        <a class="uk-text-background" id="hydrogenLearnMore">Leran more ></a>
+      </div>
+    </div>
+  </div>
+  <div class="uk-card uk-card-primary uk-grid-collapse uk-child-width-1-3@s uk-grid" uk-grid id="roughnessCard"
+    style="justify-content: center;">
+    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+      <div class="canvas-container">
+        <canvas id="webgl6"></canvas>
+      </div>
+    </div>
+    <div class="uk-first-column">
+      <div class="uk-card-body uk-width-1-3\@xl uk-width-1-3\@l uk-width-1-3\@m">
+        <button class="uk-button uk-button-default">Surface​ ​Roughness</button>
+        <div uk-dropdown="" class="uk-drop uk-dropdown">
+          <ul class="uk-nav uk-dropdown-nav">
+            <li class="elevation">Digital elevation model</li>
+            <li class="gravity">Gravity map</li>
+            <li class="hydrogen">Hydrogen​ ​Abundance</li>
+          </ul>
+        </div>
+        <p>Rough​ ​surfaces​ ​indicate​ ​the <br>​ ​presence​ ​of​ ​large ​rocks.</p>
+        <div style="width: 80%;">
+          <p class="unitsSmall">RMS (m)</p>
+          <div class="scale">
+            <span>0</span>
+            <img src="assets/rougnessScale.png">
+            <span>4</span>
+          </div>
+        </div>
+        <br>
+        <a class="uk-text-background" id="roughnessLearnMore">Leran more ></a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

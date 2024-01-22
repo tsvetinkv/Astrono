@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  background: linear-gradient(0deg, rgb(38, 2, 73) 0%, rgb(4, 20, 56) 100%);
+  font-family: 'Raleway', sans-serif!important;
+}
+
+h1{
+  font-family: 'Outfit', sans-serif!important;
+}
+
+#smallerScreenNav{
+  display: none;
+}
+
+#verticalCard {
+  display: none;
+}
+
+#horizontalCard {
+  display: block;
+}
+
+.uk-navbar{
+  height: 10vh;
+}
+
+.canvas-container {
+  overflow: hidden;
+}
+
+.uk-card-secondary {
+  background: rgb(10, 14, 42);
+  background: linear-gradient(90deg, rgba(10, 14, 42, 1) 0%, rgba(11, 15, 44, 1) 50%, rgba(22, 27, 57, 1) 100%);
+}
+
+.uk-card-primary {
+  background: rgb(43, 2, 85);
+  background: linear-gradient(90deg, rgba(43, 2, 85, 1) 0%, rgba(32, 14, 78, 1) 50%, rgba(5, 26, 70, 1) 100%);
+}
+
+.gravity,
+.hydrogen,
+.roughness,
+.elevation {
+  margin: 10px;
+}
+
+.scale {
+  display: inline;
+}
+
+.scale img {
+  height: 20px;
+  width: 50%;
+}
+
+.uk-text-background {
+  display: block;
+}
+
+.units,
+.unitsEl {
+  text-align: center;
+  width: 77%;
+}
+
+.unitsSmall {
+  text-align: center;
+  width: 58%;
+}
+
+.learnMore {
+  margin-right: 8vw;
+}
+
+@media (min-width: 640px) and (max-width: 800px) {
+
+  .units,
+  .unitsSmall {
+    margin-top: 65%;
+  }
+}
+
+@media (max-width:800px) {
+  .canvas-container {
+    order: 2;
+  }
+
+  #verticalCard {
+    display: block;
+  }
+
+  #horizontalCard {
+    display: none;
+  }
+
+  .scale img {
+    height: 20px;
+    width: auto;
+  }
+
+  .scale {
+    display: inline-block;
+    width: 90vw;
+  }
+
+  .units,
+  .unitsEl {
+    width: 90vw;
+  }
+
+  .unitsSmall {
+    width: 85vw;
+  }
+
+  #elevationCard,
+  #gravityCard,
+  #hydrogenCard,
+  #roughnessCard,
+  .canvas-container {
+    text-align: center;
+  }
+
+  .learnMore {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #biggerSceenNav{
+    display: none;
+  }
+  #smallerScreenNav{
+    display: flex;
+  }
+}

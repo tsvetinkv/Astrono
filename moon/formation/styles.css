@@ -1,0 +1,115 @@
+.heading {
+    font-size: 2.5vw;
+}
+
+h3{
+    font-family: 'Outfit', sans-serif!important;
+}
+
+.p {
+    font-size: 1.5vw;
+}
+
+#background {
+    background: rgb(59, 0, 122);
+    background: linear-gradient(0deg, rgba(43,2,85,1) 0%, rgba(32,14,78,1) 50%, rgba(5,26,70,1) 100%);
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.text-medium {
+    font-size: 1.35vw;
+    line-height: 180%;
+}
+
+#textMedium2 {
+    font-size: 1.3vw;
+    line-height: 160%;
+}
+
+figure img {
+    width: 100%;
+    height: 50vh;
+}
+
+figure {
+    text-align: center;
+}
+
+#footer {
+    color: aliceblue;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+@media (min-width: 850px) and (max-width: 1050px) {
+    .heading {
+        font-size: 2.5vw;
+    }
+
+    .p {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 850px) {
+    .heading {
+        font-size: 3vw;
+    }
+
+    .p {
+        font-size: 2.3vw;
+    }
+}
+@media (min-width: 850px) and (max-width:1200px){
+    .text-medium, #textMedium2 {
+        font-size: 1.8vw;
+    }
+    #footer {
+        font-size: 1.5vw;
+    }
+}
+@media (min-width: 550px) and (max-width:850px){
+    .text-medium, #textMedium2 {
+        font-size: 2.5vw;
+    }
+    #footer {
+        font-size: 2vw;
+    }
+}
+@media (max-width:550px){
+    .uk-column-1-2{
+        display: contents;
+    }
+    .text-medium, #textMedium2 {
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    #footer {
+        font-size: 4vw;
+    }
+}
+@media (min-width: 400px) and (max-width: 640px) {
+    .heading {
+        font-size: 5vw;
+    }
+
+    .p {
+        font-size: 4vw;
+    }
+}
+
+@media(max-width:400px) {
+    .heading {
+        font-size: 6vw;
+    }
+
+    .p {
+        font-size: 5vw;
+    }
+
+    #overlayP {
+        font-size: 70%;
+    }
+}
