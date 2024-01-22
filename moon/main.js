@@ -1,13 +1,12 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
-
-import moonTexture from "./assets/moon-texture.jpg";
-import moonElevation from "./assets/moon-elevation.jpg";
-import moonGravity from "./assets/moon-gravity.jpg";
-import moonHidrogen from "./assets/moon-hidrogen.jpg";
-import moonRoughness from "./assets/moon-roughness.jpg";
-
-import moonDisplacementMap from "./assets/moon-displacement.jpg";
+let moonTexture = "./assets/moon-texture.jpg";
+// import moonTexture from "./assets/moon-texture.jpg";
+let moonElevation = "./assets/moon-elevation.jpg";
+let moonGravity = "./assets/moon-gravity.jpg";
+let moonHidrogen = "./assets/moon-hidrogen.jpg";
+let moonRoughness = "./assets/moon-roughness.jpg";
+let moonDisplacementMap = "./assets/moon-displacement.jpg";
 
 const elevation = document.querySelectorAll(".elevation");
 const gravity = document.querySelectorAll(".gravity");
