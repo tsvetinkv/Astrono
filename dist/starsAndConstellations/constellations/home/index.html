@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constellations</title>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="../../../assets/costellationsHome-U9_5Lamo.js"></script>
+  <link rel="modulepreload" crossorigin href="../../../assets/modulepreload-polyfill-9p4a8sJU.js">
+  <link rel="stylesheet" crossorigin href="../../../assets/costellationsHome-NH2UmwYn.css">
+  <link rel="stylesheet" crossorigin href="../../../assets/uikit-pg6vp1My.css">
+</head>
+
+<body>
+    <div class="uk-navbar-justify uk-navbar" id="biggerSceenNav" uk-navbar="" style="background: rgb(42 2 84);">
+        <div class="uk-navbar-left" style="flex-grow: 7;">
+            <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img src="../../../assets/logo-Fe6E0WnK.png" /></a>
+            <ul class="uk-navbar-nav" style="flex-grow: 5;">
+                <li><a href="/events/">Events</a></li>
+                <li>
+                    <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true"
+                        id="hoveredNav">Stars &
+                        constellations</a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar"
+                        id="dropdown" style="max-width: 887px;background:rgb(42 2 84);">
+                        <div class="uk-padding">
+                            <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+                                <div class="uk-first-column">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="/starsAndConstellations/stars/basics/">Star
+                                                Basics</a></li>
+                                        <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/">Types
+                                                Stars</a></li>
+                                        <li class="uk-parent"><a
+                                                href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star
+                                                systems</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a
+                                                href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations
+                                                by seasons</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/moon/">Moon</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div uk-navbar="" class="uk-navbar" id="smallerScreenNav" style="background: rgb(42 2 84);">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="/"><img src="../../../assets/logo-Fe6E0WnK.png" /></a>
+        </div>
+        <div class="uk-navbar-right uk-margin-right">
+            <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
+                uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"><svg width="20"
+                    height="20" viewBox="0 0 20 20"></svg></a>
+            <div class="uk-navbar-dropdown uk-drop"
+                uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
+                style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:rgb(42 2 84);">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="/events/">Events</a></li>
+                    <li class="uk-active"><a href="#">Star & Constellations</a></li>
+                    <li class="uk-parent">
+                        <a href="/starsAndConstellations/stars/basics/">Star Basics</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
+                            <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by
+                            seasons</a>
+                    </li>
+                    <li class="uk-active"><a href="/moon/">Moon</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="uk-h1 uk-text-center uk-margin-medium-top uk-margin-medium-bottom uk-text-bolder" id="heading1">
+        Constellations</h1>
+    <div class="uk-flex uk-flex-center">
+        <form class="form" onsubmit="return false">
+            <div class="form-title"><span id="generate">Generate</span></div>
+            <div class="title-2"><span id="starChart">Star Chart</span></div>
+            <div class="uk-column-1-2 uk-flex uk-flex-center uk-margin">
+                <div class="input-container">
+                    <input class="input-date" id="dateInput" type="date">
+                </div>
+
+                <section class="bg-stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </section>
+
+                <div class="input-container">
+                    <select id="constellationSelect">
+                        <option value="and">Andromeda</option>
+                        <option value="ant">Antlia</option>
+                        <option value="aps">Apus</option>
+                        <option value="aqr">Aquarius</option>
+                        <option value="aql">Aquila</option>
+                        <option value="ara">Ara</option>
+                        <option value="ari">Aries</option>
+                        <option value="aur">Auriga</option>
+                        <option value="boo">Boötes</option>
+                        <option value="cae">Caelum</option>
+                        <option value="cam">Camelopardalis</option>
+                        <option value="cnc">Cancer</option>
+                        <option value="cvn">Canes Venatici</option>
+                        <option value="cma">Canis Major</option>
+                        <option value="cmi">Canis Minor</option>
+                        <option value="cap">Capricornus</option>
+                        <option value="car">Carina</option>
+                        <option value="cas">Cassiopeia</option>
+                        <option value="cen">Centaurus</option>
+                        <option value="cep">Cepheus</option>
+                        <option value="cet">Cetus</option>
+                        <option value="cha">Chamaeleon</option>
+                        <option value="cir">Circinus</option>
+                        <option value="col">Columba</option>
+                        <option value="com">Coma Berenices</option>
+                        <option value="cra">Corona Austrina</option>
+                        <option value="crb">Corona Borealis</option>
+                        <option value="crv">Corvus</option>
+                        <option value="crt">Crater</option>
+                        <option value="cru">Crux</option>
+                        <option value="cyg">Cygnus</option>
+                        <option value="del">Delphinus</option>
+                        <option value="dor">Dorado</option>
+                        <option value="dra">Draco</option>
+                        <option value="equ">Equuleus</option>
+                        <option value="eri">Eridanus</option>
+                        <option value="for">Fornax</option>
+                        <option value="gem">Gemini</option>
+                        <option value="gru">Grus</option>
+                        <option value="her">Hercules</option>
+                        <option value="hor">Horologium</option>
+                        <option value="hya">Hydra</option>
+                        <option value="hyi">Hydrus</option>
+                        <option value="ind">Indus</option>
+                        <option value="lac">Lacerta</option>
+                        <option value="leo">Leo</option>
+                        <option value="lmi">Leo Minor</option>
+                        <option value="lep">Lepus</option>
+                        <option value="lib">Libra</option>
+                        <option value="lup">Lupus</option>
+                        <option value="lyn">Lynx</option>
+                        <option value="lyr">Lyra</option>
+                        <option value="men">Mensa</option>
+                        <option value="mic">Microscopium</option>
+                        <option value="mon">Monoceros</option>
+                        <option value="mus">Musca</option>
+                        <option value="nor">Norma</option>
+                        <option value="oct">Octans</option>
+                        <option value="oph">Ophiuchus</option>
+                        <option value="ori">Orion</option>
+                        <option value="pav">Pavo</option>
+                        <option value="peg">Pegasus</option>
+                        <option value="per">Perseus</option>
+                        <option value="phe">Phoenix</option>
+                        <option value="pic">Pictor</option>
+                        <option value="psc">Pisces</option>
+                        <option value="psa">Piscis Austrinus</option>
+                        <option value="pup">Puppis</option>
+                        <option value="pyx">Pyxis</option>
+                        <option value="ret">Reticulum</option>
+                        <option value="sge">Sagitta</option>
+                        <option value="sgr">Sagittarius</option>
+                        <option value="sco">Scorpius</option>
+                        <option value="scl">Sculptor</option>
+                        <option value="sct">Scutum</option>
+                        <option value="ser">Serpens Cauda</option>
+                        <option value="sex">Sextans</option>
+                        <option value="tau">Taurus</option>
+                        <option value="tel">Telescopium</option>
+                        <option value="tri">Triangulum</option>
+                        <option value="tra">Triangulum Australe</option>
+                        <option value="tuc">Tucana</option>
+                        <option value="uma">Ursa Major</option>
+                        <option value="umi">Ursa Minor</option>
+                        <option value="vel">Vela</option>
+                        <option value="vir">Virgo</option>
+                        <option value="vol">Volans</option>
+                        <option value="Vul">Vulpecula</option>
+                    </select>
+                </div>
+
+                <div class="uk-flex uk-flex-center">
+                    <button class="submit" id="submit">
+                        <span id="generateBtn" class="sign-text">Generate!</span>
+                    </button>
+                </div>
+            </div>
+            <p class="uk-text-center uk-margin-medium-top uk-text-italic" id="time">It may take 10-15 seconds to
+                generate a star chart.</p>
+        </form>
+    </div>
+    <div id="popupContainer" style="display: none;">
+        <span id="closeButton" class="close-button">✘</span>
+        <img id="popupImage" src="" />
+    </div>
+    <main>
+        <section>
+            <h2 class="uk-h2 uk-text-center uk-margin-medium-top" id="heading2">What are constellations?</h2>
+            <div class="uk-column-1-2 uk-flex uk-flex-center uk-flex-top">
+                <p class="uk-width-1-2" id="constellationsP">
+                    There are a few different definitions of constellations, but many people think of
+                    constellations as
+                    a
+                    group of stars. The constellations you can see at night depend on your location on Earth and
+                    the
+                    time of
+                    year. Constellations were named after objects, animals, and people long ago. Astronomers today
+                    still
+                    use
+                    constellations to name stars and meteor showers.
+                </p>
+                <img id="constellationImg" src="../../../assets/constellations-ktif9xNb.png" />
+            </div>
+        </section>
+        <section id="visibleConstellations">
+            <h2 class="uk-text-center" id="heading3">What constellations can you see in the night sky?</h2>
+            <div class="uk-flex uk-flex-center">
+                <p id="visibleConstellationsP">
+                    The constellations you can see at night depend on the time of year. Earth orbits around the Sun once
+                    each year. Our view into space through the night sky changes as we orbit. So, the night sky
+                    looks
+                    slightly different each night because Earth is in a different spot in its orbit. The stars
+                    appear each
+                    night to move slightly west of where they were the night before.
+                    Your location on Earth also determines what stars and constellations you see, and how high they
+                    appear
+                    to rise in the sky. The Northern Hemisphere is always pointing in a different direction than the
+                    Southern Hemisphere. This means that stargazers in Australia, for example, get a slightly
+                    different view
+                    of the sky and can see a few different constellations than those in the United States.
+                    It can be a little confusing to picture how the night sky changes as we orbit the Sun. You can see
+                    how
+                    it all works in the illustration below.
+                </p>
+            </div>
+
+            <figure class="uk-text-center">
+                <img src="../../../assets/visibleConstellations--D-NyUna.png" />
+                <figcaption id="figcaption">
+                    A chart showing some of the constellations that are visible from the Northern Hemisphere in
+                    different times of year. Credit: NASA/JPL-Caltech
+                </figcaption>
+            </figure>
+        </section>
+        <section class="margin-medium-bottom" id="seasons">
+            <h2 class="uk-text-center" id="heading4">Constellations by seasons</h2>
+            <div class="center">
+                <p class="uk-margin-auto" id="constellationsBySeasonsP">
+                    Constellations are ever-changing patterns of stars that grace our night sky, varying with the
+                    seasons. From the wintry brilliance of Orion and Taurus to the summer's Cygnus and Lyra, these
+                    celestial arrangements have inspired cultures throughout history. Join us as we explore the
+                    constellations by season, delving into their rich history and captivating lore.
+                </p>
+            </div>
+            <div class="container uk-margin-small-bottom">
+                <div class="centerBtn">
+                    <a class="uk-link-text" href="/starsAndConstellations/constellations/constellationsBySeasons/">
+                        <button class="btn">
+                            <span id="learnMore">Learn more</span>
+                            <span class="arrow">
+                                <svg fill="rgb(31, 69, 252)" viewBox="0 0 320 512" height="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
