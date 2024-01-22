@@ -1,151 +1,33 @@
-body {
-    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
+html {
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%) !important;
     background-repeat: no-repeat;
-    font-family: Segoe UI;
     color: #C5CCFC;
     overflow-x: hidden;
+    font-family: 'Raleway', sans-serif!important;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    color: #E6CEFF;
-    height: 60px;
-    background: #000B53;
-    margin: -8px;
-    padding: 0;
+h2{
+    font-family: 'Outfit', sans-serif!important;
 }
 
-.nav-links a {
-    color: #C5CCFC;
-    text-decoration: none;
-}
-
-.logo img {
-    height: 50px;
-    width: 200px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    font-size: 18px;
-}
-
-.menu li {
-    padding: 5px 14px;
-    text-align: center;
-}
-
-.menu li:hover {
-    background: #310082;
-    border-radius: 20px 5px;
-    transition: 0.26s ease-in;
-}
-
-.starsAndConstellations {
-    position: relative;
-}
-
-.dropdown {
-    background: linear-gradient(#000B53, #070476);
-    margin-left: -20px;
-    position: absolute;
+#smallerScreenNav {
     display: none;
-    border-radius: 10px;
-    top: 35px;
-    text-align: center;
-    list-style-position: inside;
 }
 
-.dropdown li {
-    display: inline-block;
-    text-align: center;
-    padding-right: 40px;
-}
-
-.dropdown li:hover {
-    background: transparent;
-}
-
-.starsAndConstellations:hover .dropdown {
-    display: block;
-}
-
-.navbar ul {
-    list-style-type: none;
-}
-
-header {
+#header {
     background: linear-gradient(90deg, rgba(62, 3, 122, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(7, 4, 118, 1) 100%);
-    margin: -40px;
     text-align: center;
-    width: 103.2%;
 }
 
-#heading {
-    margin-top: 40px;
-}
-
-.icon {
-    background: url(./images/SearchIcon.png) no-repeat left;
-    background-size: 17px;
-    width: 300px;
-    padding: 7px 25px;
-    border: 1px solid #9daaff;
-    color: #9daaff;
-    border-radius: 30px;
-    background-position: 7px 7px;
-    margin-bottom: 20px;
-}
-
-::placeholder {
-    color: #9daaff;
-}
-
-.navigation {
-    background-color: #000B53;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
-    margin-left: -12px;
-    width: 99vw;
-}
-
-.navigation a {
-    float: left;
-    color: #9daaff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    position: relative;
-}
-
-.triangle {
-    position: absolute;
-    top: calc(100%);
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 25px solid #000B53;
-    border-radius: 0 0 10px 10px;
-}
-
-.centered-item {
-    position: relative;
+main {
+    margin-top: 30px;
 }
 
 fieldset {
     border: 2px solid #C5CCFC;
-    border-radius: 5px;
     display: inline-block;
+    width: 75vw;
+    border-radius: 10px;
 }
 
 fieldset legend {
@@ -154,374 +36,112 @@ fieldset legend {
     font-size: 25px;
 }
 
-fieldset span {
-    font-size: 18px;
-}
-
 main {
     margin-top: 30px;
-}
-
-.content img {
-    margin-top: 30px
 }
 
 section {
     margin-top: 10px;
 }
 
-.text {
-    flex: none;
+.uk-column-1-2 {
+    column-gap: 20% !important;
 }
 
 p {
-    font-size: 19px;
-    line-height: 200%;
+    font-size: calc(0.4rem + 1vw);
+    line-height: 1.8rem;
+    margin-bottom: 0 !important;
+}
+
+fieldset span {
+    font-size: calc(0.3rem + 0.9vw);
 }
 
 h2 {
-    font-size: 33px;
-    color: #9daaff;
-    text-align: center;
-}
-
-.images {
-    flex: 1;
-    max-width: 420px;
-    margin-top: 60px;
-}
-
-img {
-    width: 360px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 160px;
-}
-
-.rightText {
-    text-align: right;
-}
-
-.textAndImage {
-    display: flex;
-    justify-content: center;
-    gap: 160px;
-}
-
-.textAndImage p {
-    margin-top: 95px;
-}
-
-.forStargazes {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-section {
-    margin-top: 20px;
-}
-
-.smallerScreen {
-    display: none;
-}
-
-.pulsarsAndMagnetars {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 175px;
-}
-
-.magnetars img {
-    float: right;
-}
-
-
-.btn {
-    margin: auto;
-    margin-bottom: 2%;
-    align-items: center;
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-    border: 0;
-    border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    display: flex;
-    font-family: Phantomsans, sans-serif;
-    font-size: 15px;
-    justify-content: center;
-    line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.btn:active,
-.btn:hover {
-    outline: 0;
-}
-
-.btn span {
-    background-color: rgb(5, 6, 45);
-    padding: 10px 10px;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-}
-
-.btn:hover span {
-    background: none;
-}
-
-.btn:active {
-    transform: scale(0.9);
-}
-
-@media (min-width: 1311px) {
-    .navbar {
-        height: 7vh;
-    }
-
-    .logo img {
-        height: 7vh;
-        width: auto;
-    }
-
-    .menu {
-        font-size: 1.2vw;
-    }
-
-    .dropdown {
-        top: 120%;
-        width: 11vw;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .navigation a {
-        font-size: 1.2vw;
-    }
-
-    #heading {
-        font-size: 2.2vw;
-    }
-
-    .icon {
-        background-size: 1.3vw;
-        width: 25vw;
-        padding: 0.5% 2%;
-        border-radius: 100px;
-        background-position: 8px 9px;
-        font-size: 1.2vw;
-    }
-
-    #mainSequenceP {
-        margin-top: 21%;
-    }
-
-    img {
-        width: 25vw;
-        height: auto;
-        border-radius: 30px;
-    }
-
-    h2 {
-        font-size: 2vw;
-        margin-bottom: 5%;
-    }
-
-    .pulsarsAndMagnetars {
-        gap: 15%;
-    }
-
-    fieldset legend {
-        font-size: 1.8vw;
-    }
-
-    fieldset {
-        width: 75vw;
-        border-radius: 15px;
-    }
-
-    .textAndImage p {
-        margin-top: 10%;
-    }
-}
-
-@media (min-width: 901px) and (max-width:1310px) {
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    .pulsarsAndMagnetars {
-        gap: 25%;
-    }
-
-    img {
-        width: 35vw;
-        height: auto;
-        margin-top: 5%;
-    }
-
-    fieldset {
-        width: 85vw;
-    }
-
-    #mainSequenceP {
-        margin-top: 145px;
-    }
-}
-
-@media (min-width: 901px) {
-    .navigation {
-        width: 100vw;
-    }
-
-    p {
-        font-size: 1.4vw;
-        width: 40vw;
-    }
-
-    .textAndImage {
-        gap: 10%;
-    }
-
-    .pulsarsAndMagnetars p {
-        width: 30vw;
-    }
-
-    fieldset span {
-        font-size: 1.4vw;
-    }
-
-}
-
-
-@media (min-width: 530px) and (max-width: 900px) {
-    .dropdown {
-        margin-left: -5%;
-        width: 15vw;
-    }
-
-    img {
-        width: 80vw;
-        height: 95vh;
-    }
-}
-
-@media (max-width: 530px) {
-    .dropdown {
-        margin-left: 0;
-        top: 100%;
-        width: 25vw;
-    }
-
-    img {
-        width: 90vw;
-        height: auto;
-    }
+    color: #9daaff !important;
+    font-size: calc(1.2rem + 1vw) !important;
 }
 
 @media (max-width: 900px) {
-    .menu li {
-        padding: 5px 5px;
+    .uk-column-1-2 {
+        display: contents !important;
     }
 
-    .dropdown li {
-        margin: 0 -80px;
-        display: inline-block;
-        text-align: center;
-        padding-right: 0;
+    .reverse {
+        display: inline-flex !important;
+        flex-direction: column-reverse;
+        width: 100% !important;
     }
 
-    .dropdown a {
-        margin-left: -50px;
+    .uk-text-center,
+    .pulsars,
+    .magnetars {
+        width: 100% !important;
     }
 
-    .content,
-    .textAndImage,
-    .pulsarsAndMagnetars,
-    .forStargazes {
-        display: block;
+    .pulsars,
+    .magnetars {
+        margin-bottom: 5%;
     }
 
-    .navigation {
-        gap: 0;
-        margin-left: -15px;
-        width: 100.7vw;
-    }
-
-    .menu {
-        font-size: 15px;
-        align-items: center;
-        margin-left: -10%;
-    }
-
-    .logo img {
-        height: auto;
-        width: 100px;
-    }
-
-    header {
-        margin: -40px -2.3%;
-    }
-
-    .icon {
-        width: 250px;
-        padding: 7px 25px;
-        background-position: 7px 6px;
-        font-size: 12.5px;
-    }
-
-    .textAndImage p {
-        margin-top: 0;
+    .uk-text-center img {
+        width: 55vw !important;
     }
 
     p,
-    .rightText {
-        text-align: center;
+    .uk-flex fieldset {
+        width: 55vw !important;
+        margin: auto !important;
     }
 
-    .image {
-        text-align: center;
+    p {
+        margin-top: 5% !important;
+        font-size: calc(0.7rem + 1vw);
+        text-align: justify!important;
     }
 
-    .magnetars img {
-        float: none;
+    fieldset span {
+        font-size: calc(0.6rem + 0.9vw);
     }
 
-    .forStargazes {
-        margin-top: 0;
+    #introduction {
+        width: 100vw !important;
     }
 
-    fieldset legend {
-        font-size: 19px;
+    .uk-text-left {
+        text-align: center !important;
     }
 
-    .biggerScreen {
+    .pulsarsAndMagnetars {
+        display: block !important;
+    }
+
+    .uk-margin-small-bottom {
+        margin-top: 0 !important;
+    }
+
+    #typesStarsP {
+        margin-bottom: 5%!important;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #biggerSceenNav {
         display: none;
     }
 
-    .smallerScreen {
-        display: block;
+    #smallerScreenNav {
+        display: flex;
+    }
+
+    .uk-text-center img {
+        width: 80vw !important;
+    }
+
+    p,
+    .uk-flex fieldset {
+        width: 80vw !important;
     }
 }
