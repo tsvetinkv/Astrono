@@ -31,7 +31,7 @@ let events;
 const section = document.querySelector(".events");
 
 
-fetch('https://localhost:7160/Events/GetAllEvents', {
+fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
     method: 'GET',
     headers: {
         accept: "application/json",
