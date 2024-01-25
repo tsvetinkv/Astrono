@@ -1,24 +1,24 @@
-import "/style.css";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import moonTexture from "../assets/moon-texture.jpg";
-import moonDisplacementMap from "../assets/moon-displacement.jpg";
+import * as THREE from "https://cdn.skypack.dev/three@0.132.2";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js";
+const moonTexture = "/moon/assets/moon-texture.jpg";
+const moonDisplacementMap = "/moon/assets/moon-displacement.jpg";
+const textureLoader = new THREE.TextureLoader();
 
 const scene1 = new THREE.Scene();
 
 const geometry = new THREE.SphereGeometry(3, 64, 64);
-const textureLoader = new THREE.TextureLoader();
 const texture = textureLoader.load(moonTexture);
 const displacementMap = textureLoader.load(moonDisplacementMap);
+
 
 // add material
 const material = new THREE.MeshStandardMaterial({
     color: 0xffffff,
     map: texture,
     displacementMap: displacementMap,
-    displacementScale: 0.1,
+    displacementScale: 0.005,
     bumpMap: displacementMap,
-    bumpScale: 3,
+    bumpScale: 0.04,
 });
 
 
@@ -36,9 +36,10 @@ if (document.documentElement.clientWidth < 800) {
 }
 
 // light
-const light = new THREE.DirectionalLight(0xffffff, 2);
+const light = new THREE.DirectionalLight(0xffffff, 1.15);
 light.position.set(100, 10, 5);
 scene1.add(light);
+
 
 // camera
 const camera1 = new THREE.PerspectiveCamera(20, w / h);
@@ -50,9 +51,9 @@ const canvas1 = document.querySelector("#webgl1");
 const renderer1 = new THREE.WebGLRenderer({
     canvas: canvas1,
     antialias: true,
+    alpha: true
 });
 renderer1.setSize(w, h);
-renderer1.setClearColor(0x0f0e0e, 0);
 renderer1.render(scene1, camera1);
 
 const canvas2 = document.querySelector("#webgl2");
@@ -61,7 +62,6 @@ const renderer2 = new THREE.WebGLRenderer({
     antialias: true,
 });
 renderer2.setSize(w, h);
-renderer2.setClearColor(0x0f0e0e, 0);
 renderer2.render(scene1, camera1);
 
 // orbit controls
