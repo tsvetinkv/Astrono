@@ -60,6 +60,7 @@ const canvas2 = document.querySelector("#webgl2");
 const renderer2 = new THREE.WebGLRenderer({
     canvas: canvas2,
     antialias: true,
+    alpha: true
 });
 renderer2.setSize(w, h);
 renderer2.render(scene1, camera1);
