@@ -47,18 +47,18 @@ fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
     })
     .catch(error => console.error('Error:', error))
 
-    function formatDate(date) {
-        const options = { month: "long", day: "numeric" };
-        if (currentLanguage === "bg") {
-            return date.toLocaleDateString("bg-BG", options);
-        } else {
-            return date.toLocaleDateString("en-US", options)
-        }
+function formatDate(date) {
+    const options = { month: "long", day: "numeric" };
+    if (currentLanguage === "bg") {
+        return date.toLocaleDateString("bg-BG", options);
+    } else {
+        return date.toLocaleDateString("en-US", options)
     }
+}
 
 function displayEvents() {
     section.innerHTML = "";
-    
+
     // Set the current month text
     const currentDate = new Date();
     const currentMonth = currentDate.getMonth();
@@ -98,7 +98,7 @@ function displayEvents() {
 }
 
 function createEventCard(event, eventName, lineOfEvents) {
-    
+
     if (eventName.includes("Meteor Shower") || eventName.includes("Метеоритен дъжд")) {
         eventPhotoFileName = eventPhotos["Meteor Shower"];
     } else if (eventName.includes("Moon") || eventName.includes("Лун")) {
@@ -190,12 +190,67 @@ function displayPopup(event) {
     const popupWindow = window.open("", "EventPopup", "width=600,height=350");
     popupWindow.document.body.innerHTML = popupContent;
 }
+function fetchTranslations() {
+    fetch('https://apiastrono.bsite.net/Translations/GetAllTranslations', {
+        method: 'GET',
+        headers: {
+            accept: "application/json",
+        }
+    })
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            translateTxt(data);
+        })
+        .catch(error => console.error('Error:', error))
+
+}
+function translateTxt(translations) {
+    const sAndCNav = document.getElementById("hoveredNav");
+    const moonNav = document.getElementById("moonNav");
+    const starBasics = document.getElementById("starBasics");
+    const typesStars = document.getElementById("typesStars");
+    const multipleStarSystems = document.getElementById("multipleStarSystems");
+    const constellations = document.getElementById("constellations");
+    const constellationsBySeasons = document.getElementById("constellationsBySeasons");
+    const title = document.getElementById("title");
+    const p = document.getElementById("p");
+    let htmlElements = [sAndCNav, moonNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons];
+    translations.forEach(t => {
+        if (t.page == 17) {
+            if (t.en != "EVENTS" && t.en != "ABOUT") {
+                for (let i = 0; i < htmlElements.length; i++) {
+                    if (t.en == htmlElements[i].innerHTML || t.bg == htmlElements[i].innerHTML) {
+                        if (currentLanguage == "en") {
+                            htmlElements[i].innerHTML = t.en;
+                        } else if (currentLanguage == "bg") {
+                            htmlElements[i].innerHTML = t.bg;
+                        }
+                    }
+                }
+            }
+        }else if(t.page == 2){
+            let elements = [title, p];
+            for (let i = 0; i < elements.length; i++) {
+                if (t.en.trim() == elements[i].innerHTML.trim() || t.bg.trim() == elements[i].innerHTML.trim()) {
+                    if (currentLanguage == "en") {
+                        elements[i].innerHTML = t.en;
+                    } else if (currentLanguage == "bg") {
+                        elements[i].innerHTML = t.bg;
+                    }
+                }
+            }
+        }
+    })
+}
 
 function translate() {
     for (var i = 0; i < translateBtn.length; i++) {
         translateBtn[i].addEventListener('click', function () {
             switchLanguage();
             displayEvents();
+            fetchTranslations();
         });
     }
 }
