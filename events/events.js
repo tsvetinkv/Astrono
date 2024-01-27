@@ -22,7 +22,8 @@ const eventPhotos = {
 let eventPhotoFileName;
 let translateBtn = document.querySelectorAll(".translate");
 let currentLanguage = window.currentLanguage;
-translate();
+
+
 function switchLanguage() {
     changeLanguage();
     currentLanguage = window.currentLanguage;
@@ -190,6 +191,9 @@ function displayPopup(event) {
     const popupWindow = window.open("", "EventPopup", "width=600,height=350");
     popupWindow.document.body.innerHTML = popupContent;
 }
+
+translate();
+
 function fetchTranslations() {
     fetch('https://apiastrono.bsite.net/Translations/GetAllTranslations', {
         method: 'GET',
