@@ -112,7 +112,7 @@ function translateTxt(translations) {
     if (currentLanguage === "en") {
         eventImgs.forEach(img => img.src = "./images/eventsEn.png");
         starsAndConstellationsImg.src = "./images/starsAndConstellationsEn.png";
-        moonImg.forEach(img => img.src = "./images/moonBg.png");
+        moonImg.forEach(img => img.src = "./images/moonEn.png");
     } else {
         eventImgs.forEach(img => img.src = "./images/eventsBg.png");
         starsAndConstellationsImg.src = "./images/starsAndConstellationsBg.png";
