@@ -22,12 +22,20 @@ const eventPhotos = {
 let eventPhotoFileName;
 let translateBtn = document.querySelectorAll(".translate");
 let currentLanguage = window.currentLanguage;
-
+fetchTranslations();
+for (var i = 0; i < translateBtn.length; i++) {
+    translateBtn[i].addEventListener('click', function () {
+        switchLanguage();
+        displayEvents();
+    });
+}
 
 function switchLanguage() {
     changeLanguage();
     currentLanguage = window.currentLanguage;
+    fetchTranslations();
 }
+
 let events;
 const section = document.querySelector(".events");
 
@@ -192,8 +200,6 @@ function displayPopup(event) {
     popupWindow.document.body.innerHTML = popupContent;
 }
 
-translate();
-
 function fetchTranslations() {
     fetch('https://apiastrono.bsite.net/Translations/GetAllTranslations', {
         method: 'GET',
@@ -227,10 +233,11 @@ function translateTxt(translations) {
     const moonS = document.getElementById("moonS");
     const title = document.getElementById("title");
     const p = document.getElementById("p");
+    const tbtn = document.querySelectorAll(".tbtn");
+
     let htmlElements = [sAndCNav, moonNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons, starsAndConstellationsS, starBasicsS, typesStarsS, multipleStarSystemsS, constellationsS, constellationsBySeasonsS, moonS];
     translations.forEach(t => {
         if (t.page == 17) {
-            if (t.en != "EVENTS" && t.en != "ABOUT") {
                 for (let i = 0; i < htmlElements.length; i++) {
                     if (t.en == htmlElements[i].innerHTML || t.bg == htmlElements[i].innerHTML) {
                         if (currentLanguage == "en") {
@@ -240,7 +247,17 @@ function translateTxt(translations) {
                         }
                     }
                 }
-            }
+
+                tbtn.forEach(tb => {
+                    if (t.en == tb.innerHTML || t.bg == tb.innerHTML) {
+                        if (currentLanguage == "en") {
+                            tb.innerHTML = t.en;
+                        } else if (currentLanguage == "bg") {
+                            tb.innerHTML = t.bg;
+                        }
+                    }
+                })
+                
         } else if (t.page == 2) {
             let elements = [title, p];
             for (let i = 0; i < elements.length; i++) {
@@ -254,14 +271,4 @@ function translateTxt(translations) {
             }
         }
     })
-}
-
-function translate() {
-    for (var i = 0; i < translateBtn.length; i++) {
-        translateBtn[i].addEventListener('click', function () {
-            switchLanguage();
-            fetchTranslations();
-            displayEvents();
-        });
-    }
 }
