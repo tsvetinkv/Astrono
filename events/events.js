@@ -256,8 +256,8 @@ function translate() {
     for (var i = 0; i < translateBtn.length; i++) {
         translateBtn[i].addEventListener('click', function () {
             switchLanguage();
-            displayEvents();
             fetchTranslations();
+            displayEvents();
         });
     }
 }
