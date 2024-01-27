@@ -213,7 +213,7 @@ function fetchTranslations() {
 function translateTxt(translations) {
     const sAndCNav = document.getElementById("hoveredNav");
     const moonNav = document.getElementById("moonNav");
-    const starBasics = document.querySelectorAll("starBasics");
+    const starBasics = document.getElementById("starBasics");
     const typesStars = document.getElementById("typesStars");
     const multipleStarSystems = document.getElementById("multipleStarSystems");
     const constellations = document.getElementById("constellations");
