@@ -1,4 +1,3 @@
-// helper.js
 window.currentLanguage = localStorage.getItem('currentLanguage') || "en";
 
 function changeLanguage() {
