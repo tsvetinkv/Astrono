@@ -209,14 +209,21 @@ function fetchTranslations() {
 function translateTxt(translations) {
     const sAndCNav = document.getElementById("hoveredNav");
     const moonNav = document.getElementById("moonNav");
-    const starBasics = document.getElementById("starBasics");
+    const starBasics = document.querySelectorAll("starBasics");
     const typesStars = document.getElementById("typesStars");
     const multipleStarSystems = document.getElementById("multipleStarSystems");
     const constellations = document.getElementById("constellations");
     const constellationsBySeasons = document.getElementById("constellationsBySeasons");
+    const starsAndConstellationsS = document.getElementById("starsAndConstellationsS");
+    const starBasicsS = document.getElementById("starBasicsS");
+    const typesStarsS = document.getElementById("typesStarsS");
+    const multipleStarSystemsS = document.getElementById("multipleStarSystemsS");
+    const constellationsS = document.getElementById("constellationsS");
+    const constellationsBySeasonsS = document.getElementById("constellationsBySeasonsS");
+    const moonS = document.getElementById("moonS");
     const title = document.getElementById("title");
     const p = document.getElementById("p");
-    let htmlElements = [sAndCNav, moonNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons];
+    let htmlElements = [sAndCNav, moonNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons, starsAndConstellationsS, starBasicsS, typesStarsS, multipleStarSystemsS, constellationsS, constellationsBySeasonsS, moonS];
     translations.forEach(t => {
         if (t.page == 17) {
             if (t.en != "EVENTS" && t.en != "ABOUT") {
@@ -230,7 +237,7 @@ function translateTxt(translations) {
                     }
                 }
             }
-        }else if(t.page == 2){
+        } else if (t.page == 2) {
             let elements = [title, p];
             for (let i = 0; i < elements.length; i++) {
                 if (t.en.trim() == elements[i].innerHTML.trim() || t.bg.trim() == elements[i].innerHTML.trim()) {
