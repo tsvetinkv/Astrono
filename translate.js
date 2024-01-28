@@ -93,17 +93,21 @@ function translateTxt(translations) {
                 }
             }
             eventsP.forEach(e => {
-                if (currentLanguage == "en") {
-                    e.innerHTML = t.en;
-                } else if (currentLanguage == "bg") {
-                    e.innerHTML = t.bg;
+                if (t.en.trim() == e.innerHTML.trim() || t.bg.trim() == e.innerHTML.trim()) {
+                    if (currentLanguage == "en") {
+                        e.innerHTML = t.en;
+                    } else if (currentLanguage == "bg") {
+                        e.innerHTML = t.bg;
+                    }
                 }
             })
             moonP.forEach(m => {
-                if (currentLanguage == "en") {
-                    m.innerHTML = t.en;
-                } else if (currentLanguage == "bg") {
-                    m.innerHTML = t.bg;
+                if (t.en.trim() == m.innerHTML.trim() || t.bg.trim() == m.innerHTML.trim()) {
+                    if (currentLanguage == "en") {
+                        m.innerHTML = t.en;
+                    } else if (currentLanguage == "bg") {
+                        m.innerHTML = t.bg;
+                    }
                 }
             })
         }
