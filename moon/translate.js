@@ -27,8 +27,8 @@ function fetchTranslations() {
             translateTxt(data);
         })
         .catch(error => console.error('Error:', error))
-
 }
+
 function translateTxt(translations) {
     const eventsNav = document.getElementById("eventsNav");
     const sAndCNav = document.getElementById("hoveredNav");

@@ -322,52 +322,185 @@ const gravityLearnMore = document.getElementById("gravityLearnMore");
 const hydrogenLearnMore = document.getElementById("hydrogenLearnMore");
 const roughnessLearnMore = document.getElementById("roughnessLearnMore");
 
+function fetchTranslations(fn) {
+  fetch('https://apiastrono.bsite.net/Translations/GetAllTranslations', {
+    method: 'GET',
+    headers: {
+      accept: "application/json",
+    }
+  })
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      fn(data);
+    })
+    .catch(error => console.error('Error:', error))
+}
+
 elevationLearnMore.addEventListener("click", () => {
-  const typeMoon = {
-    name: "Digital​ ​Elevation​ ​Model",
-    img: "https://moon.nasa.gov/system/internal_resources/details/original/108_Copernicus_800x600.jpg",
-    figcaption: "​Copernicus crater viewed from orbit.",
-    description: `This​ ​dataset​ ​shows​ ​the​ ​Moon's​ ​topography.​ ​The​ ​LOLA​ ​instrument​
-    onboard​ ​LRO​ ​has​ ​measured​ ​the altitude​ ​of​ ​more​ ​than​ ​6​ ​billion​ ​points​ ​on​ ​the
-    ​lunar​ ​surface,​ ​so​ ​that​ ​scientists​ ​now​ ​have​ ​better​ ​topography for​ ​the​ ​Moon
-    ​than​ ​any​ ​other​ ​planetary​ ​body​ ​in​ ​the​ ​solar​ ​system!​ ​Red​ ​and​ ​white​ ​indicate
-    ​high​ ​altitudes and​ ​blue​ ​and​ ​purple​ ​indicate​ ​low​ ​altitudes.`,
-  };
-  displayPopup(typeMoon);
+  fetchTranslations(translateTxt);
+  function translateTxt(translations) {
+    const typeMoon = {
+      name: "Digital​ ​Elevation​ ​Model",
+      img: "https://moon.nasa.gov/system/internal_resources/details/original/108_Copernicus_800x600.jpg",
+      figcaption: "Copernicus crater viewed from orbit.",
+      description: `This​ ​dataset​ ​shows​ ​the​ ​Moon's​ ​topography.​ ​The​ ​LOLA​ ​instrument​onboard​ ​LRO​ ​has​ ​measured​ ​the altitude​ ​of​ ​more​ ​than​ ​6​ ​billion​ ​points​ ​on​ ​the​lunar​ ​surface,​ ​so​ ​that​ ​scientists​ ​now​ ​have​ ​better​ ​topography for​ ​the​ ​Moon​than​ ​any​ ​other​ ​planetary​ ​body​ ​in​ ​the​ ​solar​ ​system!​ ​Red​ ​and​ ​white​ ​indicate​high​ ​altitudes and​ ​blue​ ​and​ ​purple​ ​indicate​ ​low​ ​altitudes.`,
+    };
+    translations.forEach(t => {
+      if (t.page == 4) {
+        if (currentLanguage == 'en') {
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.en;
+          } else if (t.en = typeMoon.name) {
+            typeMoon.name = t.en;
+          } else if (t.en = typeMoon.description) {
+            typeMoon.description = t.en;
+          }
+        } else if (currentLanguage == 'bg') {
+          console.log(t.en);
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.en == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.en == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+          if (t.bg == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.bg == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.bg == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+        }
+      }
+    })
+    displayPopup(typeMoon);
+  }
 });
 gravityLearnMore.addEventListener("click", () => {
-  const typeMoon = {
-    name: "Gravity​ ​Map",
-    img: "https://moon.nasa.gov/system/internal_resources/details/original/106_711351main_Zuber-3-pia16587-43_800-600.jpg",
-    figcaption: `​​This perspective, known as a Mercator projection, shows the
-    far side of the moon in the center and the near side (as viewed from Earth) at either side.`,
-    description: `Gravity​ ​field​ ​maps​ ​reveal​ ​features​ ​such​ ​as​ ​tectonic​ ​structures,
-    ​ ​volcanic​ ​landforms,​ ​basin​ ​rings,​ ​and crater​ ​central​ ​peaks.​ ​The​ ​moon's​ ​gravity
-    ​ ​field​ ​is​ ​unlike​ ​that​ ​of​ ​any​ ​terrestrial​ ​planet​ ​in​ ​our​ ​solar​ ​system.`,
-  };
-  displayPopup(typeMoon);
+  fetchTranslations(translateTxt);
+  function translateTxt(translations) {
+    const typeMoon = {
+      name: "Gravity​ ​Map",
+      img: "https://moon.nasa.gov/system/internal_resources/details/original/106_711351main_Zuber-3-pia16587-43_800-600.jpg",
+      figcaption: `​​This perspective, known as a Mercator projection, shows the far side of the moon in the center and the near side (as viewed from Earth) at either side.`,
+      description: `Gravity​ ​field​ ​maps​ ​reveal​ ​features​ ​such​ ​as​ ​tectonic​ ​structures,​ ​volcanic​ ​landforms,​ ​basin​ ​rings,​ ​and crater​ ​central​ ​peaks.​ ​The​ ​moon's​ ​gravity​ ​field​ ​is​ ​unlike​ ​that​ ​of​ ​any​ ​terrestrial​ ​planet​ ​in​ ​our​ ​solar​ ​system.`,
+    };
+    translations.forEach(t => {
+      if (t.page == 4) {
+        if (currentLanguage == 'en') {
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.en;
+          } else if (t.en = typeMoon.name) {
+            typeMoon.name = t.en;
+          } else if (t.en = typeMoon.description) {
+            typeMoon.description = t.en;
+          }
+        } else if (currentLanguage == 'bg') {
+          console.log(t.en);
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.en == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.en == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+          if (t.bg == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.bg == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.bg == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+        }
+      }
+    })
+    displayPopup(typeMoon);
+  }
 });
 hydrogenLearnMore.addEventListener("click", () => {
-  const typeMoon = {
-    name: "Hydrogen​ ​Abundance",
-    img: "https://moon.nasa.gov/system/internal_resources/details/original/110_Water_Ice_800x600.jpg",
-    figcaption: `Areas of the moon's south pole with possibly high deposits of 
-    frozen water are colored blue in this map.`,
-    description: `Data​ ​confirmed​ ​hydrogen​ ​in​ ​the​ ​permanently​ ​shaded​ ​regions​ ​of
-    ​ ​the​ ​lunar​ ​poles​ ​is​ ​in​ ​the​ ​form​ ​of water-ice.​ ​This​ ​water-ice​ ​may​ ​be​ ​trapped​ ​indefinitely.`,
-  };
-  displayPopup(typeMoon);
+  fetchTranslations(translateTxt);
+  function translateTxt(translations) {
+    const typeMoon = {
+      name: "Hydrogen​ ​Abundance",
+      img: "https://moon.nasa.gov/system/internal_resources/details/original/110_Water_Ice_800x600.jpg",
+      figcaption: `Areas of the moon's south pole with possibly high deposits of frozen water are colored blue in this map.`,
+      description: "Data​ ​confirmed​ ​hydrogen​ ​in​ ​the​ ​permanently​ ​shaded​ ​regions​ ​of​ ​the​ ​lunar​ ​poles​ ​is​ ​in​ ​the​ ​form​ ​of water-ice.​ ​This​ ​water-ice​ ​may​ ​be​ ​trapped​ ​indefinitely.",
+    };
+    translations.forEach(t => {
+      if (t.page == 4) {
+        if (currentLanguage == 'en') {
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.en;
+          } else if (t.en = typeMoon.name) {
+            typeMoon.name = t.en;
+          } else if (t.en = typeMoon.description) {
+            typeMoon.description = t.en;
+          }
+        } else if (currentLanguage == 'bg') {
+          console.log(t.en);
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.en == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.en == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+          if (t.bg == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.bg == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.bg == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+        }
+      }
+    })
+    displayPopup(typeMoon);
+  }
 });
 roughnessLearnMore.addEventListener("click", () => {
-  const typeMoon = {
-    name: "Surface​ ​Roughness",
-    img: "https://moon.nasa.gov/system/internal_resources/details/original/111_555516main_053111a_800x600.jpg",
-    figcaption: "​​​Boulders clustered on the floor of Anaxagoras crater",
-    description: `This​ ​dataset​ ​shows​ ​the​ ​moon's​ ​surface​ ​roughness.​ ​Rough​ ​surfaces
-    ​ ​indicate​ ​the​ ​presence​ ​of​ ​large rocks,​ ​which​ ​may​ ​pose​ ​hazards​ ​for​ ​future​ ​lunar
-    ​ ​landers.​ ​The​ ​roughest​ ​surfaces​ ​are​ ​red​ ​and​ ​white​ ​while the​ ​smoother​ ​areas​ ​are​ ​blue.`,
-  };
-  displayPopup(typeMoon);
+  fetchTranslations(translateTxt);
+  function translateTxt(translations) {
+    const typeMoon = {
+      name: "Surface​ ​Roughness",
+      img: "https://moon.nasa.gov/system/internal_resources/details/original/111_555516main_053111a_800x600.jpg",
+      figcaption: "​​​Boulders clustered on the floor of Anaxagoras crater",
+      description: "This​ ​dataset​ ​shows​ ​the​ ​moon's​ ​surface​ ​roughness.​ ​Rough​ ​surfaces​ ​indicate​ ​the​ ​presence​ ​of​ ​large rocks,​ ​which​ ​may​ ​pose​ ​hazards​ ​for​ ​future​ ​lunar​ ​landers.​ ​The​ ​roughest​ ​surfaces​ ​are​ ​red​ ​and​ ​white​ ​while the​ ​smoother​ ​areas​ ​are​ ​blue.",
+    };
+    translations.forEach(t => {
+      if (t.page == 4) {
+        if (currentLanguage == 'en') {
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.en;
+          } else if (t.en = typeMoon.name) {
+            typeMoon.name = t.en;
+          } else if (t.en = typeMoon.description) {
+            typeMoon.description = t.en;
+          }
+        } else if (currentLanguage == 'bg') {
+          console.log(t.en);
+          if (t.en == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.en == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.en == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+          if (t.bg == typeMoon.figcaption) {
+            typeMoon.figcaption = t.bg;
+          } else if (t.bg == typeMoon.name) {
+            typeMoon.name = t.bg;
+          } else if (t.bg == typeMoon.description) {
+            typeMoon.description = t.bg;
+          }
+        }
+      }
+    })
+    displayPopup(typeMoon);
+  }
 });
 function displayPopup(typeMoon) {
   const popupContent = `
