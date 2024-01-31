@@ -3,6 +3,7 @@ function translateTxt(translations) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
     const id10 = document.getElementById('10');
+    const id11 = document.getElementById('11');
     const id12 = document.querySelectorAll(`.${CSS.escape("12")}`);
     const id14 = document.querySelectorAll(`.${CSS.escape("14")}`);
     const id15 = document.querySelectorAll(`.${CSS.escape("15")}`);
@@ -21,7 +22,7 @@ function translateTxt(translations) {
     const id7 = document.querySelectorAll(`.${CSS.escape("7")}`);
 
 
-    let elements = [id8, id9, id10, id201, id202, id203, id204, id1, id3, id4, id6];
+    let elements = [id8, id9, id10, id11, id201, id202, id203, id204, id1, id3, id4, id6];
     translations.forEach(t => {
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
@@ -48,7 +49,7 @@ function swapImages(){
     const eventImgs = document.querySelectorAll(".eventImg");
     const starsAndConstellationsImg = document.getElementById("starsAndConstellationsImg");
     const moonImg = document.querySelectorAll(".moonImg");
-    
+
     if (currentLanguage === "En") {
         eventImgs.forEach(img => img.src = "./images/eventsEn.png");
         starsAndConstellationsImg.src = "./images/starsAndConstellationsEn.png";
