@@ -1,6 +1,6 @@
-function chekIfNotNull(page, currentLanguage){
+function chekIfNotNull(page, language){
     if (page != null) {
-        fetchTranslations(page, currentLanguage);
+        fetchTranslations(page, language);
     }
 }
 function translateButton(page1, page2, page3) {
