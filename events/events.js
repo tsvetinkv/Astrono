@@ -20,22 +20,6 @@ const eventPhotos = {
 };
 
 let eventPhotoFileName;
-let translateBtn = document.querySelectorAll(".translate");
-let currentLanguage = window.currentLanguage;
-fetchTranslations();
-for (var i = 0; i < translateBtn.length; i++) {
-    translateBtn[i].addEventListener('click', function () {
-        switchLanguage();
-        displayEvents();
-    });
-}
-
-function switchLanguage() {
-    changeLanguage();
-    currentLanguage = window.currentLanguage;
-    fetchTranslations();
-}
-
 let events;
 const section = document.querySelector(".events");
 
@@ -198,77 +182,4 @@ function displayPopup(event) {
 
     const popupWindow = window.open("", "EventPopup", "width=600,height=350");
     popupWindow.document.body.innerHTML = popupContent;
-}
-
-function fetchTranslations() {
-    fetch('https://apiastrono.bsite.net/Translations/GetAllTranslations', {
-        method: 'GET',
-        headers: {
-            accept: "application/json",
-        }
-    })
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            translateTxt(data);
-        })
-        .catch(error => console.error('Error:', error))
-
-}
-function translateTxt(translations) {
-    const sAndCNav = document.getElementById("hoveredNav");
-    const moonNav = document.getElementById("moonNav");
-    const starBasics = document.getElementById("starBasics");
-    const typesStars = document.getElementById("typesStars");
-    const multipleStarSystems = document.getElementById("multipleStarSystems");
-    const constellations = document.getElementById("constellations");
-    const constellationsBySeasons = document.getElementById("constellationsBySeasons");
-    const starsAndConstellationsS = document.getElementById("starsAndConstellationsS");
-    const starBasicsS = document.getElementById("starBasicsS");
-    const typesStarsS = document.getElementById("typesStarsS");
-    const multipleStarSystemsS = document.getElementById("multipleStarSystemsS");
-    const constellationsS = document.getElementById("constellationsS");
-    const constellationsBySeasonsS = document.getElementById("constellationsBySeasonsS");
-    const moonS = document.getElementById("moonS");
-    const title = document.getElementById("title");
-    const p = document.getElementById("p");
-    const tbtn = document.querySelectorAll(".tbtn");
-
-    let htmlElements = [sAndCNav, moonNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons, starsAndConstellationsS, starBasicsS, typesStarsS, multipleStarSystemsS, constellationsS, constellationsBySeasonsS, moonS];
-    translations.forEach(t => {
-        if (t.page == 17) {
-                for (let i = 0; i < htmlElements.length; i++) {
-                    if (t.en == htmlElements[i].innerHTML || t.bg == htmlElements[i].innerHTML) {
-                        if (currentLanguage == "en") {
-                            htmlElements[i].innerHTML = t.en;
-                        } else if (currentLanguage == "bg") {
-                            htmlElements[i].innerHTML = t.bg;
-                        }
-                    }
-                }
-
-                tbtn.forEach(tb => {
-                    if (t.en == tb.innerHTML || t.bg == tb.innerHTML) {
-                        if (currentLanguage == "en") {
-                            tb.innerHTML = t.en;
-                        } else if (currentLanguage == "bg") {
-                            tb.innerHTML = t.bg;
-                        }
-                    }
-                })
-                
-        } else if (t.page == 2) {
-            let elements = [title, p];
-            for (let i = 0; i < elements.length; i++) {
-                if (t.en.trim() == elements[i].innerHTML.trim() || t.bg.trim() == elements[i].innerHTML.trim()) {
-                    if (currentLanguage == "en") {
-                        elements[i].innerHTML = t.en;
-                    } else if (currentLanguage == "bg") {
-                        elements[i].innerHTML = t.bg;
-                    }
-                }
-            }
-        }
-    })
 }

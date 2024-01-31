@@ -14,8 +14,9 @@ h2, h3{
 }
 
 .uk-card-title {
-  font-size: 1.8rem!important;
+  font-size: 1.85rem!important;
   line-height: 1.2!important;
+  color: #EDDCFF!important;
 }
 
 .uk-card{
@@ -43,10 +44,6 @@ p{
   border-radius: 20px;
   width: 90%;
 
-}
-
-#title {
-  color: #EDDCFF;
 }
 
 #smallerScreenNav {
@@ -168,13 +165,13 @@ canvas {
   }
 }
 
-@media (min-width: 700px) and (max-width:1024px) {
+@media (min-width: 700px) and (max-width:1150px) {
   #textbox {
     width: 50%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .uk-column-1-2 {
     display: contents;
   }
