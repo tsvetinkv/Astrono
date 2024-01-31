@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -18,10 +17,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/main-mEG8RW5K.js"></script>
+  <script type="module" crossorigin src="./assets/main-uC6pFMTY.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-9p4a8sJU.js">
+  <link rel="stylesheet" crossorigin href="./assets/style-uFGDVYdo.css">
   <link rel="stylesheet" crossorigin href="./assets/uikit-pg6vp1My.css">
-  <link rel="stylesheet" crossorigin href="./assets/style-aAvLBInK.css">
 </head>
 
 <body>
@@ -29,34 +28,38 @@
     <div class="uk-navbar-left" style="flex-grow: 7;">
       <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="#"><img src="./assets/logoLight-EaHVsdZH.png" /></a>
       <ul class="uk-navbar-nav" style="flex-grow: 5;">
-        <li><a href="/events/">Events</a></li>
+        <li><a href="/events/" id="eventsNav">EVENTS</a></li>
         <li>
           <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true"
-            id="hoveredNav">Stars & constellations</a>
+            id="hoveredNav">STARS AND CONSTELLATIONS</a>
           <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar" id="dropdown"
             style="max-width: 887px;background:#090D29;">
             <div class="uk-padding">
               <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
                 <div class="uk-first-column">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/starsAndConstellations/stars/basics/">Star Basics</a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star
-                        systems</a></li>
+                    <li class="uk-active"><a href="/starsAndConstellations/stars/basics/" id="starBasics">Star Basics</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/" id="typesStars">Types Stars</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/"
+                        id="multipleStarSystems">Multiple star systems</a></li>
                   </ul>
                 </div>
                 <div>
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/starsAndConstellations/constellations/home/">Constellations</a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                    <li class="uk-active"><a href="/starsAndConstellations/constellations/home/"
+                        id="constellations">Constellations</a></li>
+                    <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                        id="constellationsBySeasons">Constellations by seasons</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </li>
-        <li><a href="/moon/">Moon</a></li>
-        <li><a href="/about/">About</a></li>
+        <li><a href="/moon/" id="moonNav">MOON</a></li>
+        <li><a href="/about/" id="aboutNav">ABOUT</a></li>
+        <li class="translate" style="color:#9eb8f4; cursor: pointer;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAULSURBVHgB5VdfiFRVGP++75x7Z8eZdWepNCF1xQJZylrDQGmhDSnSICEQFvGhEKKkXuxZs96ih/TFB1+MUDQEyz9RuaYRlGUQ/qmgDFbI/uq2rbvuzL33nK/vnLkze2dcZ3fq0Q/2zrlnzjm/78/v/L5ZgNvNsDbYffjqI9YEuxTBUkVoFQKGhCwLUCtkDQxEBCRrtTw0EiDib/lc+dX+/tIQtGkemJnVrkNjV5BhPqE7GEEcgAARSP4ckJJ1Kp13oAExKPc98ShRZcnAQPdoO8AuANj7wR+9xvJ87wnilE/s3tM3rKUn8331WULUfdCmeeAoCDMH3sqwzflZADuTdLsA/Wf1KE4PZegqjq10n1yfb1xvjGkbXbuH0oGcYeqTqOBDZeiQVRZCqWdvT+Xi2e/sZrRkpeZCNn5SUDcIqvdNKcVnzly7RyWFdW5/EvPHqwbywzBTxCaJvce1BxvuJZWsRb52mMGuPvvDHQcDjU8sX1bYL8V+XHKywi/1BEAfcRyrCWvM3WBwQUegTl34Ol49q4gRbC2zwIg9MWNPjkrn5NJcSSxsRuY3z/94bVDRnI1WlqpMciVg7u/v/luGO9z7ha/K33CML8rwi5bAZnJCbm2+ymKaYq2xamsHxg/KnerU0ehuE847xZBWv852V2NsrDHaEVLBXTBTqlW+wDXSNOxHLBmilzes695qg9KzMtMz3SGuxtn3ZKLyfcyVd2EmYF/jdCunhMkFuI85GYhtfOzAsfEThbmFz4t5cz8Bv5N1km/2F/pETPpWFfe1wM2y2ma9EczktKjUNuCOASsM+GcsXqMVDClIjiIF6wWwK3uFv/zsxjlkWu7UzKmbUzmdqiA5FSS6RDresuihjk9SDEEpx+TZ7EkqNBPaRkx7rNUDmEqWT4mlNQzBTrbYhU1lZdSOlH4/Oh33m8hDuLE4ei+Y4ODFi38W68ARJDfgf5hUWCpkw5nWScspFeLOO+vAW56Zd0mhOV91nRtEkBmaCtlYVCQ7nMD4sIS7zEUmQcbZ5V7h+Oa9ujaYVzJPjU/qwSQ2va4+LmOE0oJEroS1Vkl+ZcBKFEI6kt9DhJfDcHIPmK5dbF267XBEfz2cNwt+lrdSWrkqYHoHkSpTYtWODQ1d752M7QYtyVIKu6VXb1Kou5WXTvtcsePGSRMVN0vn3lZrr9LWhWjoCWdUtGRJX36YWoHsPzpy5PjxXxdn50TRHwAMtgOp7YjqFWbsduHIucOLlna8F0Wd+3Up3DmdLvhI04hbAkeGOq/jHJ2dqzYlhGZWSxXe/uVSPGiZH03GkpWo+TjXk5qy3Y9zMCOw1PJba/Cl7Jy1Bhsr5MYWDI28j2QuS1N5PrHlKOHoLeTmSjJUKtWIdStgRWNvsC3tO3B0rCziUSmEV/uRQjYRpwqX/gpB3ItRsY8VvuB+q2kIOQjMaxCb0+L+Y7VUufW5XLUGLYE3Pr3YdZy1AlJNGs7lj05cX9a4TZyg6HXm3KciPD3kpUZIFFEZ0exQNeAmawlcM3QtKDUikQuT/Q4SNLSDkXpS78Cn39J6HfJErds2W8saT2dSO6qfDz6DmiG3qS65kPLZSa9RG7PvVVLCzKye1kj9Xh3U6wu3ujrZdTWXaBxH/xPwfQuLZ5QyPzG0b6j4yMLVXSPN7szahGx08nR50JpkaSCpU0qyLIwKlObqfxnaok1UoLVRTnKFa2GgLixaoY/AbWv/AmClAajkxkvsAAAAAElFTkSuQmCC" /><span
+            class="tbtn">Translate</span></li>
       </ul>
     </div>
   </div>
@@ -73,37 +76,41 @@
         uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
         style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:#090D29;">
         <ul class="uk-nav uk-navbar-dropdown-nav">
-          <li class="uk-active"><a href="/events/">Events</a></li>
-          <li class="uk-active"><a href="/starsAndConstellations/">Star & Constellations</a></li>
+          <li class="uk-active"><a href="/events/" id="eventsS">Events</a></li>
+          <li class="uk-active"><a href="/starsAndConstellations/" id="starsAndConstellationsS">Stars and Constellations</a></li>
           <li class="uk-parent">
-            <a href="/starsAndConstellations/stars/basics/">Star Basics</a>
+            <a href="/starsAndConstellations/stars/basics/" id="starBasicsS">Star Basics</a>
             <ul class="uk-nav-sub">
-              <li><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
-              <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+              <li><a href="/starsAndConstellations/stars/typesStars/" id="typesStarsS">Types Stars</a></li>
+              <li><a href="/starsAndConstellations/stars/multipleStarSystems/" id="multipleStarSystemsS">Multiple star systems</a></li>
             </ul>
           </li>
           <li class="uk-parent">
-            <a href="/starsAndConstellations/constellations/home/">Constellations</a>
+            <a href="/starsAndConstellations/constellations/home/" id="constellationsS">Constellations</a>
             <ul class="uk-nav-sub">
-              <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+              <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                  id="constellationsBySeasonsS">Constellations by seasons</a></li>
             </ul>
           </li>
-          <li class="uk-active"><a href="/moon/">Moon</a></li>
-          <li class="uk-active"><a href="/about/">About</a></li>
+          <li class="uk-active"><a href="/moon/" id="moonS">Moon</a></li>
+          <li class="uk-active"><a href="/about/" id="aboutS">About</a></li>
         </ul>
       </div>
     </div>
   </div>
-
+  <div class="uk-flex uk-flex-center uk-margin-large-top">
+    <button id="btn" class="translate"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAULSURBVHgB5VdfiFRVGP++75x7Z8eZdWepNCF1xQJZylrDQGmhDSnSICEQFvGhEKKkXuxZs96ih/TFB1+MUDQEyz9RuaYRlGUQ/qmgDFbI/uq2rbvuzL33nK/vnLkze2dcZ3fq0Q/2zrlnzjm/78/v/L5ZgNvNsDbYffjqI9YEuxTBUkVoFQKGhCwLUCtkDQxEBCRrtTw0EiDib/lc+dX+/tIQtGkemJnVrkNjV5BhPqE7GEEcgAARSP4ckJJ1Kp13oAExKPc98ShRZcnAQPdoO8AuANj7wR+9xvJ87wnilE/s3tM3rKUn8331WULUfdCmeeAoCDMH3sqwzflZADuTdLsA/Wf1KE4PZegqjq10n1yfb1xvjGkbXbuH0oGcYeqTqOBDZeiQVRZCqWdvT+Xi2e/sZrRkpeZCNn5SUDcIqvdNKcVnzly7RyWFdW5/EvPHqwbywzBTxCaJvce1BxvuJZWsRb52mMGuPvvDHQcDjU8sX1bYL8V+XHKywi/1BEAfcRyrCWvM3WBwQUegTl34Ol49q4gRbC2zwIg9MWNPjkrn5NJcSSxsRuY3z/94bVDRnI1WlqpMciVg7u/v/luGO9z7ha/K33CML8rwi5bAZnJCbm2+ymKaYq2xamsHxg/KnerU0ehuE847xZBWv852V2NsrDHaEVLBXTBTqlW+wDXSNOxHLBmilzes695qg9KzMtMz3SGuxtn3ZKLyfcyVd2EmYF/jdCunhMkFuI85GYhtfOzAsfEThbmFz4t5cz8Bv5N1km/2F/pETPpWFfe1wM2y2ma9EczktKjUNuCOASsM+GcsXqMVDClIjiIF6wWwK3uFv/zsxjlkWu7UzKmbUzmdqiA5FSS6RDresuihjk9SDEEpx+TZ7EkqNBPaRkx7rNUDmEqWT4mlNQzBTrbYhU1lZdSOlH4/Oh33m8hDuLE4ei+Y4ODFi38W68ARJDfgf5hUWCpkw5nWScspFeLOO+vAW56Zd0mhOV91nRtEkBmaCtlYVCQ7nMD4sIS7zEUmQcbZ5V7h+Oa9ujaYVzJPjU/qwSQ2va4+LmOE0oJEroS1Vkl+ZcBKFEI6kt9DhJfDcHIPmK5dbF267XBEfz2cNwt+lrdSWrkqYHoHkSpTYtWODQ1d752M7QYtyVIKu6VXb1Kou5WXTvtcsePGSRMVN0vn3lZrr9LWhWjoCWdUtGRJX36YWoHsPzpy5PjxXxdn50TRHwAMtgOp7YjqFWbsduHIucOLlna8F0Wd+3Up3DmdLvhI04hbAkeGOq/jHJ2dqzYlhGZWSxXe/uVSPGiZH03GkpWo+TjXk5qy3Y9zMCOw1PJba/Cl7Jy1Bhsr5MYWDI28j2QuS1N5PrHlKOHoLeTmSjJUKtWIdStgRWNvsC3tO3B0rCziUSmEV/uRQjYRpwqX/gpB3ItRsY8VvuB+q2kIOQjMaxCb0+L+Y7VUufW5XLUGLYE3Pr3YdZy1AlJNGs7lj05cX9a4TZyg6HXm3KciPD3kpUZIFFEZ0exQNeAmawlcM3QtKDUikQuT/Q4SNLSDkXpS78Cn39J6HfJErds2W8saT2dSO6qfDz6DmiG3qS65kPLZSa9RG7PvVVLCzKye1kj9Xh3U6wu3ujrZdTWXaBxH/xPwfQuLZ5QyPzG0b6j4yMLVXSPN7szahGx08nR50JpkaSCpU0qyLIwKlObqfxnaok1UoLVRTnKFa2GgLixaoY/AbWv/AmClAajkxkvsAAAAAElFTkSuQmCC" /><span
+        class="tbtn">Translate</span></button>
+  </div>
   <div class="uk-padding-large">
     <div class="uk-column-1-2" style="gap: 10%;">
       <div id="text">
-        <h2 class="uk-text-bolder uk-text-italic">Are you interested in astronomy?</h2>
-        <h3 class="uk-text-italic">Do you want to learn new things about celestial events or stars and constelations?
+        <h2 class="uk-text-bolder uk-text-italic" id="heading1">Are you interested in astronomy?</h2>
+        <h3 class="uk-text-italic" id="heading2">
+          Do you want to learn new things about celestial events or stars and constelations?
         </h3>
-        <p>
-          Then Astrono is the perfect place for you! Just choose from the categories below and explore a whole new
-          univerce and learn new things.
+        <p id="para1">
+          Then Astrono is the perfect place for you! Just choose from the categories below and explore a whole new univerce and learn new things.
         </p>
       </div>
       <div class="uk-flex uk-flex-center">
@@ -117,15 +124,13 @@
         <img class="eventImg" src="./assets/eventsEn-PbA6ACXs.png" />
       </div>
     </a>
-    <p class="events" style="text-align:right;" class="pageExplanation">
-      If you want to learn more about Celestial events like full moons, new moons, lunar eclipces, solar eclipses
-      or meteor showers, and see when they will happen, then check this page.
+    <p class="events pageExplanation eventsP" style="text-align:right;">
+      If you want to know more about celestial events such as full moon, new moon, lunar eclipses, solar eclipses, conjunctions of the moon with planets, meteor showers or comets and find out when they will happen, then check the page.
     </p>
   </div>
   <div class="sectionPhone">
-    <p class="events" class="pageExplanation">
-      If you want to learn more about Celestial events like full moons, new moons, lunar eclipces, solar eclipses
-      or meteor showers, and see when they will happen, then check this page.
+    <p class="events pageExplanation eventsP">
+      If you want to know more about celestial events such as full moon, new moon, lunar eclipses, solar eclipses, conjunctions of the moon with planets, meteor showers or comets and find out when they will happen, then check the page.
     </p>
     <a href="/events/index.html">
       <div class="card">
@@ -135,10 +140,9 @@
   </div>
   <div class="section uk-margin-medium-bottom">
     <p id="starsAndConstellations" class="pageExplanation">
-      If stars grab your attention and you want to learn about the stars and the constellations then this page is
-      for you.
+      If stars grab your attention and you want to learn about the stars and the constellations then this page is for you.
     </p>
-    <a href="/starsAndConstellations/constellations/home/">
+    <a href="/starsAndConstellations/">
       <div class="cardRight">
         <img id="starsAndConstellationsImg" src="./assets/starsAndConstellationsEn-R9v3Fn80.png" />
       </div>
@@ -147,25 +151,25 @@
   <div class="sectionBiggerScreen uk-margin-medium-bottom">
     <a href="/moon/index.html">
       <div class="card">
-        <img class="eventImg" src="./assets/MoonEn-1MkZZlhf.png" />
+        <img class="moonImg" src="./assets/MoonEn-1MkZZlhf.png" />
       </div>
     </a>
-    <p class="events" style="text-align:right;" class="pageExplanation">
-      If you want to see different moon maps, or to learn about the moon formation, moon phases or about the different
-      types of eclipses, then chek this page.
+    <p class="events pageExplanation moonP" style="text-align:right;">
+      If you want to see different moon maps, or to learn about the moon formation, moon phases or about the different types of eclipses, then chek this page.
     </p>
   </div>
   <div class="sectionPhone uk-margin-medium-bottom">
-    <p class="events" class="pageExplanation">
-      If you want to see different moon maps, or to learn about the moon formation, moon phases or about the different
-      types of eclipses, then chek this page.
+    <p class="events pageExplanation moonP">
+      If you want to see different moon maps, or to learn about the moon formation, moon phases or about the different types of eclipses, then chek this page.
     </p>
     <a href="/moon/index.html">
       <div class="card">
-        <img class="eventImg" src="./assets/MoonEn-1MkZZlhf.png" />
+        <img class="moonImg" src="./assets/MoonEn-1MkZZlhf.png" />
       </div>
     </a>
   </div>
+  <script src="helpers.js"></script>
+  <script src="translate.js"></script>
 </body>
 
 </html>
