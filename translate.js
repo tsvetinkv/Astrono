@@ -15,7 +15,6 @@ function translateButton(page1, page2, page3) {
             switchLanguage(page1, page2, page3);
         });
     }
-
 }
 
 function switchLanguage(page1, page2, page3) {

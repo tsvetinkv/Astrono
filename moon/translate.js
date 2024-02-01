@@ -72,7 +72,6 @@ function translateTxt(translations) {
     const ppm = document.getElementById("ppm");
     const roughnessP = document.getElementById("roughnessP");
 
-
     let htmlElements = [eventsNav, sAndCNav, starBasics, typesStars, multipleStarSystems, constellations, constellationsBySeasons, eventsS, starsAndConstellationsS, starBasicsS, typesStarsS, multipleStarSystemsS, constellationsS, constellationsBySeasonsS, moonFormation, moonPhases, eclipses];
     translations.forEach(t => {
         if (t.page == 17) {
@@ -134,15 +133,7 @@ function translateTxt(translations) {
                     }
                 }
             }
-            gravity.forEach(g => {
-                if (t.en.trim() == g.innerHTML.trim() || t.bg.trim() == g.innerHTML.trim()) {
-                    if (currentLanguage == "en") {
-                        g.innerHTML = t.en;
-                    } else if (currentLanguage == "bg") {
-                        g.innerHTML = t.bg;
-                    }
-                }
-            })
+
 
             elevation.forEach(el => {
                 if (t.en.trim() == el.innerHTML.trim() || t.bg.trim() == el.innerHTML.trim()) {
@@ -150,6 +141,16 @@ function translateTxt(translations) {
                         el.innerHTML = t.en;
                     } else if (currentLanguage == "bg") {
                         el.innerHTML = t.bg;
+                    }
+                }
+            })
+
+            gravity.forEach(g => {
+                if (t.en.trim() == g.innerHTML.trim() || t.bg.trim() == g.innerHTML.trim()) {
+                    if (currentLanguage == "en") {
+                        g.innerHTML = t.en;
+                    } else if (currentLanguage == "bg") {
+                        g.innerHTML = t.bg;
                     }
                 }
             })
@@ -183,6 +184,8 @@ function translateTxt(translations) {
                     }
                 }
             })
+
         }
     })
+    
 }
