@@ -2,21 +2,32 @@ body {
     background: linear-gradient(0deg, rgba(43, 2, 85, 1) 0%, rgba(5, 26, 70, 1) 100%);
     font-family: 'Raleway', sans-serif;
 }
+
 header {
     background-image: url(images/background.jpg);
     column-gap: 15% !important;
     height: 60vh;
 }
 
-h2, h3{
-    font-family: 'Outfit', sans-serif!important;
+h2,
+h3 {
+    font-family: 'Outfit', sans-serif !important;
 }
 
 .uk-card {
     border-radius: 20px;
     background: rgba(9, 13, 41, 0.9);
     width: 30vw;
-    height: 70%
+    height: 75%;
+    padding: 2%!important;
+}
+
+.uk-card-title {
+    margin-bottom: 0;
+}
+
+.uk-card p{
+    margin-top: 3%;
 }
 
 .cards {
@@ -99,8 +110,13 @@ iframe {
         width: 40vw;
         height: auto;
     }
-}
 
+}
+@media (min-width: 600px) and (max-width: 675px){
+    .uk-card {
+        height: 55vh;
+    }
+}
 @media (min-width: 480px) and (max-width:600px) {
 
     header {
@@ -110,17 +126,18 @@ iframe {
         justify-items: center;
     }
 
-    .uk-card, #wrap{
-        margin-top:5%;
+    .uk-card,
+    #wrap {
+        margin-top: 5%;
     }
 
-    #wrap{
+    #wrap {
         margin-bottom: 2%;
     }
 
     .uk-card {
         width: 85vw;
-        height: 35vh;
+        height: 45vh;
     }
 
     iframe {
@@ -148,17 +165,18 @@ iframe {
         justify-items: center;
     }
 
-    .uk-card, #wrap{
-        margin-top:5%;
+    .uk-card,
+    #wrap {
+        margin-top: 5%;
     }
 
-    #wrap{
+    #wrap {
         margin-bottom: 2%;
     }
 
     .uk-card {
         width: 90vw;
-        height: 40vh;
+        height: 49vh;
     }
 
     iframe {
