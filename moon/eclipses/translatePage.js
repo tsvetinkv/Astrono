@@ -12,6 +12,10 @@ function translateTxt(translations) {
     const id205 = document.querySelectorAll('.tbtn');
     const id23 = document.querySelectorAll(`.${CSS.escape("23")}`);
     const id24 = document.querySelectorAll(`.${CSS.escape("24")}`);
+    const id25 = document.getElementById('25');
+    const id26 = document.getElementById('26');
+    const id27 = document.getElementById('27');
+    const id28 = document.getElementById('28');
     const id78 = document.getElementById('78');
     const id79 = document.getElementById('79');
     const id80 = document.getElementById('80');
@@ -35,7 +39,7 @@ function translateTxt(translations) {
     const id99 = document.getElementById('99');
     const id100 = document.getElementById('100');
 
-    let elements = [id8, id9, id201, id203, id78, id79, id80, id81, id82, id83, id84, id85, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100];
+    let elements = [id8, id9, id201, id203, id25, id26, id27, id28, id78, id79, id80, id81, id82, id83, id84, id85, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100];
     translations.forEach(t => {
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
