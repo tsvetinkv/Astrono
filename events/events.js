@@ -42,7 +42,7 @@ fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
 
 function formatDate(date) {
     const options = { month: "long", day: "numeric" };
-    if (currentLanguage === "bg") {
+    if (currentLanguage === "Bg") {
         return date.toLocaleDateString("bg-BG", options);
     } else {
         return date.toLocaleDateString("en-US", options)
@@ -62,7 +62,7 @@ function displayEvents() {
         const lineOfEvents = document.createElement("div");
         lineOfEvents.classList.add("lineOfEvents");
 
-        if (currentLanguage == 'en') {
+        if (currentLanguage == 'En') {
             monthName.textContent = monthsEn[i];
         } else {
             monthName.textContent = monthsBg[i];
@@ -78,7 +78,7 @@ function displayEvents() {
         // Loop through events for the current month
         currentMonthEvents.forEach(event => {
             let eventName;
-            if (currentLanguage == 'en') {
+            if (currentLanguage == 'En') {
                 eventName = event.name;
             } else {
                 eventName = event.translatedName;
@@ -147,7 +147,7 @@ function createEventCard(event, eventName, lineOfEvents) {
 function displayPopup(event) {
     let description;
     let name
-    if (currentLanguage === "en") {
+    if (currentLanguage === "En") {
         description = event.description;
         name = event.name;
     } else {
