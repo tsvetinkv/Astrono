@@ -133,7 +133,6 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
 const tick = () => {
   const rotationSpeed = 0.005; // Set the rotation speed here
 
@@ -149,8 +148,9 @@ const tick = () => {
     const radius = Math.sqrt(x * x + z * z);
     const angle = Math.atan2(z, x);
 
-    positions[i3] = Math.cos(angle + rotationSpeed) * radius;
-    positions[i3 + 2] = Math.sin(angle + rotationSpeed) * radius;
+    // Change the sign of rotationSpeed to make the galaxy spin left
+    positions[i3] = Math.cos(angle - rotationSpeed) * radius;
+    positions[i3 + 2] = Math.sin(angle - rotationSpeed) * radius;
   }
 
   scene.getObjectByName(
