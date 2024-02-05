@@ -23,32 +23,40 @@
         <div class="uk-navbar-left" style="flex-grow: 7;">
             <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img src="./images/logoLight.png" /></a>
             <ul class="uk-navbar-nav" style="flex-grow: 5;">
-                <li><a href="/events/">Events</a></li>
+                <li><a href="/events/" id="8"></a></li>
                 <li>
-                    <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true" id="hoveredNav">Stars &
-                        constellations</a>
+                    <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true"
+                        id="9"></a>
                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar"
                         id="dropdown" style="max-width: 887px;background:rgb(0 11 83);">
                         <div class="uk-padding">
                             <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
                                 <div class="uk-first-column">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Stars</a></li>
-                                        <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
-                                        <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+                                        <li class="uk-active"><a href="#" class="12"></a></li>
+                                        <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/"
+                                                class="14"></a></li>
+                                        <li class="uk-parent"><a
+                                                href="/starsAndConstellations/stars/multipleStarSystems/"
+                                                class="15"></a></li>
                                     </ul>
                                 </div>
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="/starsAndConstellations/constellations/home/">Constellations</a></li>
-                                        <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                                        <li class="uk-active"><a href="/starsAndConstellations/constellations/home/"
+                                                class="17"></a></li>
+                                        <li class="uk-parent"><a
+                                                href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                                                class="19"></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li><a href="/moon/">Moon</a></li>
+                <li><a href="/moon/" id="10"></a></li>
+                <li class="translate" style="color:#9eb8f4; cursor: pointer;"><img
+                        src="/images/translateIcon.png" /><span class="tbtn"></span></li>
             </ul>
         </div>
     </div>
@@ -65,76 +73,66 @@
                 uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
                 style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:rgb(0 11 83);">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/events/">Events</a></li>
-                    <li class="uk-active"><a href="/starsAndConstellations/">Star & Constellations</a></li>
+                    <li class="uk-active"><a href="/events/" id="203"></a></li>
+                    <li class="uk-active"><a href="/starsAndConstellations/" id="201"></a></li>
                     <li class="uk-parent">
-                        <a href="#">Stars</a>
+                        <a href="#" class="12">Stars</a>
                         <ul class="uk-nav-sub">
-                            <li><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
-                            <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+                            <li><a href="/starsAndConstellations/stars/typesStars/" class="14"></a></li>
+                            <li><a href="/starsAndConstellations/stars/multipleStarSystems/" class="15"></a></li>
                         </ul>
                     </li>
                     <li class="uk-parent">
-                        <a href="/starsAndConstellations/constellations/home/">Constellations</a>
+                        <a href="/starsAndConstellations/constellations/home/" class="17"></a>
                         <ul class="uk-nav-sub">
-                            <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                            <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                                    class="19"></a></li>
                         </ul>
                     </li>
-                    <li class="uk-active"><a href="/moon/">Moon</a></li>
+                    <li class="uk-active"><a href="/moon/" id="202"></a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div id="header">
-        <h2 style="color: #c5ccfc;">Stars</h2>
+        <h2 style="color: #c5ccfc;" id="108">Stars</h2>
+        <div class="uk-flex uk-flex-center uk-margin-small-top uk-margin-small-bottom">
+            <button id="btn" class="translate"><img src="/images/translateIcon.png" /><span
+                    class="tbtn"></span></button>
+        </div>
         <form class="uk-search uk-search-default uk-first-column uk-margin-small-bottom"  onsubmit="return false">
             <span uk-search-icon="" class="uk-icon uk-search-icon"><svg width="20" height="20" viewBox="0 0 20 20"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span>
-            <input class="uk-search-input" id="placeholder" type="search" placeholder="Search star name" aria-label="Search">
+            <input class="uk-search-input" id="placeholder" type="search" placeholder="" aria-label="Search">
         </form>
     </div>
 
     <div uk-navbar="" class="uk-navbar uk-padding-small" style="background-color: #000B53;">
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Basics</a></li>
-                <li><a href="/starsAndConstellations/stars/typesStars/">Types Stars</a></li>
-                <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple Star Systems</a></li>
+                <li class="uk-active"><a href="#" id="110"></a></li>
+                <li><a href="/starsAndConstellations/stars/typesStars/" id="111"></a></li>
+                <li><a href="/starsAndConstellations/stars/multipleStarSystems/" id="112"></a></li>
             </ul>
         </div>
     </div>
     <main class="uk-margin-large-top">
         <div class="uk-flex uk-flex-middle uk-flex-center">
-            <p id="introdusingText">
-                Astronomers estimate that the universe could contain up to one septillion stars. Our Milky Way alone contains more than 100 billion, including our
-                most well-studied star, the Sun. Stars are giant balls of hot gas – mostly hydrogen, with some helium
-                and small amounts of other elements. Every star has its own life cycle, ranging from a few million to
-                trillions of years, and its properties change as it ages.
-            </p>
+            <p id="113" class="introdusingText"></p>
         </div>
         <section>
             <div class="uk-column-1-2 uk-padding-large">
                 <span class="text">
-                    <h2 id="birth">
-                        Birth of stars
-                    </h2>
-                    <p id="birthP">
-                        Stars form in large clouds of gas and dust called molecular clouds. Molecular clouds are cold
-                        which causes gas to clump, creating high-density pockets. Some of these clumps can collide with
-                        each other or collect more matter, strengthening their gravitational force as their mass grows.
-                        Eventually, gravity causes some of these clumps to collapse. When this happens, friction causes
-                        the material to heat up, which eventually leads to the development of a protostar – a baby star.
-                        Batches of stars that have recently formed from molecular clouds are often called stellar
-                        clusters and molecular clouds full of stellar clusters are called stellar nurseries.
-                    </p>
+                    <h2 id="114"></h2>
+                    <p id="115"></p>
                 </span>
                 <div class="images uk-align-right uk-margin-medium-top">
                     <figure>
                         <img src="./images/MolecularClouds.png" alt="Molecular clouds">
-                        <figcaption class="uk-text-center" id="figcaption1">Molecular clouds</figcaption>
+                        <figcaption class="uk-text-center" id="116"></figcaption>
                     </figure>
                     <figure>
                         <img src="./images/Protostar.png" alt="Protostar">
-                        <figcaption class="uk-text-center" id="figcaption2">Developement of protostar</figcaption>
+                        <figcaption class="uk-text-center" id="117"></figcaption>
                     </figure>
                 </div>
             </div>
@@ -144,65 +142,45 @@
                 <div class="images uk-align-left uk-margin-medium-top">
                     <figure>
                         <img src="./images/Redgiant.png" alt="Redgiant star">
-                        <figcaption class="uk-text-center">Red giant star</figcaption>
+                        <figcaption class="uk-text-center" id="120"></figcaption>
                     </figure>
                     <figure>
                         <img src="./images/MainSequenceStar.png" alt="Main Sequence Star">
-                        <figcaption class="uk-text-center">Main sequence star</figcaption>
+                        <figcaption class="uk-text-center" id="121"></figcaption>
                     </figure>
                 </div>
                 <span class="text uk-align-right uk-text-right" id="lifeOfStarsText">
-                    <h2>
-                        Life of stars
-                    </h2>
-                    <p>
-                        At first, most of the protostar’s energy comes from heat released by its initial collapse. Over
-                        millions of years, high pressures and temperatures in the core trigger nuclear fusion, turning
-                        hydrogen into helium, releasing energy that counteracts gravity. These stable stars are called
-                        main sequence stars, and this phase lasts millions or billions of years. Our Sun is midway
-                        through it. A star's mass determines how fast it uses its gas fuel. Lower-mass stars burn
-                        longer, appearing dimmer and cooler than massive stars, which burn fuel faster. Some low-mass
-                        stars can shine for trillions of years, while massive stars live only a few million years.
-                    </p>
+                    <h2 id="118"></h2>
+                    <p id="119"></p>
                 </span>
             </div>
         </section>
         <section>
             <div class="uk-column-1-2 uk-padding-large">
                 <span class="text">
-                    <h2>
-                        Death of stars
-                    </h2>
-                    <p>
-                        As a star's core depletes its hydrogen, gravity starts to compress it. This
-                        compression raises its temperature and pressure, causing the star to expand. The outcome of this
-                        process varies with the star's mass. Low-mass stars evolve into subgiants or giants, fusing
-                        helium into carbon, as our Sun will eventually. Some giants pulsate, shedding their atmospheres
-                        to form planetary nebulae. The core, known as a white dwarf, gradually cools over billions of
-                        years. High-mass stars undergo fusion to create heavier elements, such as oxygen and magnesium,
-                        while the most massive stars eventually reach iron fusion, which depletes their energy quickly.
-                        This results in a core collapse, followed by a supernova explosion. The core becomes either a
-                        neutron star or a black hole. Supernova dispers materials, enriching future molecular clouds and
-                        seeding new star formation.
-                    </p>
+                    <h2 id="122"></h2>
+                    <p id="123"></p>
                 </span>
                 <div class="images uk-align-right uk-margin-medium-top" id="threeImages">
                     <figure>
                         <img src="./images/Supernova.png" alt="Supernova explosion">
-                        <figcaption class="uk-text-center" id="figcaption5">Supernova explosion</figcaption>
+                        <figcaption class="uk-text-center" id="124"></figcaption>
                     </figure>
                     <figure>
                         <img src="./images/WhiteDwarf.png" alt="White Dwarf Star">
-                        <figcaption class="uk-text-center" id="figcaption6">White Dwarf</figcaption>
+                        <figcaption class="uk-text-center" id="125"></figcaption>
                     </figure>
                     <figure>
                         <img src="./images/NeutronStar.png" alt="Neutron Star">
-                        <figcaption class="uk-text-center" id="figcaption7">Neutron star</figcaption>
+                        <figcaption class="uk-text-center" id="126">r</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
     </main>
+    <script src="/helpers.js"></script>
+    <script src="/translate.js"></script>
+    <script src="./translatePage.js"></script>
     <script type="module" src="./script.js"></script>
 </body>
 
