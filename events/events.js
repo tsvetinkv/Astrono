@@ -18,27 +18,34 @@ const eventPhotos = {
     "Comet": "comet.jpg",
     "Conjunction": "moonConjunction.jpg"
 };
-
+fetchEvents();
 let eventPhotoFileName;
 let events;
 const section = document.querySelector(".events");
-
-
-fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
-    method: 'GET',
-    headers: {
-        accept: "application/json",
-    }
-})
-    .then(response => {
-        return response.json()
+const translateBtns = document.querySelectorAll(".translate");
+for (var i = 0; i < translateBtns.length; i++) {
+    translateBtns[i].addEventListener('click', function () {
+        fetchEvents();
+    });
+}
+function fetchEvents(){
+    fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
+        method: 'GET',
+        headers: {
+            accept: "application/json",
+        }
     })
-    .then(data => {
-        events = data;
-        displayEvents();
-
-    })
-    .catch(error => console.error('Error:', error))
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            events = data;
+            displayEvents();
+    
+        })
+        .catch(error => console.error('Error:', error))
+        
+}
 
 function formatDate(date) {
     const options = { month: "long", day: "numeric" };
@@ -51,7 +58,6 @@ function formatDate(date) {
 
 function displayEvents() {
     section.innerHTML = "";
-
     // Set the current month text
     const currentDate = new Date();
     const currentMonth = currentDate.getMonth();
@@ -91,7 +97,6 @@ function displayEvents() {
 }
 
 function createEventCard(event, eventName, lineOfEvents) {
-
     if (eventName.includes("Meteor Shower") || eventName.includes("Метеоритен дъжд")) {
         eventPhotoFileName = eventPhotos["Meteor Shower"];
     } else if (eventName.includes("Moon") || eventName.includes("Лун")) {
