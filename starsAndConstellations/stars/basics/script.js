@@ -4,7 +4,6 @@
             if (value) {
                 window.location.href = '/starsAndConstellations/stars/starSearch/index.html?value=' + encodeURIComponent(value);
                 localStorage.setItem('clearInput', 'true');
-                location.reload();
             }
         }
     });
@@ -14,7 +13,6 @@
         if (value) {
             window.location.href = '/starsAndConstellations/stars/starSearch/index.html?value=' + encodeURIComponent(value);
             localStorage.setItem('clearInput', 'true');
-            location.reload();
         }
     });
 
