@@ -15,7 +15,7 @@ h1 {
     font-family: 'Outfit', sans-serif !important;
 }
 
-#smallerScreenNav {
+#smallerScreenNav, #error {
     display: none;
 }
 
@@ -47,10 +47,6 @@ h1 {
 
 
 @media (max-width: 850px) {
-    main {
-        display: block !important;
-    }
-
     .img {
         width: 70vw;
         height: 45vh;

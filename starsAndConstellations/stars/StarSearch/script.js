@@ -28,7 +28,7 @@ fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
 
 
 function displayInfo(data) {
-    if (data.length === 0) {
+    if (data.length == 0) {
         const h1Error = document.getElementById('error');
         const main = document.getElementById('main');
         h1Error.style.height = "86vh";
@@ -38,6 +38,17 @@ function displayInfo(data) {
         h1Error.style.fontSize = "3vw";
         main.style.display = "none";
     } else {
+        const ukFlex = document.querySelector('.uk-flex');
+        if (innerWidth <= 850) {
+            ukFlex.style.display = "block";
+        }
+        window.addEventListener("resize", () => {
+            if (innerWidth <= 850) {
+                ukFlex.style.display = "block";
+            }else{
+                ukFlex.style.display = "flex";
+            }
+        });
         let starName = document.getElementById("name");
         let starConstellation = document.getElementById("constellation");
         let starDistance = document.getElementById("distance");
