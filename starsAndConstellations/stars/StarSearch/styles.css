@@ -1,6 +1,6 @@
 html,
 body {
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -8,11 +8,11 @@ body {
     background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
     color: #C5CCFC;
     height: 100vh;
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
-h1{
-    font-family: 'Outfit', sans-serif!important;
+h1 {
+    font-family: 'Outfit', sans-serif !important;
 }
 
 #smallerScreenNav {
@@ -26,12 +26,12 @@ h1{
     filter: brightness(1.15) contrast(1.10);
 }
 
-figcaption{
+figcaption {
     width: 30vw;
 }
 
-h1{
-    color: #C5CCFC!important;
+h1 {
+    color: #C5CCFC !important;
 }
 
 @media (min-width: 1235px) {
@@ -63,6 +63,11 @@ h1{
     figcaption {
         width: 70vw;
         margin: auto;
+    }
+
+    html,
+    body {
+        overflow-y: auto;
     }
 }
 
