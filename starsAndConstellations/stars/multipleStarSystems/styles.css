@@ -2,15 +2,15 @@ html {
     background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%) !important;
     color: #C5CCFC;
     overflow-x: hidden;
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
-h2{
-    font-family: 'Outfit', sans-serif!important;
+h2 {
+    font-family: 'Outfit', sans-serif !important;
 }
 
-
-#smallerScreenNav {
+#smallerScreenNav,
+#btn {
     display: none;
 }
 
@@ -21,6 +21,10 @@ h2{
 
 .uk-column-1-2 {
     column-gap: 20% !important;
+}
+
+.uk-text-center {
+    text-align: center!important;
 }
 
 p {
@@ -51,7 +55,7 @@ h2 {
     }
 
     .uk-padding-large {
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .uk-text-center {
@@ -70,20 +74,20 @@ h2 {
         margin: auto !important;
     }
 
-    figure{
-        margin: auto!important;
+    figure {
+        margin: auto !important;
     }
 
-    figure img{
+    figure img {
         width: 55vw;
     }
 
-    h2{
+    h2 {
         text-align: center;
     }
 
     .uk-width-1-2 {
-        width: 100%!important;
+        width: 100% !important;
     }
 }
 
@@ -96,7 +100,37 @@ h2 {
         display: flex;
     }
 
-    .uk-text-center img, figure img, p {
-        width: 80vw!important;
+    .uk-text-center img,
+    figure img,
+    p {
+        width: 80vw !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #btn img {
+        width: auto;
+    }
+
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.5%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 675px) {
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.2%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 2.9vw;
     }
 }
