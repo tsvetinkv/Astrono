@@ -27,31 +27,40 @@
         <div class="uk-navbar-left" style="flex-grow: 7;">
             <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img src="./images/logoLight.png" /></a>
             <ul class="uk-navbar-nav" style="flex-grow: 5;">
-                <li><a href="/events/">Events</a></li>
+                <li><a href="/events/" id="8"></a></li>
                 <li>
-                    <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true" id="hoveredNav">Stars &
-                        constellations</a>
+                    <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true"
+                        id="9"></a>
                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar"
                         id="dropdown" style="max-width: 887px;background:rgb(0 11 83);">
                         <div class="uk-padding">
                             <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
                                 <div class="uk-first-column">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="/starsAndConstellations/stars/basics/">Star Basics</a></li>
-                                        <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+                                        <li class="uk-active"><a href="/starsAndConstellations/stars/basics/" class="12"></a></li>
+                                        <li class="uk-parent"><a href="#"
+                                                class="14"></a></li>
+                                        <li class="uk-parent"><a
+                                                href="/starsAndConstellations/stars/multipleStarSystems/"
+                                                class="15"></a></li>
                                     </ul>
                                 </div>
                                 <div>
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="/starsAndConstellations/constellations/home/">Constellations</a></li>
-                                        <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                                        <li class="uk-active"><a href="/starsAndConstellations/constellations/home/"
+                                                class="17"></a></li>
+                                        <li class="uk-parent"><a
+                                                href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                                                class="19"></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li><a href="/moon/">Moon</a></li>
+                <li><a href="/moon/" id="10"></a></li>
+                <li class="translate" style="color:#9eb8f4; cursor: pointer;"><img
+                        src="/images/translateIcon.png" /><span class="tbtn"></span></li>
             </ul>
         </div>
     </div>
@@ -68,39 +77,45 @@
                 uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
                 style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:rgb(0 11 83);">
                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/events/">Events</a></li>
-                    <li class="uk-active"><a href="/starsAndConstellations/">Star & Constellations</a></li>
+                    <li class="uk-active"><a href="/events/" id="203"></a></li>
+                    <li class="uk-active"><a href="/starsAndConstellations/" id="201"></a></li>
                     <li class="uk-parent">
-                        <a href="/starsAndConstellations/stars/basics/">Star Basics</a>
+                        <a href="/starsAndConstellations/stars/basics/" class="12">Stars</a>
                         <ul class="uk-nav-sub">
-                            <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple star systems</a></li>
+                            <li><a href="#" class="14"></a></li>
+                            <li><a href="/starsAndConstellations/stars/multipleStarSystems/" class="15"></a></li>
                         </ul>
                     </li>
                     <li class="uk-parent">
-                        <a href="/starsAndConstellations/constellations/home/">Constellations</a>
+                        <a href="/starsAndConstellations/constellations/home/" class="17"></a>
                         <ul class="uk-nav-sub">
-                            <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/">Constellations by seasons</a></li>
+                            <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/"
+                                    class="19"></a></li>
                         </ul>
                     </li>
-                    <li class="uk-active"><a href="/moon/">Moon</a></li>
+                    <li class="uk-active"><a href="/moon/" id="202"></a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div id="header">
-        <h2 style="color: #c5ccfc;">Stars</h2>
+        <h2 style="color: #c5ccfc;" id="108">Stars</h2>
+        <div class="uk-flex uk-flex-center uk-margin-small-top uk-margin-small-bottom">
+            <button id="btn" class="translate"><img src="/images/translateIcon.png" /><span
+                    class="tbtn"></span></button>
+        </div>
         <form class="uk-search uk-search-default uk-first-column uk-margin-small-bottom"  onsubmit="return false">
             <span uk-search-icon="" class="uk-icon uk-search-icon"><svg width="20" height="20" viewBox="0 0 20 20"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></span>
-            <input class="uk-search-input" id="placeholder" type="search" placeholder="Search star name" aria-label="Search">
+            <input class="uk-search-input" id="placeholder" type="search" placeholder="" aria-label="Search">
         </form>
     </div>
 
     <div uk-navbar="" class="uk-navbar uk-padding-small" style="background-color: #000B53;">
         <div class="uk-navbar-center">
             <ul class="uk-navbar-nav">
-                <li><a href="/starsAndConstellations/stars/basics/">Basics</a></li>
-                <li class="uk-active"><a href="#">Types Stars</a></li>
-                <li><a href="/starsAndConstellations/stars/multipleStarSystems/">Multiple Star Systems</a></li>
+                <li><a href="/starsAndConstellations/stars/basics/" id="110"></a></li>
+                <li class="uk-active"><a href="#" id="111"></a></li>
+                <li><a href="/starsAndConstellations/stars/multipleStarSystems/" id="112"></a></li>
             </ul>
         </div>
     </div>
@@ -108,17 +123,8 @@
         <section>
             <div class="uk-column-1-2 uk-flex uk-flex-center uk-flex-middle">
                 <div class="uk-width-1-3" id="introduction">
-                    <h2 class="uk-text-left" id="typesStarsHeading">
-                        Types stars
-                    </h2>
-                    <p id="typesStarsP">
-                        The universe is filled with an astonishing diversity of stars,
-                        each possessing unique characteristics that set them apart
-                        from one another. Stars vary widely in terms of their
-                        brightness, size, color, and behavior. Some types change into
-                        others very quickly, while others stay
-                        relatively unchanged over trillions of years.
-                    </p>
+                    <h2 class="uk-text-left" id="127"></h2>
+                    <p id="128"></p>
                 </div>
                 <div class="uk-text-center">
                     <img src="./images/SpectralClass.png">
@@ -128,243 +134,115 @@
         <section>
             <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2">
                 <div class="uk-text-center">
-                    <h2 id="mainSequence">
-                        Main Sequence Stars
-                    </h2>
+                    <h2 id="129"></h2>
                     <img src="./images/MainSequenceStar.png">
                 </div>
-                    <p class="uk-width-1-3  uk-text-right" id="mainSequenceP">
-                        A normal star forms from dust and gas in a stellar
-                        nursery, gaining mass and heating up over hundreds of thousands of years.
-                        When its core reaches millions of degrees, nuclear fusion begins
-                        as hydrogen nuclei merge into helium, releasing
-                        energy that counters gravity. Such stars, known as main sequence stars,
-                        make up about 90% of all stars. They vary in size, color,
-                        and luminosity, with lifespans ranging from millions to billions of years.
-                    </p>
+                <p class="uk-width-1-3  uk-text-right" id="130"></p>
             </div>
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
+            <div class="uk-flex uk-flex-center uk-margin-medium-top">
                 <fieldset>
-                    <legend class="legend">For stargazers</legend>
-                    <span id="legend1">
-                        Many main sequence stars can be seen with the
-                        unaided eye,
-                        such as Sirius – the brightest star
-                        in the night sky – in the northern constellation
-                        Canis Major.
-                    </span>
+                    <legend class="131"></legend>
+                    <span id="132"></span>
                 </fieldset>
             </div>
         </section>
         <section>
-                <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2 reverse">
-                        <p class="uk-width-1-3">
-                            When a main sequence star under eight solar masses exhausts core hydrogen, it collapses due
-                            to
-                            gravity, raising temperature and pressure. Helium fusion into carbon releases energy,
-                            causing
-                            hydrogen fusion to expand the outer layers, forming a red giant. These red giants often
-                            appear
-                            orange. They become unstable, pulsate, and eject their atmospheres, ultimately
-                            dispersing their
-                            outer layers as a planetary nebula. Our Sun will become a red giant in about 5 billion
-                            years.
-                        </p>
-                    <div class="uk-text-center">
-                        <h2 class="redGiants">
-                            Red Giants
-                        </h2>
-                        <img src="./images/RedGiant.png">
-                    </div>
+            <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2" class="reverse">
+                <p class="uk-width-1-3" id="134"></p>
+                <div class="uk-text-center">
+                    <h2 class="redGiants" id="133"></h2>
+                    <img src="./images/RedGiant.png">
                 </div>
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
+            </div>
+            <div class="uk-flex uk-flex-center uk-margin-medium-top">
                 <fieldset>
-                    <legend class="legend">For stargazers</legend>
-                    <span id="legend2">
-                        Arcturus in the northern constellation Boötes
-                        and Gamma Crucis in the southern constellation
-                        Crux (the Southern Cross) are red giants visible
-                        to the unaided eye.
-                    </span>
+                    <legend class="131"></legend>
+                    <span id="135"></span>
                 </fieldset>
             </div>
         </section>
         <section>
             <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2">
                 <div class="uk-text-center">
-                    <h2 id="whiteDwarfs">
-                        White Dwarfs
-                    </h2>
+                    <h2 id="136"></h2>
                     <img src="./images/WhiteDwarf.png">
                 </div>
-                    <p class="uk-width-1-3  uk-text-right" id="whiteDwarfsP">
-                        When a red giant sheds its outer layers, it leaves behind a white dwarf core, typically
-                        Earth-sized
-                        but far more massive. A teaspoon of their material can outweigh a pickup truck. White
-                        dwarfs
-                        cool
-                        over billions of years, occasionally emitting visible light from blue to red. Some host
-                        dusty
-                        disks
-                        and planetary remnants from their red giant past. In about 10 billion years, our Sun
-                        will also
-                        transform into a white dwarf following its red giant phase.
-                    </p>
-                </div>
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
+                <p class="uk-width-1-3  uk-text-right" id="137"></p>
+            </div>
+            <div class="uk-flex uk-flex-center uk-margin-medium-top">
                 <fieldset>
-                    <legend class="legend">For stargazers</legend>
-                    <span id="legend3">
-                        White dwarfs are often too faint for naked-eye observation but can be spotted in binary
-                        systems
-                        with brighter main sequence stars, like Procyon B in Canis Minor. If you have a telescope,
-                        you
-                        can observe individual white dwarfs like LP 145-141 in Musca (southern constellation) and
-                        Van
-                        Maanen's star in Pisces (northern constellation).
-                    </span>
+                    <legend class="131"></legend>
+                    <span id="138"></span>
                 </fieldset>
             </div>
         </section>
         <section>
-                    <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2 reverse">
-                        <p class="uk-width-1-3" class="neutronStarP">
-                            A neutron star forms when a main sequence star with between about eight and 20 times the
-                            Sun’s
-                            mass
-                            runs out of hydrogen in its core. The star initially fuses helium into carbon, then
-                            converts
-                            carbon
-                            into heavier elements like neon, oxygen, silicon, and finally iron, releasing energy that
-                            prevents
-                            core collapse. However, as it reaches iron fusion, the star runs out of fuel, leading to a
-                            rapid
-                            core collapse, rebound, and a powerful supernova explosion. The remnant core is a
-                            superdense
-                            neutron
-                            star.
-                        </p>
-                    <div class="uk-text-center">
-                        <h2 class="neutronStar">
-                            Neutron Stars
-                        </h2>
-                        <img src="./images/NeutronStar.png" />
-                    </div>
+            <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2" class="reverse">
+                <p class="uk-width-1-3" id="140"></p>
+                <div class="uk-text-center">
+                    <h2 id="139"></h2>
+                    <img src="./images/NeutronStar.png" />
+                </div>
             </div>
-            <span class="uk-child-width-1-3 uk-flex uk-flex-center uk-flex-bottom uk-margin-large-top pulsarsAndMagnetars" style="column-gap: 10%;">
+            <span
+                class="uk-child-width-1-3 uk-flex uk-flex-center uk-flex-middle uk-margin-large-top pulsarsAndMagnetars"
+                style="column-gap: 10%;">
                 <div class="pulsars">
-                    <h2 class="uk-text-center" id="pulsars">Pulsars</h2>
-                    <p class="uk-margin-small-bottom" id="pulsarsP">
-                        these are a type of rapidly rotating neutron star.
-                        As they rotate, the spots spin in and out of
-                        view like the beams of a lighthouse. Some pulsars
-                        spin faster than blender blades.
-                    </p>
+                    <h2 class="uk-text-center" id="141"></h2>
+                    <p class="uk-margin-small-bottom" id="142"></p>
                     <div class="uk-text-center">
                         <img src="./images/Pulsar.png" />
                     </div>
                 </div>
                 <div class="magnetars">
-                    <h2 class="uk-text-center" id="magnetars">Magnetars</h2>
-                    <p class="uk-margin-small-bottom" id="magnetarsP">
-                        All neutron stars have strong magnetic fields.
-                        But a magnetar’s can be 10 trillion times
-                        stronger than a refrigerator magnet’s and up
-                        to a thousand times stronger than a typical neutron
-                        star’s.
-                    </p>
+                    <h2 class="uk-text-center" id="143"></h2>
+                    <p class="uk-margin-small-bottom" id="144"></p>
                     <div class="uk-text-center">
                         <img src="./images/Magnetar.png" />
                     </div>
                 </div>
             </span>
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
+            <div class="uk-flex uk-flex-center uk-margin-medium-top">
                 <fieldset>
-                    <legend class="legend">For stargazers</legend>
-                    <span id="legend4">
-                        Neutron stars are too faint to see with the unaided eye or backyard telescopes, although the
-                        Hubble
-                        Space Telescope has been able to capture a few in visible light. Astronomers usually
-                        observe them
-                        via X-rays and radio emission.
-                    </span>
+                    <legend class="131"></legend>
+                    <span id="145"></span>
                 </fieldset>
             </div>
-            </section>
-            <section>
-                <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2">
-                    <div class="uk-text-center">
-                        <h2 id="redDwarfs">
-                            Red Dwarfs
-                        </h2>
-                        <img src="./images/RedDwarfs.png">
-                    </div>
-                        <p class="uk-width-1-3  uk-text-right" id="redDwarfsP">
-                            Red dwarfs, the smallest main sequence stars, are cooler and often appear orange in color.
-                            They
-                            maintain a constant fusion process that allows them to burn through their hydrogen supply
-                            for
-                            trillions of years without significant structural changes. Some low-mass red dwarfs, just a
-                            third of
-                            the Sun's mass, may have lifespans exceeding the current age of the universe, up to about
-                            14
-                            trillion years. Red dwarfs are abundant and make up roughly 75% of the Milky Way's stellar
-                            population.
-                        </p>
-                    </div>
-                <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
-                    <fieldset>
-                        <legend class="legend">For stargazers</legend>
-                        <span id="legend5">
-                            Red dwarfs are too faint to see with the unaided
-                            eye. But with a backyard telescope, you may be
-                            able to see Lacaille 8760 in the southern constellation
-                            Microscopium or Lalande 21185 in the
-                            northern constellation Ursa Major.
-                        </span>
-                    </fieldset>
+        </section>
+        <section>
+            <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2">
+                <div class="uk-text-center">
+                    <h2 id="146"></h2>
+                    <img src="./images/RedDwarfs.png">
                 </div>
-            </section>
-            <section>
-                    <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2 reverse">
-                            <p class="uk-width-1-3">
-                                Brown dwarfs aren’t technically stars. They’re more massive than planets but not quite
-                                as
-                                massive as
-                                stars. Generally, they have between 13 and 80 times the mass of Jupiter. They emit
-                                almost
-                                no
-                                visible
-                                light, but scientists have seen a few in infrared light. Some brown dwarfs form the same
-                                way as
-                                main
-                                sequence stars, from gas and dust clumps in nebulae, but they never gain enough mass
-                                to do
-                                fusion on
-                                the scale of a main sequence star. Others may form like planets, from disks of gas and
-                                dust
-                                around
-                                stars.
-                            </p>
-                        <div class="uk-text-center">
-                            <h2 class="brownDwarfs">
-                                Brown Dwarfs
-                            </h2>
-                            <img src="./images/BrownDwarf.png">
-                        </div>
+                <p class="uk-width-1-3  uk-text-right" id="147"></p>
+            </div>
+            <div class="uk-flex uk-flex-center uk-margin-medium-top">
+                <fieldset>
+                    <legend class="131"></legend>
+                    <span id="148"></span>
+                </fieldset>
+            </div>
+        </section>
+        <section>
+            <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top uk-column-1-2" class="reverse">
+                <p class="uk-width-1-3" id="149"></p>
+                <div class="uk-text-center">
+                    <h2 id="150"></h2>
+                    <img src="./images/BrownDwarf.png">
                 </div>
-                <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-medium-top">
-                    <fieldset>
-                        <legend class="legend">For stargazers</legend>
-                        <span id="legend6">
-                            Brown dwarfs are generally invisible to both the unaided eye and small backyard telescopes
-                            due
-                            to their faintness and small size.
-                        </span>
-                    </fieldset>
-                </div>
-            </section>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-bottom uk-margin-medium-top">
+                <fieldset>
+                    <legend class="131"></legend>
+                    <span id="151"></span>
+                </fieldset>
+            </div>
+        </section>
     </main>
+    <script src="/helpers.js"></script>
+    <script src="/translate.js"></script>
+    <script src="./translatePage.js"></script>
     <script src="/starsAndConstellations/stars/basics/script.js"></script>
 </body>
 
