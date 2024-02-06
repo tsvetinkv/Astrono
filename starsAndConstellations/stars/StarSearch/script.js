@@ -29,12 +29,13 @@ fetch(`https://api.api-ninjas.com/v1/stars?name=${value}`, {
 
 function displayInfo(data) {
     if (data.length === 0) {
+        const h1Error = document.getElementById('error');
+        const main = document.getElementById('main');
         h1Error.style.height = "86vh";
         h1Error.style.display = "flex";
         h1Error.style.alignItems = "center";
         h1Error.style.justifyContent = "center";
         h1Error.style.fontSize = "3vw";
-        h1Error.innerHTML = "Няма такава звезда в списъка";
         main.style.display = "none";
     } else {
         let starName = document.getElementById("name");

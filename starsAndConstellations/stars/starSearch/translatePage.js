@@ -17,7 +17,7 @@ function translateTxt(translations) {
     const id161 = document.getElementById("161");
     const id163 = document.getElementById("163");
     const id165 = document.getElementById("165");
-
+    const error = document.getElementById("error");
 
     let elements = [id8, id9, id10, id203, id201, id202, id166, id167, id161, id163, id165];
     translations.forEach(t => {
@@ -37,6 +37,8 @@ function translateTxt(translations) {
             } else if (t.id == 246) {
                 const tooltip = UIkit.tooltip(id165);
                 tooltip.$el.setAttribute("title", t.text);
+            }else if (t.id == 247) {
+                error.innerHTML = t.text;
             }
         }
 
