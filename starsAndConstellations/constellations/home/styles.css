@@ -5,11 +5,12 @@ html {
 body {
     background: linear-gradient(0deg, rgba(116, 30, 113, 1) 0%, rgba(10, 22, 84, 1) 100%);
     color: #CAF7F3 !important;
-    font-family: 'Raleway', sans-serif!important;
+    font-family: 'Raleway', sans-serif !important;
 
 }
 
-#smallerScreenNav {
+#smallerScreenNav,
+#btn {
     display: none;
 }
 
@@ -22,7 +23,7 @@ p {
 h2,
 h1 {
     color: #7CE4DC !important;
-    font-family: 'Outfit', sans-serif!important;
+    font-family: 'Outfit', sans-serif !important;
 }
 
 .form {
@@ -468,12 +469,12 @@ figure {
     }
 
     #constellationImg {
-        margin-top: 3%!important;
+        margin-top: 3% !important;
     }
 
     #constellationImg,
     figure,
-    #constellationsBySeasonsP {
+    .constellationsBySeasonsP {
         margin-bottom: 5% !important;
     }
 }
@@ -485,5 +486,33 @@ figure {
 
     #smallerScreenNav {
         display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    #btn img {
+        width: auto;
+    }
+
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.5%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 675px) {
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.2%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 2.9vw;
     }
 }
