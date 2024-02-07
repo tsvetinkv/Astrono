@@ -505,7 +505,7 @@ figure {
     }
 }
 
-@media (min-width: 450px) and (max-width: 675px) {
+@media (min-width: 450px) and (max-width: 600px) {
     #btn {
         display: inline;
         background: #2a0254;
