@@ -20,7 +20,8 @@
 <body>
     <div class="uk-navbar-justify uk-navbar" id="biggerSceenNav" uk-navbar="" style="background: rgb(42 2 84);">
         <div class="uk-navbar-left" style="flex-grow: 7;">
-            <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img src="/starsAndConstellations/images/logo.png" /></a>
+            <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/"><img
+                    src="/starsAndConstellations/images/logo.png" /></a>
             <ul class="uk-navbar-nav" style="flex-grow: 5;">
                 <li><a href="/events/" id="8"></a></li>
                 <li>
@@ -54,7 +55,21 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="/moon/" id="10"></a></li>
+                <li>
+                    <a href="/moon/" id="10" role="button" aria-haspopup="true" aria-expanded="true"></a>
+                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1 uk-drop uk-navbar-dropdown-dropbar"
+                        id="dropdown" style="max-width: 900px;background:rgb(0 11 83);">
+                        <div class="uk-padding">
+                            <div class="uk-drop-grid uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-parent"><a href="/moon/formation/" class="249"></a></li>
+                                    <li class="uk-parent"><a href="/moon/moonPhases/" class="250"></a></li>
+                                    <li class="uk-parent"><a href="/moon/eclipses/" class="251"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="translate" style="color:#9eb8f4; cursor: pointer;"><img
                         src="/images/translateIcon.png" /><span class="tbtn"></span></li>
             </ul>
@@ -90,27 +105,33 @@
                         </ul>
                     </li>
                     <li class="uk-active"><a href="/moon/" id="202"></a></li>
+                    <li class="uk-parent">
+                        <a href="/moon/formation/" class="249"></a>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="/moon/moonPhases/" class="250"></a>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="/moon/eclipses/" class="251"></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-    <main class="uk-flex uk-flex-center uk-flex-middle uk-margin-large-top uk-margin-large-bottom" id="main" style="height:77vh;">
+    <main class="uk-flex uk-flex-center uk-flex-middle uk-margin-large-top uk-margin-large-bottom" id="main"
+        style="height:77vh;">
         <figure class="uk-text-center">
             <img class="img" id="star" src="" />
             <figcaption class="uk-text-center" id="166"></figcaption>
         </figure>
         <div class="starInfo uk-text-center uk-margin-large-right uk-margin-large-left">
             <h1 id="name"></h1>
-            <span id="161"
-                uk-tooltip=""></span><span
-                id="constellation"></span><br>
+            <span id="161" uk-tooltip=""></span><span id="constellation"></span><br>
             <br>
             <span id="163" uk-tooltip=""></span>
             <span id="distance"></span><br>
             <br>
-            <span id="165"
-                uk-tooltip=""></span><span
-                id="spectralClass"></span><br>
+            <span id="165" uk-tooltip=""></span><span id="spectralClass"></span><br>
         </div>
         <figure class="uk-text-center">
             <img class="img" id="constellationImg" src="" />
