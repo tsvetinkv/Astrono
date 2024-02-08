@@ -9,6 +9,9 @@ function translateTxt(translations) {
     const id15 = document.querySelectorAll(`.${CSS.escape("15")}`);
     const id17 = document.querySelectorAll(`.${CSS.escape("17")}`);
     const id19 = document.querySelectorAll(`.${CSS.escape("19")}`);
+    const id249 = document.querySelectorAll(`.${CSS.escape("249")}`);
+    const id250 = document.querySelectorAll(`.${CSS.escape("250")}`);
+    const id251 = document.querySelectorAll(`.${CSS.escape("251")}`);
     const id201 = document.getElementById('201');
     const id202 = document.getElementById('202');
     const id203 = document.getElementById('203');
@@ -38,6 +41,9 @@ function translateTxt(translations) {
         translateMultipleElements(id15, t, 15);
         translateMultipleElements(id17, t, 17);
         translateMultipleElements(id19, t, 19);
+        translateMultipleElements(id249, t, 249);
+        translateMultipleElements(id250, t, 250);
+        translateMultipleElements(id251, t, 251);
         translateMultipleElements(id5, t, 5);
         translateMultipleElements(id7, t, 7);
     })
