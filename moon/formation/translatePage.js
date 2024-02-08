@@ -2,12 +2,16 @@ translateButton(16, 3, 5);
 function translateTxt(translations) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
+    const id10 = document.getElementById('10');
     const id12 = document.querySelectorAll(`.${CSS.escape("12")}`);
     const id14 = document.querySelectorAll(`.${CSS.escape("14")}`);
     const id15 = document.querySelectorAll(`.${CSS.escape("15")}`);
     const id17 = document.querySelectorAll(`.${CSS.escape("17")}`);
     const id19 = document.querySelectorAll(`.${CSS.escape("19")}`);
+    const id250 = document.querySelectorAll(`.${CSS.escape("250")}`);
+    const id251 = document.querySelectorAll(`.${CSS.escape("251")}`);
     const id201 = document.getElementById('201');
+    const id202 = document.getElementById('202');
     const id203 = document.getElementById('203');
     const id205 = document.querySelectorAll('.tbtn');
     const id23 = document.querySelectorAll(`.${CSS.escape("23")}`);
@@ -30,7 +34,7 @@ function translateTxt(translations) {
 
     
 
-    let elements = [id8, id9, id201, id203, id25, id26, id27, id28, id42, id40, id41, id43, id44, id46, id47, id48, id49, id50, id51];
+    let elements = [id8, id9, id10, id201, id202, id203, id25, id26, id27, id28, id42, id40, id41, id43, id44, id46, id47, id48, id49, id50, id51];
     translations.forEach(t => {
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
@@ -46,6 +50,8 @@ function translateTxt(translations) {
         translateMultipleElements(id15, t, 15);
         translateMultipleElements(id17, t, 17);
         translateMultipleElements(id19, t, 19);
+        translateMultipleElements(id250, t, 250);
+        translateMultipleElements(id251, t, 251);
         translateMultipleElements(id23, t, 23);
         translateMultipleElements(id24, t, 24);
     });

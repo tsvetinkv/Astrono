@@ -2,12 +2,16 @@ translateButton(16, 3, 7);
 function translateTxt(translations) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
+    const id10 = document.getElementById('10');
     const id12 = document.querySelectorAll(`.${CSS.escape("12")}`);
     const id14 = document.querySelectorAll(`.${CSS.escape("14")}`);
     const id15 = document.querySelectorAll(`.${CSS.escape("15")}`);
     const id17 = document.querySelectorAll(`.${CSS.escape("17")}`);
     const id19 = document.querySelectorAll(`.${CSS.escape("19")}`);
+    const id249 = document.querySelectorAll(`.${CSS.escape("249")}`);
+    const id250 = document.querySelectorAll(`.${CSS.escape("250")}`);
     const id201 = document.getElementById('201');
+    const id202 = document.getElementById('202');
     const id203 = document.getElementById('203');
     const id205 = document.querySelectorAll('.tbtn');
     const id23 = document.querySelectorAll(`.${CSS.escape("23")}`);
@@ -39,7 +43,7 @@ function translateTxt(translations) {
     const id99 = document.getElementById('99');
     const id100 = document.getElementById('100');
 
-    let elements = [id8, id9, id201, id203, id25, id26, id27, id28, id78, id79, id80, id81, id82, id83, id84, id85, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100];
+    let elements = [id8, id9, id10, id201, id202, id203, id25, id26, id27, id28, id78, id79, id80, id81, id82, id83, id84, id85, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100];
     translations.forEach(t => {
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
@@ -55,6 +59,8 @@ function translateTxt(translations) {
         translateMultipleElements(id15, t, 15);
         translateMultipleElements(id17, t, 17);
         translateMultipleElements(id19, t, 19);
+        translateMultipleElements(id249, t, 249);
+        translateMultipleElements(id250, t, 250);
         translateMultipleElements(id23, t, 23);
         translateMultipleElements(id24, t, 24);
     });
