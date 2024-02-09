@@ -88,9 +88,13 @@ generateGalaxy();
 // Sizes
 const sizes = { width: window.innerWidth / 3, height: window.innerHeight / 2.5 };
 if (document.documentElement.clientWidth < 1008) {
-  sizes.width = document.documentElement.clientWidth / 2.5;
+  sizes.width = document.documentElement.clientWidth/2;
   sizes.height = window.innerHeight / 2.5;
-} 
+  if (document.documentElement.clientWidth < 600) {
+    sizes.width = document.documentElement.clientWidth/1.2;
+    sizes.height = window.innerHeight / 2;
+    }
+}
 // Camera: vertical field of view (fov), aspect ratio renderer
 // PerspectiveCamera
 const camera = new THREE.PerspectiveCamera(
@@ -113,11 +117,15 @@ controls.enableDamping = true;
 window.addEventListener("resize", () => {
   // Update sizes
   sizes.width = window.innerWidth / 3;
-  sizes.height = window.innerHeight / 3;
+  sizes.height = window.innerHeight / 2.5;
 
   if (document.documentElement.clientWidth < 1008) {
-    sizes.width = document.documentElement.clientWidth/2.5;
+    sizes.width = document.documentElement.clientWidth/2;
     sizes.height = window.innerHeight / 2.5;
+    if (document.documentElement.clientWidth < 600) {
+      sizes.width = document.documentElement.clientWidth/1.2;
+      sizes.height = window.innerHeight / 2;
+      }
   }
   // Update camera
   camera.aspect = sizes.width / sizes.height;
