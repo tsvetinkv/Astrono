@@ -88,8 +88,8 @@ generateGalaxy();
 // Sizes
 const sizes = { width: window.innerWidth / 2.5, height: window.innerHeight / 2.2 };
 if (document.documentElement.clientWidth < 1008) {
-  sizes.width = document.documentElement.clientWidth / 3;
-  sizes.height = window.innerHeight / 3.5;
+  sizes.width = document.documentElement.clientWidth / 4;
+  sizes.height = window.innerHeight / 4;
 } 
 // Camera: vertical field of view (fov), aspect ratio renderer
 // PerspectiveCamera
