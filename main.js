@@ -86,10 +86,10 @@ const generateGalaxy = () => {
 generateGalaxy();
 
 // Sizes
-const sizes = { width: window.innerWidth / 2.5, height: window.innerHeight / 2.2 };
+const sizes = { width: window.innerWidth / 3, height: window.innerHeight / 3 };
 if (document.documentElement.clientWidth < 1008) {
-  sizes.width = document.documentElement.clientWidth / 4;
-  sizes.height = window.innerHeight / 4;
+  sizes.width = document.documentElement.clientWidth / 2.5;
+  sizes.height = window.innerHeight / 2.5;
 } 
 // Camera: vertical field of view (fov), aspect ratio renderer
 // PerspectiveCamera
@@ -113,11 +113,11 @@ controls.enableDamping = true;
 window.addEventListener("resize", () => {
   // Update sizes
   sizes.width = window.innerWidth / 3;
-  sizes.height = window.innerHeight / 2.5;
+  sizes.height = window.innerHeight / 3;
 
   if (document.documentElement.clientWidth < 1008) {
-    sizes.width = document.documentElement.clientWidth/1.5;
-    sizes.height = window.innerHeight / 2;
+    sizes.width = document.documentElement.clientWidth/2.5;
+    sizes.height = window.innerHeight / 2.5;
   }
   // Update camera
   camera.aspect = sizes.width / sizes.height;
