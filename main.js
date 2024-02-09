@@ -86,7 +86,7 @@ const generateGalaxy = () => {
 generateGalaxy();
 
 // Sizes
-const sizes = { width: window.innerWidth / 3, height: window.innerHeight / 3 };
+const sizes = { width: window.innerWidth / 3, height: window.innerHeight / 2.5 };
 if (document.documentElement.clientWidth < 1008) {
   sizes.width = document.documentElement.clientWidth / 2.5;
   sizes.height = window.innerHeight / 2.5;
