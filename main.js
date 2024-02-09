@@ -86,9 +86,9 @@ const generateGalaxy = () => {
 generateGalaxy();
 
 // Sizes
-const sizes = { width: window.innerWidth / 2.5, height: window.innerHeight / 2.2 };
+const sizes = { width: window.innerWidth / 2.6, height: window.innerHeight / 2.2 };
 if (document.documentElement.clientWidth < 1008) {
-  sizes.width = document.documentElement.clientWidth / 1.5;
+  sizes.width = document.documentElement.clientWidth / 1.6;
   sizes.height = window.innerHeight / 2.5;
 } 
 // Camera: vertical field of view (fov), aspect ratio renderer
