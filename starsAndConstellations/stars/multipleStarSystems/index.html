@@ -11,6 +11,7 @@
         content="звезди, видове звезди, звезда от главната последователност, червен гигант, бяло джудже, неутронна звезда, магнетар, пулсар, червено джудже, кафяво джудже" />
     <title>Multiple stars systems</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/toTopButton.css" type="text/css" />
     <link rel="stylesheet" href="/uikit-3.17.11/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
@@ -141,6 +142,13 @@
         </div>
     </div>
     <main class="uk-margin-medium-top">
+        <button class="button" onclick="topFunction()" id="myBtn" title="Go to top">
+            <svg class="svgIcon" viewBox="0 0 384 512">
+                <path
+                    d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+                </path>
+            </svg>
+        </button>
         <section id="inroduction">
             <div class="uk-column-1-2 uk-padding-large uk-flex uk-flex-center">
                 <div class="text uk-width-1-2">
@@ -190,6 +198,7 @@
             </div>
         </section>
     </main>
+    <script src='/toTopButton.js'></script>
     <script src="/helpers.js"></script>
     <script src="/translate.js"></script>
     <script src="./translatePage.js"></script>

@@ -67,7 +67,6 @@ canvas {
   display: none;
 }
 
-
 @media (max-width: 675px) {
   #biggerSceenNav {
     display: none;
