@@ -10,7 +10,7 @@
     background-color: rgb(20, 20, 20);
     border: none;
     font-weight: 600;
-    box-shadow: 0px 0px 0px 2px #d5aeff;
+    box-shadow: 0px 0px 0px 2px #C1A3FA;
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
@@ -22,12 +22,12 @@
 }
 
 .svgIcon path {
-    fill: white;
+    fill: whitesmoke;
 }
 
 .button:hover {
     border-radius: 50px;
     transition-duration: 0.3s;
-    background-color: #d5aeff;
+    background-color: #C1A3FA;
     align-items: center;
 }
