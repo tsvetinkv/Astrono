@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://astrono.netlify.app/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/events/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/stars/basics/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/stars/typesstars/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/stars/multiplestarsystems/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/constellations/home/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/starsandconstellations/constellations/constellationsbyseasons/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/moon/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/moon/formation/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/moon/moonphases/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/moon/eclipses/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://astrono.netlify.app/about/</loc>
+  <lastmod>2024-02-24T22:40:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

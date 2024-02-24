@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://astrono.netlify.app/sitemap.xml
