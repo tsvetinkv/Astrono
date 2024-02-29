@@ -22,6 +22,10 @@ h1 {
   font-family: 'Outfit', sans-serif !important;
 }
 
+p{
+  color: aliceblue;
+}
+
 #smallerScreenNav {
   display: none;
 }
@@ -91,6 +95,10 @@ h1 {
   margin-right: 8vw;
 }
 
+td p{
+  font-size: 1.15rem;
+  line-height: 155%;
+}
 @media (min-width: 640px) and (max-width: 800px) {
 
   .units,

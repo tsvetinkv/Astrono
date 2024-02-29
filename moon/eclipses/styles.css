@@ -27,7 +27,7 @@ body {
 }
 
 td img {
-    width: 50vw;
+    width: 75vw;
     border-radius: 10px;
 }
 
@@ -44,7 +44,10 @@ td h2 {
 #eclipsesFigure img {
     width: 85vw;
 }
-
+figcaption{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
 @media (min-width: 550px) and (max-width:965px) {
     td img {
         width: 200rem;
