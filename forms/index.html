@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrono</title>
+    <link rel="stylesheet" href="/uikit-3.17.11/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1 class="gradient uk-margin-top uk-margin-small-bottom">Create Account</h1>
+                <div class="uk-margin-small-top uk-margin-bottom">
+                    <input class="uk-margin-small-top uk-margin-bottom" type="text" placeholder="Username" style="background-color: #CDD7F8;  
+                box-shadow: 1px 0px 40px 4px #B88BFE;" />
+                    <input class="uk-margin-top uk-margin-bottom" type="password" placeholder="Password" style="background-color: #DBD8FC;  
+                box-shadow: 1px 0px 40px 4px #9789F9;" />
+                    <input class="uk-margin-top uk-margin-small-bottom" type="text" placeholder="Birthday" style="background-color: #E8D9FF;  
+                    box-shadow: 1px 0px 40px 4px #8195F3;" />
+                </div>
+                <button>Registrate</button>
+                <span class="uk-margin-top">Have an account? <b class="signIn">Sign in</b></span>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 class="gradient">Sign in</h1>
+                <div class="uk-margin-medium-top uk-margin-medium-bottom">
+                    <input class="uk-margin-small-top uk-margin-medium-bottom" type="text" placeholder="Username" style="background-color: #CDD7F8;  
+                    box-shadow: 1px 0px 40px 10px #B88BFE;
+                    " />
+                    <input class="uk-margin-top" type="password" placeholder="Password" style="background-color: #E8D9FF;
+                    box-shadow: 1px 0px 40px 10px #8195F3;
+                    " />
+                </div>
+                <button>Sign In</button>
+                <span class="uk-margin-top">Don’t have an account? <b class="signUp">Registrate</b></span>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="uk-width-1-2 uk-margin-top">Welcome Back!</h1>
+                    <p class="uk-margin-top" style="width: 70%;">To access more interesting functionalities please login
+                        with your personal info</p>
+                    <button class="ghost signIn">Sign In</button>
+                    <span class="uk-margin-top" style="width: 15dvw">Don’t want to make an account? No problem! You can
+                        still use Astrono, though some
+                        functionalities may be limited</span>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 class="uk-margin-medium-top uk-margin-small-bottom">Hello, Friend!</h1>
+                    <p class="uk-margin-top">Enter your personal details and have acces to page for hubble picture taken
+                        on your birthday,
+                        star chart generator, star navigator and much more.</p>
+                    <button class="ghost signUp">Registrate</button>
+                    <span class="uk-margin-top" style="width: 15dvw">Don’t want to make an account? No problem! You can
+                        still use Astrono, though some
+                        functionalities may be limited</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./form.js"></script>
+</body>
+
+</html>

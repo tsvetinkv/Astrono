@@ -29,7 +29,7 @@ for (var i = 0; i < translateBtns.length; i++) {
     });
 }
 function fetchEvents(){
-    fetch('https://apiastrono.bsite.net/Events/GetAllEvents', {
+    fetch('https://astronoapi.azurewebsites.net/Events/GetAllEvents', {
         method: 'GET',
         headers: {
             accept: "application/json",

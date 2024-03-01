@@ -27,7 +27,7 @@ function switchLanguage(page1, page2, page3) {
 
 
 function fetchTranslations(page, language) {
-    const fetchUrl = `https://astronoapi.bsite.net/Translations/GetAllTranslations/${page}?language=${language}`;
+    const fetchUrl = `https://astronoapi.azurewebsites.net/Translations/GetAllTranslations/${page}?language=${language}`;
     fetch(fetchUrl, {
         method: 'GET',
         headers: {

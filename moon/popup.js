@@ -5,7 +5,7 @@ const roughnessLearnMore = document.getElementById("roughnessLearnMore");
 
 function fetchTranslationsForPopup(func) {
     let currentLanguage = window.currentLanguage;
-    const fetchUrl = `https://apiastrono.bsite.net/Translations/GetAllTranslations/4?language=${currentLanguage}`;
+    const fetchUrl = `https://astronoapi.azurewebsites.net/Translations/GetAllTranslations/4?language=${currentLanguage}`;
     fetch(fetchUrl, {
         method: 'GET',
         headers: {
