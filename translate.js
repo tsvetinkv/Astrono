@@ -1,6 +1,7 @@
-function chekIfNotNull(page, language){
+function chekIfNotNull(page, language) {
     if (page != null) {
-        fetchTranslations(page, language);
+        // fetchTranslations(page, language);
+        translateTxt(page, language);
     }
 }
 function translateButton(page1, page2, page3) {
@@ -26,7 +27,7 @@ function switchLanguage(page1, page2, page3) {
 }
 
 
-function fetchTranslations(page, language) {
+/*function fetchTranslations(page, language) {
     const fetchUrl = `https://astronoapi.azurewebsites.net/Translations/GetAllTranslations/${page}?language=${language}`;
     fetch(fetchUrl, {
         method: 'GET',
@@ -41,12 +42,12 @@ function fetchTranslations(page, language) {
             translateTxt(data);
         })
         .catch(error => console.error('Error:', error))
-}
+}*/
 
-function translateMultipleElements(element, t, id) {
+function translateMultipleElements(element, obj, key, id) {
     element.forEach(el => {
-        if (t.id == id) {
-            el.innerHTML = t.text;
+        if (key == id) {
+            el.innerHTML = obj[key];
         }
     })
 }
