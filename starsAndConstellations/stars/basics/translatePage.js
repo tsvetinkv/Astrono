@@ -1,5 +1,5 @@
 translateButton(16, 9, 10);
-function translateTxt(translations) {
+function translateTxt(page, language) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
     const id10 = document.getElementById('10');
@@ -36,28 +36,28 @@ function translateTxt(translations) {
     const id126 = document.getElementById('126');
 
     let elements = [id8, id9, id10, id108, id203, id201, id202, id110, id111, id112, id113, id114, id115, id116, id117, id118, id119, id120, id121, id122, id123, id124, id125, id126];
-    translations.forEach(t => {
-        for (let i = 0; i < elements.length; i++) {
-            const element = elements[i];
-            const elementId = parseInt(element.id, 10)
-            if (t.id === elementId) {
-                element.innerHTML = t.text;
+    const translationsObj = translations[language];
+    const pageObj = translationsObj[page];
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const elementId = parseInt(element.id, 10)
+        Object.keys(pageObj).forEach(key => {
+            if (key == elementId) {
+                element.innerHTML = pageObj[key];
             }
-            if(t.id == 109){
-                placeholder.placeholder = t.text;
+            if (key == 109) {
+                placeholder.placeholder = pageObj[key];
             }
-        }
-
-        translateMultipleElements(id205, t, 205);
-        translateMultipleElements(id12, t, 12);
-        translateMultipleElements(id14, t, 14);
-        translateMultipleElements(id15, t, 15);
-        translateMultipleElements(id17, t, 17);
-        translateMultipleElements(id19, t, 19);
-        translateMultipleElements(id249, t, 249);
-        translateMultipleElements(id250, t, 250);
-        translateMultipleElements(id251, t, 251);
-    })
-
+            translateMultipleElements(id205, pageObj, key, 205);
+            translateMultipleElements(id12, pageObj, key, 12);
+            translateMultipleElements(id14, pageObj, key, 14);
+            translateMultipleElements(id15, pageObj, key, 15);
+            translateMultipleElements(id17, pageObj, key, 17);
+            translateMultipleElements(id19, pageObj, key, 19);
+            translateMultipleElements(id249, pageObj, key, 249);
+            translateMultipleElements(id250, pageObj, key, 250);
+            translateMultipleElements(id251, pageObj, key, 251);
+        });
+    }
 }
 

@@ -29,7 +29,7 @@ for (var i = 0; i < translateBtns.length; i++) {
     });
 }
 function fetchEvents(){
-    fetch('https://astronoapi.azurewebsites.net/Events/GetAllEvents', {
+    fetch('./eventsCalendar.json', {
         method: 'GET',
         headers: {
             accept: "application/json",

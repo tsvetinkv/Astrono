@@ -1,5 +1,5 @@
 translateButton(16, 3, 4);
-function translateTxt(translations) {
+function translateTxt(page, language) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
     const id10 = document.getElementById('10');
@@ -39,32 +39,34 @@ function translateTxt(translations) {
     
 
     let elements = [id8, id9, id10, id201, id202, id203, id25, id26, id27, id28, id29, id30, id31, id33, id34, id35, id36, id37, id38, id39];
-    translations.forEach(t => {
-        for (let i = 0; i < elements.length; i++) {
-            const element = elements[i];
-            const elementId = parseInt(element.id, 10)
-            if (t.id === elementId) {
-                element.innerHTML = t.text;
+    const translationsObj = translations[language];
+    const pageObj = translationsObj[page];
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        const elementId = parseInt(element.id, 10)
+        Object.keys(pageObj).forEach(key => {
+            if (key == elementId) {
+                element.innerHTML = pageObj[key];
             }
-        }
+            translateMultipleElements(id205, pageObj, key, 205);
+            translateMultipleElements(id12, pageObj, key, 12);
+            translateMultipleElements(id14, pageObj, key, 14);
+            translateMultipleElements(id15, pageObj, key, 15);
+            translateMultipleElements(id17, pageObj, key, 17);
+            translateMultipleElements(id19, pageObj, key, 19);
+            translateMultipleElements(id249, pageObj, key, 249);
+            translateMultipleElements(id250, pageObj, key, 250);
+            translateMultipleElements(id251, pageObj, key, 251);
+            translateMultipleElements(id23, pageObj, key, 23);
+            translateMultipleElements(id24, pageObj, key, 24);
+            translateMultipleElements(id32, pageObj, key, 32);
+            translateMultipleElements(id206, pageObj, key, 206);
+            translateMultipleElements(id208, pageObj, key, 208);
+            translateMultipleElements(id209, pageObj, key, 209);
+            translateMultipleElements(id210, pageObj, key, 210);
 
-        translateMultipleElements(id205, t, 205);
-        translateMultipleElements(id12, t, 12);
-        translateMultipleElements(id14, t, 14);
-        translateMultipleElements(id15, t, 15);
-        translateMultipleElements(id17, t, 17);
-        translateMultipleElements(id19, t, 19);
-        translateMultipleElements(id249, t, 249);
-        translateMultipleElements(id250, t, 250);
-        translateMultipleElements(id251, t, 251);
-        translateMultipleElements(id23, t, 23);
-        translateMultipleElements(id24, t, 24);
-        translateMultipleElements(id32, t, 32);
-        translateMultipleElements(id206, t, 206);
-        translateMultipleElements(id208, t, 208);
-        translateMultipleElements(id209, t, 209);
-        translateMultipleElements(id210, t, 210);
-    });
+        });
+    }
 }
 
 
