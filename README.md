@@ -1,96 +1,43 @@
-Astrono e раазпределено приложение, създадено с цел да помогне на хората да разширят знанията си за астрономията. Сайта предлага следните функционалности:
- # Небесни събития
- Тази страница представя предстоящи астрономически събития като новолуния, пълнолуния, слънчеви и лунни затъмнения и метеоритни дъждове. 
 
- <img src="/images/celestialEvents.png" />
- 
- При кликване върху всяко събитие, потребителите могат да получат допълнителна информация чрез изкачащ прозорец.
+![Logo](https://astrono.netlify.app/images/logoLight.png)
+--
+Astrono is website where you can learn more about stars, constellations, the moon and upcoming celestial events. Astrono offers an interesting way to learn astronomy through interactive elements, maps and more.
 
-<img src="/images/eventPopupWindow.png" />
+Astrono provides users with pages where they can learn about:
+- Upcoming celestial events from the current month to June;
+- The Moon - through interactive 3D lunar maps of sea level, gravity, hydrogen availability and surface roughness. You can also learn about the formation and structure of the moon, the different lunar phases, and the different types of lunar and solar eclipses.
+- Stars and constellations - through interactive maps of the sky, searching for stars by their names and generating star maps of constellations. The site provides information about the life of stars, different types of stars, solar systems with several suns, constellations and different constellations by season. It is designed for people of all ages, it is enough to have a desire to learn new information about astronomy.
 
-# Звезди и Съзвездия
-Тази страница е обща за двата вида подстраници: Звезди и Съзвездия. Тя съдържа инрекативна карта на звездното небе за българия, която се обновява всяка секунда и показва нощното небе със звездите, съзвездията, луната и планетите.
-  <img src="/images/star&constellationMap.png" />
 
- ## Звезди
- ### Основни знания за звездите 
- Тази подстраница предоставя основни знания за звездите, като информация за зараждането им
-  <img src="/images/birthOfStars.png" />
-  
-  за техния живот
+## Functionalities
 
-  <img src="/images/lifeOfStars.png" />
+- Navigation bar
+- Interactive map of the night sky
+- Star search
+- Upcoming celestial events
+- 3D elements 
+- Translation into Bulgarian and English
+- Star chart generator
+- Back to top button
+## Demo
+https://astrono.netlify.app/
 
-  и за смъртта им
+## Badges
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-  <img src="/images/deathOfStars.png" />
-  
- ### Видове звезди
- Тази подстраница предоставя информация за различните видове звезди:
- #### Звезди от главната последователност 
- 
-  <img src="/images/mainSequenceStars.png" />
- 
- #### Червени гиганти
- 
-  <img src="/images/redGiants.png" />
- 
- #### Бели джуджета
 
-  <img src="/images/whiteDwarfs.png" />
- 
- #### Неутронни звезди
-със разновидостите пулсари и магнетари
+## Feedback
 
-  <img src="/images/neutronStars.png" />
- 
- #### Червени джуджета 
+If you have any feedback, please reach out to me at cnikolova95@gmail.com
 
-  <img src="/images/redDwarfs.png" />
- 
- #### Кафяви джуджета
 
-  <img src="/images/brownDwarfs.png" />
- 
- В секцията за наблюдатели на звезди се предоставя информация за видимостта на различните типове звезди - дали могат да бъдат видяни с просто око, с телескоп или не могат да бъдат видяни.
- 
-  
- ### Слънчеви системи
- 
- Тази страница предоставя информация за слънчеви системи с няколко слънца: 
- #### Двойни звезди
+## Sources
 
-  <img src="/images/binaryStars.png" />
- 
- #### Рентгеновите двойни системи
-
-  <img src="/images/x-rayBinaries.png" />
- 
- #### Mножествa звезди
-
-  <img src="/images/otherMultiples.png" />
- 
- Въведение и подробна информация за всеки тип система се предоставят, заедно със снимки.
-
-  ### Звезден навигатор
- 
-Във всяка от страниците за звезди има търсачка, която позволява на потребителите да търсят име на звезда на английски. Връща информация за съзвездието, на което принадлежи звездата, колко светлинни години е от нас и какъв е нейният спектрален клас, както и снимки на звездата и съзвездието от библиотеката на NASA.
- 
-  <img src="/images/starSearch.png" />
-  
-## Съзвездия
-
-Тази секция се състои от две страници - една въвеждаща страница за съзвездията, която предлага форма за генериране на звездна карта на съзвездие за избрана дата и съзвездие от потребителя, 
-
-  <img src="/images/starChartForm.png" />
-
-  <img src="/images/starChart.png" />
-
-и страница за съзвездия по сезони, която предоставя информация за различните видими съзвездия през различните сезони, заедно със снимки.
-
- <img src="/images/winterConstellations.png" />
-
- 
-
- 
- ### *[Линк за сайта](https://astrono.netlify.app/)*. 
+ - [Interactive map of the night sky](https://slowe.github.io/VirtualSky/custom)
+ - [Star search](https://api-ninjas.com/api/stars)
+ - [Star chart generator](http://demo.astronomyapi.com/?#/star-chart)
+ - [Photo of the star and the constelattion from star search](https://images.nasa.gov/)
+ - [Information about stars](https://universe.nasa.gov/stars/basics/)
+ - [Information in constellation home page](https://spaceplace.nasa.gov/constellations/en/)
+ - [Information in constellations by seasons page](https://www.astronomy.com/observing/learn-the-constellations/)
+ - [Information about the moon](https://science.nasa.gov/moon/)
