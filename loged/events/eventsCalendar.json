@@ -1,0 +1,113 @@
+[
+    {
+        "name": "Quadrantid Meteor Shower",
+        "description": "The Quadrantids is an above average shower, with up to 40 meteors per hour at its peak. It is thought to be produced by dust grains left behind by an extinct comet known as 2003 EH1, which was discovered in 2003. The shower runs annually from January 1-5. It peaks this year on the night of the 3rd and morning of the 4th. The crescent moon will set early in the evening, leaving dark skies for what should be an excellent show. Best viewing will be from a dark location after midnight. Meteors will radiate from the constellation Bootes, but can appear anywhere in the sky.",
+        "translatedName": "Квадрантиден Метеоритен дъжд",
+        "translatedDescription": "Квадрантидите са дъжд над средния, с до 40 метеора на час в своя пик. Смята се, че се произвежда от зърна прах, оставени от изчезнала комета, известна като 2003 EH1, открита през 2003 г. Поливът тече всяка година от 1 до 5 януари. Той достига своя връх тази година в нощта на 3-ти и сутринта на 4-ти. Полумесецът ще залезе рано вечерта, оставяйки тъмни небеса за това, което би трябвало да е отлично шоу. Най-доброто гледане ще бъде от тъмно място след полунощ. Метеорите ще излъчват от съзвездието Воловар, но могат да се появят навсякъде в небето.",
+        "isMeteor": true,
+        "startDate": "2025-01-02T00:00:00",
+        "endDate": "2025-01-03T00:00:00"
+    },
+    {
+        "name": "Saturn and the Moon",
+        "description": "One day after sweeping past Venus, the Waxing Crescent Moon passes close to Saturn. For observers in some parts of Europe, the Moon passes in front of Saturn, producing a lunar occultation.",
+        "translatedName": "Сатурн и Луната",
+        "translatedDescription": "Един ден след преминаването си покрай Венера, нарастващият полумесец на Луната преминава близо до Сатурн. За наблюдателите в някои части на Европа Луната ще премине пред Сатурн, създавайки лунно затъмнение.",
+        "isMeteor": false,
+        "startDate": "2025-01-04T00:00:00",
+        "endDate": "2025-01-05T00:00:00"
+
+    },
+    {
+        "name": "Full Moon",
+        "description": "The Moon will be located on the opposite side of the Earth as the Sun and its face will be will be fully illuminated. This phase occurs at 22:28 UTC. This full moon was known by early Native American tribes as the Wolf Moon because this was the time of year when hungry wolf packs howled outside their camps. This moon has also been know as the Old Moon and the Moon After Yule.",
+        "translatedName": "Пълнолуние",
+        "translatedDescription": "Луната ще бъде разположена на противоположната страна на Земята, тъй като Слънцето и нейното лице ще бъдат напълно осветени. Тази фаза настъпва в 22:28 UTC. Тази пълна луна е била известна от ранните индиански племена като Вълчата луна, защото това е времето от годината, когато гладни глутници вълци вият пред лагерите си. Тази луна също е известна като Старата луна и Луната след Юле.",
+        "isMeteor": false,
+        "startDate": "2025-01-13T22:28:00",
+        "endDate": "2025-01-14T03:00:00"
+
+    },
+    {
+        "name": "New Moon",
+        "description": "The Moon will located on the same side of the Earth as the Sun and will not be visible in the night sky. This phase occurs at 12:37 UTC. This is the best time of the month to observe faint objects such as galaxies and star clusters because there is no moonlight to interfere.",
+        "translatedName": "Новолуние",
+        "translatedDescription": "Луната ще бъде разположена от същата страна на Земята като Слънцето и няма да се вижда на нощното небе. Тази фаза настъпва в 12:37 UTC. Това е най-доброто време от месеца за наблюдение на слаби обекти като галактики и звездни купове, защото няма лунна светлина, която да пречи.",
+        "isMeteor": false,
+        "startDate": "2025-01-29T00:00:00",
+        "endDate": "2025-01-30T00:00:00"
+
+    },
+    {
+        "name": "Conjunction of the Moon and Mars",
+        "description": "The Moon and Mars will share the same right ascension, with the Moon passing 46' to the north of Mars. The Moon will be 11 days old. At around the same time, the two objects will also make a close approach, technically called an appulse. The Moon will be at mag -12.6, and Mars at mag -0.8, both in the constellation Gemini. The pair will be a little too widely separated to fit comfortably within the field of view of a telescope, but will be visible to the naked eye or through a pair of binoculars.",
+        "translatedName": "Съвпад на Луната и Марс",
+        "translatedDescription": "Луната и Марс ще споделят едно и също право изкачване, като Луната ще премине 46' на север от Марс. Приблизително по същото време двата обекта също ще се приближат (аппулс). Луната ще бъде при mag -12.6, а Марс при mag -0.8, и двете в съзвездието Близнаци. Двойката ще бъде твърде широко раздалечена, за да се побере удобно в зрителното поле на телескоп, но ще бъде видима с просто око или през чифт бинокъл.",
+        "isMeteor": false,
+        "startDate": "2025-02-09T00:00:00",
+        "endDate": "2025-02-10T00:00:00"
+    },
+    {
+        "name": "Full Moon",
+        "description": "The Moon will be located on the opposite side of the Earth as the Sun and its face will be will be fully illuminated. This phase occurs at 13:55 UTC. This full moon was known by early Native American tribes as the Snow Moon because the heaviest snows usually fell during this time of the year. Since hunting is difficult, this moon has also been known by some tribes as the Hunger Moon, since the harsh weather made hunting difficult.",
+        "translatedName": "Пълнолуние",
+        "translatedDescription": "Луната ще бъде разположена на противоположната страна на Земята, тъй като Слънцето и нейното лице ще бъдат напълно осветени. Тази фаза настъпва в 13:55 UTC. Тази пълна луна е била известна от ранните индиански племена като Снежна луна, защото най-тежките снегове обикновено падат през това време на годината. Тъй като ловът е труден, тази луна също е известна от някои племена като Луната на глада, тъй като суровото време затруднява лова.",
+        "isMeteor": false,
+        "startDate": "2025-02-12T00:00:00",
+        "endDate": "2025-02-13T00:00:00"
+    },
+    {
+        "name": "Conjunction of Mercury and Saturn",
+        "description": "Mercury and Saturn will share the same right ascension, with Mercury passing 1°39' to the north of Saturn. Mercury will be at mag -1.1, and Saturn at mag 1.1, both in the constellation Aquarius. The pair will be too widely separated to fit within the field of view of a telescope, but will be visible to the naked eye or through a pair of binoculars.",
+        "translatedName": "Съвпад на Меркурий и Сатурн",
+        "translatedDescription": "Меркурий и Сатурн ще споделят едно и също право изкачване, като Меркурий ще премине 1°39' на север от Сатурн. Меркурий ще бъде при mag -1.1, а Сатурн при mag 1.1, и двата в съзвездието Водолей. Двойката ще бъде твърде широко разделена, за да се побере в зрителното поле на телескоп, но ще бъде видима с просто око или през чифт бинокъл.",
+        "isMeteor": false,
+        "startDate": "2025-02-25T00:00:00",
+        "endDate": "2025-02-25T00:00:00"
+    },
+    {
+        "name": "New Moon",
+        "description": "The Moon will located on the same side of the Earth as the Sun and will not be visible in the night sky. This phase occurs at 12:37 UTC. This is the best time of the month to observe faint objects such as galaxies and star clusters because there is no moonlight to interfere.",
+        "translatedName": "Новолуние",
+        "translatedDescription": "Луната ще бъде разположена от същата страна на Земята като Слънцето и няма да се вижда на нощното небе. Тази фаза настъпва в 12:37 UTC. Това е най-доброто време от месеца за наблюдение на слаби обекти като галактики и звездни купове, защото няма лунна светлина, която да пречи.",
+        "isMeteor": false,
+        "startDate": "2025-02-28T00:00:00",
+        "endDate": "2025-03-01T00:00:00"
+    },
+    {
+        "name": "Full Moon",
+        "description": "The Moon will be located on the opposite side of the Earth as the Sun and its face will be will be fully illuminated. This phase occurs at 06:56 UTC. This full moon was known by early Native American tribes as the Worm Moon because this was the time of year when the ground would begin to soften and the earthworms would reappear. This moon has also been known as the Crow Moon, the Crust Moon, the Sap Moon, and the Lenten Moon.",
+        "translatedName": "Пълнолуние",
+        "translatedDescription": "Луната ще бъде разположена на противоположната страна на Земята, тъй като Слънцето и нейното лице ще бъдат напълно осветени. Тази фаза настъпва в 06:56 UTC. Това пълнолуние е било известно от ранните индиански племена като Луната на червеите, защото това е времето от годината, когато земята ще започне да се размеква и земните червеи ще се появят отново. Тази луна е известна още като Луната на враната, Луната на кората, Луната на сока и Луната на постите.",
+        "isMeteor": false,
+        "startDate": "2025-03-14T00:00:00",
+        "endDate": "2025-01-15T00:00:00"
+    },
+    {
+        "name": "Total Lunar Eclipse",
+        "description": "A total lunar eclipse occurs when the Moon passes completely through the Earth's dark shadow, or umbra. During this type of eclipse, the Moon will gradually get darker and then take on a rusty or blood red color. The eclipse will be visible throughout all of North America, Mexico, Central America, and South America.",
+        "translatedName": "Пълно лунно затъмнение",
+        "translatedDescription": "Пълно лунно затъмнение настъпва, когато Луната премине изцяло през тъмната сянка на Земята. По време на този тип затъмнение Луната постепенно ще потъмнее и след това ще придобие ръждив или кървавочервен цвят. Затъмнението ще бъде видимо в цяла Северна Америка, Мексико, Централна Америка и Южна Америка.",
+        "isMeteor": false,
+        "startDate": "2025-03-14T00:00:00",
+        "endDate": "2025-03-14T00:00:00"
+    },
+    {
+        "name": "New Moon",
+        "description": "The Moon will located on the same side of the Earth as the Sun and will not be visible in the night sky. This phase occurs at 11:00 UTC. This is the best time of the month to observe faint objects such as galaxies and star clusters because there is no moonlight to interfere.",
+        "translatedName": "Новолуние",
+        "translatedDescription": "Луната ще бъде разположена от същата страна на Земята като Слънцето и няма да се вижда на нощното небе. Тази фаза настъпва в 11:00 UTC. Това е най-доброто време от месеца за наблюдение на слаби обекти като галактики и звездни купове, защото няма лунна светлина, която да пречи.",
+        "isMeteor": false,
+        "startDate": "2025-03-29T00:00:00",
+        "endDate": "2025-03-30T00:00:00"
+    },
+    {
+        "name": "Partial Solar Eclipse",
+        "description": "A partial solar eclipse occurs when the Moon covers only a part of the Sun, sometimes resembling a bite taken out of a cookie. A partial solar eclipse can only be safely observed with a special solar filter or by looking at the Sun's reflection. This partial eclipse will be visible throughout Greenland and most of northern Europe and northern Russia. It will be best seen from Canada with 93% coverage.",
+        "translatedName": "Частично слънчево затъмнение",
+        "translatedDescription": "Частично слънчево затъмнение се случва, когато Луната покрива само част от Слънцето, понякога наподобяваща хапка от бисквитка. Частично слънчево затъмнение може да се наблюдава безопасно само със специален слънчев филтър или като се гледа отражението на Слънцето. Това частично затъмнение ще бъде видимо в цяла Гренландия и по-голямата част от Северна Европа и Северна Русия. Най-добре ще се вижда от Канада с 93% покритие.",
+        "isMeteor": false,
+        "startDate": "2025-03-29T00:00:00",
+        "endDate": "2025-03-29T00:00:00"
+    }
+]

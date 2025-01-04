@@ -1,0 +1,160 @@
+{
+  "data": [
+    {
+      "id": 29,
+      "text_En": "DIGITAL ELEVATION MODEL",
+      "text_Bg": "ЦИФРОВ МОДЕЛ НА РЕЛЕФА",
+      "page": 4
+    },
+    {
+      "id": 30,
+      "text_En": "Topographic Moon map created by <br>  Lunar Reconnaissance Orbiter.",
+      "text_Bg": "Топографска карта на Луната, <br> създадена от Лунния <br> разузнавателен орбитър.",
+      "page": 4
+    },
+    {
+      "id": 31,
+      "text_En": "Elev (m)",
+      "text_Bg": "Надморска височина (m)",
+      "page": 4
+    },
+    {
+      "id": 32,
+      "text_En": "Learn more &gt;",
+      "text_Bg": "Научи повече &gt;",
+      "page": 4
+    },
+    {
+      "id": 33,
+      "text_En": "GRAVITY MAP",
+      "text_Bg": "ГРАВИТАЦИОННА КАРТА",
+      "page": 4
+    },
+    {
+      "id": 34,
+      "text_En": "Global lunar gravity survey created <br> by the twin GRAIL spacecraft.",
+      "text_Bg": "Глобално изследване на лунната <br> гравитация, създадено от <br>космическия апарат близнак GRAIL.",
+      "page": 4
+    },
+    {
+      "id": 35,
+      "text_En": "HYDROGEN ABUNDANCE",
+      "text_Bg": "НАЛИЧИЕ НА ВОДОРД",
+      "page": 4
+    },
+    {
+      "id": 36,
+      "text_En": "The presence of hydrogen may <br> indicate the presence of water.",
+      "text_Bg": "Наличието на водород може дa <br> показва наличието на вода.",
+      "page": 4
+    },
+    {
+      "id": 37,
+      "text_En": "PPM BY WEIGHT",
+      "text_Bg": "PPM ПО ТЕГЛО",
+      "page": 4
+    },
+    {
+      "id": 38,
+      "text_En": "SURFACE ROUGHNESS",
+      "text_Bg": "ГРАПАВОСТ НА ПОВЪРХНОСТТА",
+      "page": 4
+    },
+    {
+      "id": 39,
+      "text_En": "Rough surfaces indicate the <br> presence of large rocks.",
+      "text_Bg": "Грапавите повърхности показват​ <br> ​наличие на​ ​големи скали.",
+      "page": 4
+    },
+    {
+      "id": 206,
+      "text_En": "Digital elevation model",
+      "text_Bg": "Цифров модел на релефа",
+      "page": 4
+    },
+    {
+      "id": 208,
+      "text_En": "Gravity map",
+      "text_Bg": "Гравитационна карта",
+      "page": 4
+    },
+    {
+      "id": 209,
+      "text_En": "Hydrogen Abundance",
+      "text_Bg": "Наличие на водород",
+      "page": 4
+    },
+    {
+      "id": 210,
+      "text_En": "Surface Roughness",
+      "text_Bg": "Грапавост на повърхността",
+      "page": 4
+    },
+    {
+      "id": 228,
+      "text_En": "Copernicus crater viewed from orbit.",
+      "text_Bg": "кратерът Коперник, гледан от орбита.",
+      "page": 4
+    },
+    {
+      "id": 234,
+      "text_En": "This dataset shows the Moon's topography. The LOLA instrumentonboard LRO has measured the altitude of more than 6 billion points on thelunar surface, so that scientists now have better topography for the Moonthan any other planetary body in the solar system! Red and white indicatehigh altitudes and blue and purple indicate low altitudes.",
+      "text_Bg": "Този набор от данни показва топографията на Луната. Инструментът LOLA на борда на LRO е измерил височината на повече от 6 милиарда точки на лунната повърхност, така че учените вече разполагат с по-добра топография на Луната от всяко друго планетарно тяло в Слънчевата система!Червеното и бялото обозначават големи височини, а синьото и лилавото - малки височини.",
+      "page": 4
+    },
+    {
+      "id": 237,
+      "text_En": "This perspective, known as a Mercator projection, shows the far side of the moon in the center and the near side (as viewed from Earth) at either side.",
+      "text_Bg": "Tази перспектива, известна като проекция на Меркатор, показва далечната страна на Луната в центъра, а близката страна (гледана от Земята) - от двете страни.",
+      "page": 4
+    },
+    {
+      "id": 238,
+      "text_En": "Gravity Map",
+      "text_Bg": "Карта на гравитацията",
+      "page": 4
+    },
+    {
+      "id": 239,
+      "text_En": "Gravity field maps reveal features such as tectonic structures, volcanic landforms, basin rings, and crater central peaks. The moon's gravity field is unlike that of any terrestrial planet in our solar system.",
+      "text_Bg": "Картите на гравитационното поле разкриват характеристики като тектонични структури, вулканични форми на релефа, пръстени на басейни и централни върхове на кратери. Гравитационното поле на Луната не прилича на това на никоя от земните планети в нашата Слънчева система.",
+      "page": 4
+    },
+    {
+      "id": 240,
+      "text_En": "Areas of the moon's south pole with possibly high deposits of frozen water are colored blue in this map.",
+      "text_Bg": "Областите на южния полюс на Луната, в които вероятно има големи залежи от замръзнала вода, са оцветени в синьо на тази карта.",
+      "page": 4
+    },
+    {
+      "id": 241,
+      "text_En": "Hydrogen Abundance",
+      "text_Bg": "Наличие на водород",
+      "page": 4
+    },
+    {
+      "id": 242,
+      "text_En": "Data confirmed hydrogen in the permanently shaded regions of the lunar poles is in the form of water-ice. This water-ice may be trapped indefinitely.",
+      "text_Bg": "Данните потвърждават, че водородът в постоянно засенчените области на лунните полюси е под формата на воден лед. Този воден лед може да бъде задържан за неопределено време.",
+      "page": 4
+    },
+    {
+      "id": 243,
+      "text_En": "Boulders clustered on the floor of Anaxagoras crater",
+      "text_Bg": "Камъни, събрани на дъното на кратера Анаксагор",
+      "page": 4
+    },
+    {
+      "id": 244,
+      "text_En": "Surface Roughness",
+      "text_Bg": "Грапавост на повърхността",
+      "page": 4
+    },
+    {
+      "id": 245,
+      "text_En": "This dataset shows the moon's surface roughness. Rough surfaces indicate the presence of large rocks, which may pose hazards for future lunar landers. The roughest surfaces are red and white while the smoother areas are blue.",
+      "text_Bg": "Този набор от данни показва грапавостта на лунната повърхност. Грубите повърхности показват наличието на големи скали, които могат да представляват опасност за бъдещите лунни апарати. Най-грубите повърхности са червени и бели, а по-гладките - сини.",
+      "page": 4
+    }
+  ]
+}

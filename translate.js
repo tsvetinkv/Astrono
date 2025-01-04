@@ -53,4 +53,13 @@ function translateMultipleElements(element, obj, key, id) {
 }
 
 
+function translateMultiplePlaceHolders(element, obj, key, id) {
+    element.forEach(el => {
+        if (key == id) {
+            el.placeholder = obj[key];
+        }
+    })
+}
+
+
 

@@ -1,5 +1,23 @@
 const translations = {
     Bg: {
+        0: {
+            266: "Преведи",
+            267: "Влез",
+            269: "Парола",
+            270: "Регистрирай се",
+            271: "Нямаш профил? ",
+            272: "Здравей, Приятел!",
+            273: "Регистрирай се и имай достъп до повече функционалности, като генератор на звездни карти и много други.",
+            274: "Не искаш да си направиш профил? Можеш да използваш Астроно, но някои функционалности ще липсват.",
+            275: "Добре дошъл отново!",
+            276: "За достъп до повече функционалности, влез в профила си.",
+            277: "Създай профил",
+            278: "Имейл",
+            279: "Имаш профил? ",
+            292: "Влез в профила си",
+            300: "Невалиден имейл",
+            301: "Паролата трябва да съдържа главни, малки букви и цифри."
+        },
         1: {
             1: "Заинтересован ли си от астрономията?",
             3: "Искаш ли да научиш нови неща за звездните събития или за звездите и съзвездията?",
@@ -246,9 +264,28 @@ const translations = {
             249: "Формиране на луната",
             250: "Лунни фази",
             251: "Затъмнения",
+            265: "Излез от профила"
         }
     },
     En: {
+        0: {
+            266: "Translate",
+            267: "Sign in",
+            269: "Password",
+            270: "Registrate",
+            271: "Don’t have an account? ",
+            272: "Hello, Friend!",
+            273: "Registrate and access more features like a star navigator, star chart generator and add upcoming celestial events.",
+            274: "Don’t want to make an account? No problem! You can still use Astrono, though some functionalities may be limited",
+            275: "Welcome Back!",
+            276: "To access more interesting features please login.",
+            277: "Create Account",
+            278: "Email",
+            279: "Have an account? ",
+            292: "Sign in",
+            300: "Invalid email",
+            301: "Password must contain uppercase, lowercase letters, and numbers"
+        },
         1: {
             1: "Are you interested in astronomy?",
             3: "Do you want to learn new things about celestial events or stars and constelations?",
@@ -495,6 +532,7 @@ const translations = {
             249: "Moon Formation",
             250: "Moon Phases",
             251: "Eclipses",
+            265: "Logout"
         }
     }
 };

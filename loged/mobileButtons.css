@@ -1,0 +1,27 @@
+.btn {
+    display: none;
+    width: max-content;
+    border-radius: 5px;
+    background: #2a0254;
+    border: none;
+    color: #e2cafc;
+    padding: 0.5em;
+}
+
+@media (max-width: 450px) {
+    .btn img {
+        width: auto;
+    }
+
+    .btn {
+        display: inline;
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 675px) {
+    .btn {
+        display: inline;
+        font-size: 2.9vw;
+    }
+}

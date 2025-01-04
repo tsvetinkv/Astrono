@@ -1,0 +1,93 @@
+html,
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%);
+    color: #C5CCFC;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+#smallerScreenNav, #error {
+    display: none;
+}
+
+.img {
+    width: 30vw;
+    height: 50vh;
+    border-radius: 15px;
+    filter: brightness(1.15) contrast(1.10);
+}
+
+figcaption {
+    width: 30vw;
+}
+
+h1 {
+    color: #C5CCFC !important;
+}
+
+.btn{
+    display: none!important;
+}
+@media (min-width: 1235px) {
+    figcaption {
+        width: 30vw;
+        font-size: 1.4vw;
+    }
+
+    .starInfo {
+        font-size: 1.5vw;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .img {
+        width: 70vw;
+        height: 45vh;
+    }
+
+    main {
+        height: auto !important;
+    }
+
+    figcaption {
+        width: 70vw;
+        margin: auto;
+    }
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #biggerSceenNav {
+        display: none;
+    }
+
+    #smallerScreenNav {
+        display: flex;
+    }
+
+    .btn{
+        display: inline!important;
+    }
+
+    #buttons{
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin: 1em;
+    }
+
+}

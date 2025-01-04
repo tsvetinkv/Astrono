@@ -1,0 +1,152 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Astrono is website to learn astronomy. You can see upcoming events like meteor showers, moon events and eclipses. and learn abouts stars and constellations with interactive maps and much more." />
+  <meta name="keywords" content="Astrono, astronomy, events, stars, constellations" />
+  <link rel="icon" type="image/png" href="/images/smallLogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" />
+  <link rel="stylesheet" href="/unlogged/mobileButtons.css" type="text/css" />
+  <link rel="stylesheet" href="/toTopButton.css" type="text/css" />
+  <link rel="stylesheet" href="/scrollbar.css" type="text/css" />
+  <link rel="stylesheet" href="/uikit-3.17.11/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script type="module" src="./main.js"></script>
+</head>
+
+<body>
+  <div class="uk-navbar-justify uk-navbar" id="biggerSceenNav" uk-navbar="" style="background: rgb(42 2 84);">
+    <div class="uk-navbar-left" style="flex-grow: 7;">
+      <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="/unlogged/homePage/"><img src="./images/logo.png" /></a>
+      <ul class="uk-navbar-nav" style="flex-grow: 5;">
+        <li>
+          <a href="/unlogged/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true" id="9"></a>
+          <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar" id="dropdown"
+            style="max-width: 887px;background: rgb(42 2 84);">
+            <div class="uk-padding">
+              <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
+                <div class="uk-first-column">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="/unlogged/starsAndConstellations/stars/basics/" class="12"></a></li>
+                    <li class="uk-parent"><a href="/unlogged/starsAndConstellations/stars/typesStars/" class="14"></a></li>
+                    <li class="uk-parent"><a href="/unlogged/starsAndConstellations/stars/multipleStarSystems/" class="15"></a></li>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="/unlogged/starsAndConstellations/constellations/home/" class="17"></a></li>
+                    <li class="uk-parent"><a href="/unlogged/starsAndConstellations/constellations/constellationsBySeasons/" class="19"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="/unlogged/moon/" id="10" role="button" aria-haspopup="true" aria-expanded="true"></a>
+          <div class="uk-navbar-dropdown uk-navbar-dropdown-width-1 uk-drop uk-navbar-dropdown-dropbar" id="dropdown"
+            style="max-width: 900px;background: rgb(42 2 84);;">
+            <div class="uk-padding">
+              <div class="uk-drop-grid uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                <ul class="uk-nav uk-navbar-dropdown-nav">
+                  <li class="uk-parent"><a href="/unlogged/moon/formation/" class="249"></a></li>
+                  <li class="uk-parent"><a href="/unlogged/moon/moonPhases/" class="250"></a></li>
+                  <li class="uk-parent"><a href="/unlogged/moon/eclipses/" class="251"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="translate" style="cursor: pointer;"><img src="images/translateIcon.png" /><span class="tbtn">Translate</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div uk-navbar="" class="uk-navbar" id="smallerScreenNav" style="background: rgb(42 2 84);">
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="/unlogged/homePage/"><img src="./images/logo.png" /></a>
+    </div>
+    <div class="uk-navbar-right uk-margin-right">
+      <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
+        uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"><svg width="20" height="20"
+          viewBox="0 0 20 20"></svg></a>
+      <div class="uk-navbar-dropdown uk-drop"
+        uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
+        style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:rgb(42 2 84);">
+        <ul class="uk-nav uk-navbar-dropdown-nav">
+          <li class="uk-active"><a href="/unlogged/starsAndConstellations/" id="201"></a></li>
+          <li class="uk-parent">
+            <a href="/unlogged/starsAndConstellations/stars/basics/" class="12"></a>
+            <ul class="uk-nav-sub">
+              <li><a href="/unlogged/starsAndConstellations/stars/typesStars/"  class="14"></a></li>
+              <li><a href="/unlogged/starsAndConstellations/stars/multipleStarSystems/" class="15"></a></li>
+            </ul>
+          </li>
+          <li class="uk-parent">
+            <a href="/unlogged/starsAndConstellations/constellations/home/" class="17"></a>
+            <ul class="uk-nav-sub">
+              <li><a href="/unlogged/starsAndConstellations/constellations/constellationsBySeasons/" class="19"></a></li>
+            </ul>
+          </li>
+          <li class="uk-active"><a href="/unlogged/moon/" id="202"></a></li>
+          <li class="uk-parent">
+            <a href="/unlogged/moon/formation/" class="249"></a>
+          </li>
+          <li class="uk-parent">
+            <a href="/unlogged/moon/moonPhases/" class="250"></a>
+          </li> <li class="uk-parent">
+            <a href="/unlogged/moon/eclipses/" class="251"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="introduction">
+    <div class="uk-column-1-2">
+      <div class="uk-padding">
+        <div class="uk-flex uk-flex-center">
+          <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-text-center" id="textbox">
+            <h3 class="uk-card-title" id="20"></h3>
+            <hr id="hr">
+            <p id="21"></p>
+            <button id="btn" class="translate"><img src="images/translateIcon.png" /><span class="tbtn">Translate</span></button>
+          </div>
+
+        </div>
+        <div class="uk-flex uk-flex-center" style="padding: 5%;">
+          <canvas id="webgl2"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="button" onclick="topFunction()" id="myBtn" title="Go to top">
+    <svg class="svgIcon" viewBox="0 0 384 512">
+      <path
+        d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+      ></path>
+    </svg>
+  </button>  
+  <div id="center">
+    <section class="events">
+    </section>
+  </div>
+  <script src='/toTopButton.js'></script>
+  <script src="/translations.js"></script>
+  <script src="/helpers.js"></script>
+  <script src="/translate.js"></script>
+  <script src="./translatePage.js"></script>
+  <script src="./eventsCalendar.json"></script>
+  <script src="./events.js"></script>
+</body>
+
+</html>

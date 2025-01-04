@@ -1,0 +1,142 @@
+html {
+    background: rgb(38, 2, 73) !important;
+}
+
+body {
+    background: linear-gradient(0deg, rgb(38, 2, 73) 0%, rgb(4, 20, 56) 100%)!important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.text-medium {
+    font-size: 1.45vw;
+    line-height: 180%;
+}
+
+#largeImg {
+    height: 45vh;
+    width: 35vw;
+}
+
+#largerImg {
+    height: 40vh;
+}
+
+.rightAlign {
+    text-align: right;
+    color: #debeff;
+}
+
+td img {
+    width: 75vw;
+    border-radius: 10px;
+}
+
+td h2 {
+    color: #9eb8f4;
+}
+
+#gif {
+    width: 50vw;
+    height: 30vh;
+}
+
+#eclipsesFigure,
+#eclipsesFigure img {
+    width: 85vw;
+}
+figcaption{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+@media (min-width: 550px) and (max-width:965px) {
+    td img {
+        width: 200rem;
+    }
+
+    .text-medium {
+        font-size: 2.5vw;
+    }
+
+    #eclipsesFigure,
+    #eclipseFigure img {
+        padding: 5%;
+        text-align: center;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 550px) {
+    tr {
+        display: grid;
+    }
+
+    td img {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .text-medium {
+        font-size: 4.5vw;
+        margin-left: 0;
+    }
+
+    .uk-column-1-2 {
+        display: contents;
+    }
+
+    .rightAlign {
+        width: auto;
+        text-align: center;
+    }
+
+    #gif {
+        width: 90vw;
+    }
+
+    #eclipsesFigure,
+    #eclipseFigure img {
+        padding: 5%;
+        text-align: center;
+        width: auto;
+    }
+
+    #largeImg {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+    #btn img, img {
+        width: auto!important;
+    }
+
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.2%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 2.9vw;
+    }
+}
+
+@media (max-width: 450px){
+    #btn img, img {
+        width: auto!important;
+    }
+
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.5%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 4.5vw;
+    }
+}
+

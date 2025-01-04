@@ -1,0 +1,147 @@
+html {
+    background: linear-gradient(0deg, rgba(62, 3, 122, 1) 0%, rgba(5, 4, 119, 1) 100%) !important;
+    color: #C5CCFC;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif !important;
+
+}
+
+h2 {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+#smallerScreenNav {
+    display: none;
+}
+
+#header {
+    background: linear-gradient(90deg, rgba(62, 3, 122, 1) 0%, rgba(49, 0, 130, 1) 50%, rgba(7, 4, 118, 1) 100%);
+    text-align: center;
+}
+
+#btn {
+    display: none;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.introdusingText {
+    text-align: center;
+    font-weight: 330;
+    width: 80vw;
+    font-size: 1.2rem;
+    line-height: 160%;
+
+}
+
+.text p {
+    font-size: 1.25rem;
+    line-height: 180%;
+}
+
+.uk-padding-large {
+    padding: 2% 8% 2% 8% !important;
+}
+
+.uk-margin-medium-top {
+    margin-top: 43px !important;
+}
+
+h2 {
+    color: #9daaff !important;
+}
+
+.uk-column-1-2 {
+    display: block !important;
+}
+
+@media (min-width: 1301px) {
+    #lifeOfStarsText {
+        width: 131%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .uk-column-1-2 {
+        display: contents !important;
+    }
+
+    .images {
+        display: inline-flex !important;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        gap: 20vw
+    }
+
+    #threeImages {
+        gap: 10vw;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    #reverse {
+        display: inline-flex !important;
+        flex-direction: column-reverse;
+    }
+
+    #lifeOfStarsText {
+        float: left !important;
+        text-align: center !important;
+        margin: 0 !important
+    }
+
+    section {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 630px) {
+    .images {
+        display: inline-block !important;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #biggerSceenNav {
+        display: none;
+    }
+
+    #smallerScreenNav {
+        display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    #btn img {
+        width: auto;
+    }
+
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.5%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 4.5vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 675px) {
+    #btn {
+        display: inline;
+        background: #2a0254;
+        border: none;
+        padding: 1.2%;
+        border-radius: 10%;
+        color: #e2cafc;
+        font-size: 2.9vw;
+    }
+}

@@ -1,158 +1,144 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Astrono is website to learn astronomy. You can see upcoming events liek meteor showers, moon events and eclipses. and learn abouts stars and constellations with interactive maps and much more." />
-  <meta name="keywords" content="Astrono, astronomy, events, stars, constellations" />
-  <link rel="icon" type="image/png" href="./assets/smallLogo-Eu9GC8Uh.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astrono</title>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="./assets/main-uC6pFMTY.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrono</title>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="./assets/main-G4hnfr5z.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-9p4a8sJU.js">
-  <link rel="stylesheet" crossorigin href="./assets/style-uFGDVYdo.css">
-  <link rel="stylesheet" crossorigin href="./assets/uikit-pg6vp1My.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-2VYkgj8v.css">
+  <link rel="stylesheet" crossorigin href="./assets/uikit-g1uGb_nw.css">
 </head>
 
 <body>
-  <div class="uk-navbar-justify uk-navbar" id="biggerSceenNav" uk-navbar="" style="background:rgba(11, 1, 15, 0.52);">
-    <div class="uk-navbar-left" style="flex-grow: 7;">
-      <a class="uk-navbar-item uk-logo" style="flex-grow: 0;" href="#"><img src="./assets/logoLight-EaHVsdZH.png" /></a>
-      <ul class="uk-navbar-nav" style="flex-grow: 5;">
-        <li><a href="/events/" id="8"></a></li>
-        <li>
-          <a href="/starsAndConstellations/" role="button" aria-haspopup="true" aria-expanded="true" id="9"></a>
-          <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2 uk-drop uk-navbar-dropdown-dropbar" id="dropdown"
-            style="max-width: 887px;background:#090D29;">
-            <div class="uk-padding">
-              <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-grid-stack" uk-grid="">
-                <div class="uk-first-column">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/starsAndConstellations/stars/basics/" class="12"></a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/stars/typesStars/" class="14"></a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/stars/multipleStarSystems/" class="15"></a>
-                    </li>
-                  </ul>
+    <section class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1 class="277 gradient uk-margin-small-bottom"></h1>
+                <div class="uk-margin-small-top uk-margin-bottom uk-margin-medium-left maxWidth">
+                    <section>
+                    <p class="invalidEmail"></p>
+                    <input class="uk-margin-small-top uk-margin-bottom email" id="emailRegister" placeholder=""
+                           style="background-color: #DBD8FC;
+                box-shadow: 0px 0px 20px #B88BFE;" type="email"/>
+                    </section>
+                    <section>
+                        <p class="invalidPassword"></p>
+                        <input class="uk-margin-small-top uk-margin-small-bottom password" id="passwordRegister"
+                               placeholder="" style="background-color: #E8D9FF;
+                    box-shadow: 0px 0px 20px #8195F3;" type="password"/>
+                    </section>
                 </div>
-                <div>
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="/starsAndConstellations/constellations/home/" class="17"></a></li>
-                    <li class="uk-parent"><a href="/starsAndConstellations/constellations/constellationsBySeasons/"
-                        class="19"></a></li>
-                  </ul>
+                <button class="signUp button" id="registrateBtn"></button>
+                <span class="279 uk-margin-top"></span>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 class="292 gradient"></h1>
+                <div class="maxWidth uk-margin-top uk-margin-medium-bottom uk-margin-medium-left">
+                    <section>
+                    <p class="invalidEmail"></p>
+                    <input class="uk-margin-small-top uk-margin-medium-bottom email" id="emailLogin" type="text" placeholder="" style="background-color: #DBD8FC;
+                    box-shadow: 0px 0px 20px #B88BFE;
+                    " />
+                    </section>
+                    <section>
+                        <p class="invalidPassword"></p>
+                    <input class="uk-margin-small-top password" id="passwordLogin" type="password" placeholder="" style="background-color: #E8D9FF;
+                    box-shadow: 0px 0px 20px #8195F3;
+                    " />
+                    </section>
                 </div>
-              </div>
+                <button class="button signIn" id="loginBtn"></button>
+                <span class="271 uk-margin-top"></span>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button class="translate btn"><img src="data:image/png;base64,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" /><span
+                        class="tbtn"></span></button>
+                    <h1 class=" uk-margin-top" id="275"></h1>
+                    <p class="uk-margin-top" id="276" style="width: 70%;"></p>
+                    <button class="signIn ghost signIn button"></button>
+                    <span class="uk-margin-top" style="width: 15dvw"><a class="274 uk-link-heading" href="/unlogged/homePage/"></a></span>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <button class="translate btn"><img src="data:image/png;base64,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" /><span
+                        class="tbtn"></span></button>
+                    <h1 id="272"></h1>
+                    <p class="uk-margin-top" id="273"></p>
+                    <button class="ghost signUp button"></button>
+                    <span class="uk-margin-top" style="width: 15dvw"><a class="274 uk-link-heading" href="/unlogged/homePage/"></a></span>
+                </div>
             </div>
-          </div>
-        </li>
-        <li><a href="/moon/" id="10"></a></li>
-        <li><a href="/about/" id="11"></a></li>
-        <li class="translate" style="color:#9eb8f4; cursor: pointer;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAULSURBVHgB5VdfiFRVGP++75x7Z8eZdWepNCF1xQJZylrDQGmhDSnSICEQFvGhEKKkXuxZs96ih/TFB1+MUDQEyz9RuaYRlGUQ/qmgDFbI/uq2rbvuzL33nK/vnLkze2dcZ3fq0Q/2zrlnzjm/78/v/L5ZgNvNsDbYffjqI9YEuxTBUkVoFQKGhCwLUCtkDQxEBCRrtTw0EiDib/lc+dX+/tIQtGkemJnVrkNjV5BhPqE7GEEcgAARSP4ckJJ1Kp13oAExKPc98ShRZcnAQPdoO8AuANj7wR+9xvJ87wnilE/s3tM3rKUn8331WULUfdCmeeAoCDMH3sqwzflZADuTdLsA/Wf1KE4PZegqjq10n1yfb1xvjGkbXbuH0oGcYeqTqOBDZeiQVRZCqWdvT+Xi2e/sZrRkpeZCNn5SUDcIqvdNKcVnzly7RyWFdW5/EvPHqwbywzBTxCaJvce1BxvuJZWsRb52mMGuPvvDHQcDjU8sX1bYL8V+XHKywi/1BEAfcRyrCWvM3WBwQUegTl34Ol49q4gRbC2zwIg9MWNPjkrn5NJcSSxsRuY3z/94bVDRnI1WlqpMciVg7u/v/luGO9z7ha/K33CML8rwi5bAZnJCbm2+ymKaYq2xamsHxg/KnerU0ehuE847xZBWv852V2NsrDHaEVLBXTBTqlW+wDXSNOxHLBmilzes695qg9KzMtMz3SGuxtn3ZKLyfcyVd2EmYF/jdCunhMkFuI85GYhtfOzAsfEThbmFz4t5cz8Bv5N1km/2F/pETPpWFfe1wM2y2ma9EczktKjUNuCOASsM+GcsXqMVDClIjiIF6wWwK3uFv/zsxjlkWu7UzKmbUzmdqiA5FSS6RDresuihjk9SDEEpx+TZ7EkqNBPaRkx7rNUDmEqWT4mlNQzBTrbYhU1lZdSOlH4/Oh33m8hDuLE4ei+Y4ODFi38W68ARJDfgf5hUWCpkw5nWScspFeLOO+vAW56Zd0mhOV91nRtEkBmaCtlYVCQ7nMD4sIS7zEUmQcbZ5V7h+Oa9ujaYVzJPjU/qwSQ2va4+LmOE0oJEroS1Vkl+ZcBKFEI6kt9DhJfDcHIPmK5dbF267XBEfz2cNwt+lrdSWrkqYHoHkSpTYtWODQ1d752M7QYtyVIKu6VXb1Kou5WXTvtcsePGSRMVN0vn3lZrr9LWhWjoCWdUtGRJX36YWoHsPzpy5PjxXxdn50TRHwAMtgOp7YjqFWbsduHIucOLlna8F0Wd+3Up3DmdLvhI04hbAkeGOq/jHJ2dqzYlhGZWSxXe/uVSPGiZH03GkpWo+TjXk5qy3Y9zMCOw1PJba/Cl7Jy1Bhsr5MYWDI28j2QuS1N5PrHlKOHoLeTmSjJUKtWIdStgRWNvsC3tO3B0rCziUSmEV/uRQjYRpwqX/gpB3ItRsY8VvuB+q2kIOQjMaxCb0+L+Y7VUufW5XLUGLYE3Pr3YdZy1AlJNGs7lj05cX9a4TZyg6HXm3KciPD3kpUZIFFEZ0exQNeAmawlcM3QtKDUikQuT/Q4SNLSDkXpS78Cn39J6HfJErds2W8saT2dSO6qfDz6DmiG3qS65kPLZSa9RG7PvVVLCzKye1kj9Xh3U6wu3ujrZdTWXaBxH/xPwfQuLZ5QyPzG0b6j4yMLVXSPN7szahGx08nR50JpkaSCpU0qyLIwKlObqfxnaok1UoLVRTnKFa2GgLixaoY/AbWv/AmClAajkxkvsAAAAAElFTkSuQmCC" /><span
-            class="tbtn"></span></li>
-      </ul>
-    </div>
-  </div>
+        </div>
+    </section>
+    <section class="mobile">
+        <div class="form-container sign-up-container">
+            <form action="#" id="signUpMobile">
+                <button class="translate btn"><img src="data:image/png;base64,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" /><span
+                        class="tbtn"></span></button>
+                <h1 class="277 gradient uk-margin-small-bottom"></h1>
+                <div class="uk-margin-top uk-margin-medium-bottom uk-margin-medium-left">
+                    <section>
+                        <p class="invalidEmail"></p>
+                    <input class="uk-margin-small-top uk-margin-medium-bottom email" id="emailRegisterMobile" type="email" placeholder="" style="background-color: #DBD8FC;
+                box-shadow: 0px 0px 20px #B88BFE;" />
+                    </section>
+                    <section>
+                        <p class="invalidPassword"></p>
+                    <input class="uk-margin-small-top uk-margin-small-bottom password" id="passwordRegisterMobile" type="password" placeholder="" style="background-color: #E8D9FF;
+                    box-shadow: 0px 0px 20px #8195F3;" />
+                    </section>
+                </div>
+                <button class="signUp button" id="registrateBtnMobile"></button>
+                <span class="279 uk-margin-small-top"></span>
+                <span class="uk-margin-top"><a class="274 uk-link-heading" href="/unlogged/homePage/"></a></span>
 
-  <div uk-navbar="" class="uk-navbar" id="smallerScreenNav" style="background:rgba(11, 1, 15, 0.52);">
-    <div class="uk-navbar-left">
-      <a class="uk-navbar-item uk-logo" href="#"><img src="./assets/logoLight-EaHVsdZH.png" /></a>
-    </div>
-    <div class="uk-navbar-right uk-margin-right">
-      <a class="uk-navbar-toggle uk-navbar-toggle-animate uk-icon uk-navbar-toggle-icon" href=""
-        uk-navbar-toggle-icon="" role="button" aria-haspopup="true" aria-label="Open menu"><svg width="20" height="20"
-          viewBox="0 0 20 20"></svg></a>
-      <div class="uk-navbar-dropdown uk-drop"
-        uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !.uk-navbar; stretch: x; flip: false"
-        style="width: 1439.2px; overflow-x: auto; max-width: 1489px; top: 80px; left: 0px; background:#090D29;">
-        <ul class="uk-nav uk-navbar-dropdown-nav">
-          <li class="uk-active"><a href="/events/" id="203"></a></li>
-          <li class="uk-active"><a href="/starsAndConstellations/" id="201"></a></li>
-          <li class="uk-parent">
-            <a href="/starsAndConstellations/stars/basics/" class="12"></a>
-            <ul class="uk-nav-sub">
-              <li><a href="/starsAndConstellations/stars/typesStars/" class="14"></a></li>
-              <li><a href="/starsAndConstellations/stars/multipleStarSystems/" class="15"></a></li>
-            </ul>
-          </li>
-          <li class="uk-parent">
-            <a href="/starsAndConstellations/constellations/home/" class="17"></a>
-            <ul class="uk-nav-sub">
-              <li><a href="/starsAndConstellations/constellations/constellationsBySeasons/" class="19"></a></li>
-            </ul>
-          </li>
-          <li class="uk-active"><a href="/moon/" id="202"></a></li>
-          <li class="uk-active"><a href="/about/" id="204"></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="uk-flex uk-flex-center uk-margin-large-top">
-    <button id="btn" class="translate"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAULSURBVHgB5VdfiFRVGP++75x7Z8eZdWepNCF1xQJZylrDQGmhDSnSICEQFvGhEKKkXuxZs96ih/TFB1+MUDQEyz9RuaYRlGUQ/qmgDFbI/uq2rbvuzL33nK/vnLkze2dcZ3fq0Q/2zrlnzjm/78/v/L5ZgNvNsDbYffjqI9YEuxTBUkVoFQKGhCwLUCtkDQxEBCRrtTw0EiDib/lc+dX+/tIQtGkemJnVrkNjV5BhPqE7GEEcgAARSP4ckJJ1Kp13oAExKPc98ShRZcnAQPdoO8AuANj7wR+9xvJ87wnilE/s3tM3rKUn8331WULUfdCmeeAoCDMH3sqwzflZADuTdLsA/Wf1KE4PZegqjq10n1yfb1xvjGkbXbuH0oGcYeqTqOBDZeiQVRZCqWdvT+Xi2e/sZrRkpeZCNn5SUDcIqvdNKcVnzly7RyWFdW5/EvPHqwbywzBTxCaJvce1BxvuJZWsRb52mMGuPvvDHQcDjU8sX1bYL8V+XHKywi/1BEAfcRyrCWvM3WBwQUegTl34Ol49q4gRbC2zwIg9MWNPjkrn5NJcSSxsRuY3z/94bVDRnI1WlqpMciVg7u/v/luGO9z7ha/K33CML8rwi5bAZnJCbm2+ymKaYq2xamsHxg/KnerU0ehuE847xZBWv852V2NsrDHaEVLBXTBTqlW+wDXSNOxHLBmilzes695qg9KzMtMz3SGuxtn3ZKLyfcyVd2EmYF/jdCunhMkFuI85GYhtfOzAsfEThbmFz4t5cz8Bv5N1km/2F/pETPpWFfe1wM2y2ma9EczktKjUNuCOASsM+GcsXqMVDClIjiIF6wWwK3uFv/zsxjlkWu7UzKmbUzmdqiA5FSS6RDresuihjk9SDEEpx+TZ7EkqNBPaRkx7rNUDmEqWT4mlNQzBTrbYhU1lZdSOlH4/Oh33m8hDuLE4ei+Y4ODFi38W68ARJDfgf5hUWCpkw5nWScspFeLOO+vAW56Zd0mhOV91nRtEkBmaCtlYVCQ7nMD4sIS7zEUmQcbZ5V7h+Oa9ujaYVzJPjU/qwSQ2va4+LmOE0oJEroS1Vkl+ZcBKFEI6kt9DhJfDcHIPmK5dbF267XBEfz2cNwt+lrdSWrkqYHoHkSpTYtWODQ1d752M7QYtyVIKu6VXb1Kou5WXTvtcsePGSRMVN0vn3lZrr9LWhWjoCWdUtGRJX36YWoHsPzpy5PjxXxdn50TRHwAMtgOp7YjqFWbsduHIucOLlna8F0Wd+3Up3DmdLvhI04hbAkeGOq/jHJ2dqzYlhGZWSxXe/uVSPGiZH03GkpWo+TjXk5qy3Y9zMCOw1PJba/Cl7Jy1Bhsr5MYWDI28j2QuS1N5PrHlKOHoLeTmSjJUKtWIdStgRWNvsC3tO3B0rCziUSmEV/uRQjYRpwqX/gpB3ItRsY8VvuB+q2kIOQjMaxCb0+L+Y7VUufW5XLUGLYE3Pr3YdZy1AlJNGs7lj05cX9a4TZyg6HXm3KciPD3kpUZIFFEZ0exQNeAmawlcM3QtKDUikQuT/Q4SNLSDkXpS78Cn39J6HfJErds2W8saT2dSO6qfDz6DmiG3qS65kPLZSa9RG7PvVVLCzKye1kj9Xh3U6wu3ujrZdTWXaBxH/xPwfQuLZ5QyPzG0b6j4yMLVXSPN7szahGx08nR50JpkaSCpU0qyLIwKlObqfxnaok1UoLVRTnKFa2GgLixaoY/AbWv/AmClAajkxkvsAAAAAElFTkSuQmCC" /><span class="tbtn"></span></button>
-  </div>
-  <div class="uk-padding-large">
-    <div class="uk-column-1-2" style="gap: 10%;">
-      <div id="text">
-        <h2 class="uk-text-bolder uk-text-italic" id="1"></h2>
-        <h3 class="uk-text-italic" id="3"></h3>
-        <p id="4"></p>
-      </div>
-      <div class="uk-flex uk-flex-center">
-        <canvas id="webgl"></canvas>
-      </div>
-    </div>
-  </div>
-  <div class="sectionBiggerScreen">
-    <a href="/events/index.html">
-      <div class="card">
-        <img class="eventImg" src="./assets/eventsEn-PbA6ACXs.png" />
-      </div>
-    </a>
-    <p class="events pageExplanation 5" style="text-align:right;"></p>
-  </div>
-  <div class="sectionPhone">
-    <p class="events pageExplanation 5"></p>
-    <a href="/events/index.html">
-      <div class="card">
-        <img class="eventImg" src="./assets/eventsEn-PbA6ACXs.png" />
-      </div>
-    </a>
-  </div>
-  <div class="section uk-margin-medium-bottom">
-    <p id="6" class="pageExplanation"></p>
-    <a href="/starsAndConstellations/">
-      <div class="cardRight">
-        <img id="starsAndConstellationsImg" src="./assets/starsAndConstellationsEn-R9v3Fn80.png" />
-      </div>
-    </a>
-  </div>
-  <div class="sectionBiggerScreen uk-margin-medium-bottom">
-    <a href="/moon/index.html">
-      <div class="card">
-        <img class="moonImg" src="./assets/MoonEn-1MkZZlhf.png" />
-      </div>
-    </a>
-    <p class="events pageExplanation 7" style="text-align:right;"></p>
-  </div>
-  <div class="sectionPhone uk-margin-medium-bottom">
-    <p class="events pageExplanation 7"></p>
-    <a href="/moon/index.html">
-      <div class="card">
-        <img class="moonImg" src="./assets/MoonEn-1MkZZlhf.png" />
-      </div>
-    </a>
-  </div>
-  <script src="helpers.js"></script>
-  <script src="translate.js"></script>
-  <script src="translateHomePage.js"></script>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" id="signInMobile">
+                <button class="translate btn"><img src="data:image/png;base64,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" /><span
+                        class="tbtn"></span></button>
+                <h1 class="292 gradient"></h1>
+                <div class="uk-margin-top uk-margin-medium-bottom uk-margin-medium-left">
+                    <section>
+                        <p class="invalidEmail"> </p>
+                    <input class="uk-margin-small-top uk-margin-medium-bottom email" id="emailLoginMobile" type="text" placeholder="" style="background-color: #DBD8FC;
+                    box-shadow: 0px 0px 20px #B88BFE;
+                    " />
+                    </section>
+                    <section>
+                        <p class="invalidPassword"></p>
+                    <input class="uk-margin-small-top password" id="passwordLoginMobile" type="password" placeholder="" style="background-color: #E8D9FF;
+                    box-shadow: 0px 0px 20px #8195F3;
+                    " />
+                    </section>
+                </div>
+                <button class="button signIn" id="loginBtnMobile"></button>
+                <span class="271 uk-margin-top"></span>
+                <span class="uk-margin-top"><a class="274 uk-link-heading" href="/unlogged/homePage/"></a></span>
+            </form>
+        </div>
+    </section>
+    <script src="validation.js"></script>
+    <script src="/form.js"></script>
+    <script src="/helpers.js"></script>
+    <script src="translations.js"></script>
+    <script src="/translate.js"></script>
+    <script src="/translatePage.js"></script>
 </body>
 
 </html>
