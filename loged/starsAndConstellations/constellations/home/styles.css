@@ -331,7 +331,7 @@ figure {
     justify-content: center;
 }
 
-.btn {
+.linkButton {
     width: 150px;
     height: 46px;
     border-radius: 30px;
@@ -363,7 +363,7 @@ figure {
     transition: all .5s ease;
 }
 
-.btn:hover .arrow {
+.linkButton:hover .arrow {
     width: calc(140px - (4px)*2);
     background-color: rgb(245, 245, 245);
 }
@@ -451,7 +451,7 @@ figure {
         width: 90% !important;
     }
 
-    .btn {
+    .linkButton {
         margin-top: 5%;
     }
 
