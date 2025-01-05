@@ -81,6 +81,19 @@ input {
     border-radius: 15px;
 }
 
+.password-container {
+    position: relative;
+    width: 99%;
+    margin: -6%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8%;
+    top: 35%;
+    cursor: pointer;
+}
+
 .username {
     background-image: url('public/username.png');
     background-repeat: no-repeat;

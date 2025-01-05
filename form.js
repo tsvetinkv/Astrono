@@ -17,3 +17,23 @@ function swap() {
 window.onload = function () {
     swap();
 }
+
+const passwordInput = document.querySelectorAll('.password');
+const togglePasswordIcon = document.querySelectorAll('.toggle-password');
+
+togglePasswordIcon.forEach(el => {
+    el.addEventListener('click', () =>{
+        passwordInput.forEach(input =>{
+        if (input.type === "password") {
+            input.type = "text";
+            el.setAttribute('uk-icon', 'icon: eye');
+            UIkit.icon(el);
+        } else {
+            input.type = "password";
+            el.setAttribute('uk-icon', 'icon: eye-slash');
+            UIkit.icon(el);
+        }
+    })
+})
+})
+
