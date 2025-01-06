@@ -259,12 +259,19 @@ b, button{
     font-size: 0.9rem;
     display: none;
 }
+
+.invalidPassword{
+    margin-bottom: 8%;
+}
+
 section{
     display: grid;
 }
+
 .maxWidth{
     width: 85%;
 }
+
 @media (min-width: 1030px){
     #container{
         display: block;
