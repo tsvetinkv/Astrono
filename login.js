@@ -2,9 +2,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBHdyXlzEPf5MMqBPV9crqnaqvZsctEwI8",
@@ -22,15 +19,25 @@ const submitMobile = document.getElementById('loginBtnMobile');
 const invalidEmail = document.querySelectorAll('.invalidEmail');
 const invalidPassword = document.querySelectorAll('.invalidPassword');
 
-submitMobile.addEventListener('click', event =>{
+submit.addEventListener('click', event => {
     event.preventDefault();
+    handleFormSubmission('emailLogin', 'passwordLogin');
+});
 
-    const emailMobile = document.getElementById('emailLoginMobile');
-    const passwordMobile = document.getElementById('passwordLoginMobile').value;
+submitMobile.addEventListener('click', event => {
+    event.preventDefault();
+    handleFormSubmission('emailLoginMobile', 'passwordLoginMobile');
+});
 
-    if(validateEmail(emailMobile.value) && validatePassword(passwordMobile)){
+function handleFormSubmission(emailElementId, passwordElementId) {
+    const email = document.getElementById(emailElementId).value;
+    const password = document.getElementById(passwordElementId).value;
+
+    console.log(email);
+
+    if (validateEmail(email) && validatePassword(password)) {
         const auth = getAuth();
-        signInWithEmailAndPassword(auth, emailMobile.value, passwordMobile)
+        signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed up
                 const user = userCredential.user;
@@ -41,49 +48,19 @@ submitMobile.addEventListener('click', event =>{
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 // ..
-                alert(errorMessage)
+                alert(errorMessage);
             });
-    }else if(validateEmail(emailMobile.value) == false){
+    } else {
+        if (!validateEmail(email)) {
             invalidEmail.forEach(el => {
                 el.style.display = "block";
             });
-            emailMobile.classList.replace('uk-margin-medium-bottom', 'uk-margin-bottom');
-    }
-    if(validatePassword(passwordMobile) == false){
-        invalidPassword.forEach(el => {
-            el.style.display = "block";
-        });
-    }
-})
-submit.addEventListener('click', event =>{
-    event.preventDefault();
-    const  email = document.getElementById('emailLogin');
-    const password = document.getElementById('passwordLogin').value;
-
-    if(validateEmail(email.value) && validatePassword(password)){
-        const auth = getAuth();
-        signInWithEmailAndPassword(auth, email.value, password)
-            .then((userCredential) => {
-                // Signed up
-                const user = userCredential.user;
-                // ...
-                window.location.href = "/loged/homePage/"
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-                alert(errorMessage)
+            document.getElementById(emailElementId).classList.replace('uk-margin-medium-bottom', 'uk-margin-bottom');
+        }
+        if (!validatePassword(password)) {
+            invalidPassword.forEach(el => {
+                el.style.display = "block";
             });
-    }else if(validateEmail(email.value) == false){
-        invalidEmail.forEach(el => {
-            el.style.display = "block"
-        });
-        email.classList.replace('uk-margin-medium-bottom', 'uk-margin-bottom');
+        }
     }
-    if(validatePassword(password) == false){
-        invalidPassword.forEach(el => {
-            el.style.display = "block"
-        });
-    }
-})
+}

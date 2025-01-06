@@ -11,12 +11,9 @@ function translateTxt(page, language) {
     const id271 = document.querySelectorAll(`.${CSS.escape("271")}`);
     const id272 = document.getElementById('272');
     const id273 = document.getElementById('273');
-    const id274 = document.querySelectorAll(`.${CSS.escape("274")}`);
     const id275 = document.getElementById('275');
     const id276 = document.getElementById('276');
-    const id277 = document.querySelectorAll(`.${CSS.escape("277")}`)
     const id279 = document.querySelectorAll(`.${CSS.escape("279")}`);
-    const id292 = document.querySelectorAll(`.${CSS.escape("292")}`);
     const id300 = document.querySelectorAll('.invalidEmail');
     const id301 = document.querySelectorAll('.invalidPassword');
 
@@ -32,16 +29,19 @@ function translateTxt(page, language) {
             if (key == elementId) {
                 element.innerHTML = pageObj[key];
             }
+
+            const elementClasses = [274, 277, 292];
+            elementClasses.forEach(classNum => {
+                translateMultipleElements(document.querySelectorAll(`.${CSS.escape(classNum)}`), pageObj, key, classNum);
+            });
+
             translateMultipleElements(id266, pageObj, key, 266);
             translateMultipleElements(id267, pageObj, key, 267);
             translateMultiplePlaceHolders(id278, pageObj, key, 278);
             translateMultiplePlaceHolders(id269, pageObj, key, 269);
             translateMultipleElements(id270, pageObj, key, 270);
-            translateMultipleElements(id274, pageObj, key, 274);
             translateMultipleElements(id271, pageObj, key, 271);
-            translateMultipleElements(id277, pageObj, key, 277);
             translateMultipleElements(id279, pageObj, key, 279);
-            translateMultipleElements(id292, pageObj, key, 292);
             translateMultipleElements(id300, pageObj, key, 300);
             translateMultipleElements(id301, pageObj, key, 301);
         });

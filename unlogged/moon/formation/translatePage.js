@@ -3,19 +3,10 @@ function translateTxt(page, language) {
     const id8 = document.getElementById('8');
     const id9 = document.getElementById('9');
     const id10 = document.getElementById('10');
-    const id12 = document.querySelectorAll(`.${CSS.escape("12")}`);
-    const id14 = document.querySelectorAll(`.${CSS.escape("14")}`);
-    const id15 = document.querySelectorAll(`.${CSS.escape("15")}`);
-    const id17 = document.querySelectorAll(`.${CSS.escape("17")}`);
-    const id19 = document.querySelectorAll(`.${CSS.escape("19")}`);
-    const id250 = document.querySelectorAll(`.${CSS.escape("250")}`);
-    const id251 = document.querySelectorAll(`.${CSS.escape("251")}`);
     const id201 = document.getElementById('201');
     const id202 = document.getElementById('202');
     const id203 = document.getElementById('203');
     const id205 = document.querySelectorAll('.tbtn');
-    const id23 = document.querySelectorAll(`.${CSS.escape("23")}`);
-    const id24 = document.querySelectorAll(`.${CSS.escape("24")}`);
     const id25 = document.getElementById('25');
     const id26 = document.getElementById('26');
     const id27 = document.getElementById('27');
@@ -44,16 +35,13 @@ function translateTxt(page, language) {
             if (key == elementId) {
                 element.innerHTML = pageObj[key];
             }
+
+            const elementClasses = [12, 14, 15, 17, 19, 251, 250, 23, 24];
+            elementClasses.forEach(classNum => {
+                translateMultipleElements(document.querySelectorAll(`.${CSS.escape(classNum)}`), pageObj, key, classNum);
+            });
+
             translateMultipleElements(id205, pageObj, key, 205);
-            translateMultipleElements(id12, pageObj, key, 12);
-            translateMultipleElements(id14, pageObj, key, 14);
-            translateMultipleElements(id15, pageObj, key, 15);
-            translateMultipleElements(id17, pageObj, key, 17);
-            translateMultipleElements(id19, pageObj, key, 19);
-            translateMultipleElements(id250, pageObj, key, 250);
-            translateMultipleElements(id251, pageObj, key, 251);
-            translateMultipleElements(id23, pageObj, key, 23);
-            translateMultipleElements(id24, pageObj, key, 24);
             translateMultipleElements(id265, pageObj, key, 265);
 
         });
