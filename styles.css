@@ -84,13 +84,13 @@ input {
 .password-container {
     position: relative;
     width: 99%;
-    margin: -6%;
+    margin: -7%;
 }
 
 .toggle-password {
     position: absolute;
     right: 8%;
-    top: 35%;
+    top: 1.5em;
     cursor: pointer;
 }
 
