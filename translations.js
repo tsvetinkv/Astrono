@@ -16,7 +16,8 @@ const translations = {
             279: "Имаш профил? ",
             292: "Влез в профила си",
             300: "Невалиден имейл",
-            301: "Паролата трябва да съдържа главни, малки букви и цифри."
+            301: "Паролата трябва да съдържа главни, малки букви и цифри.",
+            302: "Забравена парола?"
         },
         1: {
             1: "Заинтересован ли си от астрономията?",
@@ -284,7 +285,8 @@ const translations = {
             279: "Have an account? ",
             292: "Sign in",
             300: "Invalid email",
-            301: "Password must contain uppercase, lowercase letters, and numbers"
+            301: "Password must contain uppercase, lowercase letters, and numbers",
+            302: "Forgot password?"
         },
         1: {
             1: "Are you interested in astronomy?",

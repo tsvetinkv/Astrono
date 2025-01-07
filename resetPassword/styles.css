@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #b88bfe;
+    background-image:
+            radial-gradient(at 61% 4%, hsl(235, 100%, 80%) 0px, transparent 38%),
+            radial-gradient(at 75% 66%, hsl(228, 100%, 79%) 0px, transparent 38%),
+            radial-gradient(at 98% 88%, hsl(253, 98%, 77%) 0px, transparent 38%),
+            radial-gradient(at 23% 16%, hsl(229, 83%, 73%) 0px, transparent 38%),
+            radial-gradient(at 95% 65%, hsl(257, 90%, 77%) 0px, transparent 38%),
+            radial-gradient(at 10% 79%, hsl(230, 98%, 77%) 0px, transparent 38%),
+            radial-gradient(at 85% 58%, hsl(255, 100%, 79%) 0px, transparent 38%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #E8D9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 14, 70, 0.88);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.8em 3.5em;
+}
+
+h2 {
+    color: #E8D9FF!important;
+    margin: 0.5em 0 0 0!important;
+}
+
+p{
+margin: 0.8em 0 1.5em 0;
+}
+
+.passInput {
+    width: 78%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #7897F2;
+    padding: 0 0 0.5em 0;
+    font-size: 15px;
+    color: #E8D9FF;
+    outline: none;
+}
+
+input::placeholder{
+    color: #E8D9FF;
+}
+
+button {
+    width: 80%;
+    background-color: #7897F2;
+    color: #151e58;
+    padding: 0.8em;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 845px) {
+   body{
+       height: 100vh;
+       padding: 0;
+   }
+
+   h2{
+       font-size: 1.35rem;
+   }
+
+   p{
+       font-size: 0.9em;
+   }
+
+   .card{
+       padding: 3.5em 1em;
+       width: 50vw;
+   }
+}
+
+@media (min-width: 500px) and (max-width: 640px) {
+    .card{
+        padding: 3.5em 1em;
+        width: 60vw;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .card{
+        padding: 3.5em 1em;
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .card{
+        padding: 3.5em 1em;
+        width: 85vw;
+    }
+}

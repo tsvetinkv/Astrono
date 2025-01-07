@@ -272,6 +272,13 @@ section{
     width: 85%;
 }
 
+.forgotPass{
+    font-size: 0.85em;
+    color: #B88AFE;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 @media (min-width: 1030px){
     #container{
         display: block;

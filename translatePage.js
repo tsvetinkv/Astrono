@@ -16,6 +16,8 @@ function translateTxt(page, language) {
     const id279 = document.querySelectorAll(`.${CSS.escape("279")}`);
     const id300 = document.querySelectorAll('.invalidEmail');
     const id301 = document.querySelectorAll('.invalidPassword');
+    const id302 = document.querySelectorAll('.forgotPass');
+
 
 
     let elements = [id272, id273, id275, id276];
@@ -44,6 +46,8 @@ function translateTxt(page, language) {
             translateMultipleElements(id279, pageObj, key, 279);
             translateMultipleElements(id300, pageObj, key, 300);
             translateMultipleElements(id301, pageObj, key, 301);
+            translateMultipleElements(id302, pageObj, key, 302);
+
         });
     }
     createBElements(id270, id267, id271, id279);
